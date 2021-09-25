@@ -108,7 +108,7 @@
 				<div class="row">
 					<button type="button" class="btn btn-success" onclick="window.location.href='/insertarclientes.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
-					<button type="button" class="btn btn-danger">
+					<button type="button" class="btn btn-danger" onclick="window.location.href='/eliminarclientes.jsp'">
 					<i class="fas fa-trash"></i> Eliminar cliente</button>
 					<button type="button" class="btn btn-warning">
 					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>

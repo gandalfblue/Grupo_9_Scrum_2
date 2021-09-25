@@ -93,13 +93,13 @@ public class ClientesDAO {
 		} catch (SQLException e) {
 			//si hay un error en el sql mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo consultar el Clientes");
+			System.out.println("No se pudo consultar el cliente");
 			System.out.println(e.getMessage());
 			System.out.println(e.getErrorCode());
 		} catch (Exception e) {
 			//si hay cualquier otro error mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo consultar el Clientes");
+			System.out.println("No se pudo consultar los clientes");
 			System.out.println(e.getMessage());
 			System.out.println(e.getLocalizedMessage());
 		}
@@ -184,13 +184,13 @@ public class ClientesDAO {
 		} catch (SQLException e) {
 			//si hay un error en el sql mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo eliminar el Clientes");
+			System.out.println("No se pudo eliminar el cliente");
 			System.out.println(e.getMessage());
 			System.out.println(e.getErrorCode());
 		} catch (Exception e) {
 			//si hay cualquier otro error mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo eliminar el Clientes");
+			System.out.println("No se pudo eliminar los clientes");
 			System.out.println(e.getMessage());
 			System.out.println(e.getLocalizedMessage());
 		}
