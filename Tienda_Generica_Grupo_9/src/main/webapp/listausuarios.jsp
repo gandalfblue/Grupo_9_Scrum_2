@@ -36,14 +36,14 @@
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
 				var usuarios = JSON.parse(xmlhttp.responseText);
-				var tbltop = "<table class='table table-hover'><tr><th>Cedula</th><th>Email</th><th>Nombre</th><th>Password</th><th>Usuario</th></tr>";
+				var tbltop = "<table class='table' id='tabla' table-hover'><tr><th>Cedula</th><th>Email</th><th>Nombre</th><th>Password</th><th>Usuario</th></tr>";
 				var main = "";
 				for (i = 0; i < usuarios.length; i++) {
 					main += "<tr><td>" + usuarios[i].cedula_usuario
 							+ "</td><td>" + usuarios[i].email_usuario
 							+ "</td><td>" + usuarios[i].nombre_usuario
-							+ "</td><td>" + usuarios[i].password + "</td><td>"
-							+ usuarios[i].usuario + "</td></tr>";
+							+ "</td><td>" + usuarios[i].password 
+							+ "</td><td>" + usuarios[i].usuario + "</td></tr>";
 				}
 				var tblbottom = "</table>";
 				var tbl = tbltop + main + tblbottom;
@@ -61,9 +61,9 @@
 
 
 <body>
+	
 	<!-- Navbar-->	
-   <div class="usuarios">
-	<nav class="navbar">
+   	<nav class="navbar" id ="titulo_2">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
@@ -71,7 +71,7 @@
 	</nav>
 
 	<!-- Navbar modulos-->
-	<nav class="navbar navbar-dark bg-links">
+	<nav class="navbar navbar-dark bg-primary">
 		<div class="container">
 			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-users"></i> Usuarios</a> 
@@ -91,27 +91,34 @@
 	<!-- contenido  -->		
 			<div class="container p-4">
 				<div class="col text-center">
-				  	<button type="button" class="btn btn-success" onclick="window.location.href='/insertarusuario.jsp'">
+				  	<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarusuario.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar usuario</button>
-					<button type="button" class="btn btn-danger">
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarusuario.jsp'">
 					<i class="fas fa-trash"></i> Eliminar usuario</button>
-					<button type="button" class="btn btn-warning">
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarusuario.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
-					<button type="button" class="btn btn-dark">
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar un usuario</button>
-					<button type="button" class="btn btn-primary">
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listasuarios.jsp'">
 					<i class="fas fa-search"></i> Lista de todos los usuarios</button>					
 				</div>
-		 	  
+	<br><br> 	  
 		<h2><i class="fas fa-list-ol"></i> Lista de usuarios</h2>
 			<div class="container">
-				<div class="tabla">
-					<!--  Aqui es donde se autogenera la tabla basado en el script -->
-					<div class="col align-self-center " id="usuariosinfo">					
+				<div class="table-wrapper-scroll-y my-custom-scrollbar">
+					<div class="row">
+						<!--  Aqui es donde se autogenera la tabla basado en el script -->
+						<div class="col align-self-center " id="usuariosinfo">					
+						</div>	
 					</div>	
-				</div>	
-			</div>		
-	</div>
+				</div>		
+			</div>
+	<br><br>
 	
 	<nav class="navbar2 fixed-bottom">
 			<div class="row justify-content-between">
@@ -122,6 +129,5 @@
 				</div>
 			</div>
 		</nav>
-</div>
 </body>
 </html>

@@ -31,7 +31,7 @@
 
 <body class="index">
 	<!-- Navbar-->
-	<nav class="navbar">
+	<nav class="navbar" id="titulo" >
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html"> 
 			<i class="fas fa-shopping-basket"></i> Tienda Generica

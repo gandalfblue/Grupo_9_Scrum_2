@@ -166,23 +166,23 @@ footer {
   color: white;
 }
 
-a{
+#titulo{
 	color: blue;
 }
 
-a:hover{
+#titulo:hover{
 	color:darkred;
 }
 
-b{
-	color: blue;
+#titulo_2{
+	color: darkred;
 }
 
-b:hover{
-	color:darkred;
+#titulo_2:hover{
+	color: darkblue;
 }
 
-.usuarios{ 
+#contenedor_2{ 
 	 height: 100%;
      width: 100;
 	 font-family: Arial, Helvetica, sans-serif;

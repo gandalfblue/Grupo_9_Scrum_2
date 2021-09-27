@@ -106,6 +106,51 @@ public class UsuarioDAO {
 		return listausuarios;
 	}
 
+	public ArrayList<UsuarioVO> consultarUsuario_Cedula(int cedula_usuario) {	
+		//lista que contendra el o los usuarios obtenidos
+		ArrayList<UsuarioVO> listausuarios = new ArrayList<UsuarioVO>();		
+		//instancia de la conexión
+		Conexion conex = new Conexion();
+		try {
+			//prepare la sentencia en la base de datos
+			PreparedStatement consulta = conex.getConnection()
+					.prepareStatement("SELECT * FROM usuarios where cedula_usuario = ? ");		
+			// se cambia el comodin ? por el dato que ha llegado en el parametro de la funcion
+			consulta.setInt(1, cedula_usuario);			
+			//ejecute la sentencia
+			ResultSet res = consulta.executeQuery();			
+			//cree un objeto basado en la clase entidad con los datos encontrados
+			if (res.next()) {
+				UsuarioVO Usuario = new UsuarioVO();
+				Usuario.setCedula_usuario(Integer.parseInt(res.getString("cedula_usuario")));
+				Usuario.setEmail_usuario(res.getString("email_usuario"));
+				Usuario.setNombre_usuario(res.getString("nombre_usuario"));
+				Usuario.setPassword(res.getString("password"));
+				Usuario.setUsuario(res.getString("usuario"));
+
+				listausuarios.add(Usuario);
+			}
+			//cerrar resultado, sentencia y conexión
+			res.close();
+			consulta.close();
+			conex.desconectar();
+
+		} catch (SQLException e) {
+			//si hay un error en el sql mostrarlo
+			System.out.println("------------------- ERROR --------------");
+			System.out.println("No se pudo consultar el usuario");
+			System.out.println(e.getMessage());
+			System.out.println(e.getErrorCode());
+		} catch (Exception e) {
+			//si hay cualquier otro error mostrarlo
+			System.out.println("------------------- ERROR --------------");
+			System.out.println("No se pudo consultar el usuario");
+			System.out.println(e.getMessage());
+			System.out.println(e.getLocalizedMessage());
+		}
+		return listausuarios;
+	}
+	
 	/**
 	 * permite consultar la lista de todos los usuarios
 	 * 
