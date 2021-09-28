@@ -87,7 +87,24 @@
 		</div>
 	</nav>
 	
-	
+			<div class="container p-4">
+				<div class="col text-center">
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarclientes.jsp'">
+					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarclientes.jsp'">
+					<i class="fas fa-trash"></i> Eliminar cliente</button>
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarclientes.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarclientes.jsp'">
+					<i class="fas fa-search"></i> Buscar un cliente</button>
+					
+				</div>
+			</div>
+			
 	<!-- contenido  -->
 	
 	<div style="padding-left: 5px;">
@@ -101,28 +118,7 @@
 					</div>
 	
 				</div>
-			</div>
-	
-		<h1><i class="fas fa-cogs"></i> Operaciones</h1>
-			<div class="container">
-				<div class="row">
-					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarclientes.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
-					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarclientes.jsp'">
-					<i class="fas fa-trash"></i> Eliminar cliente</button>
-					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarclientes.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
-					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarclientes.jsp'">
-					<i class="fas fa-search"></i> Buscar un cliente</button>
-					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaclientes.jsp'">
-					<i class="fas fa-search"></i> Lista de todos los clientes</button>
-				</div>
-			</div>
+			</div>		
 	</div>
 
 

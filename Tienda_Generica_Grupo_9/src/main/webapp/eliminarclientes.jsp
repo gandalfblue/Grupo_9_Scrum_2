@@ -123,9 +123,6 @@
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarclientes.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
-					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarclientes.jsp'">
-					<i class="fas fa-trash"></i> Eliminar cliente</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarclientes.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
@@ -134,7 +131,7 @@
 					<i class="fas fa-search"></i> Buscar un cliente</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='/listaclientes.jsp'">
-					<i class="fas fa-search"></i> Lista de todos los clientes</button>
+					<i class="fas fa-search"></i> Lista de clientes</button>
 				</div>
 
 			</div>

@@ -103,10 +103,10 @@
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar un usuario</button>
-					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listasuarios.jsp'">
-					<i class="fas fa-search"></i> Lista de todos los usuarios</button>					
+									
 				</div>
+			</div>
+			
 	<br><br> 	  
 		<h2><i class="fas fa-list-ol"></i> Lista de usuarios</h2>
 			<div class="container">

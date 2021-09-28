@@ -10,7 +10,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Eliminar cliente</title>
+<title>Eliminar usuario</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -99,7 +99,7 @@
 	 			</div>
 			</div>
 			
-			<div id="table" class="contenedor">
+			<div class="contenedor" id="tabla visually-hidden">
 					
 			<h2><i class="fas fa-list-ol"></i> Datos del usuario a eliminar</h2>
 			<div class="container">
@@ -123,9 +123,6 @@
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarusuario.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar usuario</button>
-					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarusuario.jsp'">
-					<i class="fas fa-trash"></i> Eliminar usuario</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarusuario.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
@@ -134,7 +131,7 @@
 					<i class="fas fa-search"></i> Buscar un usuario</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='/listasuarios.jsp'">
-					<i class="fas fa-search"></i> Lista de todos los usuarios</button>
+					<i class="fas fa-search"></i> Lista de usuarios</button>
 				</div>
 
 			</div>

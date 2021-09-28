@@ -127,10 +127,6 @@
 						onclick="window.location.href='/eliminarusuario.jsp'">
 						<i class="fas fa-trash"></i> Eliminar usuario
 					</button>
-					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarusuario.jsp'">
-						<i class="fas fa-pen-alt"></i> Actualizar usuario
-					</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='/buscarusuario.jsp'">
 						<i class="fas fa-search"></i> Buscar un usuario
@@ -144,15 +140,15 @@
 		</div>
 
 	</div>
-	<nav class="navbar fixed-bottom navbar-dark bg-dark">
-		<div class="row justify-content-between">
-			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Diego Rodriguez <i
+	<nav class="navbar2 fixed-bottom">
+			<div class="row justify-content-between">
+				<div class="col-4">
+					<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
 					class="fas fa-code-branch"></i></a>
+				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
 	<script>
 		function actualizar() {
 			var x = document.getElementById("user").value;

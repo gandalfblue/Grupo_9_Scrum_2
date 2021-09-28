@@ -46,7 +46,7 @@
 		<div class="container">
 			<a class="navbar-brand links" href="listausuarios.jsp"> <i
 				class="fas fa-users"></i> Usuarios
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
+			</a> <a class="navbar-brand links" href="listaclientes.jsp"> <i
 				class="fas fa-address-book"></i> Clientes
 			</a> <a class="navbar-brand links" href="listaclientes.jsp"> <i
 				class="fas fa-truck"></i> Proveedores
@@ -127,9 +127,7 @@
 			</h1>
 			<div class="container">
 				<div class="row">
-					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarusuario.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar usuario</button>
+					
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='/eliminarusuario.jsp'">
 					<i class="fas fa-trash"></i> Eliminar usuario</button>
@@ -141,7 +139,7 @@
 					<i class="fas fa-search"></i> Buscar un usuario</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='/listasuarios.jsp'">
-					<i class="fas fa-search"></i> Lista de todos los usuarios</button>
+					<i class="fas fa-search"></i> Lista de usuarios</button>
 				</div>
 
 			</div>
