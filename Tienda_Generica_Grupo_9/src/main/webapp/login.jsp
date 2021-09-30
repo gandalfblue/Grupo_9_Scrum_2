@@ -29,9 +29,9 @@
 
 </head>
 
-<body class="index">
+<body style="background: url('https://cdn.pixabay.com/photo/2014/04/03/10/00/shopping-cart-309592_960_720.png');">
 	<!-- Navbar-->
-	<nav class="navbar" id="titulo" >
+	<nav class="navbar" id="titulo">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html"> 
 			<i class="fas fa-shopping-basket"></i> Tienda Generica
@@ -142,10 +142,10 @@
 	  <!-- Grid container -->
 	
 	  <!-- Copyright -->	  
-	  <div class="text-center pt-10" style="background-color: rgba(0, 0, 0, 0.4);">
+	  <div class="text-center pt-10" id= "piepagina">
     Grupo 9 Equipo 2  
   </div>
-  <div class="text-center pt-10" style="background-color: rgba(0, 0, 0, 0.4);"> 
+  <div class="text-center pt-10" id= "piepagina"> 
     Carol Martínez - Claudia P. González - David Muñoz - Andrés F. Lozada © 2021 Copyright.
   </div>
 	  <!-- Copyright -->

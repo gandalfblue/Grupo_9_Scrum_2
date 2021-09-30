@@ -77,8 +77,4 @@ public class UsuarioVO implements Serializable {
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
 	}
-	
-	
-	
-
 }

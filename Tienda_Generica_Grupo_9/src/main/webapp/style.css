@@ -1,8 +1,8 @@
 
-.index{
+body{
 	 font-family: Arial, Helvetica, sans-serif;
-	 margin: 0;
-	 background: url("https://cdn.pixabay.com/photo/2014/04/03/10/00/shopping-cart-309592_960_720.png");
+	 margin: 0;	
+	 background: url('https://cdn.pixabay.com/photo/2018/06/10/17/39/market-3466906__340.jpg'); 
 	 background-size: contain;
 	 background-attachment: fixed;
 	 background-color: whitesmoke;
@@ -194,9 +194,19 @@ h2{
 }
 
 a{
-	color: black;
+	color: green;
 }
 
 a:hover{
-	color:darkblue;
+	color: black;
 }
+
+#piepagina{
+	background-color: rgba(0, 0, 0, 0.4)
+}
+
+#titulo_2{
+	background-color:aqua;
+}
+
+
