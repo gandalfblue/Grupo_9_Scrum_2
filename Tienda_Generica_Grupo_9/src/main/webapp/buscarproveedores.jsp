@@ -10,7 +10,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Actualizar proveedor</title>
+<title>Buscar proveedor</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -50,69 +50,75 @@
 				class="fas fa-address-book"></i> Clientes
 			</a> <a class="navbar-brand links" href="listaproveedores.jsp"> <i
 				class="fas fa-truck"></i> Proveedores
-			</a> <a class="navbar-brand links" href="listaproductos.jsp"> <i
+			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
 				class="fas fa-apple-alt"></i> Productos
-			</a> <a class="navbar-brand links" href="listaventas.jsp"> <i
+			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
 				class="fas fa-money-check-alt"></i> Ventas
-			</a> <a class="navbar-brand links" href="listadereportes.jsp"> <i
+			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
 				class="fas fa-clipboard-list"></i> Reportes
 			</a>
 		</div>
 	</nav>
 
 	<div style="padding-left: 5px">
-		<h1>
-			<i class="fas fa-sync"></i> Datos a actualizar del proveedor
-		</h1>
+		<h2>
+			<i class="fas fa-search"></i> Buscando un proveedor
+		</h2>
 		<div class="container">
 
 
 			<div id="error" class="alert alert-danger visually-hidden"
-				role="alert">Error al actualizar el proveedor, verifique que el numero de nit sea valido</div>
+				role="alert">Error al buscar el proveedor, el proveedor no existe</div>
 
 			<div id="correcto" class="alert alert-success visually-hidden"
-				role="alert">proveedor actualizado con exito</div>
+				role="alert">proveedor encontrado con exito</div>
 
 			<form id="form1">
+			
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">Nit</span> <input
+					<span class="input-group-text" id="basic-addon1">proveedor a buscar</span> <input
 						type="text" class="form-control"
-						placeholder="Inserte el nit aqui..."
+						placeholder="Inserte la nit aqui..."
 						aria-describedby="basic-addon1" required id="nit_proveedor">
 				</div>
 				
+				<br>
+				<br>
+				<br>
+				
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon4">Ciudad</span> <input
+					<span class="input-group-text" id="basic-addon2">Ciudad</span> <input
 						type="text" class="form-control"
-						placeholder="Inserte la ciudad aqui..."
-						aria-describedby="basic-addon4" required id="ciudad_proveedor">
+						aria-describedby="basic-addon2" required id="ciudad_proveedor" disabled="disabled">
 				</div>
-
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon2">Direccion</span> <input
-						type="text" class="form-control"
-						placeholder="Inserte la direccion aqui..."
-						aria-describedby="basic-addon2" required id="direccion_proveedor">
-				</div>
-
-				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon3">Nombre completo</span>
+					<span class="input-group-text" id="basic-addon3">Direccion</span>
 					<input type="text" class="form-control"
-						placeholder="Inserte el nombre aqui..."
-						aria-describedby="basic-addon3" required id="nombre_proveedor">
-				</div>				
+						aria-describedby="basic-addon3" required id="direccion_proveedor"  disabled="disabled">
+				</div>
+				
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="basic-addon4">Nombre Completo</span> <input
+						type="text" class="form-control"
+						aria-describedby="basic-addon4" required id="nombre_proveedor"  disabled="disabled">
+				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Telefono</span> <input
 						type="text" class="form-control"
-						placeholder="Inserte el telefono aqui..."
-						aria-describedby="basic-addon5" required id="telefono_proveedor">
+						aria-describedby="basic-addon5" required id="telefono_proveedor"  disabled="disabled">
 				</div>
 			</form>
 
-			<button type="button" class="btn btn-warning" onclick="actualizar()">
-				<i class="fas fa-edit"></i> Actualizar proveedor
+			<button type="button" class="btn btn-primary" onclick="enviar()">
+				<i class="fas fa-search"></i> Buscar proveedor
 			</button>
+			
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
 
 			<h1>
 				<i class="fas fa-cogs"></i> Operaciones
@@ -127,13 +133,13 @@
 						onclick="window.location.href='/eliminarproveedores.jsp'">
 						<i class="fas fa-trash"></i> Eliminar proveedor
 					</button>
-					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/buscarproveedores.jsp'">
-						<i class="fas fa-search"></i> Buscar un proveedor
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarproveedores.jsp'">
+						<i class="fas fa-pen-alt"></i> Actualizar proveedor
 					</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='/listaproveedores.jsp'">
-						<i class="fas fa-search"></i> Lista de proveedores
+						<i class="fas fa-search"></i> Lista de proveedors
 					</button>
 				</div>
 			</div>
@@ -142,76 +148,54 @@
 	</div>
 	
 	<nav class="navbar2 fixed-bottom">
-			<div class="row justify-content-between">
-				<div class="col-4">
-					<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
+		<div class="row justify-content-between">
+			<div class="col-4">
+				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
 					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
 					class="fas fa-code-branch"></i></a>
-				</div>
 			</div>
+		</div>
 	</nav>
 	
 	<script>
-		function actualizar() {
-			var y = document.getElementById("nit_proveedor").value;
-			var req = new XMLHttpRequest();
-			var coincidencia = false;
-			req.open('GET', 'http://localhost:8080/listarproveedors', false);
-			req.send(null);
-			var proveedors = null;
-			if (req.status == 200)
-				proveedors = JSON.parse(req.responseText);
-			console.log(JSON.parse(req.responseText));
-
-			for (i = 0; i < proveedors.length; i++) {
+		function enviar() {
 				
-				console.log(proveedors[i].nit_proveedor);
-
-				if (proveedors[i].nit_proveedor == y) {
-					console.log(proveedors[i].nit_proveedor + " " + y);
-					coincidencia = true
-					break;
-				}
-			}
-			console.log(coincidencia);
-
-			if (coincidencia != false) {
-				var formData = new FormData();
-				formData.append("nit_proveedor", document
-						.getElementById("nit_proveedor").value);
-				formData.append("ciudad_proveedor", document
-						.getElementById("ciudad_proveedor").value);
-				formData.append("direccion_proveedor", document
-						.getElementById("direccion_proveedor").value);
-				formData.append("nombre_proveedor",
-						document.getElementById("nombre_proveedor").value);
-				formData.append("telefono_proveedor",
-						document.getElementById("telefono_proveedor").value);
-				var xhr = new XMLHttpRequest();
-				xhr.open("PUT", "http://localhost:8080/actualizarproveedores");
+				var req = new XMLHttpRequest();
+				var coincidencia = false;
+				var user=   document.getElementById("nit_proveedor").value;
+				req.open('GET', 'http://localhost:8080/consultarproveedores?nit_proveedor='+user, false);
+				req.send(null);
+				var proveedors = null;
+				if (req.status == 200)
+					proveedors = JSON.parse(req.responseText);
+				console.log(JSON.parse(req.responseText));				
 
 				var element = document.getElementById("error");
 				element.classList.add("visually-hidden");
 				var element2 = document.getElementById("correcto");
 				element2.classList.remove("visually-hidden");
+				
+				console.log(proveedors.toString());
+				
+			if (proveedors.toString()!=""){
 
-				document.getElementById("nit_proveedor").value = "";
-				document.getElementById("ciudad_proveedor").value = "";
-				document.getElementById("direccion_proveedor").value = "";
-				document.getElementById("nombre_proveedor").value = "";
-				document.getElementById("telefono_proveedor").value = "";
-				xhr.send(formData);
+				document.getElementById("ciudad_proveedor").value = proveedors[0].ciudad_proveedor;
+				document.getElementById("direccion_proveedor").value = proveedors[0].direccion_proveedor;
+				document.getElementById("nombre_proveedor").value = proveedors[0].nombre_proveedor;
+				document.getElementById("telefono_proveedor").value = proveedors[0].telefono_proveedor;
+				
+				document.getElementById("nit_proveedor").value = "";			
 
 			} else {
 				var element = document.getElementById("error");
 				element.classList.remove("visually-hidden");
 				var element2 = document.getElementById("correcto");
 				element2.classList.add("visually-hidden");
-				document.getElementById("nit_proveedor").value = "";
 				document.getElementById("ciudad_proveedor").value = "";
 				document.getElementById("direccion_proveedor").value = "";
 				document.getElementById("nombre_proveedor").value = "";
 				document.getElementById("telefono_proveedor").value = "";
+				document.getElementById("user").value = "";
 			}
 		}
 	</script>
