@@ -156,19 +156,19 @@
 			var y = document.getElementById("nit_proveedor").value;
 			var req = new XMLHttpRequest();
 			var coincidencia = false;
-			req.open('GET', 'http://localhost:8080/listarproveedors', false);
+			req.open('GET', 'http://localhost:8080/listarproveedores', false);
 			req.send(null);
-			var proveedors = null;
+			var proveedores = null;
 			if (req.status == 200)
-				proveedors = JSON.parse(req.responseText);
+				proveedores = JSON.parse(req.responseText);
 			console.log(JSON.parse(req.responseText));
 
-			for (i = 0; i < proveedors.length; i++) {
+			for (i = 0; i < proveedores.length; i++) {
 				
-				console.log(proveedors[i].nit_proveedor);
+				console.log(proveedores[i].nit_proveedor);
 
-				if (proveedors[i].nit_proveedor == y) {
-					console.log(proveedors[i].nit_proveedor + " " + y);
+				if (proveedores[i].nit_proveedor == y) {
+					console.log(proveedores[i].nit_proveedor + " " + y);
 					coincidencia = true
 					break;
 				}

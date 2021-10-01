@@ -78,7 +78,7 @@
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">proveedor a buscar</span> <input
 						type="text" class="form-control"
-						placeholder="Inserte la nit aqui..."
+						placeholder="Inserte el nit aqui..."
 						aria-describedby="basic-addon1" required id="nit_proveedor">
 				</div>
 				

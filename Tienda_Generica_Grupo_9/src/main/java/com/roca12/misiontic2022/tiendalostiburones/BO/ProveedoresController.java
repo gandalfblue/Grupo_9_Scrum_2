@@ -33,19 +33,19 @@ public class ProveedoresController {
 		return Dao.consultarProveedores(nit_proveedor);
 	}
 
-	@GetMapping("/listarProveedores")
+	@GetMapping("/listarproveedores")
 	public ArrayList<ProveedoresVO> listaDeProveedores() {
 		ProveedoresDAO Dao = new ProveedoresDAO();
 		return Dao.listaDeProveedores();
 	}
 	
-	@DeleteMapping("/eliminarProveedores")
+	@DeleteMapping("/eliminarproveedores")
 	public void eliminarProveedores(Integer nit_proveedor) {
 		ProveedoresDAO Dao = new ProveedoresDAO();
 		Dao.eliminarProveedores(nit_proveedor);
 	}
 	
-	@PutMapping("/actualizarProveedores")
+	@PutMapping("/actualizarproveedores")
 	public void actualizarProveedores(ProveedoresVO user) {
 		ProveedoresDAO Dao = new ProveedoresDAO();
 		Dao.actualizarProveedores(user);

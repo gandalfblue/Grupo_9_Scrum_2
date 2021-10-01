@@ -62,7 +62,7 @@ public class ProveedoresDAO {
 	 * @return
 	 */
 	public ArrayList<ProveedoresVO> consultarProveedores(Integer nit_proveedor) {	
-		//lista que contendra el o los Proveedoress obtenidos
+		//lista que contendra el o los Proveedores obtenidos
 		ArrayList<ProveedoresVO> listaproveedores = new ArrayList<ProveedoresVO>();		
 		//instancia de la conexión
 		Conexion conex = new Conexion();
