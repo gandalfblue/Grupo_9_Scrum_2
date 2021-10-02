@@ -29,7 +29,7 @@
 
 </head>
 
-<body style="background: url('https://cdn.pixabay.com/photo/2014/04/03/10/00/shopping-cart-309592_960_720.png');">
+<body id="body_index">
 	<!-- Navbar-->
 	<nav class="navbar" id="titulo">
 		<div class="container-fluid">

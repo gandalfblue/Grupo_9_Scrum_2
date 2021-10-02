@@ -36,7 +36,7 @@
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
 				var usuarios = JSON.parse(xmlhttp.responseText);
-				var tbltop = "<table class='table' id='tabla' table-hover'><tr><th>Cedula</th><th>Email</th><th>Nombre</th><th>Password</th><th>Usuario</th></tr>";
+				var tbltop = "<table class='table table-hover' id='tabla'><tr><th>Cedula</th><th>Email</th><th>Nombre</th><th>Password</th><th>Usuario</th></tr>";
 				var main = "";
 				for (i = 0; i < usuarios.length; i++) {
 					main += "<tr><td>" + usuarios[i].cedula_usuario
@@ -80,24 +80,6 @@
 			<a class="navbar-brand links" href="listareportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
-	</nav>
-
-	<!-- Navbar modulos-->
-	<nav class="navbar navbar-dark bg-primary">
-		<div class="container">
-			<a class="navbar-brand links" href="listausuarios.jsp">
-			<i class="fas fa-users"></i> Usuarios</a> 
-			<a class="navbar-brand links" href="listaclientes.jsp">
-			<i class="fas fa-address-book"></i> Clientes</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
-			<i class="fas fa-truck"></i> Proveedores</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
-			<i class="fas fa-apple-alt"></i> Productos</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
-			<i class="fas fa-money-check-alt"></i> Ventas</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
-			<i class="fas fa-clipboard-list"></i> Reportes</a>
-		</div>
 	</nav>	
 	
 	<!-- contenido  -->		
@@ -118,9 +100,8 @@
 									
 				</div>
 			</div>
-			
-	<br><br> 	  
-		<h2><i class="fas fa-list-ol"></i> Lista de usuarios</h2>
+  
+		<h2><i class="fas fa-stream"></i> Lista de usuarios</h2>
 			<div class="container">
 				<div class="table-wrapper-scroll-y my-custom-scrollbar">
 					<div class="row">
@@ -130,14 +111,13 @@
 					</div>	
 				</div>		
 			</div>
-	<br><br>
 	
-	<nav class="navbar2 fixed-bottom">
+	<nav class="navbar2 fixed-bottom" id="titulo">
 			<div class="row justify-content-between">
 				<div class="col-4">
-					<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 				</div>
 			</div>
 		</nav>
