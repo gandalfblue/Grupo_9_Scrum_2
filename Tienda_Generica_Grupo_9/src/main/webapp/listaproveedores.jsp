@@ -40,7 +40,7 @@
 				var main = "";
 				for (i = 0; i < proveedores.length; i++) {
 					main += "<tr><td>" + proveedores[i].nit_proveedor
-							+ "</td><td>" + proveedores[i]ciudad_proveedor
+							+ "</td><td>" + proveedores[i].ciudad_proveedor
 							+ "</td><td>" + proveedores[i].direccion_proveedor
 							+ "</td><td>" + proveedores[i].nombre_proveedor
 							+ "</td><td>" + proveedores[i].telefono_proveedor + "</td></tr>";
