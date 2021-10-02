@@ -31,7 +31,7 @@
 
 <body class="index">
 	<!-- Navbar-->
-	<nav class="navbar" id="titulo" >
+	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html"> 
 			<i class="fas fa-shopping-basket"></i> Tienda Generica
@@ -39,11 +39,16 @@
 		</div>
 	</nav>
 	
+			<div class="header">
+			<br>
+			<br>
+				<h1 style="color:blue; "><i class='fas fa-list-ol fa-pulse fa-spin fa-1x'></i> Bienvenido</h1>
+			</div>
+ 
+	
 	<!-- Contenedor de los botones y texto -->
 	<form class="formulario">
-    
-    <h1>Bienvenido</h1>
-    
+
      <div class="contenedor">
      
      	<div class="input-contenedor mb-3">
@@ -145,9 +150,15 @@
 	  <div class="text-center pt-10" style="background-color: rgba(0, 0, 0, 0.4);">
     Grupo 9 Equipo 2  
   </div>
-  <div class="text-center pt-10" style="background-color: rgba(0, 0, 0, 0.4);"> 
-    Carol Martínez - Claudia P. González - David Muñoz - Andrés F. Lozada © 2021 Copyright.
-  </div>
+	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+		<div class="row justify-content-between">
+			<div class="col-4">
+				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
+					class="fas fa-code-branch"></i></a>
+			</div>
+		</div>
+	</nav>
 	  <!-- Copyright -->
 	</footer>
 			<!--  

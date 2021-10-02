@@ -36,7 +36,7 @@
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
 				var clientes = JSON.parse(xmlhttp.responseText);
-				var tbltop = "<table class='table table-dark table-striped'><tr><th>Cédula</th><th>Dirección</th><th>Email</th><th>Nombre</th><th>Teléfono</th></tr>";
+				var tbltop = "<table class='table table-light table-striped'><tr><th>Cédula</th><th>Dirección</th><th>Email</th><th>Nombre</th><th>Teléfono</th></tr>";
 				var main = "";
 				for (i = 0; i < clientes.length; i++) {
 					main += "<tr><td>" + clientes[i].cedula_cliente
@@ -60,18 +60,12 @@
 </head>
 
 
-<body>
+<body style="background-color:white;">
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
-		</div>
-	</nav>
-
-	<!-- Navbar modulos-->
-	<nav class="navbar navbar-dark bg-primary">
-		<div class="container">
 			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-users"></i> Usuarios</a> 
 			<a class="navbar-brand links" href="listaclientes.jsp">
@@ -86,9 +80,10 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-	
+
 			<div class="container p-4">
 				<div class="col text-center">
+				    <img src="https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg"  height="100px" alt="logo" id="listaclientes"/>
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarclientes.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
@@ -101,15 +96,25 @@
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarclientes.jsp'">
 					<i class="fas fa-search"></i> Buscar un cliente</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaclientes.jsp'">
+					<i class="fas fa-search"></i> Lista de clientes</button>
 					
 				</div>
 			</div>
 			
 	<!-- contenido  -->
 	
-	<div style="padding-left: 5px;">
 	
-		<h1><i class="fas fa-list-ol"></i> Listado de clientes</h1>
+		<div class="header">
+			
+			<h1 style="color:blue; "><i class="fas fa-list-ol"></i> Listado de clientes</h1>
+  			
+		</div>
+	
+	<div style="height: 75%; overflow: auto">
+	
+		
 			<div class="container">
 				<div class="row">
 					<!--  Aqui es donde se autogenera la tabla basado en el script -->

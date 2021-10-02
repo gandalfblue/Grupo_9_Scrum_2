@@ -34,36 +34,50 @@
 
 <body>
 	<!-- Navbar-->
-	<nav class="navbar">
+	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-users"></i> Usuarios</a> 
+			<a class="navbar-brand links" href="listaclientes.jsp">
+			<i class="fas fa-address-book"></i> Clientes</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-truck"></i> Proveedores</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-apple-alt"></i> Productos</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-money-check-alt"></i> Ventas</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-
-	<!-- Navbar modulos-->
-	<nav class="navbar navbar-dark bg-primary">
-		<div class="container">
-			<a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-users"></i> Usuarios
-			</a> <a class="navbar-brand links" href="listaclientes.jsp"> <i
-				class="fas fa-address-book"></i> Clientes
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-truck"></i> Proveedores
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-apple-alt"></i> Productos
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-money-check-alt"></i> Ventas
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-clipboard-list"></i> Reportes
-			</a>
-		</div>
-	</nav>
-
+			<div class="container p-4">
+				<div class="col text-center">
+				    <img src="https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg"  height="100px" alt="logo" id="listaclientes"/>
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarclientes.jsp'">
+					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarclientes.jsp'">
+					<i class="fas fa-trash"></i> Eliminar cliente</button>
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarclientes.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarclientes.jsp'">
+					<i class="fas fa-search"></i> Buscar un cliente</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaclientes.jsp'">
+					<i class="fas fa-search"></i> Lista de clientes</button>
+					
+				</div>
+			</div>
+			
+			<div class="header">
+				<h1 style="color:blue; "><i class="fas fa-list-ol"></i> Datos del nuevo cliente</h1>
+			</div>
 	<div style="padding-left: 5px">
-		<h1>
-			<i class="fas fa-plus-circle"></i> Datos del nuevo cliente
-		</h1>
 		<div class="container">
 		
 		
@@ -115,34 +129,11 @@
 				<i class="fas fa-check"></i> Insertar nuevo cliente
 			</button>
 
-			<h1>
-				<i class="fas fa-cogs"></i> Operaciones
-			</h1>
-			<div class="container">
-				<div class="row">
-					<button type="button" class="btn btn-danger"
-					onclick="window.location.href='/eliminarclientes.jsp'">>
-						<i class="fas fa-trash"></i> Eliminar cliente
-					</button>
-					<button type="button" class="btn btn-warning"
-					onclick="window.location.href='/actualizarclientes.jsp'">>
-						<i class="fas fa-pen-alt"></i> Actualizar cliente
-					</button>
-					<button type="button" class="btn btn-secondary"
-					onclick="window.location.href='/buscarclientes.jsp'">>
-						<i class="fas fa-search"></i> Buscar un cliente
-					</button>
-					<button type="button" class="btn btn-primary"
-					onclick="window.location.href='/listaclientes.jsp'">
-						<i class="fas fa-search"></i> Lista de clientes
-					</button>
-				</div>
-
-			</div>
+			
 		</div>
 
 	</div>
-	<nav class="navbar2 fixed-bottom">
+		<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>

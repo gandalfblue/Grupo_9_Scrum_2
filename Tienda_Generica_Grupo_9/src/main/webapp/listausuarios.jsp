@@ -36,7 +36,7 @@
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
 				var usuarios = JSON.parse(xmlhttp.responseText);
-				var tbltop = "<table class='table' id='tabla' table-hover'><tr><th>Cedula</th><th>Email</th><th>Nombre</th><th>Password</th><th>Usuario</th></tr>";
+				var tbltop = "<table class='table table-light table-striped' id='tabla' table-hover'><tr><th>Cedula</th><th>Email</th><th>Nombre</th><th>Password</th><th>Usuario</th></tr>";
 				var main = "";
 				for (i = 0; i < usuarios.length; i++) {
 					main += "<tr><td>" + usuarios[i].cedula_usuario
@@ -60,19 +60,12 @@
 </head>
 
 
-<body>
+<body style="background-image: url('https://cdn.pixabay.com/photo/2018/06/10/17/39/market-3466906__340.jpg');">
 	
-	<!-- Navbar-->	
-   	<nav class="navbar" id ="titulo_2">
+	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
-		</div>
-	</nav>
-
-	<!-- Navbar modulos-->
-	<nav class="navbar navbar-dark bg-primary">
-		<div class="container">
 			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-users"></i> Usuarios</a> 
 			<a class="navbar-brand links" href="listaclientes.jsp">
@@ -86,7 +79,7 @@
 			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
-	</nav>	
+	</nav>
 	
 	<!-- contenido  -->		
 			<div class="container p-4">
@@ -107,17 +100,16 @@
 				</div>
 			</div>
 			
-	<br><br> 	  
-		<h2><i class="fas fa-list-ol"></i> Lista de usuarios</h2>
+	<div style="height: 75%; overflow: auto">	  
+		<h1><i class="fas fa-list-ol"></i> Lista de usuarios</h1>
 			<div class="container">
-				<div class="table-wrapper-scroll-y my-custom-scrollbar">
 					<div class="row">
 						<!--  Aqui es donde se autogenera la tabla basado en el script -->
 						<div class="col align-self-center " id="usuariosinfo">					
 						</div>	
 					</div>	
-				</div>		
-			</div>
+				</div>	
+			</div>		
 	<br><br>
 	
 	<nav class="navbar2 fixed-bottom">
