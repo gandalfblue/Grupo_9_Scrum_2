@@ -34,7 +34,7 @@
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.open("GET", baseurl, true);
 		xmlhttp.onreadystatechange = function() {
-			if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				var clientes = JSON.parse(xmlhttp.responseText);
 				var tbltop = "<table class='table table-dark table-striped'><tr><th>Cédula</th><th>Dirección</th><th>Email</th><th>Nombre</th><th>Teléfono</th></tr>";
 				var main = "";

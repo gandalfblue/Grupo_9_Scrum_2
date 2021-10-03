@@ -180,11 +180,13 @@ footer {
 #tabla{
 	background-color: rgba(222, 246, 247,0.4);
 	color: black;
+	text-align: center;
 }
 
 #tabla:hover{
 	background-color: rgba(149, 240, 246,0.4);
 	color: black;
+	text-align: center;
 }
 
 h2{
@@ -219,4 +221,9 @@ a:hover{
 	color: rgba(6, 125, 10)
 }
 
-
+#titulo_3{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-family: fantasy;
+}

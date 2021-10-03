@@ -217,7 +217,7 @@
 								element.classList.add("visually-hidden");
 								document.getElementById("inputuser").value = "";
 								document.getElementById("inputpass").value = "";
-								window.location.href = "listausuarios.jsp";
+								window.location.href = "index_2.jsp";
 								return;
 							} else {
 								//si la clave NO coincide
