@@ -83,7 +83,7 @@
 
 			<div class="container p-4">
 				<div class="col text-center">
-				    <img src="https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg"  height="100px" alt="logo" id="listaclientes"/>
+				    <img src="https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg"  height="150px" alt="logo" id="listaclientes"/>
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarclientes.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
@@ -111,6 +111,8 @@
 			<h1 style="color:blue; "><i class="fas fa-list-ol"></i> Listado de clientes</h1>
   			
 		</div>
+		<br>
+		<br>
 	
 	<div style="height: 75%; overflow: auto">
 	

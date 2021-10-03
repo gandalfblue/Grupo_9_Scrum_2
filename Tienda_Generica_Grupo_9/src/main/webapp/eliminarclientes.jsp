@@ -32,7 +32,7 @@
 </head>
 
 
-<body>
+<body style="background-image: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg');">
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
@@ -54,7 +54,6 @@
 	</nav>
 			<div class="container p-4">
 				<div class="col text-center">
-				    <img src="https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg"  height="100px" alt="logo" id="listaclientes"/>
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarclientes.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
@@ -78,6 +77,8 @@
 		<div class="header">
 				<h1 style="color:blue; "><i class="fas fa-list-ol"></i> Cedula del cliente a eliminar</h1>
 		</div>
+		<br>
+		<br>
 
 	<div style="padding-left: 5px">
 
@@ -97,7 +98,7 @@
 			<form id="form1">
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Cedula del cliente</span>
-					 <input type="text" class="form-control"
+					 <input type="text" class="form-control" id="preselection" 
 						placeholder="Inserte cedula aqui..."
 						aria-describedby="basic-addon1" required id="clientesearch">
 				</div>

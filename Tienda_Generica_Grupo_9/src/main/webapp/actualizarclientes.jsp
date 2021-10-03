@@ -32,7 +32,7 @@
 </head>
 
 
-<body>
+<body style="background-image: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg');">
 <!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
@@ -55,7 +55,6 @@
 	
 				<div class="container p-4">
 				<div class="col text-center">
-				    <img src="https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg"  height="100px" alt="logo" id="listaclientes"/>
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarclientes.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
@@ -77,6 +76,8 @@
 			<div class="header">
 				<h1 style="color:blue; "><i class="fas fa-list-ol"></i> Datos del nuevo cliente</h1>
 			</div>
+			<br>
+			<br>
 
 	<div style="padding-left: 5px">
 
@@ -92,35 +93,35 @@
 			<form id="form1">
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Cedula</span> <input
-						type="text" class="form-control"
+						type="text" class="form-control" id="preselection" 
 						placeholder="Inserte cedula aqui..."
 						aria-describedby="basic-addon1" required id="cedula_cliente">
 				</div>
 				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Direccion</span> <input
-						type="text" class="form-control"
+						type="text" class="form-control" id="preselection" 
 						placeholder="Inserte la dirección aqui..."
 						aria-describedby="basic-addon4" required id="direccion_cliente">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon2">Email</span> <input
-						type="text" class="form-control"
+						type="text" class="form-control" id="preselection" 
 						placeholder="Inserte email aqui..."
 						aria-describedby="basic-addon2" required id="email_cliente">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Nombre completo</span>
-					<input type="text" class="form-control"
+					<input type="text" class="form-control" id="preselection" 
 						placeholder="Inserte el nonbre aqui..."
 						aria-describedby="basic-addon3" required id="nombre_cliente">
 				</div>				
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Telefono</span> <input
-						type="text" class="form-control"
+						type="text" class="form-control" id="preselection" 
 						placeholder="Inserte el telefono aqui..."
 						aria-describedby="basic-addon5" required id="telefono_cliente">
 				</div>
