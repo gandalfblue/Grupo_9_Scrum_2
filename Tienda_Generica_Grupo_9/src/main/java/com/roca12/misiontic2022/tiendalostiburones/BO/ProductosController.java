@@ -33,6 +33,12 @@ public class ProductosController {
 		return Dao.consultarProductos(codigo_producto);
 	}
 
+	@GetMapping("/consultarcodigo_productos")
+	public ArrayList<ProductosVO> consultarCodigo_Productos(Integer codigo_producto) {
+		ProductosDAO Dao = new ProductosDAO();
+		return Dao.consultarCodigo_Productos(codigo_producto);
+	}
+	
 	@GetMapping("/listarproductos")
 	public ArrayList<ProductosVO> listaDeProductos() {
 		ProductosDAO Dao = new ProductosDAO();
