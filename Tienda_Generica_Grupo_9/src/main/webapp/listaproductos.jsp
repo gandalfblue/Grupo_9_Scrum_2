@@ -10,7 +10,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Lista de usuarios</title>
+<title>Lista de productos</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -29,31 +29,32 @@
 
 
 <script>
-	var baseurl = "http://localhost:8080/listarusuarios";
-	function loadusuarios() {
+	var baseurl = "http://localhost:8080/listarproductos";
+	function loadproductos() {
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.open("GET", baseurl, true);
 		xmlhttp.onreadystatechange = function() {
-			if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
-				var usuarios = JSON.parse(xmlhttp.responseText);
-				var tbltop = "<table class='table table-hover' id='tabla'><tr><th>Cedula</th><th>Email</th><th>Nombre</th><th>Password</th><th>Usuario</th></tr>";
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				var productos = JSON.parse(xmlhttp.responseText);
+				var tbltop = "<table class='table table-hover' id='tabla' align='center';><tr><th>Codigo del producto</th><th>Iva de compra</th><th>Nit proveedor</th><th>Nombre del producto</th><th>Precio de compra</th><th>Precio de venta</th></tr>";
 				var main = "";
-				for (i = 0; i < usuarios.length; i++) {
-					main += "<tr><td>" + usuarios[i].cedula_usuario
-							+ "</td><td>" + usuarios[i].email_usuario
-							+ "</td><td>" + usuarios[i].nombre_usuario
-							+ "</td><td>" + usuarios[i].password 
-							+ "</td><td>" + usuarios[i].usuario + "</td></tr>";
+				for (i = 0; i < productos.length; i++) {
+					main += "<tr><td>" + productos[i].codigo_producto
+							+ "</td><td>" + productos[i].iva_compra
+							+ "</td><td>" + productos[i].nit_proveedor
+							+ "</td><td>" + productos[i].nombre_producto
+							+ "</td><td>" + productos[i].precio_compra
+							+ "</td><td>" + productos[i].precio_venta + "</td></tr>";
 				}
 				var tblbottom = "</table>";
 				var tbl = tbltop + main + tblbottom;
-				document.getElementById("usuariosinfo").innerHTML = tbl;
+				document.getElementById("productosinfo").innerHTML = tbl;
 			}
 		};
 		xmlhttp.send();
 	}
 	window.onload = function() {
-		loadusuarios();
+		loadproductos();
 	}
 </script>
 
@@ -61,9 +62,8 @@
 
 
 <body>
-	
-	<!-- Navbar-->	
-   	<nav class="navbar" id ="titulo_2">
+
+	<nav class="navbar" id ="titulo_2">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
@@ -80,38 +80,40 @@
 			<a class="navbar-brand links" href="listareportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
-	</nav>	
+	</nav>
 	
-	<!-- contenido  -->		
 			<div class="container p-4">
 				<div class="col text-center">
-				  	<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarusuario.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar usuario</button>
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarproductos.jsp'">
+					<i class="fas fa-plus-circle"></i> Agregar producto</button>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarusuario.jsp'">
-					<i class="fas fa-trash"></i> Eliminar usuario</button>
+						onclick="window.location.href='/eliminarproductos.jsp'">
+					<i class="fas fa-trash"></i> Eliminar producto</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarusuario.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
+						onclick="window.location.href='/actualizarproductos.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar producto</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarusuario.jsp'">
-					<i class="fas fa-search"></i> Buscar un usuario</button>
-									
+						onclick="window.location.href='/buscarproductos.jsp'">
+					<i class="fas fa-search"></i> Buscar un producto</button>
+					
 				</div>
 			</div>
-  
-		<h2><i class="fas fa-stream"></i> Lista de usuarios</h2>
+			
+	<!-- contenido  -->
+	
+	<h2><i class="fas fa-stream"></i> Lista de productos</h2>
 			<div class="container">
 				<div class="table-wrapper-scroll-y my-custom-scrollbar">
 					<div class="row">
 						<!--  Aqui es donde se autogenera la tabla basado en el script -->
-						<div class="col align-self-center " id="usuariosinfo">					
+						<div class="col align-self-center " id="productosinfo">					
 						</div>	
 					</div>	
 				</div>		
 			</div>
-	
+
+
 	<nav class="navbar2 fixed-bottom" id="titulo">
 			<div class="row justify-content-between">
 				<div class="col-4">
@@ -120,6 +122,8 @@
 					<i class="fas fa-cogs"></i></a>
 				</div>
 			</div>
-		</nav>
+	</nav>
+
+
 </body>
 </html>

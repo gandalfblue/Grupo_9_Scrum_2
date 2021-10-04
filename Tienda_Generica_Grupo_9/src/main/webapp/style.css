@@ -1,11 +1,17 @@
 
+#body_index{
+	background: url('https://cdn.pixabay.com/photo/2014/04/03/10/00/shopping-cart-309592_960_720.png');
+	background-size: contain;
+	background-attachment: fixed;
+	background-color: whitesmoke;
+}
+
 body{
 	 font-family: Arial, Helvetica, sans-serif;
 	 margin: 0;	
-	 background: url('https://cdn.pixabay.com/photo/2018/06/10/17/39/market-3466906__340.jpg'); 
-	 background-size: contain;
-	 background-attachment: fixed;
-	 background-color: whitesmoke;
+	 background: url('https://cdn.pixabay.com/photo/2018/04/22/12/03/world-3340864_960_720.jpg') no-repeat center center fixed; 
+	 background-size: cover;
+	 
 }
 
 * {
@@ -171,18 +177,23 @@ footer {
 	background-color: white;
 }
 
-.tabla{
-	background-color: rgba(255, 255, 255, 0.4);
+#tabla{
+	background-color: rgba(222, 246, 247,0.4);
+	color: black;
+	text-align: center;
 }
 
-.table:hover{
-	background-color: rgba(250, 219, 219,0.4);
+#tabla:hover{
+	background-color: rgba(149, 240, 246,0.4);
+	color: black;
+	text-align: center;
 }
 
 h2{
     text-align: center;
     color: black;
     font-size: 40px;
+    font-family: fantasy;
 }
 
 #titulo{
@@ -194,7 +205,7 @@ h2{
 }
 
 a{
-	color: green;
+	color: darkgreen;
 }
 
 a:hover{
@@ -206,7 +217,13 @@ a:hover{
 }
 
 #titulo_2{
-	background-color:aqua;
+	background-color: rgba(222, 246, 247,0.4);
+	color: rgba(6, 125, 10)
 }
 
-
+#titulo_3{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-family: fantasy;
+}
