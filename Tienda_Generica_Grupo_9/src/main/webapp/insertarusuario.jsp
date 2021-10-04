@@ -32,7 +32,7 @@
 </head>
 
 
-<body style="background-image: url('https://cdn.pixabay.com/photo/2018/06/10/17/39/market-3466906__340.jpg');">
+<body style="background-image: url('https://as1.ftcdn.net/v2/jpg/04/41/27/20/1000_F_441272020_qiv2yObSGl11wy6EkOOAfDowRdIgV4l2.jpg');">
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
