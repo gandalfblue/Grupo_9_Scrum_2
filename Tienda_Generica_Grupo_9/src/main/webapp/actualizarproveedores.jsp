@@ -96,35 +96,35 @@
 			<form id="form1">
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Nit</span> <input
-						type="text" class="form-control" id="preselection"
+						type="text" class="form-control" class="preselection"
 						placeholder="Inserte el nit aqui..."
 						aria-describedby="basic-addon1" required id="nit_proveedor">
 				</div>
 				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Ciudad</span> <input
-						type="text" class="form-control" id="preselection"
+						type="text" class="form-control" class="preselection"
 						placeholder="Inserte la ciudad aqui..."
 						aria-describedby="basic-addon4" required id="ciudad_proveedor">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon2">Direccion</span> <input
-						type="text" class="form-control" id="preselection"
+						type="text" class="form-control" class="preselection"
 						placeholder="Inserte la direccion aqui..."
 						aria-describedby="basic-addon2" required id="direccion_proveedor">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Nombre completo</span>
-					<input type="text" class="form-control" id="preselection"
+					<input type="text" class="form-control" class="preselection"
 						placeholder="Inserte el nombre aqui..."
 						aria-describedby="basic-addon3" required id="nombre_proveedor">
 				</div>				
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Telefono</span> <input
-						type="text" class="form-control" id="preselection"
+						type="text" class="form-control" class="preselection"
 						placeholder="Inserte el telefono aqui..."
 						aria-describedby="basic-addon5" required id="telefono_proveedor">
 				</div>

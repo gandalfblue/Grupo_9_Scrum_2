@@ -82,8 +82,6 @@
 			</div>
 		<br>
 
-	<div style="padding-left: 5px">
-		
 		<div class="container">		
 		
 			<div id="error" class="alert alert-danger visually-hidden"
@@ -99,7 +97,7 @@
 			<form id="form1">
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Nit del proveedor</span>
-					 <input type="text" class="form-control" id="preselection"
+					 <input type="text" class="form-control" class="preselection"
 						placeholder="Inserte nit aqui..."
 						aria-describedby="basic-addon1" required id="proveedorsearch">
 				</div>
