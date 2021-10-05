@@ -32,39 +32,56 @@
 </head>
 
 
-<body>
+<body id="body_proveedores">
+
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-users"></i> Usuarios</a> 
+			<a class="navbar-brand links" href="listaclientes.jsp">
+			<i class="fas fa-address-book"></i> Clientes</a>
+			<a class="navbar-brand links" href="listaproveedores.jsp">
+			<i class="fas fa-truck"></i> Proveedores</a>
+			<a class="navbar-brand links" href="listaproductos.jsp">
+			<i class="fas fa-apple-alt"></i> Productos</a>
+			<a class="navbar-brand links" href="listaventas.jsp">
+			<i class="fas fa-money-check-alt"></i> Ventas</a>
+			<a class="navbar-brand links" href="listareportes.jsp">
+			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
+	<br>
+	
+				<div class="container p-3">
+				<div class="col text-center">
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarproveedores.jsp'">
+					<i class="fas fa-plus-circle"></i> Agregar proveedor</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarproveedores.jsp'">
+					<i class="fas fa-trash"></i> Eliminar proveedor</button>
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarproveedores.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar proveedor</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarproveedores.jsp'">
+					<i class="fas fa-search"></i> Buscar un proveedor</button>
+					
+				</div>
+				
+			</div>
+	
+		<br>
+			<div class="header">
+				<h1 style="color:green;" >
+					<i class="fas fa-trash"></i> Nit del proveedor a eliminar
+				</h1>		
+			</div>
+		<br>
 
-	<!-- Navbar modulos-->
-	<nav class="navbar navbar-dark bg-primary">
-		<div class="container">
-			<a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-users"></i> Usuarios
-			</a> <a class="navbar-brand links" href="listaclientes.jsp"> <i
-				class="fas fa-address-book"></i> Clientes
-			</a> <a class="navbar-brand links" href="listaproveedores.jsp"> <i
-				class="fas fa-truck"></i> Proveedores
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-apple-alt"></i> Productos
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-money-check-alt"></i> Ventas
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-clipboard-list"></i> Reportes
-			</a>
-		</div>
-	</nav>
-
-	<div style="padding-left: 5px">
-		<h2>
-			<i class="fas fa-plus-circle"></i> Nit del proveedor a eliminar
-		</h2>
-		
 		<div class="container">		
 		
 			<div id="error" class="alert alert-danger visually-hidden"
@@ -80,7 +97,7 @@
 			<form id="form1">
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Nit del proveedor</span>
-					 <input type="text" class="form-control"
+					 <input type="text" class="form-control" class="preselection"
 						placeholder="Inserte nit aqui..."
 						aria-describedby="basic-addon1" required id="proveedorsearch">
 				</div>
@@ -90,13 +107,14 @@
 			<div class="container p-4">
 				<div class="col text-center">
 					
-					<button type="button" class="btn btn-success" onclick="buscar()">
+					<button type="button" class="btn btn-secondary" onclick="buscar()">
 						<i class="fas fa-check"></i> Buscar proveedor
 					</button>
 		 			<button type="button" class="btn btn-danger" onclick="eliminar()">
 						<i class="fas fa-check"></i> Eliminar proveedor
 					</button>
 	 			</div>
+			   
 			</div>
 			
 			<div id="table" class="contenedor visually-hidden">
@@ -113,29 +131,7 @@
 			</div>
 		</div>
 			
-			<h2>
-				<i class="fas fa-cogs"></i> Operaciones
-				
-			</h2>
 			
-			<div class="container">
-				<div class="row">
-					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproveedores.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar proveedor</button>
-					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproveedores.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar proveedor</button>
-					<button type="button" class="btn btn-dark"
-						onclick="window.location.href='/buscarproveedores.jsp'">
-					<i class="fas fa-search"></i> Buscar un proveedor</button>
-					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproveedores.jsp'">
-					<i class="fas fa-search"></i> Lista de proveedores</button>
-				</div>
-
-			</div>
-		</div>
 
 	</div>
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
@@ -252,6 +248,5 @@
 		}
 	}
 </script>
-
 </body>
 </html>

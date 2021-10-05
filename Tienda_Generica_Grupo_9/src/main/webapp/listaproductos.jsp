@@ -36,7 +36,8 @@
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				var productos = JSON.parse(xmlhttp.responseText);
-				var tbltop = "<table class='table table-hover' id='tabla' align='center';><tr><th>Codigo del producto</th><th>Iva de compra</th><th>Nit proveedor</th><th>Nombre del producto</th><th>Precio de compra</th><th>Precio de venta</th></tr>";
+				var tbltop = "<table class='table table-hover table-light' id='tabla' align='center';><tr><th>Codigo del producto</th><th>Iva de compra</th><th>Nit proveedor</th><th>Nombre del producto</th><th>Precio de compra</th><th>Precio de venta</th></tr>";
+				
 				var main = "";
 				for (i = 0; i < productos.length; i++) {
 					main += "<tr><td>" + productos[i].codigo_producto
@@ -62,8 +63,7 @@
 
 
 <body>
-
-	<nav class="navbar" id ="titulo_2">
+	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
@@ -81,29 +81,37 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
+		<br>
 	
-			<div class="container p-4">
+				<div class="container p-3">
 				<div class="col text-center">
+				<img src="https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg"  height="225px" alt="logo" id="listaproveedores"/>
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarproductos.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar producto</button>
-					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarproductos.jsp'">
-					<i class="fas fa-trash"></i> Eliminar producto</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarproductos.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar producto</button>
-					<button type="button" class="btn btn-secondary"
+					<button type="button" class="btn btn-dark"
 						onclick="window.location.href='/buscarproductos.jsp'">
 					<i class="fas fa-search"></i> Buscar un producto</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaproductos.jsp'">
+					<i class="fas fa-search"></i> Lista de productos</button>
 					
 				</div>
+		<br>
+		<br>		
 			</div>
-			
+			<div class="header">
+				<h1 style="color:green;" >
+					<i class="fas fa-stream"></i> Lista de productos
+				</h1>		
+			</div>			
 	<!-- contenido  -->
 	
-	<h2><i class="fas fa-stream"></i> Lista de productos</h2>
-			<div class="container">
+
+			<div class="container" style="height: 75%; overflow: auto">
 				<div class="table-wrapper-scroll-y my-custom-scrollbar">
 					<div class="row">
 						<!--  Aqui es donde se autogenera la tabla basado en el script -->
@@ -114,14 +122,14 @@
 			</div>
 
 
-	<nav class="navbar2 fixed-bottom" id="titulo">
-			<div class="row justify-content-between">
-				<div class="col-4">
-					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
-					<i class="fas fa-cogs"></i></a>
-				</div>
+	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+		<div class="row justify-content-between">
+			<div class="col-4">
+				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
+					class="fas fa-code-branch"></i></a>
 			</div>
+		</div>
 	</nav>
 
 

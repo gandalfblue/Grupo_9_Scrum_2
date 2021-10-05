@@ -1,15 +1,39 @@
 
 #body_index{
-	background: url('https://cdn.pixabay.com/photo/2014/04/03/10/00/shopping-cart-309592_960_720.png');
-	background-size: contain;
+	background: url('carrito1.jpg');
+	background-size: 70%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
+	background-position: center;
+}
+
+#body_proveedores{
+	background: url('FreeShippingCuate.png');
+	background-size: 75%;
+	background-attachment: fixed;
+	background-color: whitesmoke;
+	background-repeat:no-repeat;
+	background-position: right;
+	
 }
 
 body{
 	 font-family: Arial, Helvetica, sans-serif;
 	 margin: 0;	
+}
+
+.bodyc{
+	 font-family: Arial, Helvetica, sans-serif;
+	 margin: 0;	
 	 background: url('https://cdn.pixabay.com/photo/2018/04/22/12/03/world-3340864_960_720.jpg') no-repeat center center fixed; 
+	 background-size: cover;
+	 
+}
+
+.bodyp{
+	 font-family: Arial, Helvetica, sans-serif;
+	 margin: 0;	
+	 background: url('FreeShippingCuate.png') no-repeat center center fixed; 
 	 background-size: cover;
 	 
 }
@@ -226,4 +250,24 @@ a:hover{
     color: black;
     font-size: 40px;
     font-family: fantasy;
+}
+
+#listaclientes  {
+ 	float: left; 
+}
+#listaproveedores  {
+ 	float: left; 
+}
+
+.preselection {
+  max-width: 45%;
+}
+
+#preselectionf {
+  max-width: 20%;
+}
+
+span {
+  display: inline-block;
+  width: 20%;
 }
