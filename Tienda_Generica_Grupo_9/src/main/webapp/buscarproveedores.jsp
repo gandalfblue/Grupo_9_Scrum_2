@@ -32,38 +32,53 @@
 </head>
 
 
-<body>
+<body id="body_proveedores">
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand links" href="index.html"><i
-				class="fas fa-fish"></i>Tienda Generica</a>
+			<a class="navbar-brand links" href="index.html">
+			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-users"></i> Usuarios</a> 
+			<a class="navbar-brand links" href="listaclientes.jsp">
+			<i class="fas fa-address-book"></i> Clientes</a>
+			<a class="navbar-brand links" href="listaproveedores.jsp">
+			<i class="fas fa-truck"></i> Proveedores</a>
+			<a class="navbar-brand links" href="listaproductos.jsp">
+			<i class="fas fa-apple-alt"></i> Productos</a>
+			<a class="navbar-brand links" href="listaventas.jsp">
+			<i class="fas fa-money-check-alt"></i> Ventas</a>
+			<a class="navbar-brand links" href="listareportes.jsp">
+			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-
-	<!-- Navbar modulos-->
-	<nav class="navbar navbar-dark bg-primary">
-		<div class="container">
-			<a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-users"></i> Usuarios
-			</a> <a class="navbar-brand links" href="listaclientes.jsp"> <i
-				class="fas fa-address-book"></i> Clientes
-			</a> <a class="navbar-brand links" href="listaproveedores.jsp"> <i
-				class="fas fa-truck"></i> Proveedores
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-apple-alt"></i> Productos
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-money-check-alt"></i> Ventas
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-clipboard-list"></i> Reportes
-			</a>
-		</div>
-	</nav>
-
+		<br>
+	
+				<div class="container p-3">
+				<div class="col text-center">
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarproveedores.jsp'">
+					<i class="fas fa-plus-circle"></i> Agregar proveedor</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarproveedores.jsp'">
+					<i class="fas fa-trash"></i> Eliminar proveedor</button>
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarproveedores.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar proveedor</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarproveedores.jsp'">
+					<i class="fas fa-search"></i> Buscar un proveedor</button>
+					
+				</div>
+				
+			</div>
+			<div class="header">
+				<h1 style="color:green;" >
+					<i class="fas fa-search"></i> Buscando un proveedor
+				</h1>		
+			</div>
 	<div style="padding-left: 5px">
-		<h2>
-			<i class="fas fa-search"></i> Buscando un proveedor
-		</h2>
+
 		<div class="container">
 
 
@@ -77,7 +92,7 @@
 			
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">proveedor a buscar</span> <input
-						type="text" class="form-control"
+						type="text" class="form-control" id="preselection"
 						placeholder="Inserte el nit aqui..."
 						aria-describedby="basic-addon1" required id="nit_proveedor">
 				</div>
@@ -88,29 +103,29 @@
 				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon2">Ciudad</span> <input
-						type="text" class="form-control"
+						type="text" class="form-control" id="preselection"
 						aria-describedby="basic-addon2" required id="ciudad_proveedor" disabled="disabled">
 				</div>
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Direccion</span>
-					<input type="text" class="form-control"
+					<input type="text" class="form-control" id="preselection"
 						aria-describedby="basic-addon3" required id="direccion_proveedor"  disabled="disabled">
 				</div>
 				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Nombre Completo</span> <input
-						type="text" class="form-control"
+						type="text" class="form-control" id="preselection"
 						aria-describedby="basic-addon4" required id="nombre_proveedor"  disabled="disabled">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Telefono</span> <input
-						type="text" class="form-control"
+						type="text" class="form-control" id="preselection"
 						aria-describedby="basic-addon5" required id="telefono_proveedor"  disabled="disabled">
 				</div>
 			</form>
 
-			<button type="button" class="btn btn-primary" onclick="enviar()">
+			<button type="button" class="btn btn-secondary" onclick="enviar()">
 				<i class="fas fa-search"></i> Buscar proveedor
 			</button>
 			
@@ -120,34 +135,11 @@
 			<br>
 			<br>
 
-			<h1>
-				<i class="fas fa-cogs"></i> Operaciones
-			</h1>
-			<div class="container">
-				<div class="row">
-					<button type="button" class="btn btn-success"
-						onclick="window.location.href='/insertarproveedores.jsp'">
-						<i class="fas fa-plus-circle"></i> Agregar proveedor
-					</button>
-					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarproveedores.jsp'">
-						<i class="fas fa-trash"></i> Eliminar proveedor
-					</button>
-					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproveedores.jsp'">
-						<i class="fas fa-pen-alt"></i> Actualizar proveedor
-					</button>
-					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproveedores.jsp'">
-						<i class="fas fa-search"></i> Lista de proveedors
-					</button>
-				</div>
-			</div>
 		</div>
 
 	</div>
 	
-	<nav class="navbar2 fixed-bottom">
+	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
