@@ -62,9 +62,9 @@
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='/eliminarproveedores.jsp'">
 					<i class="fas fa-trash"></i> Eliminar proveedor</button>
-					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproveedores.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar proveedor</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listarproveedores.jsp'">
+					<i class="fas fa-pen-alt"></i> Lista de proveedores</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarproveedores.jsp'">
 					<i class="fas fa-search"></i> Buscar un proveedor</button>
@@ -134,6 +134,10 @@
 				<i class="fas fa-edit"></i> Actualizar proveedor
 			</button>
 
+			<br>
+			<br>
+			<br>
+			<br>
 		</div>
 
 	</div>

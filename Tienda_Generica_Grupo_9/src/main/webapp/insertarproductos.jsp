@@ -57,9 +57,9 @@
 		<div class="container p-3">
 			<div class="col text-center">
 				<img src="https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg"  height="225px" alt="logo" id="listaproveedores"/>
-					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproductos.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar producto</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarproductos.jsp'">
+					<i class="fas fa-trash"></i> Eliminar producto</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarproductos.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar producto</button>

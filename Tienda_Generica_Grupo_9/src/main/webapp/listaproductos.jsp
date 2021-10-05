@@ -89,16 +89,15 @@
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarproductos.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar producto</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarproductos.jsp'">
+					<i class="fas fa-trash"></i> Eliminar producto</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarproductos.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar producto</button>
 					<button type="button" class="btn btn-dark"
 						onclick="window.location.href='/buscarproductos.jsp'">
-					<i class="fas fa-search"></i> Buscar un producto</button>
-					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproductos.jsp'">
-					<i class="fas fa-search"></i> Lista de productos</button>
-					
+					<i class="fas fa-search"></i> Buscar un producto</button>					
 				</div>
 		<br>
 		<br>		
