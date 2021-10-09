@@ -73,9 +73,7 @@
 		xmlhttp.send();
 });
 </script>
-
 </head>
-
 
 <body>
 	
@@ -98,29 +96,13 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
+	<br>
+	<br>
+	<br>
 	
-	<!-- contenido  -->		
-			<div class="container p-4">
-				<div class="col text-center">
-				  	<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarusuario.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar usuario</button>
-					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarusuario.jsp'">
-					<i class="fas fa-trash"></i> Eliminar usuario</button>
-					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarusuario.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
-					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarusuario.jsp'">
-					<i class="fas fa-search"></i> Buscar un usuario</button>
-									
-				</div>
-			</div>
-  
 		<div class="row">
-					<div class="col-xl-12">
-						<div class="card mb-4">
+					<div class="col-xl-8">
+						<div class="card m-4">
 							<div class="card-header text-white bg-dark">
 								<i class="fas fa-table"></i> Tabla de usuarios
 							</div>
@@ -151,7 +133,28 @@
 							</div>
 						</div>
 					</div>
-				</div>
+
+					<div class="col-xl">
+						<div class="container p-3">
+							<div class="col text-center">
+								<ul class="list-group" style="list-style-type:none;">
+								  	<li><button type="button" class="btn btn-success m-2" 
+								  		onclick="window.location.href='/insertarusuario.jsp'">
+										<i class="fas fa-plus-circle"></i> Agregar usuario</button></li>     
+									<li><button type="button" class="btn btn-danger m-2"
+										onclick="window.location.href='/eliminarusuario.jsp'">
+										<i class="fas fa-trash"></i> Eliminar usuario</button></li>
+									<li><button type="button" class="btn btn-warning m-2"
+										onclick="window.location.href='/actualizarusuario.jsp'">
+										<i class="fas fa-pen-alt"></i> Actualizar usuario</button></li>
+									<li><button type="button" class="btn btn-secondary m-2"
+										onclick="window.location.href='/buscarusuario.jsp'">
+										<i class="fas fa-search"></i> Buscar un usuario</button></li>
+								</ul>				
+							</div>
+						</div>
+					</div>				
+			</div>
 	
 	<nav class="navbar2 fixed-bottom" id="titulo">
 			<div class="row justify-content-between">

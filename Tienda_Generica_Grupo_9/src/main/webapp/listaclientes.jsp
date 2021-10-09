@@ -27,40 +27,53 @@
 <!-- Cargando mi hoja de estilo -->
 <link href="style.css" rel="stylesheet" type="text/css" />
 
+<link
+	href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css"
+	rel="stylesheet" />
 
 <script>
-	var baseurl = "http://localhost:8080/listarclientes";
-	function loadclientes() {
+
+	window.addEventListener('DOMContentLoaded', event => {
+	let table=null;
+    if (datatablesusers) {
+        table=new simpleDatatables.DataTable("#datatablesusers", {
+            searchable: true,
+            labels: {
+                placeholder: "Buscar...",
+                perPage: "{select} registros por pagina",
+                noRows: "No hay registros",
+                info: "Mostrando {start} a {end} de {rows} registros",
+            }
+        });
+    }
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", baseurl, true);
+		xmlhttp.open("GET", "http://localhost:8080/listarclientes", true);
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
 				var clientes = JSON.parse(xmlhttp.responseText);
-				var tbltop = "<table class='table table-dark table-striped'><tr><th>Cédula</th><th>Dirección</th><th>Email</th><th>Nombre</th><th>Teléfono</th></tr>";
-				var main = "";
+				
 				for (i = 0; i < clientes.length; i++) {
-					main += "<tr><td>" + clientes[i].cedula_cliente
-							+ "</td><td>" + clientes[i].direccion_cliente
-							+ "</td><td>" + clientes[i].email_cliente
-							+ "</td><td>" + clientes[i].nombre_cliente
-							+ "</td><td>" + clientes[i].telefono_cliente + "</td></tr>";
+					let fila = [
+						clientes[i].cedula_cliente.toString(),
+						clientes[i].direccion_cliente,
+						clientes[i].email_cliente, 
+						clientes[i].nombre_cliente, 
+						clientes[i].telefono_cliente
+					];
+
+				    table.rows().add(fila);
 				}
-				var tblbottom = "</table>";
-				var tbl = tbltop + main + tblbottom;
-				document.getElementById("clientesinfo").innerHTML = tbl;
 			}
 		};
+		
 		xmlhttp.send();
-	}
-	window.onload = function() {
-		loadclientes();
-	}
+});
 </script>
-
 </head>
 
-
 <body>
+
 	<nav class="navbar" id ="titulo_2">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
@@ -79,43 +92,67 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
-		
-			<div class="container p-4">
-				<div class="col text-center">
-					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarclientes.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
-					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarclientes.jsp'">
-					<i class="fas fa-trash"></i> Eliminar cliente</button>
-					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarclientes.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
-					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarclientes.jsp'">
-					<i class="fas fa-search"></i> Buscar un cliente</button>
-					
-				</div>
-			</div>
-			
-	<!-- contenido  -->
+	<br>
+	<br>
+	<br>
 	
-	<div style="padding-left: 5px;">
-	
-		<h1><i class="fas fa-list-ol"></i> Listado de clientes</h1>
-			<div class="container">
-				<div class="row">
-					<!--  Aqui es donde se autogenera la tabla basado en el script -->
-					<div class="col align-self-center" id="clientesinfo">
-					
+		<div class="row">
+					<div class="col-xl-8">
+						<div class="card m-4">
+							<div class="card-header text-white bg-dark">
+								<i class="fas fa-table"></i> Tabla de clientes
+							</div>
+							<div class="card-body">
+								<table id="datatablesusers">
+									<thead>
+										<tr>
+											<th>Cedula</th>
+											<th>Direccion</th>
+											<th>Email</th>
+											<th>Nombre</th>
+											<th>Teléfono</th>											
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<th>Cedula</th>
+											<th>Direccion</th>
+											<th>Email</th>
+											<th>Nombre</th>
+											<th>Teléfono</th>
+										</tr>
+									</tfoot>
+									<tbody id="clientesinfo">
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>				
+
+					<div class="col-xl">		
+						<div class="container p-4">
+							<div class="col text-center">
+								<ul class="list-group" style="list-style-type:none;">
+									<li><button type="button" class="btn btn-success m-2" 
+								  		onclick="window.location.href='/insertarclientes.jsp'">
+										<i class="fas fa-plus-circle"></i> Agregar cliente</button></li>
+									<li><button type="button" class="btn btn-danger m-2"
+										onclick="window.location.href='/eliminarclientes.jsp'">
+										<i class="fas fa-trash"></i> Eliminar cliente</button></li>
+									<li><button type="button" class="btn btn-warning m-2"
+										onclick="window.location.href='/actualizarclientes.jsp'">
+										<i class="fas fa-pen-alt"></i> Actualizar cliente</button></li>
+									<li><button type="button" class="btn btn-secondary m-2"
+										onclick="window.location.href='/buscarclientes.jsp'">
+										<i class="fas fa-search"></i> Buscar un cliente</button></li>
+								</ul>
+							</div>
+						</div>
 					</div>
-	
 				</div>
-			</div>		
-	</div>
-
-
-	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+			
+	<nav class="navbar fixed-bottom" id="titulo">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
@@ -125,6 +162,8 @@
 		</div>
 	</nav>
 
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
+crossorigin="anonymous"></script>
 
 </body>
 </html>

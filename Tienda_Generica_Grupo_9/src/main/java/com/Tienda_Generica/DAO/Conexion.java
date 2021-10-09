@@ -1,4 +1,4 @@
-package com.roca12.misiontic2022.tiendalostiburones.DAO;
+package com.Tienda_Generica.DAO;
 
 import java.sql.*;
 
