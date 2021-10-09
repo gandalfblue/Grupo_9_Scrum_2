@@ -42,7 +42,7 @@
 			<div class="header">
 			<br>
 			<br>
-				<h1 style="color:blue; "><i class='fas fa-list-ol fa-pulse fa-spin fa-1x'></i> Bienvenido</h1>
+				<h1><i class='fas fa-list-ol fa-pulse fa-spin fa-1x'></i> Bienvenido</h1>
 			</div>
  
 	

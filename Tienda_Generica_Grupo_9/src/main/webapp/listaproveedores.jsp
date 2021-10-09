@@ -109,7 +109,6 @@
 		<br>
 		<br>
 		<br>
-		
 	<!-- contenido  -->
 	
 	<div style="height: 75%; overflow: auto; ">
@@ -123,7 +122,8 @@
 				</div>
 			</div>		
 	</div>
-
+	<br>
+	<br>
 
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
