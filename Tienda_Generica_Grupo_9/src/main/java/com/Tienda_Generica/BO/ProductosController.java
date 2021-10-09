@@ -1,4 +1,4 @@
-package com.roca12.misiontic2022.tiendalostiburones.BO;
+package com.Tienda_Generica.BO;
 
 import java.util.ArrayList;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.roca12.misiontic2022.tiendalostiburones.DAO.ProductosDAO;
-import com.roca12.misiontic2022.tiendalostiburones.DTO.ProductosVO;
+import com.Tienda_Generica.DAO.ProductosDAO;
+import com.Tienda_Generica.DTO.ProductosVO;
 
 @RestController
 public class ProductosController {

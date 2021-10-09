@@ -1,8 +1,9 @@
-package com.roca12.misiontic2022.tiendalostiburones.DAO;
+package com.Tienda_Generica.DAO;
 
 import java.sql.*;
 import java.util.ArrayList;
-import com.roca12.misiontic2022.tiendalostiburones.DTO.ClientesVO;
+
+import com.Tienda_Generica.DTO.ClientesVO;
 
 /**
  * Clase que permite el acceso a la base de datos

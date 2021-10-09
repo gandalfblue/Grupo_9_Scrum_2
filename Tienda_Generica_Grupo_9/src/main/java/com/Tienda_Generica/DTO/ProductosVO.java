@@ -1,4 +1,4 @@
-package com.roca12.misiontic2022.tiendalostiburones.DTO;
+package com.Tienda_Generica.DTO;
 
 import java.io.Serializable;
 
