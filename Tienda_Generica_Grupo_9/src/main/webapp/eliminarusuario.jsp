@@ -157,8 +157,8 @@
 		var cedula_usuario=   document.getElementById("usersearch").value;
 		req.open('GET', 'http://localhost:8080/consultarusuario_cedula?cedula_usuario='+cedula_usuario, false);
 		req.send(null);
-		var usurios = null;
-		var tbltop = "<table class='table' id='tabla' visually-hidden' table-dark table-striped'><tr><th>Cédula</th><th>Email</th><th>Nombre</th><th>Password</th><th>Usuario</th></tr>";
+		var usuarios = null;
+		var tbltop = "<table class='table' id='tabla' visually-hidden><tr><th>Cédula</th><th>Email</th><th>Nombre</th><th>Password</th><th>Usuario</th></tr>";
 		document.getElementById("usuarioinfo").innerHTML = tbl;
 		
 			if (req.readyState == 4 && req.status == 200) {
