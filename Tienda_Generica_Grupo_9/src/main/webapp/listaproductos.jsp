@@ -56,11 +56,11 @@
 				for (i = 0; i < productos.length; i++) {
 					let fila = [
 						productos[i].codigo_producto.toString(), 
-						productos[i].iva_compra, 
-						productos[i].nit_proveedor, 
+						productos[i].iva_compra.toString(), 
+						productos[i].nit_proveedor.toString(), 
 						productos[i].nombre_producto,
-						productos[i].precio_compra,
-						productos[i].precio_venta
+						productos[i].precio_compra.toString(),
+						productos[i].precio_venta.toString()
 					];
 
 				    table.rows().add(fila);
