@@ -95,6 +95,10 @@
 						aria-describedby="basic-addon1" required id="nit_proveedor">
 				</div>
 				<br>
+
+				<button type="button" class="btn btn-secondary" onclick="enviar()">
+				<i class="fas fa-search"></i> Buscar proveedor
+				</button>				
 				<br>
 				<br>
 				<div class="input-group mb-3">
@@ -120,20 +124,15 @@
 						aria-describedby="basic-addon5" required id="telefono_proveedor"  disabled="disabled">
 				</div>
 			</form>
-
-			<button type="button" class="btn btn-secondary" onclick="enviar()">
-				<i class="fas fa-search"></i> Buscar proveedor
-			</button>
+			<br>
+			<br>
+			<br>
+			<br>
 			
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-
 		</div>
-
 	</div>
+	
+	
 	
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">

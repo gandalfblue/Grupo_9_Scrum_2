@@ -32,7 +32,7 @@
 </head>
 
 
-<body style="background-image: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg');">
+<body id="body_clientes">
 <!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">

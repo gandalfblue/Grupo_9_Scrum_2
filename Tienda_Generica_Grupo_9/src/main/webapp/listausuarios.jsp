@@ -36,7 +36,7 @@
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
 				var usuarios = JSON.parse(xmlhttp.responseText);
-				var tbltop = "<table class='table table-hover' id='tabla'><tr><th>Cedula</th><th>Email</th><th>Nombre</th><th>Password</th><th>Usuario</th></tr>";
+				var tbltop = "<table class='table table-hover table-light table-striped' id='tabla'><tr><th>Cedula</th><th>Email</th><th>Nombre</th><th>Password</th><th>Usuario</th></tr>";
 				var main = "";
 				for (i = 0; i < usuarios.length; i++) {
 					main += "<tr><td>" + usuarios[i].cedula_usuario
@@ -63,7 +63,7 @@
 <body>
 	
 	<!-- Navbar-->	
-   	<nav class="navbar" id ="titulo_2">
+   	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
@@ -81,10 +81,12 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
-	
+	<br>
 	<!-- contenido  -->		
 			<div class="container p-4">
 				<div class="col text-center">
+					<img src="https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg" id="corner_clientes" > 
+				
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarusuario.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar usuario</button>
@@ -100,11 +102,19 @@
 									
 				</div>
 			</div>
-  
-		<h2><i class="fas fa-stream"></i> Lista de usuarios</h2>
-			<div class="container">
-				<div class="table-wrapper-scroll-y my-custom-scrollbar">
-					<div class="row">
+  	<br>
+			<br>
+				<br>
+			<br>
+				<div class="header">
+					<h1 style="color:green; "><i class="fas fa-list-ol"></i> Lista de usuarios</h1>
+				</div>
+			<br>
+		<br>
+	<br>
+			<div style="height: 75%; overflow: auto; ">
+					<div class="container">
+						<div class="row">
 						<!--  Aqui es donde se autogenera la tabla basado en el script -->
 						<div class="col align-self-center " id="usuariosinfo">					
 						</div>	
@@ -112,7 +122,7 @@
 				</div>		
 			</div>
 	
-	<nav class="navbar2 fixed-bottom" id="titulo">
+	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 			<div class="row justify-content-between">
 				<div class="col-4">
 					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>

@@ -7,6 +7,25 @@
 	background-position: center;
 }
 
+#body_usuarios{
+	background: url('FreeShippingCuate.png');
+	background-size: 75%;
+	background-attachment: fixed;
+	background-color: whitesmoke;
+	background-repeat:no-repeat;
+	background-position: right;
+}
+
+#body_clientes{
+	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg');
+	background-size: 90%;
+	background-attachment: fixed;
+	background-color: whitesmoke;
+	background-repeat:no-repeat;
+	background-position: right;
+}
+
+
 #body_proveedores{
 	background: url('FreeShippingCuate.png');
 	background-size: 75%;
@@ -14,28 +33,89 @@
 	background-color: whitesmoke;
 	background-repeat:no-repeat;
 	background-position: right;
-	
 }
 
-#body_clientes{
-	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg');
-	background-size: 75%;
-	background-attachment: fixed;
-	background-color: whitesmoke;
-	background-repeat:no-repeat;
-	background-position: right;
-	
-}
-
-#body_usuario{
+#body_productos{
 	background: url('FreeShippingCuate.png');
 	background-size: 75%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
 	background-repeat:no-repeat;
 	background-position: right;
-	
 }
+
+#body_ventas{
+	background: url('FreeShippingCuate.png');
+	background-size: 75%;
+	background-attachment: fixed;
+	background-color: whitesmoke;
+	background-repeat:no-repeat;
+	background-position: right;
+}
+
+#body_reportes{
+	background: url('FreeShippingCuate.png');
+	background-size: 75%;
+	background-attachment: fixed;
+	background-color: whitesmoke;
+	background-repeat:no-repeat;
+	background-position: right;
+}
+
+#corner_usuarios{
+/* 	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg'); */
+	float: left;
+	background-size: 40%;
+	height: 200px; 
+	alt: "Client logo";
+	background-repeat:no-repeat;
+}
+
+#corner_clientes{
+/* 	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg'); */
+	float: left;
+	background-size: 40%;
+	height: 200px; 
+	alt: "Client logo";
+	background-repeat:no-repeat;
+}
+
+#corner_provadores{
+/* 	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg'); */
+	float: left;
+	background-size: 40%;
+	height: 200px; 
+	alt: "Client logo";
+	background-repeat:no-repeat;
+}
+
+#corner_productos{
+/* 	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg'); */
+	float: left;
+	background-size: 40%;
+	height: 200px; 
+	alt: "Client logo";
+	background-repeat:no-repeat;
+}
+
+#corner_ventas{
+/* 	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg'); */
+	float: left;
+	background-size: 40%;
+	height: 200px; 
+	alt: "Client logo";
+	background-repeat:no-repeat;
+}
+
+#corner_reportes{
+/* 	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg'); */
+	float: left;
+	background-size: 40%;
+	height: 200px; 
+	alt: "Client logo";
+	background-repeat:no-repeat;
+}
+
 
 body{
 	 font-family: Arial, Helvetica, sans-serif;

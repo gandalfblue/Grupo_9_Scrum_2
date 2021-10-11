@@ -132,8 +132,10 @@
 			<button type="button" class="btn btn-success" onclick="enviar()">
 				<i class="fas fa-check"></i> Insertar nuevo proveedor
 			</button>
-
-			
+			<br>
+			<br>
+			<br>
+			<br>
 		</div>
 
 	</div>
