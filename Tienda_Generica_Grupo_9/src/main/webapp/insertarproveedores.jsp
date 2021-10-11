@@ -93,36 +93,36 @@
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">proveedor creado con exito</div>
 
-			<form id="form1" >
+			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Nit del proveedor</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text"  
 						placeholder="Inserte nit aqui..."
 						aria-describedby="basic-addon1" required id="nit_proveedor">
 				</div>
 					<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Ciudad del proveedor</span>
-					<input type="text" class="form-control" class="preselection"
+					<input type="text" class="form-control" 
 						placeholder="Inserte el ciudad aqui..."
 						aria-describedby="basic-addon3" required id="ciudad_proveedor">
 				</div>
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon2">Direccion del proveedor</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						placeholder="Inserte la direccion aqui..."
 						aria-describedby="basic-addon2" required id="direccion_proveedor">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Nombre del proveedor</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						placeholder="Inserte el nombre del proveedor aqui..."
 						aria-describedby="basic-addon4" required id="nombre_proveedor">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Telefono del proveedor</span> <input
-						type="text" class="form-control"  class="preselection"
+						type="text" class="form-control"  
 						placeholder="Inserte el telefono del proveedor aqui..."
 						aria-describedby="basic-addon5" required id="telefono_proveedor">
 				</div>

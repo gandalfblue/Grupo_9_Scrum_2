@@ -36,7 +36,7 @@
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				var clientes = JSON.parse(xmlhttp.responseText);
-				var tbltop = "<table class='table table-dark table-striped'><tr><th>Cédula</th><th>Dirección</th><th>Email</th><th>Nombre</th><th>Teléfono</th></tr>";
+				var tbltop = "<table class='table table-hover table-light table-striped' id='tabla'><tr><th>Nit</th><th>Ciudad</th><th>Dirección</th><th>Nombre</th><th>Teléfono</th></tr>";
 				var main = "";
 				for (i = 0; i < clientes.length; i++) {
 					main += "<tr><td>" + clientes[i].cedula_cliente
@@ -60,33 +60,27 @@
 </head>
 
 
-<body>
+<body id="body_clientes">>
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
-		</div>
-	</nav>
-
-	<!-- Navbar modulos-->
-	<nav class="navbar navbar-dark bg-primary">
-		<div class="container">
 			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-users"></i> Usuarios</a> 
 			<a class="navbar-brand links" href="listaclientes.jsp">
 			<i class="fas fa-address-book"></i> Clientes</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
+			<a class="navbar-brand links" href="listaproveedores.jsp">
 			<i class="fas fa-truck"></i> Proveedores</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
+			<a class="navbar-brand links" href="listaproductos.jsp">
 			<i class="fas fa-apple-alt"></i> Productos</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
+			<a class="navbar-brand links" href="listaventas.jsp">
 			<i class="fas fa-money-check-alt"></i> Ventas</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
+			<a class="navbar-brand links" href="listareportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-	
+	<br>
 			<div class="container p-4">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
@@ -101,24 +95,31 @@
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarclientes.jsp'">
 					<i class="fas fa-search"></i> Buscar un cliente</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaclientes.jsp'">
+					<i class="fas fa-search"></i> Lista de clientes</button>
 					
 				</div>
 			</div>
 			
 	<!-- contenido  -->
-	
-	<div style="padding-left: 5px;">
-	
-		<h1><i class="fas fa-list-ol"></i> Listado de clientes</h1>
-			<div class="container">
-				<div class="row">
-					<!--  Aqui es donde se autogenera la tabla basado en el script -->
-					<div class="col align-self-center" id="clientesinfo">
-					
-					</div>
-	
+		<br>
+			<br>
+				<div class="header">
+					<h1 style="color:green; "><i class="fas fa-list-ol"></i> Listado de clientes</h1>
 				</div>
-			</div>		
+			<br>
+		<br>
+	<br>
+	
+	<div style="height: 75%; overflow: auto; ">
+		<div class="container">
+			<div class="row">
+				<!--  Aqui es donde se autogenera la tabla basado en el script -->
+				<div class="col align-self-center" id="clientesinfo">
+				</div>
+			</div>
+		</div>		
 	</div>
 
 

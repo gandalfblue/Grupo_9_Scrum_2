@@ -99,29 +99,26 @@
 					<i class="fas fa-search"></i> Buscar un proveedor</button>
 					
 				</div>
-				
 			</div>
-		<br>
-		<br>
-		<div class="header">
-				<h1 style="color:green; "><i class="fas fa-list-ol"></i> Listado de proveedores</h1>
-		</div>
-		<br>
-		<br>
+			<br>
+				<br>
+					<div class="header">
+						<h1 style="color:green; "><i class="fas fa-list-ol"></i> Listado de proveedores</h1>
+					</div>
+				<br>
+			<br>
 		<br>
 		
 	<!-- contenido  -->
 	
 	<div style="height: 75%; overflow: auto; ">
-			<div class="container">
-				<div class="row">
-					<!--  Aqui es donde se autogenera la tabla basado en el script -->
-					<div class="col align-self-center" id="proveedoresinfo">
-					
-					</div>
-	
+		<div class="container">
+			<div class="row">
+				<!--  Aqui es donde se autogenera la tabla basado en el script -->
+				<div class="col align-self-center" id="proveedoresinfo">
 				</div>
-			</div>		
+			</div>
+		</div>		
 	</div>
 
 

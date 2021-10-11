@@ -32,38 +32,55 @@
 </head>
 
 
-<body>
-	<!-- Navbar-->
+<body style="background-image: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg');">
+<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand links" href="index.html"><i
-				class="fas fa-fish"></i>Tienda Generica</a>
+			<a class="navbar-brand links" href="index.html">
+			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-users"></i> Usuarios</a> 
+			<a class="navbar-brand links" href="listaclientes.jsp">
+			<i class="fas fa-address-book"></i> Clientes</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-truck"></i> Proveedores</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-apple-alt"></i> Productos</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-money-check-alt"></i> Ventas</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-
-	<!-- Navbar modulos-->
-	<nav class="navbar navbar-dark bg-primary">
-		<div class="container">
-			<a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-users"></i> Usuarios
-			</a> <a class="navbar-brand links" href="listaclientes.jsp"> <i
-				class="fas fa-address-book"></i> Clientes
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-truck"></i> Proveedores
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-apple-alt"></i> Productos
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-money-check-alt"></i> Ventas
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-clipboard-list"></i> Reportes
-			</a>
-		</div>
-	</nav>
+	
+				<div class="container p-4">
+				<div class="col text-center">
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarclientes.jsp'">
+					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarclientes.jsp'">
+					<i class="fas fa-trash"></i> Eliminar cliente</button>
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarclientes.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarclientes.jsp'">
+					<i class="fas fa-search"></i> Buscar un cliente</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaclientes.jsp'">
+					<i class="fas fa-search"></i> Lista de clientes</button>
+					
+				</div>
+			</div>
+			<div class="header">
+				<h1 style="color:blue; "><i class="fas fa-list-ol"></i> Datos del nuevo cliente</h1>
+			</div>
+			<br>
+			<br>
 
 	<div style="padding-left: 5px">
-		<h1>
-			<i class="fas fa-sync"></i> Datos a actualizar del cliente
-		</h1>
+
 		<div class="container">
 
 
@@ -73,38 +90,38 @@
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Cliente actualizado con exito</div>
 
-			<form id="form1">
+			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Cedula</span> <input
-						type="text" class="form-control"
+						type="text" class="form-control" 
 						placeholder="Inserte cedula aqui..."
 						aria-describedby="basic-addon1" required id="cedula_cliente">
 				</div>
 				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Direccion</span> <input
-						type="text" class="form-control"
+						type="text" class="form-control" 
 						placeholder="Inserte la dirección aqui..."
 						aria-describedby="basic-addon4" required id="direccion_cliente">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon2">Email</span> <input
-						type="text" class="form-control"
+						type="text" class="form-control" 
 						placeholder="Inserte email aqui..."
 						aria-describedby="basic-addon2" required id="email_cliente">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Nombre completo</span>
-					<input type="text" class="form-control"
+					<input type="text" class="form-control" 
 						placeholder="Inserte el nonbre aqui..."
 						aria-describedby="basic-addon3" required id="nombre_cliente">
 				</div>				
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Telefono</span> <input
-						type="text" class="form-control"
+						type="text" class="form-control" 
 						placeholder="Inserte el telefono aqui..."
 						aria-describedby="basic-addon5" required id="telefono_cliente">
 				</div>
@@ -114,41 +131,18 @@
 				<i class="fas fa-edit"></i> Actualizar cliente
 			</button>
 
-			<h1>
-				<i class="fas fa-cogs"></i> Operaciones
-			</h1>
-			<div class="container">
-				<div class="row">
-					<button type="button" class="btn btn-success"
-						onclick="window.location.href='/insertarclientes.jsp'">
-						<i class="fas fa-plus-circle"></i> Agregar cliente
-					</button>
-					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarclientes.jsp'">
-						<i class="fas fa-trash"></i> Eliminar clientes
-					</button>
-					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/buscarclientes.jsp'">
-						<i class="fas fa-search"></i> Buscar un cliente
-					</button>
-					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaclientes.jsp'">
-						<i class="fas fa-search"></i> Lista de clientes
-					</button>
-				</div>
-			</div>
 		</div>
 
 	</div>
 	
-	<nav class="navbar2 fixed-bottom">
-			<div class="row justify-content-between">
-				<div class="col-4">
-					<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
+	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+		<div class="row justify-content-between">
+			<div class="col-4">
+				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
 					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
 					class="fas fa-code-branch"></i></a>
-				</div>
 			</div>
+		</div>
 	</nav>
 	
 	<script>

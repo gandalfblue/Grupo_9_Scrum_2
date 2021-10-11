@@ -4,7 +4,6 @@
 <html>
 <head>
 
-
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
 <!-- Tamaño de la pantalla -->
@@ -27,38 +26,29 @@
 <!-- Cargando mi hoja de estilo -->
 <link href="style.css" rel="stylesheet" type="text/css" />
 
-
-
 </head>
 
-
-<body>
+<body id="body_usuario">
 	<!-- Navbar-->
-	<nav class="navbar">
+	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-users"></i> Usuarios</a> 
+			<a class="navbar-brand links" href="listaclientes.jsp">
+			<i class="fas fa-address-book"></i> Clientes</a>
+			<a class="navbar-brand links" href="listaproveedores.jsp">
+			<i class="fas fa-truck"></i> Proveedores</a>
+			<a class="navbar-brand links" href="listaproductos.jsp">
+			<i class="fas fa-apple-alt"></i> Productos</a>
+			<a class="navbar-brand links" href="listaventas.jsp">
+			<i class="fas fa-money-check-alt"></i> Ventas</a>
+			<a class="navbar-brand links" href="listareportes.jsp">
+			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-
-	<!-- Navbar modulos-->
-	<nav class="navbar navbar-dark bg-primary">
-		<div class="container">
-			<a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-users"></i> Usuarios
-			</a> <a class="navbar-brand links" href="listaclientes.jsp"> <i
-				class="fas fa-address-book"></i> Clientes
-			</a> <a class="navbar-brand links" href="listaclientes.jsp"> <i
-				class="fas fa-truck"></i> Proveedores
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-apple-alt"></i> Productos
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-money-check-alt"></i> Ventas
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-clipboard-list"></i> Reportes
-			</a>
-		</div>
-	</nav>
+	<br>
 
 	<div style="padding-left: 5px">
 		<h1>
@@ -109,18 +99,11 @@
 						aria-describedby="basic-addon5" required id="password">
 				</div>
 
-
-
-
-
 			</form>
 
 			<button type="button" class="btn btn-success" onclick="enviar()">
 				<i class="fas fa-check"></i> Insertar nuevo usuario
 			</button>
-
-
-
 
 			<h1>
 				<i class="fas fa-cogs"></i> Operaciones

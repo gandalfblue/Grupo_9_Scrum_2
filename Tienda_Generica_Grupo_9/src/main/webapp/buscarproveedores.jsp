@@ -53,7 +53,6 @@
 		</div>
 	</nav>
 		<br>
-	
 				<div class="container p-3">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
@@ -70,7 +69,6 @@
 					<i class="fas fa-search"></i> Buscar un proveedor</button>
 					
 				</div>
-				
 			</div>
 			<div class="header">
 				<h1 style="color:green;" >
@@ -88,39 +86,37 @@
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">proveedor encontrado con exito</div>
 
-			<form id="form1">
+			<form id="form1" class="preselection">
 			
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">proveedor a buscar</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						placeholder="Inserte el nit aqui..."
 						aria-describedby="basic-addon1" required id="nit_proveedor">
 				</div>
-				
 				<br>
 				<br>
 				<br>
-				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon2">Ciudad</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						aria-describedby="basic-addon2" required id="ciudad_proveedor" disabled="disabled">
 				</div>
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Direccion</span>
-					<input type="text" class="form-control" class="preselection"
+					<input type="text" class="form-control" 
 						aria-describedby="basic-addon3" required id="direccion_proveedor"  disabled="disabled">
 				</div>
 				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Nombre Completo</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						aria-describedby="basic-addon4" required id="nombre_proveedor"  disabled="disabled">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Telefono</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						aria-describedby="basic-addon5" required id="telefono_proveedor"  disabled="disabled">
 				</div>
 			</form>
