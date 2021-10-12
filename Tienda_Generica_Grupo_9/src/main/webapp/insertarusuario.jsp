@@ -6,9 +6,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Insertando usuario</title>
 <!-- bootstrap-->
 <link
@@ -28,8 +28,10 @@
 
 </head>
 
+
 <body id="body_usuarios">
 	<!-- Navbar-->
+
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
@@ -49,6 +51,7 @@
 		</div>
 	</nav>
 	<br>
+
 			<div class="container p-4">
 				<div class="col text-center">
 				  	<button type="button" class="btn btn-success" 
@@ -74,6 +77,7 @@
 				</div>
 		<br>
 	<br>
+
 
 	<div style="padding-left: 5px">
 		<div class="container">
@@ -133,7 +137,7 @@
 			<div class="row justify-content-between">
 				<div class="col-4">
 					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada
 					<i class="fas fa-cogs"></i></a>
 				</div>
 			</div>

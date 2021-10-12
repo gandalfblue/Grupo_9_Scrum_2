@@ -7,9 +7,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Eliminar cliente</title>
 <!-- bootstrap-->
 <link
@@ -27,12 +27,12 @@
 <!-- Cargando mi hoja de estilo -->
 <link href="style.css" rel="stylesheet" type="text/css" />
 
-
-
 </head>
 
 
+
 <body id="body_clientes">
+
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
@@ -52,6 +52,7 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
+
 	
 			<div class="container p-4">
 				<div class="col text-center">
@@ -77,6 +78,9 @@
 			<h1 style="color:red;">
 			<i class="fas fa-plus-circle"></i> Eliminar cliente
 		</h1>
+
+
+
 		</div>
 		<br>
 		<br>
@@ -103,31 +107,27 @@
 				</div>
 
 			</form>
+
+
 		 			<button type="button" class="btn btn-danger" onclick="eliminar()">
 						<i class="fas fa-check"></i> Eliminar cliente
 					</button>
 
 			
-	  <div id="table" class="contenedor visually-hidden">	
-			<h2><i class="fas fa-list-ol"></i> Datos del cliente a eliminar</h2>
-				<div class="container">
-					<div class="row">
-					<!--  Aqui es donde se autogenera la tabla basado en el script -->
-						<div class="col align-self-center" id="clienteinfo">
-					
-						</div>
-	
-					</div>
-				</div>
-			</div>
-	</div>
+
+
+			<h2>
+				<i class="fas fa-cogs"></i> Operaciones
+				
+			</h2>
+		
 
 	</div>
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>
@@ -135,59 +135,6 @@
 	
 	<script>	
 	
-// 	function buscar() {
-		
-// 		var req = new XMLHttpRequest();
-// 		var coincidencia = false;
-// 		var cedula_cliente=   document.getElementById("clientesearch").value;
-// 		req.open('GET', 'http://localhost:8080/consultarclientes?cedula_cliente='+cedula_cliente, false);
-// 		req.send(null);
-// 		var cliente = null;
-			
-// 			if (req.readyState == 4 && req.status == 200) {
-// 				clientes = JSON.parse(xmlhttp.responseText);
-// 				console.log(JSON.parse(req.responseText));
-// 				var main = "";
-// 				for (i = 0; i < clientes.length; i++) {
-					
-// 					console.log(clientes[i].cedula_cliente);					
-					
-// 					if (clientes[i].cedula_cliente ==cedula_cliente ) {
-// 						console.log("si");
-// 						var tbltop = "<table class='table  table-dark table-striped'><tr><th>Cédula</th><th>Dirección</th><th>Email</th><th>Nombre</th><th>Teléfono</th></tr>";
-// 						var element = document.getElementById("tabla");
-// 						element.classList.remove("visually-hidden");
-// 						console.log(clientes[i].cedula_cliente +" "+cedula_cliente);	
-					
-// 						main = "<tr><td>" + clientes[i].cedula_cliente
-// 							 + "</td><td>" + clientes[i].direccion_cliente
-// 							 + "</td><td>" + clientes[i].email_cliente
-// 							 + "</td><td>" + clientes[i].nombre_cliente
-// 							 + "</td><td>" + clientes[i].telefono_cliente + "</td></tr>";
-// 					break;
-					
-// 					} else {
-// 						console.log("cliente no encontrado");
-// 						var element = document.getElementById("no_encontrado");
-// 						element.classList.remove("visually-hidden");
-// 						document.getElementById("clientesearch").value = "";
-// 						return;			
-// 				}
-				
-// 				var tblbottom = "</table>";
-// 				var tbl = tbltop + main + tblbottom;
-// 				document.getElementById("clienteinfo").innerHTML = tbl;
-// 			}
-// 				console.log("no encontrado");
-// 				var element = document.getElementById("no_encontrado");
-// 				element.classList.remove("visually-hidden");
-// 				document.getElementById("clientesearch").value = "";
-// 				return;
-// 		} else{
-// 			console.log("error al comunicar con la base de datos");
-// 		};
-// 		req.send();
-// 	}
 	function eliminar() {
 		var y = document.getElementById("clientesearch").value;
 		var req = new XMLHttpRequest();

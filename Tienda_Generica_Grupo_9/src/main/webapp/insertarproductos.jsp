@@ -7,9 +7,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Insertando producto</title>
 <!-- bootstrap-->
 <link
@@ -57,9 +57,10 @@
 		<div class="container p-3">
 			<div class="col text-center">
 				<img src="https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg"  height="225px" alt="logo" id="listaproveedores"/>
-					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproductos.jsp'">
-					<i class="fas fa-plus-circle"></i> Insertar producto</button>
+
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarproductos.jsp'">
+					<i class="fas fa-trash"></i> Eliminar producto</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarproductos.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar producto</button>
@@ -90,7 +91,7 @@
 
 
 			<div id="error" class="alert alert-danger visually-hidden"
-				role="alert">Archivo vacio, extensión no valida o datos corruptos (El separador debe ser coma ",")</div>
+				role="alert">Archivo vacio, extensiÃ³n no valida o datos corruptos (El separador debe ser coma ",")</div>
 
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Productos importados desde CSV con exito</div>
@@ -117,7 +118,7 @@
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>

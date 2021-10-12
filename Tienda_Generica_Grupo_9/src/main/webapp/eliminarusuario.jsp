@@ -4,12 +4,11 @@
 <html>
 <head>
 
-
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Eliminar usuario</title>
 <!-- bootstrap-->
 <link
@@ -27,12 +26,12 @@
 <!-- Cargando mi hoja de estilo -->
 <link href="style.css" rel="stylesheet" type="text/css" />
 
-
-
 </head>
 
 
+
 <body id="body_usuarios">
+
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
@@ -102,12 +101,6 @@
 				</div>
 
 			</form>
-					<button type="button" class="btn btn-secondary" onclick="buscar()">
-						<i class="fas fa-search"></i> Buscar usuario
-					</button>
-		 			<button type="button" class="btn btn-danger" onclick="eliminar()">
-						<i class="fas fa-trash"></i> Eliminar usuario
-					</button>
 		</div>
 
 	</div>
@@ -115,68 +108,13 @@
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>
-	</nav>
+	</nav>	
 	
 	<script>	
-	
-	function buscar() {
-		
-		var req = new XMLHttpRequest();
-		var coincidencia = false;
-		var cedula_usuario=   document.getElementById("usersearch").value;
-		req.open('GET', 'http://localhost:8080/consultarusuario_cedula?cedula_usuario='+cedula_usuario, false);
-		req.send(null);
-		var usurios = null;
-		var tbltop = "<table class='table' id='tabla' visually-hidden' table-dark table-striped'><tr><th>Cédula</th><th>Email</th><th>Nombre</th><th>Password</th><th>Usuario</th></tr>";
-		document.getElementById("usuarioinfo").innerHTML = tbl;
-		
-			if (req.readyState == 4 && req.status == 200) {
-				usuarios = JSON.parse(req.responseText);
-				console.log(JSON.parse(req.responseText));
-				var main = "";
-				for (i = 0; i < usuarios.length; i++) {
-					
-					console.log(usuarios[i].cedula_usuario);					
-					
-					if (usuarios[i].cedula_usuario ==cedula_usuario ) {
-						console.log("si");
-						var elemento = document.getElementById("tabla");
-						elemento.classList.remove("visually-hidden");
-						console.log(usuarios[i].cedula_usuario +" "+cedula_usuario);	
-					
-						main = "<tr><td>" + usuarios[i].cedula_usuario
-						+ "</td><td>" + usuarios[i].email_usuario
-						+ "</td><td>" + usuarios[i].nombre_usuario
-						+ "</td><td>" + usuarios[i].password 
-						+ "</td><td>" + usuarios[i].usuario + "</td></tr>";
-					break;
-					
-					} else {
-						console.log("usuario no encontrado");
-						var element = document.getElementById("no_encontrado");
-						element.classList.remove("visually-hidden");
-						document.getElementById("cedula_usuario").value = "";
-						return;			
-				}
-				
-				var tblbottom = "</table>";
-				var tbl = tbltop + main + tblbottom;
-				
-			}
-				console.log("no encontrado");
-				var element = document.getElementById("no_encontrado");
-				element.classList.remove("visually-hidden");
-				document.getElementById("cedula_usuario").value = "";
-				return;
-		} else{
-			console.log("error al comunicar con la base de datos");
-		};
-		req.send();
-	}
 	
 	function eliminar() {
 		var y = document.getElementById("usersearch").value;

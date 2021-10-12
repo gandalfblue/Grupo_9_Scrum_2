@@ -1,4 +1,4 @@
-package com.roca12.misiontic2022.tiendalostiburones.BO;
+package com.Tienda_Generica.BO;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

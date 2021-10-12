@@ -27,10 +27,7 @@
 <!-- Cargando mi hoja de estilo -->
 <link href="style.css" rel="stylesheet" type="text/css" />
 
-
-
 </head>
-
 
 <body>
 	<nav class="navbar" id ="titulo_2">
@@ -82,28 +79,11 @@
 			<div class="container p-4">
 				<div class="col text-center">
 					
-					<button type="button" class="btn btn-success" onclick="buscar()">
-						<i class="fas fa-check"></i> Buscar producto
-					</button>
 		 			<button type="button" class="btn btn-danger" onclick="eliminar()">
 						<i class="fas fa-check"></i> Eliminar producto
 					</button>
 	 			</div>
 			</div>
-			
-			<div id="tabla" class="contenedor visually-hidden">
-					
-			<h2><i class="fas fa-list-ol"></i> Datos del producto a eliminar</h2>
-			<div class="container">
-				<div class="row">
-					<!--  Aqui es donde se autogenera la tabla basado en el script -->
-					<div class="col align-self-center" id="productoinfo">
-					
-					</div>
-	
-				</div>
-			</div>
-		</div>
 			
 			<h2>
 				<i class="fas fa-cogs"></i> Operaciones
@@ -142,63 +122,7 @@
 	</nav>
 	
 	<script>	
-	
-	function buscar() {
 		
-		var req = new XMLHttpRequest();
-		var coincidencia = false;
-		var codigo_producto =   document.getElementById("productosearch").value;
-		req.open('GET', 'http://localhost:8080/consultarcodigo_productos?codigo_producto='+ codigo_producto, false);
-		req.send(null);
-		var productos = null;
-			
-			if (req.readyState == 4 && req.status == 200) {
-				productos = JSON.parse(xmlhttp.responseText);
-				console.log(JSON.parse(req.responseText));
-				var main = "";
-				for (i = 0; i < productos.length; i++) {
-					
-					console.log(productos[i].codigo_producto);					
-					
-					if (productos[i].codigo_producto ==codigo_producto ) {
-						console.log("si");
-						var tbltop = "<table class='table table-hover' id='tabla' align='center';><tr><th>Codigo del producto</th><th>Iva de compra</th><th>Nit proveedor</th><th>Nombre del producto</th><th>Precio de compra</th><th>Precio de venta</th></tr>";
-						var element = document.getElementById("tabla");
-						element.classList.remove("visually-hidden");
-						console.log(productos[i].codigo_producto +" " + codigo_producto);	
-					
-						main += "<tr><td>" + productos[i].codigo_producto
-						+ "</td><td>" + productos[i].iva_compra
-						+ "</td><td>" + productos[i].nit_proveedor
-						+ "</td><td>" + productos[i].nombre_producto
-						+ "</td><td>" + productos[i].precio_compra
-						+ "</td><td>" + productos[i].precio_venta + "</td></tr>";
-			
-						break;
-					
-					} else {
-						console.log("Producto no encontrado");
-						var element = document.getElementById("no_encontrado");
-						element.classList.remove("visually-hidden");
-						document.getElementById("clientesearch").value = "";
-						return;			
-				}
-				
-				var tblbottom = "</table>";
-				var tbl = tbltop + main + tblbottom;
-				document.getElementById("productoinfo").innerHTML = tbl;
-			}
-				console.log("no encontrado");
-				var element = document.getElementById("no_encontrado");
-				element.classList.remove("visually-hidden");
-				document.getElementById("productosearch").value = "";
-				return;
-		} else{
-			console.log("error al comunicar con la base de datos");
-		};
-		req.send();
-	}
-	
 	function eliminar() {
 		var y = document.getElementById("productosearch").value;
 		var req = new XMLHttpRequest();
