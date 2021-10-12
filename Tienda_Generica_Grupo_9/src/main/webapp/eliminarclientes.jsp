@@ -27,10 +27,7 @@
 <!-- Cargando mi hoja de estilo -->
 <link href="style.css" rel="stylesheet" type="text/css" />
 
-
-
 </head>
-
 
 <body>
 	<!-- Navbar-->
@@ -48,13 +45,13 @@
 				class="fas fa-users"></i> Usuarios
 			</a> <a class="navbar-brand links" href="listaclientes.jsp"> <i
 				class="fas fa-address-book"></i> Clientes
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
+			</a> <a class="navbar-brand links" href="listaproveedores.jsp"> <i
 				class="fas fa-truck"></i> Proveedores
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
+			</a> <a class="navbar-brand links" href="listaproductos.jsp"> <i
 				class="fas fa-apple-alt"></i> Productos
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
+			</a> <a class="navbar-brand links" href="listaventas.jsp"> <i
 				class="fas fa-money-check-alt"></i> Ventas
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
+			</a> <a class="navbar-brand links" href="listareportes.jsp"> <i
 				class="fas fa-clipboard-list"></i> Reportes
 			</a>
 		</div>
@@ -90,28 +87,11 @@
 			<div class="container p-4">
 				<div class="col text-center">
 					
-					<button type="button" class="btn btn-success" onclick="buscar()">
-						<i class="fas fa-check"></i> Buscar cliente
-					</button>
 		 			<button type="button" class="btn btn-danger" onclick="eliminar()">
 						<i class="fas fa-check"></i> Eliminar cliente
 					</button>
 	 			</div>
 			</div>
-			
-			<div id="table" class="contenedor visually-hidden">
-					
-			<h2><i class="fas fa-list-ol"></i> Datos del cliente a eliminar</h2>
-			<div class="container">
-				<div class="row">
-					<!--  Aqui es donde se autogenera la tabla basado en el script -->
-					<div class="col align-self-center" id="clienteinfo">
-					
-					</div>
-	
-				</div>
-			</div>
-		</div>
 			
 			<h2>
 				<i class="fas fa-cogs"></i> Operaciones
@@ -149,60 +129,6 @@
 	</nav>
 	
 	<script>	
-	
-	function buscar() {
-		
-		var req = new XMLHttpRequest();
-		var coincidencia = false;
-		var cedula_cliente=   document.getElementById("clientesearch").value;
-		req.open('GET', 'http://localhost:8080/consultarclientes?cedula_cliente='+cedula_cliente, false);
-		req.send(null);
-		var cliente = null;
-			
-			if (req.readyState == 4 && req.status == 200) {
-				clientes = JSON.parse(xmlhttp.responseText);
-				console.log(JSON.parse(req.responseText));
-				var main = "";
-				for (i = 0; i < clientes.length; i++) {
-					
-					console.log(clientes[i].cedula_cliente);					
-					
-					if (clientes[i].cedula_cliente ==cedula_cliente ) {
-						console.log("si");
-						var tbltop = "<table class='table  table-dark table-striped'><tr><th>Cédula</th><th>Dirección</th><th>Email</th><th>Nombre</th><th>Teléfono</th></tr>";
-						var element = document.getElementById("tabla");
-						element.classList.remove("visually-hidden");
-						console.log(clientes[i].cedula_cliente +" "+cedula_cliente);	
-					
-						main = "<tr><td>" + clientes[i].cedula_cliente
-							 + "</td><td>" + clientes[i].direccion_cliente
-							 + "</td><td>" + clientes[i].email_cliente
-							 + "</td><td>" + clientes[i].nombre_cliente
-							 + "</td><td>" + clientes[i].telefono_cliente + "</td></tr>";
-					break;
-					
-					} else {
-						console.log("cliente no encontrado");
-						var element = document.getElementById("no_encontrado");
-						element.classList.remove("visually-hidden");
-						document.getElementById("clientesearch").value = "";
-						return;			
-				}
-				
-				var tblbottom = "</table>";
-				var tbl = tbltop + main + tblbottom;
-				document.getElementById("clienteinfo").innerHTML = tbl;
-			}
-				console.log("no encontrado");
-				var element = document.getElementById("no_encontrado");
-				element.classList.remove("visually-hidden");
-				document.getElementById("clientesearch").value = "";
-				return;
-		} else{
-			console.log("error al comunicar con la base de datos");
-		};
-		req.send();
-	}
 	
 	function eliminar() {
 		var y = document.getElementById("clientesearch").value;
