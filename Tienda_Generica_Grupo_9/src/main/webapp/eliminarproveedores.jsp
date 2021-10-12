@@ -107,32 +107,13 @@
 			<div class="container p-4">
 				<div class="col text-center">
 					
-					<button type="button" class="btn btn-secondary" onclick="buscar()">
-						<i class="fas fa-check"></i> Buscar proveedor
-					</button>
-		 			<button type="button" class="btn btn-danger" onclick="eliminar()">
+					<button type="button" class="btn btn-danger" onclick="eliminar()">
 						<i class="fas fa-check"></i> Eliminar proveedor
 					</button>
 	 			</div>
 			   
 			</div>
 			
-			<div id="table" class="contenedor visually-hidden">
-					
-			<h2><i class="fas fa-list-ol"></i> Datos del proveedor a eliminar</h2>
-			<div class="container">
-				<div class="row">
-					<!--  Aqui es donde se autogenera la tabla basado en el script -->
-					<div class="col align-self-center" id="proveedorinfo">
-					
-					</div>
-	
-				</div>
-			</div>
-		</div>
-			
-			
-
 	</div>
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
@@ -144,61 +125,7 @@
 		</div>
 	</nav>
 	
-	<script>	
-	
-	function buscar() {
-		
-		var req = new XMLHttpRequest();
-		var coincidencia = false;
-		var nit_proveedor=   document.getElementById("proveedorsearch").value;
-		req.open('GET', 'http://localhost:8080/consultarproveedores?nit_proveedor='+nit_proveedor, false);
-		req.send(null);
-		var proveedor = null;
-			
-			if (req.readyState === 4 && req.status === 200) {
-				proveedores = JSON.parse(xmlhttp.responseText);
-				console.log(JSON.parse(req.responseText));
-				var main = "";
-				for (i = 0; i < proveedores.length; i++) {
-					
-					console.log(proveedores[i].nit_proveedor);					
-					
-					if (proveedores[i].nit_proveedor ==nit_proveedor ) {
-						console.log("si");
-						var tbltop = "<table class='table  table-dark table-striped'><tr><th>Nit</th><th>Ciudad</th><th>Dirección</th><th>Nombre</th><th>Teléfono</th></tr>";
-						var element = document.getElementById("tabla");
-						element.classList.remove("visually-hidden");
-						console.log(proveedores[i].nit_proveedor +" "+nit_proveedor);	
-					
-						main = "<tr><td>" + proveedores[i].nit_proveedor
-							 + "</td><td>" + proveedores[i].ciudad_proveedor
-							 + "</td><td>" + proveedores[i].direccion_proveedor
-							 + "</td><td>" + proveedores[i].nombre_proveedor
-							 + "</td><td>" + proveedores[i].telefono_proveedor + "</td></tr>";
-					break;
-					
-					} else {
-						console.log("proveedor no encontrado");
-						var element = document.getElementById("no_encontrado");
-						element.classList.remove("visually-hidden");
-						document.getElementById("proveedorsearch").value = "";
-						return;			
-				}
-				
-				var tblbottom = "</table>";
-				var tbl = tbltop + main + tblbottom;
-				document.getElementById("proveedorinfo").innerHTML = tbl;
-			}
-				console.log("no encontrado");
-				var element = document.getElementById("no_encontrado");
-				element.classList.remove("visually-hidden");
-				document.getElementById("proveedorsearch").value = "";
-				return;
-		} else{
-			console.log("error al comunicar con la base de datos");
-		};
-		req.send();
-	}
+	<script>		
 	
 	function eliminar() {
 		var y = document.getElementById("proveedorsearch").value;

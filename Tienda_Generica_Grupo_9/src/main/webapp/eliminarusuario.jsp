@@ -4,7 +4,6 @@
 <html>
 <head>
 
-
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
 <!-- Tamaño de la pantalla -->
@@ -26,10 +25,6 @@
 
 <!-- Cargando mi hoja de estilo -->
 <link href="style.css" rel="stylesheet" type="text/css" />
-
-<link
-	href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css"
-	rel="stylesheet" />
 
 </head>
 
@@ -182,9 +177,6 @@
 		}
 	}
 </script>
-
-<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
-crossorigin="anonymous"></script>
 
 </body>
 </html>
