@@ -1,11 +1,14 @@
 package com.Tienda_Generica.DAO;
 
 import java.sql.*;
+import java.util.logging.Logger;
 
 /**
  * Clase que permite conectar con la base de datos
  */
 public class Conexion {
+	
+	Logger logger= Logger.getLogger("com.roca12.misiontic2022.tiendalostiburones.DAO.Conexion");
 	
 	/** Parametros de conexion */
 	static String nombre_base_datos = "g9e2";
