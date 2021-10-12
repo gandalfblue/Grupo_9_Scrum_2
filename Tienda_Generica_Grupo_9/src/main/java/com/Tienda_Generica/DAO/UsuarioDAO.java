@@ -1,20 +1,21 @@
-package com.roca12.misiontic2022.tiendalostiburones.DAO;
+package com.Tienda_Generica.DAO;
 
 import java.sql.*;
 import java.util.ArrayList;
-import com.roca12.misiontic2022.tiendalostiburones.DTO.ClientesVO;
+
+import com.Tienda_Generica.DTO.UsuarioVO;
 
 /**
  * Clase que permite el acceso a la base de datos
  *
  */
-public class ClientesDAO {
+public class UsuarioDAO {
 	/**
-	 * Permite registrar un Clientes nuevo
+	 * Permite registrar un Usuario nuevo
 	 * 
 	 * @param user
 	 */
-	public void registrarClientes(ClientesVO user) {
+	public void registrarUsuario(UsuarioVO user) {
 		//llama y crea una instancia de la clase encargada de hacer la conexión
 		Conexion conex = new Conexion();
 
@@ -23,12 +24,12 @@ public class ClientesDAO {
 			Statement estatuto = conex.getConnection().createStatement();
 			
 			//String que contiene la sentencia insert a ejecutar
-			String sentencia = "INSERT INTO clientes VALUES(" 
-					+ user.getCedula_cliente() + "," + "'"
-					+ user.getDireccion_cliente() + "'," + "'" 
-					+ user.getEmail_cliente() + "'," + "'" 
-					+ user.getNombre_cliente() + "'," + "'" 
-					+ user.getTelefono_cliente() + "'" 
+			String sentencia = "INSERT INTO usuarios VALUES(" 
+					+ user.getCedula_usuario() + "," + "'"
+					+ user.getEmail_usuario() + "'," + "'" 
+					+ user.getNombre_usuario() + "'," + "'" 
+					+ user.getPassword()+ "'," + "'" 
+					+ user.getUsuario() + "'" 
 					+ ");";
 			
 			//se ejecuta la sentencia en la base de datos
@@ -42,13 +43,13 @@ public class ClientesDAO {
 		} catch (SQLException e) {
 			//si hay un error en el sql mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo insertar el cliente");
+			System.out.println("No se pudo insertar el usuario");
 			System.out.println(e.getMessage());
 			System.out.println(e.getErrorCode());
 		} catch (Exception e) {
 			//si hay cualquier otro error mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo insertar el cliente");
+			System.out.println("No se pudo insertar el usuario");
 			System.out.println(e.getMessage());
 			System.out.println(e.getLocalizedMessage());
 		}
@@ -56,34 +57,34 @@ public class ClientesDAO {
 	}
 
 	/**
-	 * permite consultar el Clientes asociado al user enviado como parametro
+	 * permite consultar el Usuario asociado al user enviado como parametro
 	 * 
 	 * @param documento
 	 * @return
 	 */
-	public ArrayList<ClientesVO> consultarClientes(Integer cedula_cliente) {	
-		//lista que contendra el o los Clientess obtenidos
-		ArrayList<ClientesVO> listaclientes = new ArrayList<ClientesVO>();		
+	public ArrayList<UsuarioVO> consultarUsuario(String usuario) {	
+		//lista que contendra el o los usuarios obtenidos
+		ArrayList<UsuarioVO> listausuarios = new ArrayList<UsuarioVO>();		
 		//instancia de la conexión
 		Conexion conex = new Conexion();
 		try {
 			//prepare la sentencia en la base de datos
 			PreparedStatement consulta = conex.getConnection()
-					.prepareStatement("SELECT * FROM clientes where cedula_cliente = ? ");		
+					.prepareStatement("SELECT * FROM usuarios where usuario = ? ");		
 			// se cambia el comodin ? por el dato que ha llegado en el parametro de la funcion
-			consulta.setInt(1, cedula_cliente);			
+			consulta.setString(1, usuario);			
 			//ejecute la sentencia
 			ResultSet res = consulta.executeQuery();			
 			//cree un objeto basado en la clase entidad con los datos encontrados
 			if (res.next()) {
-				ClientesVO Clientes = new ClientesVO();
-				Clientes.setCedula_cliente(Integer.parseInt(res.getString("cedula_cliente")));
-				Clientes.setDireccion_cliente(res.getString("direccion_cliente"));
-				Clientes.setEmail_cliente(res.getString("email_cliente"));
-				Clientes.setNombre_cliente(res.getString("nombre_cliente"));				
-				Clientes.setTelefono_cliente(res.getString("telefono_cliente"));
+				UsuarioVO Usuario = new UsuarioVO();
+				Usuario.setCedula_usuario(Integer.parseInt(res.getString("cedula_usuario")));
+				Usuario.setEmail_usuario(res.getString("email_usuario"));
+				Usuario.setNombre_usuario(res.getString("nombre_usuario"));
+				Usuario.setPassword(res.getString("password"));
+				Usuario.setUsuario(res.getString("usuario"));
 
-				listaclientes.add(Clientes);
+				listausuarios.add(Usuario);
 			}
 			//cerrar resultado, sentencia y conexión
 			res.close();
@@ -93,42 +94,42 @@ public class ClientesDAO {
 		} catch (SQLException e) {
 			//si hay un error en el sql mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo consultar el cliente");
+			System.out.println("No se pudo consultar el usuario");
 			System.out.println(e.getMessage());
 			System.out.println(e.getErrorCode());
 		} catch (Exception e) {
 			//si hay cualquier otro error mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo consultar los clientes");
+			System.out.println("No se pudo consultar el usuario");
 			System.out.println(e.getMessage());
 			System.out.println(e.getLocalizedMessage());
 		}
-		return listaclientes;
+		return listausuarios;
 	}
 
-	public ArrayList<ClientesVO> consultarClientes_Cedula(Integer cedula_cliente) {	
-		//lista que contendra el o los Clientess obtenidos
-		ArrayList<ClientesVO> listaclientes = new ArrayList<ClientesVO>();		
+	public ArrayList<UsuarioVO> consultarUsuario_Cedula(int cedula_usuario) {	
+		//lista que contendra el o los usuarios obtenidos
+		ArrayList<UsuarioVO> listausuarios = new ArrayList<UsuarioVO>();		
 		//instancia de la conexión
 		Conexion conex = new Conexion();
 		try {
 			//prepare la sentencia en la base de datos
 			PreparedStatement consulta = conex.getConnection()
-					.prepareStatement("SELECT * FROM clientes where cedula_cliente = ? ");		
+					.prepareStatement("SELECT * FROM usuarios where cedula_usuario = ? ");		
 			// se cambia el comodin ? por el dato que ha llegado en el parametro de la funcion
-			consulta.setInt(1, cedula_cliente);			
+			consulta.setInt(1, cedula_usuario);			
 			//ejecute la sentencia
 			ResultSet res = consulta.executeQuery();			
 			//cree un objeto basado en la clase entidad con los datos encontrados
 			if (res.next()) {
-				ClientesVO Clientes = new ClientesVO();
-				Clientes.setCedula_cliente(Integer.parseInt(res.getString("cedula_cliente")));
-				Clientes.setDireccion_cliente(res.getString("direccion_cliente"));
-				Clientes.setEmail_cliente(res.getString("email_cliente"));
-				Clientes.setNombre_cliente(res.getString("nombre_cliente"));				
-				Clientes.setTelefono_cliente(res.getString("telefono_cliente"));
+				UsuarioVO Usuario = new UsuarioVO();
+				Usuario.setCedula_usuario(Integer.parseInt(res.getString("cedula_usuario")));
+				Usuario.setEmail_usuario(res.getString("email_usuario"));
+				Usuario.setNombre_usuario(res.getString("nombre_usuario"));
+				Usuario.setPassword(res.getString("password"));
+				Usuario.setUsuario(res.getString("usuario"));
 
-				listaclientes.add(Clientes);
+				listausuarios.add(Usuario);
 			}
 			//cerrar resultado, sentencia y conexión
 			res.close();
@@ -138,48 +139,48 @@ public class ClientesDAO {
 		} catch (SQLException e) {
 			//si hay un error en el sql mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo consultar el cliente");
+			System.out.println("No se pudo consultar el usuario");
 			System.out.println(e.getMessage());
 			System.out.println(e.getErrorCode());
 		} catch (Exception e) {
 			//si hay cualquier otro error mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo consultar los clientes");
+			System.out.println("No se pudo consultar el usuario");
 			System.out.println(e.getMessage());
 			System.out.println(e.getLocalizedMessage());
 		}
-		return listaclientes;
+		return listausuarios;
 	}
 	
 	/**
-	 * permite consultar la lista de todos los Clientess
+	 * permite consultar la lista de todos los usuarios
 	 * 
 	 * @return
 	 */
-	public ArrayList<ClientesVO> listaDeClientes() {
-		//lista que contendra el o los Clientess obtenidos
-		ArrayList<ClientesVO> listaclientes = new ArrayList<ClientesVO>();
+	public ArrayList<UsuarioVO> listaDeUsuarios() {
+		//lista que contendra el o los usuarios obtenidos
+		ArrayList<UsuarioVO> listausuarios = new ArrayList<UsuarioVO>();
 		
 		//instancia de la conexión
 		Conexion conex = new Conexion();
 
 		try {
 			//prepare la sentencia en la base de datos
-			PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM clientes");
+			PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM usuarios");
 			
 			//ejecute la sentencia
 			ResultSet res = consulta.executeQuery();
 			
 			//cree un objeto para cada encontrado en la base de datos basado en la clase entidad con los datos encontrados
 			while (res.next()) {
-				ClientesVO Clientes = new ClientesVO();
-				Clientes.setCedula_cliente(Integer.parseInt(res.getString("cedula_cliente")));
-				Clientes.setDireccion_cliente(res.getString("direccion_cliente"));
-				Clientes.setEmail_cliente(res.getString("email_cliente"));
-				Clientes.setNombre_cliente(res.getString("nombre_cliente"));				
-				Clientes.setTelefono_cliente(res.getString("telefono_cliente"));
+				UsuarioVO Usuario = new UsuarioVO();
+				Usuario.setCedula_usuario(Integer.parseInt(res.getString("cedula_usuario")));
+				Usuario.setEmail_usuario(res.getString("email_usuario"));
+				Usuario.setNombre_usuario(res.getString("nombre_usuario"));
+				Usuario.setPassword(res.getString("password"));
+				Usuario.setUsuario(res.getString("usuario"));
 
-				listaclientes.add(Clientes);
+				listausuarios.add(Usuario);
 			}
 			
 			//cerrar resultado, sentencia y conexión
@@ -190,21 +191,21 @@ public class ClientesDAO {
 		} catch (SQLException e) {
 			//si hay un error en el sql mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo consultar todos los Clientes");
+			System.out.println("No se pudo consultar todos los usuarios");
 			System.out.println(e.getMessage());
 			System.out.println(e.getErrorCode());
 		} catch (Exception e) {
 			//si hay cualquier otro error mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo consultar todos los Clientes");
+			System.out.println("No se pudo consultar todos los usuarios");
 			System.out.println(e.getMessage());
 			System.out.println(e.getLocalizedMessage());
 		}
 
-		return listaclientes;
+		return listausuarios;
 	}
 
-	public void eliminarClientes(Integer cedula_cliente) {
+	public void eliminarUsuario(Integer cedula_usuario) {
 		
 		//instancia de la conexion
 		Conexion conex = new Conexion();
@@ -214,7 +215,7 @@ public class ClientesDAO {
 			Statement consulta = conex.getConnection().createStatement();
 			
 			//preparando sentencia a realizar
-			String sentencia = "delete from clientes where cedula_cliente =" + cedula_cliente + ";";
+			String sentencia = "delete from usuarios where cedula_usuario=" + cedula_usuario + ";";
 			
 			//impresion de verificación
 			System.out.println("Registrado " + sentencia);
@@ -229,20 +230,20 @@ public class ClientesDAO {
 		} catch (SQLException e) {
 			//si hay un error en el sql mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo eliminar el cliente");
+			System.out.println("No se pudo eliminar el usuario");
 			System.out.println(e.getMessage());
 			System.out.println(e.getErrorCode());
 		} catch (Exception e) {
 			//si hay cualquier otro error mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo eliminar los clientes");
+			System.out.println("No se pudo eliminar el usuario");
 			System.out.println(e.getMessage());
 			System.out.println(e.getLocalizedMessage());
 		}
 
 	}
 
-	public void actualizarClientes(ClientesVO user) {
+	public void actualizarUsuario(UsuarioVO user) {
 		
 		//instancia de conexion
 		Conexion conex = new Conexion();
@@ -252,12 +253,12 @@ public class ClientesDAO {
 			Statement estatuto = conex.getConnection().createStatement();
 			
 			//String con la sentencia a ejecutar
-			String sentencia = "UPDATE clientes "
-					+ "SET direccion_cliente = '"+user.getDireccion_cliente() +"',"
-					+ "email_cliente = '"+user.getEmail_cliente() +"',"
-					+ "nombre_cliente = '"+user.getNombre_cliente() +"',"
-					+ "telefono_cliente = '"+user.getTelefono_cliente() +"' "
-					+ "WHERE cedula_cliente = "+user.getCedula_cliente() +";";
+			String sentencia = "UPDATE usuarios "
+					+ "SET email_usuario = '"+user.getEmail_usuario()+"',"
+					+ "nombre_usuario = '"+user.getNombre_usuario()+"',"
+					+ "password = '"+user.getPassword()+"',"
+					+ "usuario = '"+user.getUsuario()+"' "
+					+ "WHERE cedula_usuario = "+user.getCedula_usuario()+";";
 			
 			//ejecuta la sentencia 
 			estatuto.executeUpdate(sentencia);
@@ -272,13 +273,13 @@ public class ClientesDAO {
 		} catch (SQLException e) {
 			//si hay un error en el sql mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo actualizar  el Clientes");
+			System.out.println("No se pudo actualizar  el usuario");
 			System.out.println(e.getMessage());
 			System.out.println(e.getErrorCode());
 		} catch (Exception e) {
 			//si hay cualquier otro error mostrarlo
 			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo eliminar el Clientes");
+			System.out.println("No se pudo actualizar  el usuario");
 			System.out.println(e.getMessage());
 			System.out.println(e.getLocalizedMessage());
 		}

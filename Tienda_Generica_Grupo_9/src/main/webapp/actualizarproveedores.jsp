@@ -63,7 +63,7 @@
 						onclick="window.location.href='/eliminarproveedores.jsp'">
 					<i class="fas fa-trash"></i> Eliminar proveedor</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listarproveedores.jsp'">
+						onclick="window.location.href='/listaproveedores.jsp'">
 					<i class="fas fa-pen-alt"></i> Lista de proveedores</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarproveedores.jsp'">

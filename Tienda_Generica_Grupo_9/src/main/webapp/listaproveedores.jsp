@@ -27,43 +27,55 @@
 <!-- Cargando mi hoja de estilo -->
 <link href="style.css" rel="stylesheet" type="text/css" />
 
+<link
+	href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css"
+	rel="stylesheet" />
 
 <script>
-	var baseurl = "http://localhost:8080/listarproveedores";
-	function loadproveedores() {
+
+	window.addEventListener('DOMContentLoaded', event => {
+	let table=null;
+    if (datatablesusers) {
+        table=new simpleDatatables.DataTable("#datatablesusers", {
+            searchable: true,
+            labels: {
+                placeholder: "Buscar...",
+                perPage: "{select} registros por pagina",
+                noRows: "No hay registros",
+                info: "Mostrando {start} a {end} de {rows} registros",
+            }
+        });
+    }
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", baseurl, true);
+		xmlhttp.open("GET", "http://localhost:8080/listarproveedores", true);
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
 				var proveedores = JSON.parse(xmlhttp.responseText);
-				var tbltop = "<table class='table table-hover table-light table-striped' id='tabla'><tr><th>Nit</th><th>Ciudad</th><th>Dirección</th><th>Nombre</th><th>Teléfono</th></tr>";
-				var main = "";
+				
 				for (i = 0; i < proveedores.length; i++) {
-					main += "<tr><td>" + proveedores[i].nit_proveedor
-							+ "</td><td>" + proveedores[i].ciudad_proveedor
-							+ "</td><td>" + proveedores[i].direccion_proveedor
-							+ "</td><td>" + proveedores[i].nombre_proveedor
-							+ "</td><td>" + proveedores[i].telefono_proveedor + "</td></tr>";
+					let fila = [
+						proveedores[i].nit_proveedor.toString(), 
+						proveedores[i].ciudad_proveedor, 
+						proveedores[i].direccion_proveedor, 
+						proveedores[i].nombre_proveedor, 
+						proveedores[i].telefono_proveedor
+					];
+
+				    table.rows().add(fila);
 				}
-				var tblbottom = "</table>";
-				var tbl = tbltop + main + tblbottom;
-				document.getElementById("proveedoresinfo").innerHTML = tbl;
 			}
 		};
+		
 		xmlhttp.send();
-	}
-	window.onload = function() {
-		loadproveedores();
-	}
+});
 </script>
-
 </head>
-
 
 <body>
 
 	<!-- Navbar-->
-	<nav class="navbar navbar-dark bg-dark">
+	<nav class="navbar" id ="titulo_2">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
@@ -81,51 +93,66 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-	<br>
-			<div class="container p-3">
-				<div class="col text-center">
-				<img src="FreeShippingCuate.png"  height="225px" alt="logo" id="listaproveedores"/>
-					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproveedores.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar proveedor</button>
-					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarproveedores.jsp'">
-					<i class="fas fa-trash"></i> Eliminar proveedor</button>
-					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproveedores.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar proveedor</button>
-					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarproveedores.jsp'">
-					<i class="fas fa-search"></i> Buscar un proveedor</button>
-					
-				</div>
-				
-			</div>
-		<br>
-		<br>
-		<div class="header">
-				<h1 style="color:green; "><i class="fas fa-list-ol"></i> Listado de proveedores</h1>
-		</div>
-		<br>
-		<br>
-		<br>
-		
-	<!-- contenido  -->
-	
-	<div style="height: 75%; overflow: auto; ">
-			<div class="container">
-				<div class="row">
-					<!--  Aqui es donde se autogenera la tabla basado en el script -->
-					<div class="col align-self-center" id="proveedoresinfo">
-					
+	<br>		
+			
+		<div class="row">
+					<div class="col-xl-8">
+						<div class="card m-4">
+							<div class="card-header text-white bg-dark">
+								<i class="fas fa-table"></i> Tabla de proveedores
+							</div>
+							<div class="card-body">
+								<table id="datatablesusers">
+									<thead>
+										<tr>
+											<th>Nit</th>
+											<th>Ciudad</th>
+											<th>Dirección</th>
+											<th>Nombre</th>
+											<th>Teléfono</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<th>Nit</th>
+											<th>Ciudad</th>
+											<th>Dirección</th>
+											<th>Nombre</th>
+											<th>Teléfono</th>
+										</tr>
+									</tfoot>
+									<tbody id="proveedorinfo">
+
+									</tbody>
+								</table>
+							</div>
+						</div>
 					</div>
-	
+					
+						<div class="col-xl">
+							<div class="container p-3">
+								<div class="col text-center">
+								<img src="FreeShippingCuate.png" height="225px" alt="logo" id="listaproveedores"/>
+									<ul class="list-group" style="list-style-type:none;">
+										<li><button type="button" class="btn btn-success m-2" 
+									  		onclick="window.location.href='/insertarproveedores.jsp'">
+											<i class="fas fa-plus-circle"></i> Agregar proveedor</button></li>    
+										<li><button type="button" class="btn btn-danger m-2"
+											onclick="window.location.href='/eliminarproveedores.jsp'">
+											<i class="fas fa-trash"></i> Eliminar proveedor</button></li>
+										<li><button type="button" class="btn btn-warning m-2"
+											onclick="window.location.href='/actualizarproveedores.jsp'">
+											<i class="fas fa-pen-alt"></i> Actualizar proveedor</button></li>
+										<li><button type="button" class="btn btn-secondary m-2"
+											onclick="window.location.href='/buscarproveedores.jsp'">
+											<i class="fas fa-search"></i> Buscar un proveedor</button></li>
+									</ul>					
+								</div>				
+							</div>
+						</div>
 				</div>
-			</div>		
-	</div>
 
-
-	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+	<nav class="navbar fixed-bottom" id="titulo">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
@@ -135,6 +162,8 @@
 		</div>
 	</nav>
 
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
+crossorigin="anonymous"></script>
 
 </body>
 </html>

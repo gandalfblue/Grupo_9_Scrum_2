@@ -63,7 +63,7 @@
 
 			<div id="error" class="alert alert-danger visually-hidden"
 				role="alert">Error al actualizar el usuario, verifique que la cedula y usuario dados sean validos</div>
-
+			
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Usuario actualizado con exito</div>
 
