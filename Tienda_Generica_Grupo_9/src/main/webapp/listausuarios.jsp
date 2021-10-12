@@ -46,8 +46,10 @@
                 perPage: "{select} registros por pagina",
                 noRows: "No hay registros",
                 info: "Mostrando {start} a {end} de {rows} registros",
-            }
+            }, 
+            
         });
+        
     }
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.open("GET", "http://localhost:8080/listarusuarios", true);
@@ -107,7 +109,7 @@
 								<i class="fas fa-table"></i> Tabla de usuarios
 							</div>
 							<div class="card-body">
-								<table id="datatablesusers">
+								<table id="datatablesusers" data-page-length='5'>
 									<thead>
 										<tr>
 											<th>Cedula</th>
