@@ -68,14 +68,17 @@
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarproveedores.jsp'">
 					<i class="fas fa-search"></i> Buscar un proveedor</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaproveedores.jsp'">
+					<i class="fas fa-search"></i> Lista de proveedores</button>
 					
 				</div>
 				
 			</div>
 <br>
 			<div class="header">
-				<h1 style="color:green;" >
-					<i class="fas fa-pen-alt"></i> Datos a actualizar del proveedor
+				<h1 style="color:black;" >
+					<i class="fas fa-pen-alt"></i> Actualizar proveedor
 				</h1>		
 			</div>
 		<br>	
@@ -93,38 +96,38 @@
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">proveedor actualizado con exito</div>
 
-			<form id="form1">
+			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Nit</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						placeholder="Inserte el nit aqui..."
 						aria-describedby="basic-addon1" required id="nit_proveedor">
 				</div>
 				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Ciudad</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						placeholder="Inserte la ciudad aqui..."
 						aria-describedby="basic-addon4" required id="ciudad_proveedor">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon2">Direccion</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						placeholder="Inserte la direccion aqui..."
 						aria-describedby="basic-addon2" required id="direccion_proveedor">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Nombre completo</span>
-					<input type="text" class="form-control" class="preselection"
+					<input type="text" class="form-control" 
 						placeholder="Inserte el nombre aqui..."
 						aria-describedby="basic-addon3" required id="nombre_proveedor">
 				</div>				
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Telefono</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						placeholder="Inserte el telefono aqui..."
 						aria-describedby="basic-addon5" required id="telefono_proveedor">
 				</div>

@@ -7,9 +7,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Lista de productos</title>
 <!-- bootstrap-->
 <link
@@ -157,11 +157,12 @@
 				</div>
 			</div>
 
+
 	<nav class="navbar fixed-bottom" id="titulo">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>

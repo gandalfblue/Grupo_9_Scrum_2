@@ -69,6 +69,9 @@
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarproveedores.jsp'">
 					<i class="fas fa-search"></i> Buscar un proveedor</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaproveedores.jsp'">
+					<i class="fas fa-search"></i> Lista de proveedores</button>
 					
 				</div>
 				
@@ -76,8 +79,8 @@
 	
 		<br>
 			<div class="header">
-				<h1 style="color:green;" >
-					<i class="fas fa-trash"></i> Nit del proveedor a eliminar
+				<h1 style="color:red;" >
+					<i class="fas fa-trash"></i> Eliminar proveedor
 				</h1>		
 			</div>
 		<br>
@@ -94,10 +97,10 @@
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Proveedor Eliminado con exito</div>
 
-			<form id="form1">
+			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Nit del proveedor</span>
-					 <input type="text" class="form-control" class="preselection"
+					 <input type="text" class="form-control" 
 						placeholder="Inserte nit aqui..."
 						aria-describedby="basic-addon1" required id="proveedorsearch">
 				</div>
@@ -105,7 +108,7 @@
 			</form>
 
 			<div class="container p-4">
-				<div class="col text-center">
+				<div class="col text-left">
 					
 					<button type="button" class="btn btn-danger" onclick="eliminar()">
 						<i class="fas fa-check"></i> Eliminar proveedor
