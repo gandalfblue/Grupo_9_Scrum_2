@@ -7,9 +7,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Lista de clientes</title>
 <!-- bootstrap-->
 <link
@@ -52,7 +52,6 @@
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
 				var clientes = JSON.parse(xmlhttp.responseText);
-				
 				for (i = 0; i < clientes.length; i++) {
 					let fila = [
 						clientes[i].cedula_cliente.toString(),
@@ -91,6 +90,7 @@
 			<a class="navbar-brand links" href="listareportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
+
 	</nav>	
 	<br>
 	<br>
@@ -110,7 +110,7 @@
 											<th>Direccion</th>
 											<th>Email</th>
 											<th>Nombre</th>
-											<th>Teléfono</th>											
+											<th>TelÃ©fono</th>											
 										</tr>
 									</thead>
 									<tfoot>
@@ -119,11 +119,10 @@
 											<th>Direccion</th>
 											<th>Email</th>
 											<th>Nombre</th>
-											<th>Teléfono</th>
+											<th>TelÃ©fono</th>
 										</tr>
 									</tfoot>
 									<tbody id="clientesinfo">
-
 									</tbody>
 								</table>
 							</div>
@@ -156,7 +155,7 @@
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>

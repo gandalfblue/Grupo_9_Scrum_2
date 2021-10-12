@@ -7,9 +7,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Eliminar cliente</title>
 <!-- bootstrap-->
 <link
@@ -29,39 +29,63 @@
 
 </head>
 
-<body>
+
+
+<body id="body_clientes">
+
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-users"></i> Usuarios</a> 
+			<a class="navbar-brand links" href="listaclientes.jsp">
+			<i class="fas fa-address-book"></i> Clientes</a>
+			<a class="navbar-brand links" href="listaproveedores.jsp">
+			<i class="fas fa-truck"></i> Proveedores</a>
+			<a class="navbar-brand links" href="listaproductos.jsp">
+			<i class="fas fa-apple-alt"></i> Productos</a>
+			<a class="navbar-brand links" href="listaventas.jsp">
+			<i class="fas fa-money-check-alt"></i> Ventas</a>
+			<a class="navbar-brand links" href="listareportes.jsp">
+			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
 
-	<!-- Navbar modulos-->
-	<nav class="navbar navbar-dark bg-primary">
-		<div class="container">
-			<a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-users"></i> Usuarios
-			</a> <a class="navbar-brand links" href="listaclientes.jsp"> <i
-				class="fas fa-address-book"></i> Clientes
-			</a> <a class="navbar-brand links" href="listaproveedores.jsp"> <i
-				class="fas fa-truck"></i> Proveedores
-			</a> <a class="navbar-brand links" href="listaproductos.jsp"> <i
-				class="fas fa-apple-alt"></i> Productos
-			</a> <a class="navbar-brand links" href="listaventas.jsp"> <i
-				class="fas fa-money-check-alt"></i> Ventas
-			</a> <a class="navbar-brand links" href="listareportes.jsp"> <i
-				class="fas fa-clipboard-list"></i> Reportes
-			</a>
-		</div>
-	</nav>
+	
+			<div class="container p-4">
+				<div class="col text-center">
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarclientes.jsp'">
+					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarclientes.jsp'">
+					<i class="fas fa-trash"></i> Eliminar cliente</button>
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarclientes.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarclientes.jsp'">
+					<i class="fas fa-search"></i> Buscar un cliente</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaclientes.jsp'">
+					<i class="fas fa-search"></i> Lista de clientes</button>
+					
+				</div>
+			</div>
+		<div class="header">	
+			<h1 style="color:red;">
+			<i class="fas fa-plus-circle"></i> Eliminar cliente
+		</h1>
 
-	<div style="padding-left: 5px">
-		<h2>
-			<i class="fas fa-plus-circle"></i> Cedula del cliente a eliminar
-		</h2>
-		
+
+
+		</div>
+		<br>
+		<br>
+
+	<div style="padding-left: 5px">	
 		<div class="container">		
 		
 			<div id="error" class="alert alert-danger visually-hidden"
@@ -74,7 +98,7 @@
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Cliente Eliminado con exito</div>
 
-			<form id="form1">
+			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Cedula del cliente</span>
 					 <input type="text" class="form-control"
@@ -84,45 +108,26 @@
 
 			</form>
 
-			<div class="container p-4">
-				<div class="col text-center">
-					
+
 		 			<button type="button" class="btn btn-danger" onclick="eliminar()">
 						<i class="fas fa-check"></i> Eliminar cliente
 					</button>
-	 			</div>
-			</div>
+
 			
+
+
 			<h2>
 				<i class="fas fa-cogs"></i> Operaciones
 				
 			</h2>
-			
-			<div class="container">
-				<div class="row">
-					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarclientes.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
-					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarclientes.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
-					<button type="button" class="btn btn-dark"
-						onclick="window.location.href='/buscarclientes.jsp'">
-					<i class="fas fa-search"></i> Buscar un cliente</button>
-					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaclientes.jsp'">
-					<i class="fas fa-search"></i> Lista de clientes</button>
-				</div>
-
-			</div>
-		</div>
+		
 
 	</div>
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>

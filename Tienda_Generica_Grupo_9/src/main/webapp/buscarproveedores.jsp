@@ -7,9 +7,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Buscar proveedor</title>
 <!-- bootstrap-->
 <link
@@ -53,7 +53,6 @@
 		</div>
 	</nav>
 		<br>
-	
 				<div class="container p-3">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
@@ -65,16 +64,20 @@
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarproveedores.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar proveedor</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarproveedores.jsp'">
+					<i class="fas fa-search"></i> Buscar proveedor</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listarproveedores.jsp'">
-					<i class="fas fa-pen-alt"></i> Lista de proveedores</button>
+						onclick="window.location.href='/listaproveedores.jsp'">
+					<i class="fas fa-search"></i> Lista de proveedores</button>
+
+
 					
 				</div>
-				
 			</div>
 			<div class="header">
-				<h1 style="color:green;" >
-					<i class="fas fa-search"></i> Buscando un proveedor
+				<h1 style="color:gray;" >
+					<i class="fas fa-search"></i> Buscar proveedor
 				</h1>		
 			</div>
 	<div style="padding-left: 5px">
@@ -88,41 +91,41 @@
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">proveedor encontrado con exito</div>
 
-			<form id="form1">
+			<form id="form1" class="preselection">
 			
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">proveedor a buscar</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						placeholder="Inserte el nit aqui..."
 						aria-describedby="basic-addon1" required id="nit_proveedor">
 				</div>
-				
+				<br>
+
 				<button type="button" class="btn btn-secondary" onclick="enviar()">
 				<i class="fas fa-search"></i> Buscar proveedor
 				</button>				
 				<br>
 				<br>
-				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon2">Ciudad</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						aria-describedby="basic-addon2" required id="ciudad_proveedor" disabled="disabled">
 				</div>
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Direccion</span>
-					<input type="text" class="form-control" class="preselection"
+					<input type="text" class="form-control" 
 						aria-describedby="basic-addon3" required id="direccion_proveedor"  disabled="disabled">
 				</div>
 				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Nombre Completo</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						aria-describedby="basic-addon4" required id="nombre_proveedor"  disabled="disabled">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Telefono</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						aria-describedby="basic-addon5" required id="telefono_proveedor"  disabled="disabled">
 				</div>
 			</form>
@@ -140,7 +143,7 @@
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>

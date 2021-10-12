@@ -7,9 +7,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Lista de usuarios</title>
 <!-- bootstrap-->
 <link
@@ -57,7 +57,7 @@
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
 				var usuarios = JSON.parse(xmlhttp.responseText);
-				
+
 				for (i = 0; i < usuarios.length; i++) {
 					let fila = [
 						usuarios[i].cedula_usuario.toString(), 
@@ -80,7 +80,7 @@
 <body>
 	
 	<!-- Navbar-->	
-   	<nav class="navbar" id ="titulo_2">
+   	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
@@ -99,6 +99,7 @@
 		</div>
 	</nav>	
 	<br>
+
 	<br>
 	<br>
 	
@@ -158,11 +159,11 @@
 					</div>				
 			</div>
 	
-	<nav class="navbar2 fixed-bottom" id="titulo">
+	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 			<div class="row justify-content-between">
 				<div class="col-4">
 					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada
 					<i class="fas fa-cogs"></i></a>
 				</div>
 			</div>
