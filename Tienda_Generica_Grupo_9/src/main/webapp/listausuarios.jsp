@@ -83,9 +83,9 @@
 	</nav>	
 	<br>
 	<!-- contenido  -->		
-			<div class="container p-4">
+				<div class="container p-4">
 				<div class="col text-center">
-					<img src="https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg" id="corner_clientes" > 
+					<img src="Coffee shop-rafiki.png" id="corner_clientes" > 
 				
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarusuario.jsp'">
@@ -99,18 +99,19 @@
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar un usuario</button>
-									
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listausuarios.jsp'">
+					<i class="fas fa-search"></i> Lista usuarios</button>				
 				</div>
 			</div>
   	<br>
-			<br>
-				<br>
-			<br>
+
 				<div class="header">
-					<h1 style="color:green; "><i class="fas fa-list-ol"></i> Lista de usuarios</h1>
+					<h1 style="color:blue; "><i class="fas fa-list-ol"></i> Lista usuarios</h1>
 				</div>
-			<br>
-		<br>
+			
+<br>
+<br>
 	<br>
 			<div style="height: 75%; overflow: auto; ">
 					<div class="container">

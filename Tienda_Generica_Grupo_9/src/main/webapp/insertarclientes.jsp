@@ -56,7 +56,7 @@
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarclientes.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
+					<i class="fas fa-plus-circle"></i> Insertar cliente</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='/eliminarclientes.jsp'">
 					<i class="fas fa-trash"></i> Eliminar cliente</button>
@@ -74,7 +74,7 @@
 			</div>
 			
 			<div class="header">
-				<h1 style="color:blue;"><i class="fas fa-list-ol"></i> Datos del nuevo cliente</h1>
+				<h1 style="color:green;"><i class="fas fa-list-ol"></i> Insertar cliente</h1>
 			</div>
 			<br>
 			<br>

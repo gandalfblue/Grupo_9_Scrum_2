@@ -74,8 +74,8 @@
 				</div>
 			</div>
 		<div class="header">	
-			<h1 style="color:blue;">
-			<i class="fas fa-plus-circle"></i> Cedula del cliente a eliminar
+			<h1 style="color:red;">
+			<i class="fas fa-plus-circle"></i> Eliminar cliente
 		</h1>
 		</div>
 		<br>

@@ -68,14 +68,17 @@
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarproveedores.jsp'">
 					<i class="fas fa-search"></i> Buscar un proveedor</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaproveedores.jsp'">
+					<i class="fas fa-search"></i> Lista de proveedores</button>
 					
 				</div>
 				
 			</div>
 <br>
 			<div class="header">
-				<h1 style="color:green;" >
-					<i class="fas fa-pen-alt"></i> Datos a actualizar del proveedor
+				<h1 style="color:black;" >
+					<i class="fas fa-pen-alt"></i> Actualizar proveedor
 				</h1>		
 			</div>
 		<br>	

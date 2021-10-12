@@ -8,17 +8,17 @@
 }
 
 #body_usuarios{
-	background: url('FreeShippingCuate.png');
-	background-size: 75%;
+	background: url('Coffee shop-rafiki.png');
+	background-size: 45%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
 	background-repeat:no-repeat;
-	background-position: right;
+	background-position: right bottom;
 }
 
 #body_clientes{
 	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg');
-	background-size: 90%;
+	background-size: 70%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
 	background-repeat:no-repeat;
@@ -365,5 +365,5 @@ a:hover{
 
 span {
   display: inline-block;
-  width: 20%;
+  width: 30%;
 }

@@ -106,7 +106,7 @@
 		<br>
 			<br>
 				<div class="header">
-					<h1 style="color:green; "><i class="fas fa-list-ol"></i> Listado de clientes</h1>
+					<h1 style="color:blue; "><i class="fas fa-list-ol"></i> Lista de clientes</h1>
 				</div>
 			<br>
 		<br>

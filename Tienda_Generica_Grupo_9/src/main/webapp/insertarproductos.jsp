@@ -59,7 +59,7 @@
 				<img src="https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg"  height="225px" alt="logo" id="listaproveedores"/>
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarproductos.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar producto</button>
+					<i class="fas fa-plus-circle"></i> Insertar producto</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarproductos.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar producto</button>
@@ -77,7 +77,7 @@
 		
 		<div class="header">
 				<h1 style="color:green;" >
-					<i class="fas fa-plus-circle"></i> Insertando archivo de productos
+					<i class="fas fa-plus-circle"></i> Insertar producto
 				</h1>		
 			</div>
 			<br>			
@@ -103,7 +103,7 @@
 						placeholder="Inserte el archivo aqui" accept=".csv,.txt">
 						<br>
 					<button type="button" class="btn btn-success"
-						onclick="subirArchivo()">Subir archivo</button>
+						onclick="subirArchivo()">Insertar producto</button>
 				</div>
 
 			</form>

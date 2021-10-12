@@ -104,7 +104,7 @@
 		<br>		
 			</div>
 			<div class="header">
-				<h1 style="color:green;" >
+				<h1 style="color:blue;" >
 					<i class="fas fa-stream"></i> Lista de productos
 				</h1>		
 			</div>			

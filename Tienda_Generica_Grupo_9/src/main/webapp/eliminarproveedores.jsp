@@ -69,6 +69,9 @@
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarproveedores.jsp'">
 					<i class="fas fa-search"></i> Buscar un proveedor</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaproveedores.jsp'">
+					<i class="fas fa-search"></i> Lista de proveedores</button>
 					
 				</div>
 				
@@ -76,8 +79,8 @@
 	
 		<br>
 			<div class="header">
-				<h1 style="color:green;" >
-					<i class="fas fa-trash"></i> Nit del proveedor a eliminar
+				<h1 style="color:red;" >
+					<i class="fas fa-trash"></i> Eliminar proveedor
 				</h1>		
 			</div>
 		<br>
@@ -105,7 +108,7 @@
 			</form>
 
 			<div class="container p-4">
-				<div class="col text-center">
+				<div class="col text-left">
 					
 					<button type="button" class="btn btn-secondary" onclick="buscar()">
 						<i class="fas fa-check"></i> Buscar proveedor

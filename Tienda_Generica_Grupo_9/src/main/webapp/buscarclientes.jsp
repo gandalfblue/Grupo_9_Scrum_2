@@ -74,7 +74,7 @@
 			</div>
 		</div>
 		<div class="header">
-				<h1 style="color:blue; "><i class="fas fa-search"></i> Datos del nuevo cliente</h1>
+				<h1 style="color:gray; "><i class="fas fa-search"></i> Buscar cliente</h1>
 		</div>
 
 	<div style="padding-left: 5px">
@@ -124,7 +124,7 @@
 				</div>
 			</form>
 
-			<button type="button" class="btn btn-primary" onclick="enviar()">
+			<button type="button" class="btn btn-secondary" onclick="enviar()">
 				<i class="fas fa-search"></i> Buscar cliente
 			</button>
 			

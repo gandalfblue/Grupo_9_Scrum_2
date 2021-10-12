@@ -74,7 +74,7 @@
 				</div>
 			</div>
 			<div class="header">
-				<h1 style="color:blue; "><i class="fas fa-list-ol"></i> Datos del nuevo cliente</h1>
+				<h1 style="color:black; "><i class="fas fa-list-ol"></i> Actualizar cliente</h1>
 			</div>
 			<br>
 			<br>

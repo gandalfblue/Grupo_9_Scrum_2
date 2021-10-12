@@ -58,7 +58,7 @@
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarproveedores.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar proveedor</button>
+					<i class="fas fa-plus-circle"></i> Insertar proveedor</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='/eliminarproveedores.jsp'">
 					<i class="fas fa-trash"></i> Eliminar proveedor</button>
@@ -68,6 +68,9 @@
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarproveedores.jsp'">
 					<i class="fas fa-search"></i> Buscar un proveedor</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaproveedores.jsp'">
+					<i class="fas fa-search"></i> Lista de proveedores</button>
 					
 				</div>
 				
@@ -76,7 +79,7 @@
 		<br>
 			<div class="header">
 				<h1 style="color:green;" >
-					<i class="fas fa-plus-circle"></i> Datos del nuevo proveedor
+					<i class="fas fa-plus-circle"></i> Insertar proveedor
 				</h1>		
 			</div>
 		<br>
