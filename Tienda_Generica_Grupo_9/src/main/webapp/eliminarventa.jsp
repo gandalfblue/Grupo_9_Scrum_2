@@ -10,7 +10,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Eliminar usuario</title>
+<title>Eliminar venta</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -63,37 +63,34 @@
 
 	<div style="padding-left: 5px">
 		<h2>
-			<i class="fas fa-plus-circle"></i> Cedula del usuario a eliminar
+			<i class="fas fa-plus-circle"></i> Codigo de venta a eliminar
 		</h2>
 		
 		<div class="container">		
 		
 			<div id="error" class="alert alert-danger visually-hidden"
-					role="alert">Error al eliminar el usuario,</div>
+					role="alert">Error al eliminar la venta,</div>
 					
 			<div id="no_encontrado" class="alert alert-danger visually-hidden"
-					role="alert">Usuario no encontrado, verifique que este ingresando
-					un numero de cedula registrado</div>
+					role="alert">codigo de venta no encontrado, verifique que este ingresando
+					un codigo de venta registrado</div>
 					
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Usuario Eliminado con exito</div>
 
 			<form id="form1">
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">Cedula del usuario</span>
-					 <input type="text" class="form-control"
-						placeholder="Inserte cedula aqui..."
-						aria-describedby="basic-addon1" required id="usersearch">
+					<span class="input-group-text" id="basic-addon1">Codigo Venta</span> <input
+						type="text" class="form-control"
+						aria-describedby="basic-addon1" required id="codigo_venta" disabled="disabled">
 				</div>
-
 			</form>
 
 			<div class="container p-4">
 				<div class="col text-center">
 					
 		 			<button type="button" class="btn btn-danger" onclick="eliminar()">
-						<i class="fas fa-trash"></i> Eliminar usuario
-					</button>
+						<i class="fas fa-trash"></i> Eliminar venta
 	 			</div>
 			</div>			
 			
@@ -104,18 +101,22 @@
 			
 			<div class="container">
 				<div class="row">
-					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarusuario.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar usuario</button>
+					<button type="button" class="btn btn-success"
+						onclick="window.location.href='/registrarventa.jsp'">
+						<i class="fas fa-plus-circle"></i> Agregar venta
+					</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarventa.jsp'">
+						<i class="fas fa-trash"></i> Eliminar venta
+					</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarusuario.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
-					<button type="button" class="btn btn-dark"
-						onclick="window.location.href='/buscarusuario.jsp'">
-					<i class="fas fa-search"></i> Buscar un usuario</button>
+						onclick="window.location.href='/actualizarventas.jsp'">
+						<i class="fas fa-pen-alt"></i> Actualizar venta
+					</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listasuarios.jsp'">
-					<i class="fas fa-search"></i> Lista de usuarios</button>
+						onclick="window.location.href='/listarventa.jsp'">
+						<i class="fas fa-search"></i> Lista de ventas
+					</button>
 				</div>
 
 			</div>
@@ -135,21 +136,21 @@
 	<script>	
 	
 	function eliminar() {
-		var y = document.getElementById("usersearch").value;
+		var y = document.getElementById("codigo_venta").value;
 		var req = new XMLHttpRequest();
 		var coincidencia = false;
-		req.open('GET', 'http://localhost:8080/listarusuarios', false);
+		req.open('GET', 'http://localhost:8080/listarventa', false);
 		req.send(null);
-		var usuarios = null;
+		var ventas = null;
 		if (req.status == 200)
-			usuarios = JSON.parse(req.responseText);
+			ventas = JSON.parse(req.responseText);
 		console.log(JSON.parse(req.responseText));
 
-		for (i = 0; i < usuarios.length; i++) {
+		for (i = 0; i < ventas.length; i++) {
 			
-			console.log(usuarios[i].cedula_usuario);
-			if (usuarios[i].cedula_usuario == y) {
-				console.log(usuarios[i].cedula_usuario + " " + y);
+			console.log(ventas[i].codigo_venta);
+			if (ventas[i].codigo_venta == y) {
+				console.log(ventas[i].codigo_venta + " " + y);
 				coincidencia = true
 				break;
 			}
@@ -157,10 +158,10 @@
 		console.log(coincidencia);
 
 		if (coincidencia != false) {
-			var cedula=document.getElementById("usersearch").value;
+			var codigo=document.getElementById("codigo_venta").value;
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open("DELETE", "http://localhost:8080/eliminarusuario?cedula_usuario="+cedula);
+			xhr.open("DELETE", "http://localhost:8080/eliminarventa?codigo_venta="+codigo);
 			
 			var element = document.getElementById("error");
 			element.classList.add("visually-hidden");
@@ -168,7 +169,7 @@
 			var element2 = document.getElementById("correcto");
 			element2.classList.remove("visually-hidden");
 
-			document.getElementById("usersearch").value = "";
+			document.getElementById("codigo_venta").value = "";
 			xhr.send();
 
 		} else {
@@ -178,7 +179,7 @@
 			var element2 = document.getElementById("correcto");
 			element2.classList.add("visually-hidden");
 			
-			document.getElementById("usersearch").value = "";;
+			document.getElementById("codigo_venta").value = "";;
 		}
 	}
 </script>

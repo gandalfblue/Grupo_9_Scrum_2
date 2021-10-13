@@ -11,9 +11,9 @@ public class VentasVO implements Serializable {
 	private Integer codigo_venta;
 	private Integer cedula_usuario;
 	private Integer cedula_cliente;
-	private Integer iva_venta;
-	private Integer total_venta;
-	private Integer valor_venta;
+	private Double iva_venta;
+	private Double total_venta;
+	private Double valor_venta;
 	/**
 	 * @return the codigo_venta
 	 */
@@ -50,41 +50,40 @@ public class VentasVO implements Serializable {
 	public void setCedula_cliente(Integer cedula_cliente) {
 		this.cedula_cliente = cedula_cliente;
 	}
-	
 	/**
 	 * @return the iva_venta
 	 */
-	public Integer getIva_venta() {
+	public Double getIva_venta() {
 		return iva_venta;
 	}
 	/**
 	 * @param iva_venta the iva_venta to set
 	 */
-	public void setIva_venta(Integer iva_venta) {
+	public void setIva_venta(Double iva_venta) {
 		this.iva_venta = iva_venta;
 	}
 	/**
 	 * @return the total_venta
 	 */
-	public Integer getTotal_venta() {
+	public Double getTotal_venta() {
 		return total_venta;
 	}
 	/**
 	 * @param total_venta the total_venta to set
 	 */
-	public void setTotal_venta(Integer total_venta) {
+	public void setTotal_venta(Double total_venta) {
 		this.total_venta = total_venta;
 	}
 	/**
 	 * @return the valor_venta
 	 */
-	public Integer getValor_venta() {
+	public Double getValor_venta() {
 		return valor_venta;
 	}
 	/**
 	 * @param valor_venta the valor_venta to set
 	 */
-	public void setValor_venta(Integer valor_venta) {
+	public void setValor_venta(Double valor_venta) {
 		this.valor_venta = valor_venta;
 	}
 	

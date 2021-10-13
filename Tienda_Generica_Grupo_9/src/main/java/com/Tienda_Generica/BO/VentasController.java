@@ -23,21 +23,9 @@ public class VentasController {
 	 * */
 
 	@PostMapping("/registrarventa")
-	public void registrarVenta(VentasVO codigov) {
+	public void registrarVenta(VentasVO venta) {
 		VentasDAO Dao = new VentasDAO();
-		Dao.registrarVentas(codigov);
-	}
-
-	@GetMapping("/consultarventa")
-	public ArrayList<VentasVO> consultarVentas(String venta) {
-		VentasDAO Dao = new VentasDAO();
-		return Dao.consultarVentas(venta);
-	}
-	
-	@GetMapping("/consultarcodigo_venta")
-	public ArrayList<VentasVO> consultarCodigo_venta(int codigo_venta) {
-		VentasDAO Dao = new VentasDAO();
-		return Dao.consultarCodigo_venta(codigo_venta);
+		Dao.registrarVentas(venta);
 	}
 
 	@GetMapping("/listarventas")
@@ -47,17 +35,21 @@ public class VentasController {
 	}
 	
 	@DeleteMapping("/eliminarventa")
-	public void eliminarventa(Integer codigo_venta) {
+	public void eliminarVenta(Integer codigo_venta) {
 		VentasDAO Dao = new VentasDAO();
 		Dao.eliminarVentas(codigo_venta);
 	}
 	
 	@PutMapping("/actualizarventas")
-	public void actualizarVenta(VentasVO codigov) {
+	public void actualizarVenta(VentasVO venta) {
 		VentasDAO Dao = new VentasDAO();
-		Dao.actualizarVentas(codigov);
+		Dao.actualizarVentas(venta);
 	}
 	
-	
+	@GetMapping("/contadorventas")
+	public Integer contadorVentas() {
+		VentasDAO Dao = new VentasDAO();
+		return Dao.contadorVentas();
+	}
 
 }
