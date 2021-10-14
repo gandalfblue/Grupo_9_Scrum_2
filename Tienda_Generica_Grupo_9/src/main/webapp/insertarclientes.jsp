@@ -74,7 +74,7 @@
 			</div>
 			
 			<div class="header">
-				<h1 style="color:green;"><i class="fas fa-list-ol"></i> Insertar cliente</h1>
+				<h1 style="color:green;"><i class="fas fa-plus-circle"></i> Insertar cliente</h1>
 			</div>
 			<br>
 			<br>
@@ -127,7 +127,7 @@
 			</form>
 
 			<button type="button" class="btn btn-success" onclick="enviar()">
-				<i class="fas fa-check"></i> Insertar nuevo cliente
+				<i class="fas fa-plus-circle"></i> Insertar nuevo cliente
 			</button>
 
 			

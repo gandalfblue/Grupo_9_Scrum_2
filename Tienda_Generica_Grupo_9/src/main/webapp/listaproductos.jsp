@@ -74,8 +74,7 @@
 </head>
 
 <body>
-
-	<nav class="navbar" id ="titulo_2">
+	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
@@ -92,12 +91,40 @@
 			<a class="navbar-brand links" href="listareportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
-	</nav>				
-	<br>
-	<br>	
-	<br>
-		
-			<div class="row">
+	</nav>
+			<div class="container p-4">
+				<div class="col text-center">
+				<img src="https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg" id="corner_productos">
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarproductos.jsp'">
+					<i class="fas fa-plus-circle"></i> Insertar productos</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarproductos.jsp'">
+					<i class="fas fa-trash"></i> Eliminar productos</button>
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarproductos.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarproductos.jsp'">
+					<i class="fas fa-search"></i> Buscar productos</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaproductos.jsp'">
+					<i class="fas fa-list-ol"></i> Lista productos</button>
+					
+				</div>
+			</div>
+
+<br>
+<br>
+<div class="header">	
+			<h1 style="color:blue;">
+			<i class="fas fa-list-ol"></i> lista productos
+		</h1>
+
+<br>
+<br>
+		</div>			
+			<div class="row justify-content-center">
 					<div class="col-xl-8">
 						<div class="card m-3">
 							<div class="card-header text-white bg-dark">
@@ -132,37 +159,14 @@
 							</div>
 						</div>
 					</div>
-					
-				<div class="col-xl">
-					<div class="container p-3">
-						<div class="col text-center">
-							<img src="https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg"
-							  height="225px" alt="logo" id="listaproductos"/>
-								<ul class="list-group" style="list-style-type:none;">
-									<li><button type="button" class="btn btn-success m-2" 
-								  		onclick="window.location.href='/insertarproductos.jsp'">
-										<i class="fas fa-plus-circle"></i> Agregar producto</button></li>
-									<li><button type="button" class="btn btn-danger m-2"
-										onclick="window.location.href='/eliminarproductos.jsp'">
-										<i class="fas fa-trash"></i> Eliminar producto</button></li>
-									<li><button type="button" class="btn btn-warning m-2"
-										onclick="window.location.href='/actualizarproductos.jsp'">
-										<i class="fas fa-pen-alt"></i> Actualizar producto</button>
-									<li><button type="button" class="btn btn-dark m-2"
-										onclick="window.location.href='/buscarproductos.jsp'">
-									<i class="fas fa-search"></i> Buscar un producto</button></li>	
-								</ul>				
-						</div>
-					</div>
-				</div>
-			</div>
+									
 
 
-	<nav class="navbar fixed-bottom" id="titulo">
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Dise√±ado y programado por Carol Mart√≠nez, Claudia Gonz√°lez, David Mu√±oz, Andr√©s Lozada <i
+					DiseÒado y programado por Carol MartÌnez, Claudia Gonz·lez, David MuÒoz, AndrÈs Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>

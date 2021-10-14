@@ -98,16 +98,41 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
-	<br>
+	<div class="container p-4">
+				<div class="col text-center">
+				<img src="Coffee shop-rafiki.png" id="corner_usuarios">
+				
+				  	<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarusuario.jsp'">
+					<i class="fas fa-plus-circle"></i> Insertar usuario</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarusuario.jsp'">
+					<i class="fas fa-trash"></i> Eliminar usuario</button>
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarusuario.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarusuario.jsp'">
+					<i class="fas fa-search"></i> Buscar un usuario</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listasuarios.jsp'">
+					<i class="fas fa-list-ol"></i> Lista de usuarios</button>				
+				</div>
+			</div>
 
 	<br>
 	<br>
 	
-		<div class="row">
+		<div class="header">
+			<h1 style="color:blue; "><i class="fas fa-list-ol fa-1x"></i> Lista de usuarios</h1>
+		</div>
+	<br>
+	<br>
+		<div class="row justify-content-center">
 					<div class="col-xl-8">
 						<div class="card m-4">
 							<div class="card-header text-white bg-dark">
-								<i class="fas fa-table"></i> Tabla de usuarios
+								<i class="fas fa-table"></i> Lista de usuarios
 							</div>
 							<div class="card-body">
 								<table id="datatablesusers" data-page-length='5'>
@@ -137,37 +162,17 @@
 						</div>
 					</div>
 
-					<div class="col-xl">
-						<div class="container p-3">
-							<div class="col text-center">
-								<ul class="list-group" style="list-style-type:none;">
-								  	<li><button type="button" class="btn btn-success m-2" 
-								  		onclick="window.location.href='/insertarusuario.jsp'">
-										<i class="fas fa-plus-circle"></i> Agregar usuario</button></li>     
-									<li><button type="button" class="btn btn-danger m-2"
-										onclick="window.location.href='/eliminarusuario.jsp'">
-										<i class="fas fa-trash"></i> Eliminar usuario</button></li>
-									<li><button type="button" class="btn btn-warning m-2"
-										onclick="window.location.href='/actualizarusuario.jsp'">
-										<i class="fas fa-pen-alt"></i> Actualizar usuario</button></li>
-									<li><button type="button" class="btn btn-secondary m-2"
-										onclick="window.location.href='/buscarusuario.jsp'">
-										<i class="fas fa-search"></i> Buscar un usuario</button></li>
-								</ul>				
-							</div>
-						</div>
-					</div>				
 			</div>
-	
+	</div>
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
-			<div class="row justify-content-between">
-				<div class="col-4">
-					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Dise√±ado y programado por Carol Mart√≠nez, Claudia Gonz√°lez, David Mu√±oz, Andr√©s Lozada
-					<i class="fas fa-cogs"></i></a>
-				</div>
+		<div class="row justify-content-between">
+			<div class="col-4">
+				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
+					DiseÒado y programado por Carol MartÌnez, Claudia Gonz·lez, David MuÒoz, AndrÈs Lozada <i
+					class="fas fa-code-branch"></i></a>
 			</div>
-		</nav>
+		</div>
+	</nav>
 		
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
 crossorigin="anonymous"></script>
