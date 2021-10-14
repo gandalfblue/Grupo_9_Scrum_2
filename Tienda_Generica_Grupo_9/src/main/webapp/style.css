@@ -36,8 +36,8 @@
 }
 
 #body_productos{
-	background: url('FreeShippingCuate.png');
-	background-size: 75%;
+	background: url("https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg");
+	background-size: 42%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
 	background-repeat:no-repeat;
@@ -93,7 +93,7 @@
 /* 	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg'); */
 	float: left;
 	background-size: 40%;
-	height: 200px; 
+	height: 190px; 
 	alt: "Client logo";
 	background-repeat:no-repeat;
 }
@@ -357,5 +357,5 @@ a:hover{
 
 span {
   display: inline-block;
-  width: 30%;
+  width: 35%;
 }

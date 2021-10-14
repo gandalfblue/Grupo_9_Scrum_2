@@ -75,7 +75,7 @@
 <body>
 
 	<!-- Navbar-->
-	<nav class="navbar" id ="titulo_2">
+	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
@@ -92,18 +92,43 @@
 			<a class="navbar-brand links" href="listareportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
-	</nav>
+	</nav>	
+			<div class="container p-4">
+				<div class="col text-center">
+				<img src="FreeShippingCuate.png" id="corner_provadores">
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarproveedores.jsp'">
+					<i class="fas fa-plus-circle"></i> Insertar proveedores</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarproveedores.jsp'">
+					<i class="fas fa-trash"></i> Eliminar proveedores</button>
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarproveedores.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar proveedores</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarproveedores.jsp'">
+					<i class="fas fa-search"></i> Buscar proveedores</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaproveedores.jsp'">
+					<i class="fas fa-list-ol"></i> Lista proveedores</button>
+					
+				</div>
+			</div>
+<br>		
+<div class="header">	
+			<h1 style="color:blue;">
+			<i class="fas fa-list-ol"></i> lista proveedores
+		</h1>
+		<br><br><br>
 
 
-
-
-	<br>		
-			
-		<div class="row">
+		</div>			
+		<div class="row justify-content-center">
 					<div class="col-xl-8">
 						<div class="card m-4">
+						
 							<div class="card-header text-white bg-dark">
-								<i class="fas fa-table"></i> Tabla de proveedores
+								<i class="fas fa-table"></i> Tabla proveedores
 							</div>
 							<div class="card-body">
 								<table id="datatablesusers">
@@ -132,35 +157,13 @@
 							</div>
 						</div>
 					</div>
-					
-						<div class="col-xl">
-							<div class="container p-3">
-								<div class="col text-center">
-								<img src="FreeShippingCuate.png" height="225px" alt="logo" id="listaproveedores"/>
-									<ul class="list-group" style="list-style-type:none;">
-										<li><button type="button" class="btn btn-success m-2" 
-									  		onclick="window.location.href='/insertarproveedores.jsp'">
-											<i class="fas fa-plus-circle"></i> Agregar proveedor</button></li>    
-										<li><button type="button" class="btn btn-danger m-2"
-											onclick="window.location.href='/eliminarproveedores.jsp'">
-											<i class="fas fa-trash"></i> Eliminar proveedor</button></li>
-										<li><button type="button" class="btn btn-warning m-2"
-											onclick="window.location.href='/actualizarproveedores.jsp'">
-											<i class="fas fa-pen-alt"></i> Actualizar proveedor</button></li>
-										<li><button type="button" class="btn btn-secondary m-2"
-											onclick="window.location.href='/buscarproveedores.jsp'">
-											<i class="fas fa-search"></i> Buscar un proveedor</button></li>
-									</ul>					
-								</div>				
-							</div>
-						</div>
 				</div>
 
-	<nav class="navbar fixed-bottom" id="titulo">
+	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Dise√±ado y programado por Carol Mart√≠nez, Claudia Gonz√°lez, David Mu√±oz, Andr√©s Lozada <i
+					DiseÒado y programado por Carol MartÌnez, Claudia Gonz·lez, David MuÒoz, AndrÈs Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>

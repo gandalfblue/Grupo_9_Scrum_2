@@ -75,7 +75,7 @@
 				</div>
 			</div>
 				<div class="header">
-					<h1 style="color:black; "><i class="fas fa-sync"></i> Actualizar usuario</h1>
+					<h1 style="color:black; "><i class="fas fa-pen-alt"></i> Actualizar usuario</h1>
 				</div>
 				
 	<br><br><br>

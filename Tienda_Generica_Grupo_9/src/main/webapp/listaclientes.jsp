@@ -73,7 +73,7 @@
 
 <body>
 
-	<nav class="navbar" id ="titulo_2">
+	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
@@ -81,22 +81,47 @@
 			<i class="fas fa-users"></i> Usuarios</a> 
 			<a class="navbar-brand links" href="listaclientes.jsp">
 			<i class="fas fa-address-book"></i> Clientes</a>
-			<a class="navbar-brand links" href="listaproveedores.jsp">
+			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-truck"></i> Proveedores</a>
-			<a class="navbar-brand links" href="listaproductos.jsp">
+			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-apple-alt"></i> Productos</a>
-			<a class="navbar-brand links" href="listaventas.jsp">
+			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-money-check-alt"></i> Ventas</a>
-			<a class="navbar-brand links" href="listareportes.jsp">
+			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
-
-	</nav>	
+	</nav>
+			<div class="container p-4">
+				<div class="col text-center">
+				<img src="https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg" id="corner_clientes">
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarclientes.jsp'">
+					<i class="fas fa-plus-circle"></i> Insertar cliente</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarclientes.jsp'">
+					<i class="fas fa-trash"></i> Eliminar cliente</button>
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarclientes.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarclientes.jsp'">
+					<i class="fas fa-search"></i> Buscar un cliente</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaclientes.jsp'">
+					<i class="fas fa-list-ol"></i> Lista de clientes</button>
+					
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="header">
+				<h1 style="color:Blue;"><i class="fas fa-list-ol"></i> lista de clientes</h1>
+			</div>
 	<br>
 	<br>
 	<br>
 	
-		<div class="row">
+		<div class="row justify-content-center">
 					<div class="col-xl-8">
 						<div class="card m-4">
 							<div class="card-header text-white bg-dark">
@@ -128,34 +153,13 @@
 							</div>
 						</div>
 					</div>				
-
-					<div class="col-xl">		
-						<div class="container p-4">
-							<div class="col text-center">
-								<ul class="list-group" style="list-style-type:none;">
-									<li><button type="button" class="btn btn-success m-2" 
-								  		onclick="window.location.href='/insertarclientes.jsp'">
-										<i class="fas fa-plus-circle"></i> Agregar cliente</button></li>
-									<li><button type="button" class="btn btn-danger m-2"
-										onclick="window.location.href='/eliminarclientes.jsp'">
-										<i class="fas fa-trash"></i> Eliminar cliente</button></li>
-									<li><button type="button" class="btn btn-warning m-2"
-										onclick="window.location.href='/actualizarclientes.jsp'">
-										<i class="fas fa-pen-alt"></i> Actualizar cliente</button></li>
-									<li><button type="button" class="btn btn-secondary m-2"
-										onclick="window.location.href='/buscarclientes.jsp'">
-										<i class="fas fa-search"></i> Buscar un cliente</button></li>
-								</ul>
-							</div>
-						</div>
-					</div>
 				</div>
 			
-	<nav class="navbar fixed-bottom" id="titulo">
+	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Dise√±ado y programado por Carol Mart√≠nez, Claudia Gonz√°lez, David Mu√±oz, Andr√©s Lozada <i
+					DiseÒado y programado por Carol MartÌnez, Claudia Gonz·lez, David MuÒoz, AndrÈs Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>

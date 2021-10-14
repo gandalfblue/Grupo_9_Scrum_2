@@ -68,7 +68,7 @@
 					<i class="fas fa-search"></i> Buscar un usuario</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='/listasuarios.jsp'">
-					<i class="fas fa-search"></i> Lista de usuarios</button>				
+					<i class="fas fa-list-ol"></i> Lista de usuarios</button>				
 				</div>
 			</div>
   	 	<br>
@@ -126,7 +126,7 @@
 			</form>
 
 			<button type="button" class="btn btn-success" onclick="enviar()">
-				<i class="fas fa-check"></i> Insertar nuevo usuario
+				<i class="fas fa-plus-circle"></i> Insertar nuevo usuario
 			</button>
 
 		</div>
@@ -134,14 +134,14 @@
 	</div>
 	
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
-			<div class="row justify-content-between">
-				<div class="col-4">
-					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Dise√±ado y programado por Carol Mart√≠nez, Claudia Gonz√°lez, David Mu√±oz, Andr√©s Lozada
-					<i class="fas fa-cogs"></i></a>
-				</div>
+		<div class="row justify-content-between">
+			<div class="col-4">
+				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
+					DiseÒado y programado por Carol MartÌnez, Claudia Gonz·lez, David MuÒoz, AndrÈs Lozada <i
+					class="fas fa-code-branch"></i></a>
 			</div>
-		</nav>
+		</div>
+	</nav>
 	
 	<script>
 		function enviar() {

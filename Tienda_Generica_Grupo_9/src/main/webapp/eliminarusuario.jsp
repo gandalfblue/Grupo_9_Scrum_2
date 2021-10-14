@@ -31,7 +31,6 @@
 
 
 <body id="body_usuarios">
-
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
@@ -74,13 +73,12 @@
 			</div>
   	 	<br>
 				<div class="header">
-					<h1 style="color:red; "><i class="fas fa-plus-circle"></i> Eliminar usuario</h1>
+					<h1 style="color:red; "><i class="fas fa-trash"></i> Eliminar usuario</h1>
 				</div>
 			<br>
 		<br>
 	<br>
-
-	<div style="padding-left: 5px">
+     <div style="padding-left: 5px">	
 		<div class="container">		
 			<div id="error" class="alert alert-danger visually-hidden"
 					role="alert">Error al eliminar el usuario,</div>
@@ -101,14 +99,20 @@
 				</div>
 
 			</form>
+		
+	
+		<button type="button" class="btn btn-danger" onclick="eliminar()">
+				<i class="fas fa-trash"></i> Eliminar usuario
+		</button>
+		
 		</div>
-
 	</div>
-	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+			
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Dise√±ado y programado por Carol Mart√≠nez, Claudia Gonz√°lez, David Mu√±oz, Andr√©s Lozada <i
+					DiseÒado y programado por Carol MartÌnez, Claudia Gonz·lez, David MuÒoz, AndrÈs Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>

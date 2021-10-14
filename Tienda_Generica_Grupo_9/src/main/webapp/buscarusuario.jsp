@@ -75,7 +75,7 @@
 				</div>
 			</div>
 				<div class="header">
-					<h1 style="color:gray; "><i class="fas fa-sync"></i> Buscar usuario</h1>
+					<h1 style="color:gray; "><i class="fas fa-search"></i> Buscar usuario</h1>
 				</div>
 				
 	<br>

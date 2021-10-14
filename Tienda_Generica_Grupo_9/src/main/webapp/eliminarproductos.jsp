@@ -29,8 +29,8 @@
 
 </head>
 
-<body>
-	<nav class="navbar" id ="titulo_2">
+<body id="body_productos">
+	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
@@ -48,12 +48,36 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
+	
+				<div class="container p-4">
+				<div class="col text-center">
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarproductos.jsp'">
+					<i class="fas fa-plus-circle"></i> Insertar productos</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarproductos.jsp'">
+					<i class="fas fa-trash"></i> Eliminar productos</button>
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarproductos.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarproductos.jsp'">
+					<i class="fas fa-search"></i> Buscar productos</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaproductos.jsp'">
+					<i class="fas fa-list-ol"></i> Lista productos</button>
+					
+				</div>
+			</div>
+			<br>
+			<br>
 
 	<div style="padding-left: 5px">
-		<h2>
-			<i class="fas fa-plus-circle"></i> Codigo del producto a eliminar
-		</h2>
-		
+		<h1 style="color:red">
+			<i class="fas fa-trash" ></i> Eliminar producto
+		</h1>
+		<br>
+		<br>
 		<div class="container">		
 		
 			<div id="error" class="alert alert-danger visually-hidden"
@@ -66,7 +90,7 @@
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Producto eliminado con exito</div>
 
-			<form id="form1">
+			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Codigo del producto</span>
 					 <input type="text" class="form-control"
@@ -76,49 +100,19 @@
 
 			</form>
 
-			<div class="container p-4">
-				<div class="col text-center">
-					
-		 			<button type="button" class="btn btn-danger" onclick="eliminar()">
-						<i class="fas fa-check"></i> Eliminar producto
-					</button>
-	 			</div>
-			</div>
-			
-			<h2>
-				<i class="fas fa-cogs"></i> Operaciones
-				
-			</h2>
-			
-			<div class="container">
-				<div class="row">
-					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproductos.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar producto</button>
-					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproductos.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar producto</button>
-					<button type="button" class="btn btn-dark"
-						onclick="window.location.href='/buscarproductos.jsp'">
-					<i class="fas fa-search"></i> Buscar un producto</button>
-					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproductos.jsp'">
-					<i class="fas fa-search"></i> Lista de productos</button>
-				</div>
+ 			<button type="button" class="btn btn-danger" onclick="eliminar()">
+				<i class="fas fa-trash"></i> Eliminar producto
+			</button>
 
+	
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
+		<div class="row justify-content-between">
+			<div class="col-4">
+				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
+					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>
-
-	</div>
-	
-	<nav class="navbar2 fixed-bottom" id="titulo">
-			<div class="row justify-content-between">
-				<div class="col-4">
-					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
-					<i class="fas fa-cogs"></i></a>
-				</div>
-			</div>
 	</nav>
 	
 	<script>	

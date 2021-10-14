@@ -54,27 +54,25 @@
 	</nav>
 	<br>
 	
-				<div class="container p-3">
+			<div class="container p-4">
 				<div class="col text-center">
-
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarproveedores.jsp'">
+					<i class="fas fa-plus-circle"></i> Insertar proveedores</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='/eliminarproveedores.jsp'">
-					<i class="fas fa-trash"></i> Eliminar proveedor</button>
+					<i class="fas fa-trash"></i> Eliminar proveedores</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarproveedores.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar proveedor</button>
-					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listarproveedores.jsp'">
-					<i class="fas fa-pen-alt"></i> Lista de proveedores</button>
+					<i class="fas fa-pen-alt"></i> Actualizar proveedores</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarproveedores.jsp'">
-					<i class="fas fa-search"></i> Buscar un proveedor</button>
+					<i class="fas fa-search"></i> Buscar proveedores</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='/listaproveedores.jsp'">
-					<i class="fas fa-search"></i> Lista de proveedores</button>
+					<i class="fas fa-list-ol"></i> Lista proveedores</button>
 					
 				</div>
-				
 			</div>
 	
 		<br>
@@ -143,11 +141,11 @@
 		</div>
 
 	</div>
-	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Dise√±ado y programado por Carol Mart√≠nez, Claudia Gonz√°lez, David Mu√±oz, Andr√©s Lozada <i
+					DiseÒado y programado por Carol MartÌnez, Claudia Gonz·lez, David MuÒoz, AndrÈs Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>

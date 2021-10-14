@@ -32,38 +32,52 @@
 </head>
 
 
-<body>
+<body id="body_productos">
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand links" href="index.html"><i
-				class="fas fa-fish"></i>Tienda Generica</a>
+			<a class="navbar-brand links" href="index.html">
+			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
+			<a class="navbar-brand links" href="listausuarios.jsp">
+			<i class="fas fa-users"></i> Usuarios</a> 
+			<a class="navbar-brand links" href="listaclientes.jsp">
+			<i class="fas fa-address-book"></i> Clientes</a>
+			<a class="navbar-brand links" href="listaproveedores.jsp">
+			<i class="fas fa-truck"></i> Proveedores</a>
+			<a class="navbar-brand links" href="listaproductos.jsp">
+			<i class="fas fa-apple-alt"></i> Productos</a>
+			<a class="navbar-brand links" href="listaventas.jsp">
+			<i class="fas fa-money-check-alt"></i> Ventas</a>
+			<a class="navbar-brand links" href="listareportes.jsp">
+			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-
-	<!-- Navbar modulos-->
-	<nav class="navbar navbar-dark bg-primary">
-		<div class="container">
-			<a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-users"></i> Usuarios
-			</a> <a class="navbar-brand links" href="listaclientes.jsp"> <i
-				class="fas fa-address-book"></i> Clientes
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-truck"></i> Proveedores
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-apple-alt"></i> Productos
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-money-check-alt"></i> Ventas
-			</a> <a class="navbar-brand links" href="listausuarios.jsp"> <i
-				class="fas fa-clipboard-list"></i> Reportes
-			</a>
-		</div>
-	</nav>
+	
+				<div class="container p-4">
+				<div class="col text-center">
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarproductos.jsp'">
+					<i class="fas fa-plus-circle"></i> Insertar productos</button>
+					<button type="button" class="btn btn-danger"
+						onclick="window.location.href='/eliminarproductos.jsp'">
+					<i class="fas fa-trash"></i> Eliminar productos</button>
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarproductos.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
+					<button type="button" class="btn btn-secondary"
+						onclick="window.location.href='/buscarproductos.jsp'">
+					<i class="fas fa-search"></i> Buscar productos</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaproductos.jsp'">
+					<i class="fas fa-list-ol"></i> Lista productos</button>
+					
+				</div>
+			</div>
 
 	<div style="padding-left: 5px">
-		<h2>
-			<i class="fas fa-search"></i> Buscando un cliente
-		</h2>
+		<h1 style="color:gray">
+			<i class="fas fa-search" ></i> Buscar producto
+		</h1>
 		<div class="container">
 
 
@@ -73,7 +87,7 @@
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Cliente encontrado con exito</div>
 
-			<form id="form1">
+			<form id="form1" class="preselection">
 			
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Cliente a buscar</span> <input
@@ -112,8 +126,8 @@
 				</div>
 			</form>
 
-			<button type="button" class="btn btn-primary" onclick="enviar()">
-				<i class="fas fa-search"></i> Buscar cliente
+			<button type="button" class="btn btn-secondary" onclick="enviar()">
+				<i class="fas fa-search"></i> Buscar producto
 			</button>
 			
 			<br>
@@ -122,34 +136,11 @@
 			<br>
 			<br>
 
-			<h1>
-				<i class="fas fa-cogs"></i> Operaciones
-			</h1>
-			<div class="container">
-				<div class="row">
-					<button type="button" class="btn btn-success"
-						onclick="window.location.href='/insertarclientes.jsp'">
-						<i class="fas fa-plus-circle"></i> Agregar cliente
-					</button>
-					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarclientes.jsp'">
-						<i class="fas fa-trash"></i> Eliminar cliente
-					</button>
-					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarclientes.jsp'">
-						<i class="fas fa-pen-alt"></i> Actualizar cliente
-					</button>
-					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaclientes.jsp'">
-						<i class="fas fa-search"></i> Lista de clientes
-					</button>
-				</div>
-			</div>
 		</div>
 
 	</div>
 	
-	<nav class="navbar2 fixed-bottom">
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>

@@ -76,7 +76,7 @@
 			</div>
 		<div class="header">	
 			<h1 style="color:red;">
-			<i class="fas fa-plus-circle"></i> Eliminar cliente
+			<i class="fas fa-trash"></i> Eliminar cliente
 		</h1>
 
 
@@ -110,16 +110,12 @@
 
 
 		 			<button type="button" class="btn btn-danger" onclick="eliminar()">
-						<i class="fas fa-check"></i> Eliminar cliente
+						<i class="fas fa-trash"></i> Eliminar cliente
 					</button>
 
-			
+			</div>
+		</div>
 
-
-			<h2>
-				<i class="fas fa-cogs"></i> Operaciones
-				
-			</h2>
 		
 
 	</div>
@@ -127,7 +123,7 @@
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Dise√±ado y programado por Carol Mart√≠nez, Claudia Gonz√°lez, David Mu√±oz, Andr√©s Lozada <i
+					DiseÒado y programado por Carol MartÌnez, Claudia Gonz·lez, David MuÒoz, AndrÈs Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>

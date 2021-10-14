@@ -32,7 +32,7 @@
 </head>
 
 
-<body id="body_productos">
+<body id="body_productos"> 
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
@@ -52,36 +52,33 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-	<br>
 	
-				<div class="container p-3">
+			<div class="container p-4">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarproductos.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar producto</button>
+					<i class="fas fa-plus-circle"></i> Insertar productos</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='/eliminarproductos.jsp'">
-					<i class="fas fa-trash"></i> Eliminar producto</button>
-					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproductos.jsp'">
-					<i class="fas fa-pen-alt"></i> Lista de productos</button>
+					<i class="fas fa-trash"></i> Eliminar productos</button>
+					<button type="button" class="btn btn-warning"
+						onclick="window.location.href='/actualizarproductos.jsp'">
+					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarproductos.jsp'">
-					<i class="fas fa-search"></i> Buscar un producto</button>
+					<i class="fas fa-search"></i> Buscar productos</button>
+					<button type="button" class="btn btn-primary"
+						onclick="window.location.href='/listaproductos.jsp'">
+					<i class="fas fa-list-ol"></i> Lista productos</button>
 					
 				</div>
-				
 			</div>
-<br>
 			<div class="header">
-				<h1 style="color:green;" >
-					<i class="fas fa-pen-alt"></i> Datos a actualizar del producto
+				<h1 style="color:black;" >
+					<i class="fas fa-pen-alt"></i> Actualizar producto
 				</h1>		
 			</div>
-		<br>	
-		
-	
-
+			
 	<div style="padding-left: 5px">
 		
 		<div class="container">
@@ -96,10 +93,10 @@
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Producto actualizado con exito</div>
 
-			<form id="form1">
+			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Codigo del producto</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control"
 						placeholder="Inserte el codigo del producto aqui..."
 						aria-describedby="basic-addon1" required id="codigo_producto">
 				</div>
@@ -112,35 +109,35 @@
 				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Iva de compra</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control"
 						placeholder="Inserte el iva de compra aqui..."
 						aria-describedby="basic-addon4" required id="iva_compra" disabled="disabled">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon2">Nit del proveedor</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control" 
 						placeholder="Inserte el nit del proveedor aqui..."
 						aria-describedby="basic-addon2" required id="nit_proveedor" disabled="disabled">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Nombre del producto</span>
-					<input type="text" class="form-control" class="preselection"
+					<input type="text" class="form-control"
 						placeholder="Inserte el nombre del producto aqui..."
 						aria-describedby="basic-addon3" required id="nombre_producto" disabled="disabled">
 				</div>				
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Precio de compra</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control"
 						placeholder="Inserte el precio de compra aqui..."
 						aria-describedby="basic-addon5" required id="precio_compra" disabled="disabled">
 				</div>
 				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Precio de venta</span> <input
-						type="text" class="form-control" class="preselection"
+						type="text" class="form-control"
 						placeholder="Inserte el precio de venta aqui..."
 						aria-describedby="basic-addon5" required id="precio_venta" disabled="disabled">
 				</div>

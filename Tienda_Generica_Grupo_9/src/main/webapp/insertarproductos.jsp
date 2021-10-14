@@ -32,7 +32,7 @@
 </head>
 
 
-<body>
+<body id="body_productos">
 
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
@@ -53,29 +53,28 @@
 		</div>
 	</nav>
 	
-		<br>
-		<div class="container p-3">
-			<div class="col text-center">
-				<img src="https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg"  height="225px" alt="logo" id="listaproveedores"/>
-
+			<div class="container p-4">
+				<div class="col text-center">
+					<button type="button" class="btn btn-success" 
+				  		onclick="window.location.href='/insertarproductos.jsp'">
+					<i class="fas fa-plus-circle"></i> Insertar productos</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='/eliminarproductos.jsp'">
-					<i class="fas fa-trash"></i> Eliminar producto</button>
+					<i class="fas fa-trash"></i> Eliminar productos</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarproductos.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar producto</button>
-					<button type="button" class="btn btn-dark"
+					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
+					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarproductos.jsp'">
-					<i class="fas fa-search"></i> Buscar un producto</button>
+					<i class="fas fa-search"></i> Buscar productos</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='/listaproductos.jsp'">
-					<i class="fas fa-search"></i> Lista de productos</button>
+					<i class="fas fa-list-ol"></i> Lista productos</button>
 					
+				</div>
 			</div>
 		<br>
-		<br>		
-		</div>
-		
+		<br>
 		<div class="header">
 				<h1 style="color:green;" >
 					<i class="fas fa-plus-circle"></i> Insertar producto
@@ -96,7 +95,7 @@
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Productos importados desde CSV con exito</div>
 
-			<form id="form1">
+			<form id="form1" class="preselection">
 				<div>
 					<label for="formFileLg" class="form-label">Seleccionar
 						archivo CSV con el inventario de productos</label> <input
@@ -114,11 +113,11 @@
 	</div>
 	
 			
-	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Dise√±ado y programado por Carol Mart√≠nez, Claudia Gonz√°lez, David Mu√±oz, Andr√©s Lozada <i
+					DiseÒado y programado por Carol MartÌnez, Claudia Gonz·lez, David MuÒoz, AndrÈs Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>
