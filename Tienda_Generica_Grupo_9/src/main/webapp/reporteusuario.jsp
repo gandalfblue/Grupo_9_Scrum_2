@@ -4,13 +4,12 @@
 <html>
 <head>
 
-
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Lista de usuarios</title>
+<title>Reporte de usuarios</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -74,12 +73,13 @@
 		xmlhttp.send();
 });
 </script>
+
 </head>
 
-<body>
-	
-	<!-- Navbar-->	
-   	<nav class="navbar navbar-dark bg-dark">
+<body id="body_reportes">
+
+	<!-- Navbar-->
+	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
@@ -96,7 +96,8 @@
 			<a class="navbar-brand links" href="reportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
-	</nav>	
+	</nav>
+	
 	<br>
 
 	<br>
@@ -135,39 +136,34 @@
 							</div>
 						</div>
 					</div>
-
+					
 					<div class="col-xl">
 						<div class="container p-3">
 							<div class="col text-center">
 								<ul class="list-group" style="list-style-type:none;">
-								  	<li><button type="button" class="btn btn-success m-2" 
-								  		onclick="window.location.href='/insertarusuario.jsp'">
-										<i class="fas fa-plus-circle"></i> Agregar usuario</button></li>     
-									<li><button type="button" class="btn btn-danger m-2"
-										onclick="window.location.href='/eliminarusuario.jsp'">
-										<i class="fas fa-trash"></i> Eliminar usuario</button></li>
-									<li><button type="button" class="btn btn-warning m-2"
-										onclick="window.location.href='/actualizarusuario.jsp'">
-										<i class="fas fa-pen-alt"></i> Actualizar usuario</button></li>
-									<li><button type="button" class="btn btn-secondary m-2"
-										onclick="window.location.href='/buscarusuario.jsp'">
-										<i class="fas fa-search"></i> Buscar un usuario</button></li>
-								</ul>				
+				  	
+									<li><button type="button" class="btn btn-secondary btn-lg"
+										onclick="window.location.href='/reporteclientes.jsp'">
+									<i class="fas fa-address-book"></i> Listado de clientes</button></li>
+									<li><button type="button" class="btn btn-info btn-lg"
+										onclick="window.location.href='/reporteventas.jsp'">
+									<i class="fas fa-money-check-alt"></i> Ventas por cliente</button></li>
+								</ul>
 							</div>
 						</div>
-					</div>				
-			</div>
-	
-	<nav class="navbar fixed-bottom navbar-dark bg-dark">
-			<div class="row justify-content-between">
-				<div class="col-4">
-					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
-					<i class="fas fa-cogs"></i></a>
+					</div>
 				</div>
+				
+	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+		<div class="row justify-content-between">
+			<div class="col-4">
+				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
+					class="fas fa-code-branch"></i></a>
 			</div>
-		</nav>
-		
+		</div>
+	</nav>	
+
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
 crossorigin="anonymous"></script>
 

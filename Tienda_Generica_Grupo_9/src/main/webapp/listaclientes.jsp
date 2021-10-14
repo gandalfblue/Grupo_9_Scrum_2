@@ -110,7 +110,7 @@
 											<th>Direccion</th>
 											<th>Email</th>
 											<th>Nombre</th>
-											<th>Teléfono</th>											
+											<th>Telefono</th>											
 										</tr>
 									</thead>
 									<tfoot>
@@ -119,7 +119,7 @@
 											<th>Direccion</th>
 											<th>Email</th>
 											<th>Nombre</th>
-											<th>Teléfono</th>
+											<th>Telefono</th>
 										</tr>
 									</tfoot>
 									<tbody id="clientesinfo">
