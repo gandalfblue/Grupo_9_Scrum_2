@@ -1,9 +1,10 @@
 
 #body_index{
 	background: url('carrito1.jpg');
-	background-size: 70%;
+	background-size: 60%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
+	background-repeat:no-repeat;
 	background-position: center;
 }
 
