@@ -142,7 +142,7 @@
 		</nav>
 	<script>
 		function actualizar() {
-			var x = document.getElementById("user").value;
+			
 			var y = document.getElementById("cedula_usuario").value;
 			var req = new XMLHttpRequest();
 			var coincidencia = false;
@@ -206,7 +206,7 @@
 				document.getElementById("email_usuario").value = "";
 				document.getElementById("nombre_usuario").value = "";
 				document.getElementById("password").value = "";
-				document.getElementById("user").value = "";
+				
 			}
 		}
 	</script>
