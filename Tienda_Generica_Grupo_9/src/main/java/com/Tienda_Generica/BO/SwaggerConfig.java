@@ -19,7 +19,7 @@ public class SwaggerConfig {
 	public Docket apiDocket() {
 		//RECORDAR CAMBIAR EL PAQUETE BASE AL PAQUETE BO DE CADA UNO
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("com.roca12.misiontic2022.tiendalostiburones.BO")).paths(PathSelectors.any()).build()
+				.apis(RequestHandlerSelectors.basePackage("com.Tienda_Generica.BO")).paths(PathSelectors.any()).build()
 				.apiInfo(getApiInfo());
 	}
 
