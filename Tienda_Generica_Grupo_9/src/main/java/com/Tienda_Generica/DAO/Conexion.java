@@ -25,7 +25,7 @@ public class Conexion {
 	public Conexion() {
 		try {
 			// obtenemos el driver de para mysql
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("org.mariadb.jdbc.Driver");
 			// obtenemos la conexión
 			connection = DriverManager.getConnection(url, usuariobd, clavebd);
 			//si hay conexión correcta mostrar información en consola
