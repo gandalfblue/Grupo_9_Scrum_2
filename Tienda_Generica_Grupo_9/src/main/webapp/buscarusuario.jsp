@@ -54,7 +54,6 @@
 		</div>
 	</nav>
 	
-		<br>
 			<div class="container p-4">
 				<div class="col text-center">
 				  	<button type="button" class="btn btn-success" 
@@ -77,8 +76,6 @@
 				<div class="header">
 					<h1 style="color:gray; "><i class="fas fa-search"></i> Buscar usuario</h1>
 				</div>
-				
-	<br>
 
 	<div style="padding-left: 5px">
 		<div class="container">
@@ -96,7 +93,6 @@
 						placeholder="Inserte username aqui..."
 						aria-describedby="basic-addon4" required id="usersearch" >
 				</div>
-				<br>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Cedula</span> <input

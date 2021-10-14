@@ -76,8 +76,6 @@
 					<h1 style="color:green; "><i class="fas fa-plus-circle"></i> Insertar usuario</h1>
 				</div>
 		<br>
-	<br>
-
 
 	<div style="padding-left: 5px">
 		<div class="container">
