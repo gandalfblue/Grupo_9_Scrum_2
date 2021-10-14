@@ -76,10 +76,8 @@
 			</div>
 				<div class="header">
 					<h1 style="color:black; "><i class="fas fa-pen-alt"></i> Actualizar usuario</h1>
-				</div>
-				
-	<br><br><br>
-
+				</div>			
+	<br>
 	<div style="padding-left: 5px">
 		<div class="container">
 			<div id="error" class="alert alert-danger visually-hidden"
