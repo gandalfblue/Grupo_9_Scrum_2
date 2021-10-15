@@ -50,6 +50,7 @@
 			<a class="navbar-brand links" href="listareportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
+<<<<<<< Updated upstream:Tienda_Generica_Grupo_9/src/main/webapp/index_2.jsp
 	</nav>	
 	
 	<header id=titulo_3> Pagina principal de Usuarios 
@@ -64,5 +65,46 @@
 				</div>
 			</div>
 		</nav>
+=======
+	</nav>
+	<br>
+	<br>
+	<div class="header">
+				<h2 style="color:purpol;"><i class="navbar-brand links"></i> Reportes</h2>
+			</div>
+	
+			<div class="container p-4">
+				<div class="col text-left">
+				<br>
+				<br>
+				  	<button type="button" class="btn btn-primary btn-lg" 
+				  		onclick="window.location.href='/reporteusuario.jsp'">
+					<i class="fas fa-users"></i> Lstado de usuarios</button>
+					<br>
+					<br>
+					<button type="button" class="btn btn-secondary btn-lg"
+						onclick="window.location.href='/reporteclientes.jsp'">
+					<i class="fas fa-address-book"></i> Listado de clientes</button>
+					<br>
+					<br>
+					<button type="button" class="btn btn-info btn-lg"
+						onclick="window.location.href='/reporteventas.jsp'">
+					<i class="fas fa-money-check-alt"></i> Ventas por cliente</button>
+								
+				</div>
+			</div>
+  	 	<br>
+				
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
+		<div class="row justify-content-between">
+			<div class="col-4">
+				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
+					class="fas fa-code-branch"></i></a>
+			</div>
+		</div>
+	</nav>	
+
+>>>>>>> Stashed changes:Tienda_Generica_Grupo_9/src/main/webapp/reportes.jsp
 </body>
 </html>
