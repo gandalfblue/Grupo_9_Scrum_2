@@ -38,17 +38,17 @@
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
+			<a class="navbar-brand links" href="index_usuarios.jsp">
 			<i class="fas fa-users"></i> Usuarios</a> 
 			<a class="navbar-brand links" href="listaclientes.jsp">
 			<i class="fas fa-address-book"></i> Clientes</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
+			<a class="navbar-brand links" href="listaproveedores.jsp">
 			<i class="fas fa-truck"></i> Proveedores</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
+			<a class="navbar-brand links" href="listaproductos.jsp">
 			<i class="fas fa-apple-alt"></i> Productos</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
+			<a class="navbar-brand links" href="listaventas.jsp">
 			<i class="fas fa-money-check-alt"></i> Ventas</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
+			<a class="navbar-brand links" href="reportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
@@ -95,7 +95,10 @@
 				</div>
 				
 				<br>
+				<br>
+				<br>
 				
+
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Direccion</span>
 					<input type="text" class="form-control"

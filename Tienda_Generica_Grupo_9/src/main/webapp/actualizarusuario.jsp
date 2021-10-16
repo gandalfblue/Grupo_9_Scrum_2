@@ -39,7 +39,7 @@
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
+			<a class="navbar-brand links" href="index_usuarios.jsp">
 			<i class="fas fa-users"></i> Usuarios</a> 
 			<a class="navbar-brand links" href="listaclientes.jsp">
 			<i class="fas fa-address-book"></i> Clientes</a>
@@ -49,7 +49,7 @@
 			<i class="fas fa-apple-alt"></i> Productos</a>
 			<a class="navbar-brand links" href="listaventas.jsp">
 			<i class="fas fa-money-check-alt"></i> Ventas</a>
-			<a class="navbar-brand links" href="listareportes.jsp">
+			<a class="navbar-brand links" href="reportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
@@ -70,14 +70,16 @@
 						onclick="window.location.href='/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar un usuario</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listasuarios.jsp'">
+						onclick="window.location.href='/listausuarios.jsp'">
 					<i class="fas fa-search"></i> Lista de usuarios</button>				
 				</div>
 			</div>
 				<div class="header">
 					<h1 style="color:black; "><i class="fas fa-pen-alt"></i> Actualizar usuario</h1>
-				</div>			
-	<br>
+				</div>
+				
+	<br><br><br>
+
 	<div style="padding-left: 5px">
 		<div class="container">
 			<div id="error" class="alert alert-danger visually-hidden"
@@ -140,7 +142,7 @@
 		</nav>
 	<script>
 		function actualizar() {
-			var x = document.getElementById("user").value;
+			
 			var y = document.getElementById("cedula_usuario").value;
 			var req = new XMLHttpRequest();
 			var coincidencia = false;
@@ -204,7 +206,7 @@
 				document.getElementById("email_usuario").value = "";
 				document.getElementById("nombre_usuario").value = "";
 				document.getElementById("password").value = "";
-				document.getElementById("user").value = "";
+				
 			}
 		}
 	</script>

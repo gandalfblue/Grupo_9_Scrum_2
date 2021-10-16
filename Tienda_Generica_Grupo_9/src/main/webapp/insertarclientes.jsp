@@ -76,6 +76,8 @@
 			<div class="header">
 				<h1 style="color:green;"><i class="fas fa-plus-circle"></i> Insertar cliente</h1>
 			</div>
+			<br>
+			<br>
 	<div style="padding-left: 5px  position">
 		<div class="container">
 		

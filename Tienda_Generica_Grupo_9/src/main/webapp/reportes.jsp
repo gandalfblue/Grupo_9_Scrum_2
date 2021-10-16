@@ -4,13 +4,12 @@
 <html>
 <head>
 
-
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
-<title>Tienda Generica</title>
+<!-- titulo de la pestaÃ±a -->
+<title>Reportes</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -30,10 +29,11 @@
 </head>
 
 
-<body>
-	
-	<!-- Navbar-->	
-   	<nav class="navbar" id ="titulo_2">
+
+<body id="body_reportes">
+
+	<!-- Navbar-->
+	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
@@ -47,22 +47,37 @@
 			<i class="fas fa-apple-alt"></i> Productos</a>
 			<a class="navbar-brand links" href="listaventas.jsp">
 			<i class="fas fa-money-check-alt"></i> Ventas</a>
-			<a class="navbar-brand links" href="listareportes.jsp">
+			<a class="navbar-brand links" href="reportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
-	</nav>	
+	</nav>
 	
-	<header id=titulo_3> Pagina principal de Usuarios 
-	</header>
-	
-	<nav class="navbar2 fixed-bottom" id="titulo">
-			<div class="row justify-content-between">
-				<div class="col-4">
-					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
-					<i class="fas fa-cogs"></i></a>
+		<br>
+			<div class="container p-4">
+				<div class="col text-center">
+				  	<button type="button" class="btn btn-primary btn-lg" 
+				  		onclick="window.location.href='/reporteusuario.jsp'">
+					<i class="fas fa-users"></i> Lstado de usuarios</button>
+					<button type="button" class="btn btn-secondary btn-lg"
+						onclick="window.location.href='/reporteclientes.jsp'">
+					<i class="fas fa-address-book"></i> Listado de clientes</button>
+					<button type="button" class="btn btn-info btn-lg"
+						onclick="window.location.href='/reporteventas.jsp'">
+					<i class="fas fa-money-check-alt"></i> Ventas por cliente</button>
+								
 				</div>
 			</div>
-		</nav>
+  	 	<br>
+				
+	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+		<div class="row justify-content-between">
+			<div class="col-4">
+				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada <i
+					class="fas fa-code-branch"></i></a>
+			</div>
+		</div>
+	</nav>	
+
 </body>
 </html>

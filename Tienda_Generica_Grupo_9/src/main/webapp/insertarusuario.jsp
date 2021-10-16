@@ -67,7 +67,7 @@
 						onclick="window.location.href='/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar un usuario</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listasuarios.jsp'">
+						onclick="window.location.href='/listausuarios.jsp'">
 					<i class="fas fa-list-ol"></i> Lista de usuarios</button>				
 				</div>
 			</div>
@@ -76,6 +76,8 @@
 					<h1 style="color:green; "><i class="fas fa-plus-circle"></i> Insertar usuario</h1>
 				</div>
 		<br>
+	<br>
+
 
 	<div style="padding-left: 5px">
 		<div class="container">

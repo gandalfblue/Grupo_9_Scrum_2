@@ -10,7 +10,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Buscar cliente</title>
+<title>Buscar producto</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -38,7 +38,7 @@
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
+			<a class="navbar-brand links" href="index_usuarios.jsp">
 			<i class="fas fa-users"></i> Usuarios</a> 
 			<a class="navbar-brand links" href="listaclientes.jsp">
 			<i class="fas fa-address-book"></i> Clientes</a>
@@ -48,7 +48,7 @@
 			<i class="fas fa-apple-alt"></i> Productos</a>
 			<a class="navbar-brand links" href="listaventas.jsp">
 			<i class="fas fa-money-check-alt"></i> Ventas</a>
-			<a class="navbar-brand links" href="listareportes.jsp">
+			<a class="navbar-brand links" href="reportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
@@ -82,47 +82,52 @@
 
 
 			<div id="error" class="alert alert-danger visually-hidden"
-				role="alert">Error al buscar el cliente, el cliente no existe</div>
+				role="alert">Error al buscar el producto, el producto no existe</div>
 
 			<div id="correcto" class="alert alert-success visually-hidden"
-				role="alert">Cliente encontrado con exito</div>
+				role="alert">Producto encontrado con exito</div>
 
 			<form id="form1" class="preselection">
 			
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">Cliente a buscar</span> <input
+					<span class="input-group-text" id="basic-addon1">Codigo del producto a buscar</span> <input
 						type="text" class="form-control"
 						placeholder="Inserte la cedula aqui..."
-						aria-describedby="basic-addon1" required id="cedula_cliente">
+						aria-describedby="basic-addon1" required id="codigo_producto">
 				</div>
 				
 				<br>
 				<br>
-				<br>
-				
+				<br>				
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon3">Direccion</span>
+					<span class="input-group-text" id="basic-addon3">Iva de compra</span>
 					<input type="text" class="form-control"
-						aria-describedby="basic-addon3" required id="direccion_cliente"  disabled="disabled">
+						aria-describedby="basic-addon3" required id="iva_compra"  disabled="disabled">
 				</div>
 				
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon2">Email</span> <input
+					<span class="input-group-text" id="basic-addon2">Nit del proveedor</span> <input
 						type="text" class="form-control"
-						aria-describedby="basic-addon2" required id="email_cliente" disabled="disabled">
+						aria-describedby="basic-addon2" required id="nit_proveedor" disabled="disabled">
 				</div>				
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon4">Nombre</span> <input
+					<span class="input-group-text" id="basic-addon4">Nombre del producto</span> <input
 						type="text" class="form-control"
-						aria-describedby="basic-addon4" required id="nombre_cliente"  disabled="disabled">
+						aria-describedby="basic-addon4" required id="nombre_producto"  disabled="disabled">
 				</div>
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon5">Telefono</span> <input
+					<span class="input-group-text" id="basic-addon5">Precio de compra</span> <input
 						type="text" class="form-control"
-						aria-describedby="basic-addon5" required id="telefono_cliente"  disabled="disabled">
+						aria-describedby="basic-addon5" required id="precio_compra"  disabled="disabled">
+				</div>
+				
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="basic-addon5">Precio de venta</span> <input
+						type="text" class="form-control"
+						aria-describedby="basic-addon5" required id="precio_venta"  disabled="disabled">
 				</div>
 			</form>
 
@@ -155,12 +160,12 @@
 				
 				var req = new XMLHttpRequest();
 				var coincidencia = false;
-				var user=   document.getElementById("cedula_cliente").value;
-				req.open('GET', 'http://localhost:8080/consultarclientes?cedula_cliente='+user, false);
+				var user=   document.getElementById("codigo_producto").value;
+				req.open('GET', 'http://localhost:8080/consultarproductos?codigo_producto='+user, false);
 				req.send(null);
-				var clientes = null;
+				var productos = null;
 				if (req.status == 200)
-					clientes = JSON.parse(req.responseText);
+					productos = JSON.parse(req.responseText);
 				console.log(JSON.parse(req.responseText));				
 
 				var element = document.getElementById("error");
@@ -168,27 +173,28 @@
 				var element2 = document.getElementById("correcto");
 				element2.classList.remove("visually-hidden");
 				
-				console.log(clientes.toString());
+				console.log(productos.toString());
 				
-			if (clientes.toString()!=""){
+			if (productos.toString()!=""){
 
-				document.getElementById("direccion_cliente").value = clientes[0].direccion_cliente;
-				document.getElementById("email_cliente").value = clientes[0].email_cliente;
-				document.getElementById("nombre_cliente").value = clientes[0].nombre_cliente;
-				document.getElementById("telefono_cliente").value = clientes[0].telefono_cliente;
+				document.getElementById("iva_compra").value = productos[0].iva_compra;
+				document.getElementById("nit_proveedor").value = productos[0].nit_proveedor;
+				document.getElementById("nombre_producto").value = productos[0].nombre_producto;
+				document.getElementById("precio_compra").value = productos[0].precio_compra;
+				document.getElementById("precio_venta").value = productos[0].precio_venta;
 				
-				document.getElementById("cedula_cliente").value = "";			
+				document.getElementById("codigo_producto").value = "";			
 
 			} else {
 				var element = document.getElementById("error");
 				element.classList.remove("visually-hidden");
 				var element2 = document.getElementById("correcto");
 				element2.classList.add("visually-hidden");
-				document.getElementById("direccion_cliente").value = "";
-				document.getElementById("email_cliente").value = "";
-				document.getElementById("nombre_cliente").value = "";
-				document.getElementById("telefono_cliente").value = "";
-				document.getElementById("user").value = "";
+				document.getElementById("iva_compra").value = "";
+				document.getElementById("nit_proveedor").value = "";
+				document.getElementById("nombre_producto").value = "";
+				document.getElementById("precio_compra").value = "";
+				document.getElementById("precio_venta").value = "";
 			}
 		}
 	</script>

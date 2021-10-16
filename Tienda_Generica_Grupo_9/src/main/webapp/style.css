@@ -1,14 +1,9 @@
 
 #body_index{
 	background: url('carrito1.jpg');
-<<<<<<< Updated upstream
-	background-size: 60%;
-=======
-	background-size: 50%;
->>>>>>> Stashed changes
+	background-size: 70%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
-	background-repeat:no-repeat;
 	background-position: center;
 }
 
@@ -42,7 +37,7 @@
 
 #body_productos{
 	background: url("https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg");
-	background-size: 60%;
+	background-size: 42%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
 	background-repeat:no-repeat;
@@ -50,7 +45,7 @@
 }
 
 #body_ventas{
-	background: url('https://image.freepik.com/free-vector/hand-giving-money-other-hand_51635-922.jpg');
+	background: url('FreeShippingCuate.png');
 	background-size: 75%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
@@ -59,12 +54,12 @@
 }
 
 #body_reportes{
-	background: url('https://cdn.pixabay.com/photo/2019/10/25/10/49/audit-4576720_960_720.jpg');
-	background-size: 100%;
+	background: url('FreeShippingCuate.png');
+	background-size: 75%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
 	background-repeat:no-repeat;
-	background-position: center;
+	background-position: right;
 }
 
 #corner_usuarios{

@@ -1,14 +1,11 @@
-package com.Tienda_Generica.DAO;
+package com.roca12.misiontic2022.tiendalostiburones.DAO;
 
 import java.sql.*;
-import java.util.logging.Logger;
 
 /**
  * Clase que permite conectar con la base de datos
  */
 public class Conexion {
-	
-	Logger logger= Logger.getLogger("com.roca12.misiontic2022.tiendalostiburones.DAO.Conexion");
 	
 	/** Parametros de conexion */
 	static String nombre_base_datos = "g9e2";
@@ -17,7 +14,7 @@ public class Conexion {
 	//mintic
 	static String clavebd = "minticroca";
 	//127.0.0.1 == localhost
-	static String url = "jdbc:mariadb://tiendasgenericasdr-g9-g38-53.czo3ixoe3xoe.us-east-1.rds.amazonaws.com/" + nombre_base_datos;
+	static String url = "jdbc:mysql://tiendasgenericasdr-g9-g38-53.czo3ixoe3xoe.us-east-1.rds.amazonaws.com/" + nombre_base_datos;
 	
 	//objeto sin inicializar de la conexión
 	Connection connection = null;
@@ -25,7 +22,7 @@ public class Conexion {
 	public Conexion() {
 		try {
 			// obtenemos el driver de para mysql
-			Class.forName("org.mariadb.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			// obtenemos la conexión
 			connection = DriverManager.getConnection(url, usuariobd, clavebd);
 			//si hay conexión correcta mostrar información en consola
