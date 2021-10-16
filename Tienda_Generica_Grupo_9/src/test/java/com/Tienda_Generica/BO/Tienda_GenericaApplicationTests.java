@@ -1,10 +1,10 @@
-package com.roca12.misiontic2022.tiendalostiburones.BO;
+package com.Tienda_Generica.BO;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TiendaLosTiburonesApplicationTests {
+class Tienda_GenericaApplicationTests {
 
 	@Test
 	void contextLoads() {
