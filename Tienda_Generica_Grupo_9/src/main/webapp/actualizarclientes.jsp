@@ -38,17 +38,17 @@
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
-			<a class="navbar-brand links" href="index_usuarios.jsp">
+			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-users"></i> Usuarios</a> 
 			<a class="navbar-brand links" href="listaclientes.jsp">
 			<i class="fas fa-address-book"></i> Clientes</a>
-			<a class="navbar-brand links" href="listaproveedores.jsp">
+			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-truck"></i> Proveedores</a>
-			<a class="navbar-brand links" href="listaproductos.jsp">
+			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-apple-alt"></i> Productos</a>
-			<a class="navbar-brand links" href="listaventas.jsp">
+			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-money-check-alt"></i> Ventas</a>
-			<a class="navbar-brand links" href="reportes.jsp">
+			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
@@ -86,11 +86,7 @@
 
 			<div id="error" class="alert alert-danger visually-hidden"
 				role="alert">Error al actualizar el cliente, verifique que el numero de cedula sea valido</div>
-			
-			<div id="error_buscar" class="alert alert-danger visually-hidden"
-				role="alert">Error al buscar el cliente, verifique que el numero de cedula sea valido</div>
-			
-			
+
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Cliente actualizado con exito</div>
 
@@ -102,38 +98,32 @@
 						aria-describedby="basic-addon1" required id="cedula_cliente">
 				</div>
 				
-				<button type="button" class="btn btn-secondary" onclick="enviar()">
-				<i class="fas fa-search"></i> Buscar cliente
-				</button>				
-				<br>
-				<br>
-				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Direccion</span> <input
 						type="text" class="form-control" 
 						placeholder="Inserte la dirección aqui..."
-						aria-describedby="basic-addon4" required id="direccion_cliente" disabled="disabled">
+						aria-describedby="basic-addon4" required id="direccion_cliente">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon2">Email</span> <input
 						type="text" class="form-control" 
 						placeholder="Inserte email aqui..."
-						aria-describedby="basic-addon2" required id="email_cliente" disabled="disabled">
+						aria-describedby="basic-addon2" required id="email_cliente">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Nombre completo</span>
 					<input type="text" class="form-control" 
 						placeholder="Inserte el nonbre aqui..."
-						aria-describedby="basic-addon3" required id="nombre_cliente" disabled="disabled">
+						aria-describedby="basic-addon3" required id="nombre_cliente">
 				</div>				
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Telefono</span> <input
 						type="text" class="form-control" 
 						placeholder="Inserte el telefono aqui..."
-						aria-describedby="basic-addon5" required id="telefono_cliente" disabled="disabled">
+						aria-describedby="basic-addon5" required id="telefono_cliente">
 				</div>
 			</form>
 
@@ -156,54 +146,6 @@
 	</nav>
 	
 	<script>
-	
-function enviar() {
-		
-		var req = new XMLHttpRequest();
-		var coincidencia = false;
-		var user =   document.getElementById("cedula_cliente").value;
-		var iva = document.getElementById("direccion_cliente");
-		var nit = document.getElementById("email_cliente");
-		var nombre = document.getElementById("nombre_cliente");
-		var compra = document.getElementById("telefono_cliente");
-		
-		req.open('GET', 'http://localhost:8080/consultarclientes?cedula_cliente='+user, false);
-		req.send(null);
-		var clientes = null;
-		if (req.status == 200)
-			clientes = JSON.parse(req.responseText);
-		console.log(JSON.parse(req.responseText));				
-
-		var element = document.getElementById("error_buscar");
-		element.classList.add("visually-hidden");
-		
-		console.log(productos.toString());
-		
-	if (clientes.toString()!=""){
-
-		document.getElementById("iva_compra").value = productos[0].iva_compra;
-		iva.disabled = false;
-		document.getElementById("nit_proveedor").value = productos[0].nit_proveedor;
-		nit.disabled = false;
-		document.getElementById("nombre_producto").value = productos[0].nombre_producto;
-		nombre.disabled = false;
-		document.getElementById("precio_compra").value = productos[0].precio_compra;
-		compra.disabled = false;
-		document.getElementById("precio_venta").value = productos[0].precio_venta;
-		venta.disabled = false;
-		
-	} else {
-		var element = document.getElementById("error_buscar");
-		element.classList.remove("visually-hidden");
-		
-		document.getElementById("iva_compra").value = "";
-		document.getElementById("nit_proveedor").value = "";
-		document.getElementById("nombre_producto").value = "";
-		document.getElementById("precio_compra").value = "";
-		document.getElementById("precio_venta").value = "";
-	}
-}
-	
 		function actualizar() {
 			var y = document.getElementById("cedula_cliente").value;
 			var req = new XMLHttpRequest();

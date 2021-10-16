@@ -51,14 +51,14 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
-	
+	<br>
 	<header id=titulo_3> Pagina principal de Usuarios 
 	</header>
 	
 	<div class="container p-4">
 				<div class="col text-center">
 								
-				  	<button type="button" class="btn btn-success" 
+				  	<button type="button" class="https://www.businesshaunt.com/wp-content/uploads/2021/10/How-To-Easily-Conduct-Market-Research-For-Your-B-e1633035721498-300x188.png" 
 				  		onclick="window.location.href='/insertarusuario.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar usuario</button>
 					<button type="button" class="btn btn-danger"

@@ -4,11 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Tienda_GenericaApplication {
+public class TiendaLosTiburonesApplication {
 	
 	//funcion main de todo el proyecto
 	public static void main(String[] args) {
-		SpringApplication.run(Tienda_GenericaApplication.class, args);
+		SpringApplication.run(TiendaLosTiburonesApplication.class, args);
 	}
 
 }
