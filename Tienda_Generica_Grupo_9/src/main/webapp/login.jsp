@@ -76,7 +76,7 @@
 				</button>
 				
 				<p>Aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-         		<p>¿Ya tienes una cuenta?<a class="link" href="insertarusuario.jsp"> Registrarse</a></p>
+         		<p>¿Ya tienes una cuenta?<a class="link" href="insertarusuario_login.jsp"> Registrarse</a></p>
 				
 				<div id="error" class="alert alert-danger visually-hidden"
 					role="alert">Usuario o contraseña incorrecta!</div>
@@ -228,7 +228,7 @@
 								element.classList.add("visually-hidden");
 								document.getElementById("inputuser").value = "";
 								document.getElementById("inputpass").value = "";
-								window.location.href = "index_usuarios.jsp";
+								window.location.href = "index2.jsp";
 								return;
 							} else {
 								//si la clave NO coincide
