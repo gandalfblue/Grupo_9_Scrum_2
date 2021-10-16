@@ -31,6 +31,7 @@
 	href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css"
 	rel="stylesheet" />
 
+
 <script>
 
 	window.addEventListener('DOMContentLoaded', event => {
@@ -83,7 +84,7 @@
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
-			<a class="navbar-brand links" href="index_usuarios.jsp">
+			<a class="navbar-brand links" href="listausuarios.jsp">
 			<i class="fas fa-users"></i> Usuarios</a> 
 			<a class="navbar-brand links" href="listaclientes.jsp">
 			<i class="fas fa-address-book"></i> Clientes</a>
@@ -93,11 +94,10 @@
 			<i class="fas fa-apple-alt"></i> Productos</a>
 			<a class="navbar-brand links" href="listaventas.jsp">
 			<i class="fas fa-money-check-alt"></i> Ventas</a>
-			<a class="navbar-brand links" href="reportes.jsp">
+			<a class="navbar-brand links" href="listareportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
-	
 	<div class="container p-4">
 				<div class="col text-center">
 				<img src="Coffee shop-rafiki.png" id="corner_usuarios">
@@ -115,7 +115,7 @@
 						onclick="window.location.href='/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar un usuario</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listausuarios.jsp'">
+						onclick="window.location.href='/listasuarios.jsp'">
 					<i class="fas fa-list-ol"></i> Lista de usuarios</button>				
 				</div>
 			</div>

@@ -4,12 +4,13 @@
 <html>
 <head>
 
+
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- TamaÃ±o de la pantalla -->
+<!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaÃ±a -->
-<title>Reportes</title>
+<!-- titulo de la pestaña -->
+<title>Tienda Generica</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -29,11 +30,10 @@
 </head>
 
 
-
-<body id="body_reportes">
-
-	<!-- Navbar-->
-	<nav class="navbar navbar-dark bg-dark">
+<body>
+	
+	<!-- Navbar-->	
+   	<nav class="navbar" id ="titulo_2">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
@@ -47,20 +47,46 @@
 			<i class="fas fa-apple-alt"></i> Productos</a>
 			<a class="navbar-brand links" href="listaventas.jsp">
 			<i class="fas fa-money-check-alt"></i> Ventas</a>
-			<a class="navbar-brand links" href="reportes.jsp">
+			<a class="navbar-brand links" href="listareportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
-	</nav>
+<<<<<<< Updated upstream:Tienda_Generica_Grupo_9/src/main/webapp/index_2.jsp
+	</nav>	
 	
-		<br>
+	<header id=titulo_3> Pagina principal de Usuarios 
+	</header>
+	
+	<nav class="navbar2 fixed-bottom" id="titulo">
+			<div class="row justify-content-between">
+				<div class="col-4">
+					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
+				</div>
+			</div>
+		</nav>
+=======
+	</nav>
+	<br>
+	<br>
+	<div class="header">
+				<h2 style="color:purpol;"><i class="navbar-brand links"></i> Reportes</h2>
+			</div>
+	
 			<div class="container p-4">
-				<div class="col text-center">
+				<div class="col text-left">
+				<br>
+				<br>
 				  	<button type="button" class="btn btn-primary btn-lg" 
 				  		onclick="window.location.href='/reporteusuario.jsp'">
 					<i class="fas fa-users"></i> Lstado de usuarios</button>
+					<br>
+					<br>
 					<button type="button" class="btn btn-secondary btn-lg"
 						onclick="window.location.href='/reporteclientes.jsp'">
 					<i class="fas fa-address-book"></i> Listado de clientes</button>
+					<br>
+					<br>
 					<button type="button" class="btn btn-info btn-lg"
 						onclick="window.location.href='/reporteventas.jsp'">
 					<i class="fas fa-money-check-alt"></i> Ventas por cliente</button>
@@ -69,15 +95,16 @@
 			</div>
   	 	<br>
 				
-	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada <i
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>
 	</nav>	
 
+>>>>>>> Stashed changes:Tienda_Generica_Grupo_9/src/main/webapp/reportes.jsp
 </body>
 </html>

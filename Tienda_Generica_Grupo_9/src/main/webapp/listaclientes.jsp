@@ -135,7 +135,7 @@
 											<th>Direccion</th>
 											<th>Email</th>
 											<th>Nombre</th>
-											<th>Telefono</th>											
+											<th>Teléfono</th>											
 										</tr>
 									</thead>
 									<tfoot>
@@ -144,7 +144,7 @@
 											<th>Direccion</th>
 											<th>Email</th>
 											<th>Nombre</th>
-											<th>Telefono</th>
+											<th>Teléfono</th>
 										</tr>
 									</tfoot>
 									<tbody id="clientesinfo">

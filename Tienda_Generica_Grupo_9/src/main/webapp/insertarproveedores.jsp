@@ -75,7 +75,6 @@
 				</div>
 			</div>
 	
-		<br>
 			<div class="header">
 				<h1 style="color:green;" >
 					<i class="fas fa-plus-circle"></i> Insertar proveedor

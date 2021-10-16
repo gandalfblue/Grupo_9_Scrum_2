@@ -6,9 +6,9 @@
 <head>
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Tienda Generica</title>
 
 <!-- bootstrap-->
@@ -61,7 +61,7 @@
 		<div class="input-contenedor mb-3">
 			<i class="fas fa-unlock-alt" id="icono2"></i>
 			<input id="inputpass"  class="sinborde" type="password"				
-				placeholder="Contraseña" aria-label="Contraseña"
+				placeholder="ContraseÃ±a" aria-label="ContraseÃ±a"
 				aria-describedby="basic-addon1">
 				
 			<button class="btn btn-primary" type="button" 
@@ -72,14 +72,16 @@
 		
 			<div style="margin: auto; text-align: center;">
 				<button type="button" class="button btn-success" onclick="comparar()">
-					<i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+					<i class="fas fa-sign-in-alt"></i> Iniciar SesiÃ³n
 				</button>
 				
-				<p>Aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-         		<p>¿Ya tienes una cuenta?<a class="link" href="insertarusuario_login.jsp"> Registrarse</a></p>
+				<p>Aceptas nuestras Condiciones de uso y PolÃ­tica de privacidad.</p>
+
+         		<p>Â¿Ya tienes una cuenta?<a class="link" href="insertarusuario_login.jsp"> Registrarse</a></p>
+
 				
 				<div id="error" class="alert alert-danger visually-hidden"
-					role="alert">Usuario o contraseña incorrecta!</div>
+					role="alert">Usuario o contraseÃ±a incorrecta!</div>
 			</div>
 		</div>
 </form>
@@ -93,7 +95,7 @@
 	      <a
 	        class="btn btn-primary btn-floating m-1"
 	        id="facebook"
-	        href="https://www.facebook.com"
+	        href="#!"
 	        role="button"
 	        ><i class="fab fa-facebook-f"></i
 	      ></a>
@@ -102,7 +104,7 @@
 	      <a
 	        class="btn btn-primary btn-floating m-1"
 	        id="twitter"
-	        href="https://twitter.com"
+	        href="#!"
 	        role="button"
 	        ><i class="fab fa-twitter"></i
 	      ></a>
@@ -111,7 +113,7 @@
 	      <a
 	        class="btn btn-primary btn-floating m-1"
 	        id="google"
-	        href="https://www.google.com.co"
+	        href="#!"
 	        role="button"
 	        ><i class="fab fa-google"></i
 	      ></a>
@@ -120,7 +122,7 @@
 	      <a
 	        class="btn btn-primary btn-floating m-1"
 	        id="instagram"
-	        href="https://github.com"
+	        href="#!"
 	        role="button"
 	        ><i class="fab fa-instagram"></i
 	      ></a>
@@ -154,7 +156,7 @@
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>
@@ -202,10 +204,10 @@
 			var xmlhttp = new XMLHttpRequest();
 			//abriendo la api
 			xmlhttp.open("GET", baseurl, true);
-			//funcion interna que compara la información
+			//funcion interna que compara la informaciÃ³n
 			xmlhttp.onreadystatechange = function() {
 				//si se obtiene un 200 (Conexion correcta)
-				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
 					//convirtiendo JSON en variable javascrip
 					var usuarios = JSON.parse(xmlhttp.responseText);
 					
@@ -220,15 +222,17 @@
 						console.log(usuarios[i].password);
 						
 						//si el nombre coincide
-						if (usuarios[i].usuario == x) {
+						if (usuarios[i].usuario === x) {
 							//si la clave coincide
-							if (usuarios[i].password == y) {
+							if (usuarios[i].password === y) {
 								console.log("si");
 								var element = document.getElementById("error");
 								element.classList.add("visually-hidden");
 								document.getElementById("inputuser").value = "";
 								document.getElementById("inputpass").value = "";
+
 								window.location.href = "index2.jsp";
+
 								return;
 							} else {
 								//si la clave NO coincide

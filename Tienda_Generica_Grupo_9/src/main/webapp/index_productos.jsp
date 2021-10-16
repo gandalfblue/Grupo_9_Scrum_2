@@ -50,25 +50,35 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
-	
+	<br>
+	<br>
 	<header id=titulo_3> Pagina principal de Productos 
 	</header>
-	
+	<br>
+	<br>
 	<div class="container p-4">
-				<div class="col text-center">
+				<div class="col text-left">
 								
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarproductos.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar productos</button>
+					<br>
+					<br>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='/eliminarproductos.jsp'">
 					<i class="fas fa-trash"></i> Eliminar productos</button>
+					<br>
+					<br>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarproductos.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
+					<br>
+					<br>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarproductos.jsp'">
 					<i class="fas fa-search"></i> Buscar productos</button>
+					<br>
+					<br>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='/listaproductos.jsp'">
 					<i class="fas fa-list-ol"></i> Lista productos</button>				
