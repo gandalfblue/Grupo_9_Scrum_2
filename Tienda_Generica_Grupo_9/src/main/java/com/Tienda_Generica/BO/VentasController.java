@@ -22,7 +22,7 @@ public class VentasController {
 	 * @DeleteMapping eliminar o borrar
 	 * */
 
-	@PostMapping("/registrarventa")
+	@PostMapping("/registrarventas")
 	public void registrarVenta(VentasVO venta) {
 		VentasDAO Dao = new VentasDAO();
 		Dao.registrarVentas(venta);
