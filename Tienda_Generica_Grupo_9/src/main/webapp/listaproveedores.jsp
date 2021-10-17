@@ -72,7 +72,7 @@
 </script>
 </head>
 
-<body>
+<body id="corner_proveedores">
 
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">

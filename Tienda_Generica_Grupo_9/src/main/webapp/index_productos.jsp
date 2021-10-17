@@ -29,7 +29,7 @@
 
 </head>
 
-<body id="body_productos">
+<body id="index_productos">
 	
 	<!-- Navbar-->	
    	<nav class="navbar navbar-dark bg-dark">
@@ -50,9 +50,11 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
-	
+	<br>
+	<br>
 	<header id=titulo_3> Pagina principal de Productos 
 	</header>
+	<br>
 	
 	<div class="container p-4">
 				<div class="col text-center">

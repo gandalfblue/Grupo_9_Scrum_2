@@ -119,7 +119,6 @@
 					<i class="fas fa-list-ol"></i> Lista de usuarios</button>				
 				</div>
 			</div>
-
 	<br>
 	<br>
 	
@@ -128,6 +127,7 @@
 		</div>
 	<br>
 	<br>
+
 		<div class="row justify-content-center">
 					<div class="col-xl-8">
 						<div class="card m-4">

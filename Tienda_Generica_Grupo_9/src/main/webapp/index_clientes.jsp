@@ -30,7 +30,7 @@
 </head>
 
 
-<body id="body_clientes">
+<body id="index_clientes">
 	
 	<!-- Navbar-->	
    	<nav class="navbar navbar-dark bg-dark">
@@ -51,25 +51,36 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
+	<br>
+	<br>
 	
 	<header id=titulo_3> Pagina principal de Clientes 
 	</header>
+	<br>
+			<br>
 	
 	<div class="container p-4">
-				<div class="col text-center">
+				<div class="col text-left">
 								
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarclientes.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
+					<br>
+			<br>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='/eliminarclientes.jsp'">
 					<i class="fas fa-trash"></i> Eliminar cliente</button>
+					<br>
+			<br>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarclientes.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
+					<br>
+			<br>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarclientes.jsp'">
-					<i class="fas fa-search"></i> Buscar un cliente</button>
+					<i class="fas fa-search"></i> Buscar un cliente</button><br>
+			<br>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='/listaclientes.jsp'">
 					<i class="fas fa-search"></i> Lista de clientes</button>				

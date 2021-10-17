@@ -94,11 +94,7 @@
 						type="text" class="form-control"
 						placeholder="Inserte la cedula aqui..."
 						aria-describedby="basic-addon1" required id="codigo_producto">
-				</div>
-				
-				<br>
-				<br>
-				<br>				
+				</div>				
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Iva de compra</span>
