@@ -76,8 +76,6 @@
 			<div class="header">
 				<h1 style="color:black; "><i class="fas fa-pen-alt"></i> Actualizar cliente</h1>
 			</div>
-			<br>
-			<br>
 
 	<div style="padding-left: 5px">
 

@@ -96,7 +96,6 @@
 						placeholder="Inserte el nit aqui..."
 						aria-describedby="basic-addon1" required id="nit_proveedor">
 				</div>
-				<br>
 
 				<button type="button" class="btn btn-secondary" onclick="enviar()">
 				<i class="fas fa-search"></i> Buscar proveedor

@@ -30,9 +30,7 @@
 </head>
 
 
-<body>
-	
-	<!-- Navbar-->	
+<body >         	
    	<nav class="navbar" id ="titulo_2">
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">

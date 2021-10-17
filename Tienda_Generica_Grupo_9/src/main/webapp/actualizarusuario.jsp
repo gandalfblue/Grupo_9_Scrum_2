@@ -77,8 +77,6 @@
 				<div class="header">
 					<h1 style="color:black; "><i class="fas fa-pen-alt"></i> Actualizar usuario</h1>
 				</div>
-				
-	<br><br><br>
 
 	<div style="padding-left: 5px">
 		<div class="container">

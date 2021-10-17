@@ -3,8 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
 <!-- Tamaño de la pantalla -->
@@ -22,15 +20,16 @@
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
 	integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-	crossorigin="anonymous">
+	br="anonymous">
 
 <!-- Cargando mi hoja de estilo -->
 <link href="style.css" rel="stylesheet" type="text/css" />
 
 </head>
+<br>
+<br>
 
-
-<body id="body_usuarios">
+<body id="index_usuarios">
 	
 	<!-- Navbar-->	
    	<nav class="navbar navbar-dark bg-dark">
@@ -51,25 +50,33 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
-	
+	<br>
 	<header id=titulo_3> Pagina principal de Usuarios 
 	</header>
 	
 	<div class="container p-4">
-				<div class="col text-center">
+				<div class="col text-left">
 								
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarusuario.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar usuario</button>
+					<br>
+			        <br>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='/eliminarusuario.jsp'">
 					<i class="fas fa-trash"></i> Eliminar usuario</button>
+					<br>
+			        <br>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarusuario.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
+					<br>
+			        <br>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar un usuario</button>
+					<br>
+			        <br>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='/listausuarios.jsp'">
 					<i class="fas fa-list-ol"></i> Lista de usuarios</button>				
