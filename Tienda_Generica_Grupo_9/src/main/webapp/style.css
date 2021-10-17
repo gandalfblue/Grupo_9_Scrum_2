@@ -80,11 +80,17 @@
 
 #body_ventas{
 	background: url('https://as1.ftcdn.net/v2/jpg/04/33/43/94/1000_F_433439482_TsqXhdpAxPfaNgNjwXR2E0YQWJpnCSZW.jpg');
-	background-size: 75%;
+	background-size: 100%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
 	background-repeat:no-repeat;
-	background-position: 100% -20%;
+	background-position: 150% -20%;
+}
+
+#body_ventas1{
+background-color: #FDC703;
+	
+	
 }
 
 #index_ventas{
@@ -202,6 +208,8 @@ h1{
     color: blue;
     font-size: 40px;
 }
+
+
 input[type="text"],
 input[type="password"]{
     font-size: 20px;
