@@ -40,7 +40,7 @@
 </script>
 </head>
 
-<body id= "body_ventas">
+<body id="body_ventas1">
 
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
@@ -63,7 +63,7 @@
 
 		<div
 			class="container-fluid px-4 animate__animated animate__bounceInLeft">
-			<h1 class="mt-4">Registrar venta</h1>
+			<h2 class="mt-4">Registrar venta</h2>
 			<ol class="breadcrumb mb-4">
 			</ol>
 
@@ -72,8 +72,8 @@
 			<div class="card-header text-white bg-dark">
 			<i class="fas fa-table"></i> Registro de venta
 			</div>
-
-			<div class="card-body">
+            
+			<div class="card-body" id= "body_ventas">
 
 				<h1>
 				<i class="fas fa-file-invoice-dollar"></i> Datos de la venta
@@ -303,7 +303,7 @@
 										<button type="button" class="btn btn-warning"
 											onclick="window.location.reload();">
 											<i class="fas fa-sync-alt"></i> Recargar pagina
-										</button>
+										</button >
 									</div>
 									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 										<div class="alert alert-success visually-hidden" role="alert"
