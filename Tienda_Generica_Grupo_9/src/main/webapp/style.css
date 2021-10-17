@@ -1,38 +1,63 @@
-
 #body_index{
 	background: url('carrito1.jpg');
-	background-size: 70%;
+	background-size: 50%;
 	background-attachment: fixed;
+	background-repeat:no-repeat;
 	background-color: whitesmoke;
-	background-position: center;
+	background-position:50% -10%;
 }
 
 #body_usuarios{
 	background: url('Coffee shop-rafiki.png');
-	background-size: 45%;
+	background-size: 40%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
 	background-repeat:no-repeat;
-	background-position: right bottom;
+	background-position: 100% 90%;
+}
+
+#index_usuarios{
+	background: url('Coffee shop-rafiki.png');
+	background-size: 40%;
+	background-attachment: fixed;
+	background-color: whitesmoke;
+	background-repeat:no-repeat;
+	background-position: center bottom;
 }
 
 #body_clientes{
 	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg');
-	background-size: 70%;
+	background-size: 60%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
 	background-repeat:no-repeat;
-	background-position: right;
+	background-position: 100% 70%;
 }
-
+#index_clientes{
+	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg');
+	background-size: 50%;
+	background-attachment: fixed;
+	background-color: whitesmoke;
+	background-repeat:no-repeat;
+	background-position: 50% 80%;
+}
 
 #body_proveedores{
 	background: url('FreeShippingCuate.png');
-	background-size: 75%;
+	background-size: 50%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
 	background-repeat:no-repeat;
-	background-position: right;
+	background-position: 100% -20%;
+}
+
+#index_proveedores{
+	background: url('FreeShippingCuate.png');
+	background-size: 50%;
+	background-attachment: fixed;
+	background-color: whitesmoke;
+	background-repeat:no-repeat;
+	background-position: 50% -80%;
 }
 
 #body_productos{
@@ -41,10 +66,28 @@
 	background-attachment: fixed;
 	background-color: whitesmoke;
 	background-repeat:no-repeat;
-	background-position: right;
+	background-position: 80% 80%;
+}
+
+#index_productos{
+	background: url("https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg");
+	background-size: 40%;
+	background-attachment: fixed;
+	background-color: whitesmoke;
+	background-repeat:no-repeat;
+	background-position: 50% 80%;
 }
 
 #body_ventas{
+	background: url('https://as1.ftcdn.net/v2/jpg/04/33/43/94/1000_F_433439482_TsqXhdpAxPfaNgNjwXR2E0YQWJpnCSZW.jpg');
+	background-size: 75%;
+	background-attachment: fixed;
+	background-color: whitesmoke;
+	background-repeat:no-repeat;
+	background-position: 100% -20%;
+}
+
+#index_ventas{
 	background: url('FreeShippingCuate.png');
 	background-size: 75%;
 	background-attachment: fixed;
@@ -54,18 +97,27 @@
 }
 
 #body_reportes{
-	background: url('FreeShippingCuate.png');
-	background-size: 75%;
+	background: url('https://image.freepik.com/vector-gratis/personas-cerca-enorme-tableta-papel-informe-flujo-agua-casillas-verificacion-analizando-datos-gestion-agua-ecologia-iot-concepto-ciudad-inteligente-ilustracion-vectorial_335657-2004.jpg');
+	background-size: 30%;
 	background-attachment: fixed;
 	background-color: whitesmoke;
 	background-repeat:no-repeat;
-	background-position: right;
+	background-position:95% 80%;
+}
+
+#index_reportes {
+	background: url('https://image.freepik.com/vector-gratis/personas-cerca-enorme-tableta-papel-informe-flujo-agua-casillas-verificacion-analizando-datos-gestion-agua-ecologia-iot-concepto-ciudad-inteligente-ilustracion-vectorial_335657-2004.jpg');
+	background-size: 40%;
+	background-attachment: fixed;
+	background-color: whitesmoke;
+	background-repeat:no-repeat;
+	background-position:50% 80%;
 }
 
 #corner_usuarios{
 /* 	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg'); */
 	float: left;
-	background-size: 40%;
+	background-size: 30%;
 	height: 200px; 
 	alt: "Client logo";
 	background-repeat:no-repeat;
@@ -74,7 +126,7 @@
 #corner_clientes{
 /* 	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg'); */
 	float: left;
-	background-size: 40%;
+	background-size: 60%;
 	height: 200px; 
 	alt: "Client logo";
 	background-repeat:no-repeat;
@@ -122,7 +174,7 @@ body{
 	 margin: 0;	
 }
 
-.bodyp{
+.dyp{
 	 font-family: Arial, Helvetica, sans-serif;
 	 margin: 0;	
 	 background: url('FreeShippingCuate.png') no-repeat center center fixed; 
@@ -352,7 +404,12 @@ a:hover{
 }
 
 .preselection {
-  max-width: 45%;
+  	max-width: 45%;
+}
+
+span {
+  display: inline-block;
+  width: 35%;
 }
 
 .dataTables_filter, .dataTables_info { display: none; }

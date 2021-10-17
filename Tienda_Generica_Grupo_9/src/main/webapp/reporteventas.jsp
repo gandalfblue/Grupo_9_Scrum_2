@@ -6,9 +6,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Reporte de ventas</title>
 <!-- bootstrap-->
 <link
@@ -126,15 +126,17 @@
 					</div>
 				
 				
-	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Dise�ado y programado por Carol Martinez, Claudia Gonzalez, David Mu�oz, Andr�s Lozada <i
+
+					Diseñado y programado por Carol Martinez, Claudia Gonzalez, David Muñoz, Andrés Lozada <i
+
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>
-	</nav>	
+	</nav>
 
 <script>
 

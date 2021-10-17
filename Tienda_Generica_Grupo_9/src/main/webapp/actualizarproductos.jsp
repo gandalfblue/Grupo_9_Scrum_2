@@ -52,7 +52,6 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-	
 			<div class="container p-4">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
@@ -69,8 +68,7 @@
 					<i class="fas fa-search"></i> Buscar productos</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='/listaproductos.jsp'">
-					<i class="fas fa-list-ol"></i> Lista productos</button>
-					
+					<i class="fas fa-list-ol"></i> Lista productos</button>	
 				</div>
 			</div>
 			<div class="header">
@@ -99,14 +97,10 @@
 						type="text" class="form-control"
 						placeholder="Inserte el codigo del producto aqui..."
 						aria-describedby="basic-addon1" required id="codigo_producto">
-				</div>
-
-				<button type="button" class="btn btn-secondary" onclick="enviar()">
+				</div><button type="button" class="btn btn-secondary" onclick="enviar()">
 				<i class="fas fa-search"></i> Buscar producto
-				</button>				
-				<br>
-				<br>
-				
+				</button>	
+				<br>			
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Iva de compra</span> <input
 						type="text" class="form-control"

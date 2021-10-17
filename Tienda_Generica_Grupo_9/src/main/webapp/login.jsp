@@ -63,7 +63,6 @@
 			<input id="inputpass"  class="sinborde" type="password"				
 				placeholder="Contraseña" aria-label="Contraseña"
 				aria-describedby="basic-addon1">
-				
 			<button class="btn btn-primary" type="button" 
 			onmousedown="showPassword()" onmouseup="hidePassword()"> 
          	<span class="fa fa-eye-slash show-password"></span>

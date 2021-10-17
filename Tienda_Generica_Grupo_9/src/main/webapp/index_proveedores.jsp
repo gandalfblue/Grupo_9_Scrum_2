@@ -30,7 +30,7 @@
 </head>
 
 
-<body id="body_proveedores">
+<body id="index_proveedores">
 	
 	<!-- Navbar-->	
    	<nav class="navbar navbar-dark bg-dark">
