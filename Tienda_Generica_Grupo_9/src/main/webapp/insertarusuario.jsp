@@ -71,14 +71,9 @@
 					<i class="fas fa-list-ol"></i> Lista de usuarios</button>				
 				</div>
 			</div>
-  	 	<br>
 				<div class="header">
 					<h1 style="color:green; "><i class="fas fa-plus-circle"></i> Insertar usuario</h1>
 				</div>
-		<br>
-	<br>
-
-
 	<div style="padding-left: 5px">
 		<div class="container">
 			<div id="error" class="alert alert-danger visually-hidden"

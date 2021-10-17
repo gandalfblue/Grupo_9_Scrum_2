@@ -74,7 +74,6 @@
 					
 				</div>
 			</div>
-<br>
 			<div class="header">
 				<h1 style="color:black;" >
 					<i class="fas fa-pen-alt"></i> Actualizar proveedor

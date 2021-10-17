@@ -52,7 +52,6 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-	<br>
 	
 			<div class="container p-4">
 				<div class="col text-center">
@@ -75,14 +74,11 @@
 				</div>
 			</div>
 	
-		<br>
 			<div class="header">
 				<h1 style="color:green;" >
 					<i class="fas fa-plus-circle"></i> Insertar proveedor
 				</h1>		
 			</div>
-		<br>
-	
 
 	<div style="padding-left: 5px">
 
@@ -97,36 +93,35 @@
 
 			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">Nit del proveedor</span> <input
+					<span class="input-group-text" id="basic-addon2">Nit del proveedor</span> <input
 						type="text"  
 						placeholder="Inserte nit aqui..."
-						aria-describedby="basic-addon1" required id="nit_proveedor">
+						aria-describedby="basic-addon2">
 				</div>
-					<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon3">Ciudad del proveedor</span>
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="basic-addon2">Ciudad del proveedor</span>
 					<input type="text" class="form-control" 
 						placeholder="Inserte el ciudad aqui..."
-						aria-describedby="basic-addon3" required id="ciudad_proveedor">
+						aria-describedby="basic-addon2">
 				</div>
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon2">Direccion del proveedor</span> <input
 						type="text" class="form-control" 
 						placeholder="Inserte la direccion aqui..."
-						aria-describedby="basic-addon2" required id="direccion_proveedor">
+						aria-describedby="basic-addon2">
 				</div>
-
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Nombre del proveedor</span> <input
 						type="text" class="form-control" 
 						placeholder="Inserte el nombre del proveedor aqui..."
-						aria-describedby="basic-addon4" required id="nombre_proveedor">
+						aria-describedby="basic-addon2">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Telefono del proveedor</span> <input
 						type="text" class="form-control"  
 						placeholder="Inserte el telefono del proveedor aqui..."
-						aria-describedby="basic-addon5" required id="telefono_proveedor">
+						aria-describedby="basic-addon2">
 				</div>
 
 			</form>

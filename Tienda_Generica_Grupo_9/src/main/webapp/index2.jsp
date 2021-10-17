@@ -28,7 +28,7 @@
 
 </head>
 
-<body>
+<body id="body_index">
 	
 	<!-- Navbar-->	
    	<nav class="navbar navbar-dark bg-dark">
@@ -43,7 +43,7 @@
 	
 	<div class="container p-4">
 		<div class="row justify-align-center">
-				<div class="col text-center col-xl-12 col-lg-10 col-sm-11">
+				<div class="col text-left col-xl-12 col-lg-10 col-sm-11">
 					
 					<ul class="list-group" style="list-style:none">								
 					  	<li><button type="button" class="btn btn-lg" 

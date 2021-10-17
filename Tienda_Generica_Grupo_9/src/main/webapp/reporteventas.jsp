@@ -154,15 +154,15 @@
 					</div>
 				</div>
 				
-	<nav class="navbar fixed-bottom navbar-dark bg-dark">
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Dise√±ado y programado por Carol Mart√≠nez, Claudia Gonz√°lez, David Mu√±oz, Andr√©s Lozada <i
+					DiseÒado y programado por Carol MartÌnez, Claudia Gonz·lez, David MuÒoz, AndrÈs Lozada <i
 					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>
-	</nav>	
+	</nav>
 
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
 crossorigin="anonymous"></script>

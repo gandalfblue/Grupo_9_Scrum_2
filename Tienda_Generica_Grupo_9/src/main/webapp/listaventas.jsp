@@ -40,7 +40,7 @@
 </script>
 </head>
 
-<body>
+<body id= "body_ventas">
 
 	<nav class="navbar navbar-dark bg-dark">
 		<div class="container-fluid">
@@ -325,7 +325,7 @@
 
 			</div>
 	
-	<nav class="navbar2 fixed-bottom">
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
