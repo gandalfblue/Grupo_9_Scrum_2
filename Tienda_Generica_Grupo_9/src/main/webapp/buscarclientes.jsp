@@ -88,7 +88,8 @@
 			<form id="form1"  class="preselection">
 			
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">Cliente a buscar</span> <input
+					<span class="input-group-text" id="basic-addon1">Cliente a buscar</span> 
+					<input
 						type="text" class="form-control"
 						placeholder="Inserte la cedula aqui..."
 						aria-describedby="basic-addon1" required id="cedula_cliente">

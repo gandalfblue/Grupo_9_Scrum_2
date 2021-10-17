@@ -355,3 +355,4 @@ a:hover{
   max-width: 45%;
 }
 
+.dataTables_filter, .dataTables_info { display: none; }
