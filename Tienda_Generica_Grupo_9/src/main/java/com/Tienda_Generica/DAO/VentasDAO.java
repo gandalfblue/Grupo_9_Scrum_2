@@ -2,6 +2,8 @@ package com.Tienda_Generica.DAO;
 
 import java.sql.*;
 import java.util.ArrayList;
+
+import com.Tienda_Generica.DTO.ClientesVO;
 import com.Tienda_Generica.DTO.VentasVO;
 
 /**
@@ -53,55 +55,6 @@ public class VentasDAO {
 			System.out.println(e.getLocalizedMessage());
 		}
 
-	}
-
-	/**
-	 * permite consultar la Venta asociado al codigov enviado como parametro
-	 * 
-	 * @param documento
-	 * @return
-	 */
-	public ArrayList<VentasVO> consultarVenta(Integer cedula_cliente) {	
-		//lista que contendra el o los Ventas obtenidos
-		ArrayList<VentasVO> listaventas = new ArrayList<VentasVO>();		
-		//instancia de la conexión
-		Conexion conex = new Conexion();
-		try {
-			//prepare la sentencia en la base de datos
-			PreparedStatement consulta = conex.getConnection()
-					.prepareStatement("SELECT cedula_cliente =?" + cedula_cliente + " FROM clientes c left outer join ventas v"
-									+ "on c.cedula_cliente = v.cedula_cliente =?");		
-			
-			//ejecute la sentencia
-			ResultSet res = consulta.executeQuery();
-			
-			//cree un objeto para cada encontrado en la base de datos basado en la clase entidad con los datos encontrados
-			while (res.next()) {
-				VentasVO Venta = new VentasVO();				
-				Venta.setCedula_cliente(Integer.parseInt(res.getString("cedula_cliente")));
-				Venta.setValor_venta(Double.parseDouble(res.getString("valor_venta"))); 
-				
-				listaventas.add(Venta);
-			}
-			//cerrar resultado, sentencia y conexión
-			res.close();
-			consulta.close();
-			conex.desconectar();
-
-		} catch (SQLException e) {
-			//si hay un error en el sql mostrarlo
-			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo consultar la ventas de ese cliente");
-			System.out.println(e.getMessage());
-			System.out.println(e.getErrorCode());
-		} catch (Exception e) {
-			//si hay cualquier otro error mostrarlo
-			System.out.println("------------------- ERROR --------------");
-			System.out.println("No se pudo consultar las ventas del cliente");
-			System.out.println(e.getMessage());
-			System.out.println(e.getLocalizedMessage());
-		}
-		return listaventas;
 	}
 
 	public ArrayList<VentasVO> listaDeVentas() {

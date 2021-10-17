@@ -38,13 +38,7 @@ public class VentasController {
 	public void eliminarVenta(Integer codigo_venta) {
 		VentasDAO Dao = new VentasDAO();
 		Dao.eliminarVentas(codigo_venta);
-	}
-	
-	@GetMapping("/consultarventa")
-	public void consultarVenta(Integer cedula_cliente) {
-		VentasDAO Dao = new VentasDAO();
-		Dao.eliminarVentas(cedula_cliente);
-	}
+	}	
 	
 	@PutMapping("/actualizarventas")
 	public void actualizarVenta(VentasVO venta) {

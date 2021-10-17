@@ -412,3 +412,4 @@ span {
   width: 35%;
 }
 
+.dataTables_filter, .dataTables_info { display: none; }

@@ -78,13 +78,13 @@ window.addEventListener('DOMContentLoaded', event => {
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
+			<a class="navbar-brand links" href="index_usuarios.jsp">
 			<i class="fas fa-users"></i> Usuarios</a> 
-			<a class="navbar-brand links" href="listaclientes.jsp">
+			<a class="navbar-brand links" href="index_clientes.jsp">
 			<i class="fas fa-address-book"></i> Clientes</a>
-			<a class="navbar-brand links" href="listaproveedores.jsp">
+			<a class="navbar-brand links" href="index_proveedores.jsp">
 			<i class="fas fa-truck"></i> Proveedores</a>
-			<a class="navbar-brand links" href="listaproductos.jsp">
+			<a class="navbar-brand links" href="index_productos.jsp">
 			<i class="fas fa-apple-alt"></i> Productos</a>
 			<a class="navbar-brand links" href="listaventas.jsp">
 			<i class="fas fa-money-check-alt"></i> Ventas</a>
@@ -102,7 +102,7 @@ window.addEventListener('DOMContentLoaded', event => {
 					<div class="col-xl-8">
 						<div class="card m-4">
 							<div class="card-header text-white bg-dark">
-								<i class="fas fa-table"></i> Tabla de usuarios
+								<i class="fas fa-table"></i> Tabla de clientes
 							</div>
 							<div class="card-body">
 								<table id="datatablesusers" data-page-length='5'>

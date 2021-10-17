@@ -38,17 +38,23 @@
 	let table=null;
     if (datatablesusers) {
         table=new simpleDatatables.DataTable("#datatablesusers", {
-            searchable: true,
+            searchable: true,            
+                                                         
             labels: {
                 placeholder: "Buscar...",
-                perPage: "{select} registros por pagina",
+                
                 noRows: "No hay registros",
                 info: "Mostrando {start} a {end} de {rows} registros",
             }, 
-            
-        });
-        
-    }
+                        
+        }); 
+     }
+    
+
+	    table.on('datatable.perpage', function(perpage){ 
+	        {select:(5)}
+	   	});
+    
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.open("GET", "http://localhost:8080/listarusuarios", true);
 		xmlhttp.onreadystatechange = function() {
@@ -65,7 +71,7 @@
 						usuarios[i].usuario
 					];
 
-				    table.rows().add(fila);
+				    table.rows().add(fila);				    
 				}
 			}
 		};
@@ -83,13 +89,13 @@
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
-			<a class="navbar-brand links" href="listausuarios.jsp">
+			<a class="navbar-brand links" href="index_usuarios.jsp">
 			<i class="fas fa-users"></i> Usuarios</a> 
-			<a class="navbar-brand links" href="listaclientes.jsp">
+			<a class="navbar-brand links" href="index_clientes.jsp">
 			<i class="fas fa-address-book"></i> Clientes</a>
-			<a class="navbar-brand links" href="listaproveedores.jsp">
+			<a class="navbar-brand links" href="index_proveedores.jsp">
 			<i class="fas fa-truck"></i> Proveedores</a>
-			<a class="navbar-brand links" href="listaproductos.jsp">
+			<a class="navbar-brand links" href="index_productos.jsp">
 			<i class="fas fa-apple-alt"></i> Productos</a>
 			<a class="navbar-brand links" href="listaventas.jsp">
 			<i class="fas fa-money-check-alt"></i> Ventas</a>
@@ -110,7 +116,7 @@
 								<i class="fas fa-table"></i> Tabla de usuarios
 							</div>
 							<div class="card-body">
-								<table id="datatablesusers" data-page-length='5'>
+								<table id="datatablesusers">
 									<thead>
 										<tr>
 											<th>Cedula</th>
