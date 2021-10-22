@@ -153,11 +153,11 @@ var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split
 								<ul class="list-group" style="list-style-type:none;">
 				  	
 									<li><button type="button" class="btn btn-secondary btn-lg"
-										onclick="window.location.href='/reporteclientes.jsp'">
+										onclick="window.location.href='<%=request.getContextPath()%>/reporteclientes.jsp'">
 									<i class="fas fa-address-book"></i> Listado de clientes</button></li>
 									<br>
 									<li><button type="button" class="btn btn-info btn-lg"
-										onclick="window.location.href='/reporteventas.jsp'">
+										onclick="window.location.href='<%=request.getContextPath()%>/reporteventas.jsp'">
 									<i class="fas fa-money-check-alt"></i> Ventas por cliente</button></li>
 								</ul>
 							</div>

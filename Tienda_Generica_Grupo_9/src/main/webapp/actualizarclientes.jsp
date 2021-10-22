@@ -38,17 +38,17 @@
 		<div class="container-fluid">
 			<a class="navbar-brand links" href="index.html">
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
-			<a class="navbar-brand links" href="<%=request.getContextPath()%>index_usuarios.jsp">
+			<a class="navbar-brand links" href="index_usuarios.jsp">
 			<i class="fas fa-users"></i> Usuarios</a> 
-			<a class="navbar-brand links" href="<%=request.getContextPath()%>index_clientes.jsp">
+			<a class="navbar-brand links" href="index_clientes.jsp">
 			<i class="fas fa-address-book"></i> Clientes</a>
-			<a class="navbar-brand links" href="<%=request.getContextPath()%>index_proveedores.jsp">
+			<a class="navbar-brand links" href="index_proveedores.jsp">
 			<i class="fas fa-truck"></i> Proveedores</a>
-			<a class="navbar-brand links" href="<%=request.getContextPath()%>index_productos.jsp">
+			<a class="navbar-brand links" href="index_productos.jsp">
 			<i class="fas fa-apple-alt"></i> Productos</a>
-			<a class="navbar-brand links" href="<%=request.getContextPath()%>listaventas.jsp">
+			<a class="navbar-brand links" href="listaventas.jsp">
 			<i class="fas fa-money-check-alt"></i> Ventas</a>
-			<a class="navbar-brand links" href="<%=request.getContextPath()%>reportes.jsp">
+			<a class="navbar-brand links" href="reportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
@@ -123,7 +123,7 @@
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Nombre completo</span>
 					<input type="text" class="form-control" 
-						placeholder="Inserte el nonbre aqui..."
+						placeholder="Inserte el nombre aqui..."
 						aria-describedby="basic-addon3" required id="nombre_cliente" disabled="disabled">
 				</div>				
 
@@ -179,7 +179,7 @@ function enviar() {
 		var element = document.getElementById("error_buscar");
 		element.classList.add("visually-hidden");
 		
-		console.log(productos.toString());
+		console.log(clientes.toString());
 		
 	if (clientes.toString()!=""){
 

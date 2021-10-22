@@ -58,13 +58,13 @@
 			<div class="container p-4">
 				<div class="col text-center">
 				  	<button type="button" class="btn btn-primary btn-lg" 
-				  		onclick="window.location.href='/reporteusuario.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/reporteusuario.jsp'">
 					<i class="fas fa-users"></i> Lstado de usuarios</button>
 					<button type="button" class="btn btn-secondary btn-lg"
-						onclick="window.location.href='/reporteclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/reporteclientes.jsp'">
 					<i class="fas fa-address-book"></i> Listado de clientes</button>
 					<button type="button" class="btn btn-info btn-lg"
-						onclick="window.location.href='/reporteventas.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/reporteventas.jsp'">
 					<i class="fas fa-money-check-alt"></i> Ventas por cliente</button>
 								
 				</div>

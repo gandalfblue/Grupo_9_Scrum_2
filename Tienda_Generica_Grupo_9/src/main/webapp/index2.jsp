@@ -47,22 +47,22 @@
 					
 					<ul class="list-group" style="list-style:none">								
 					  	<li><button type="button" class="btn btn-lg" 
-					  		onclick="window.location.href='/index_usuarios.jsp'">
+					  		onclick="window.location.href='<%=request.getContextPath()%>/index_usuarios.jsp'">
 							<i class="fas fa-users"></i>Usuarios</button></li>
 						<li><button type="button" class="btn btn-lg"
-							onclick="window.location.href='/index_clientes.jsp'">
+							onclick="window.location.href='<%=request.getContextPath()%>/index_clientes.jsp'">
 							<i class="fas fa-address-book"></i>Clientes</button></li>
 						<li><button type="button" class="btn btn-lg"
-							onclick="window.location.href='/index_proveedores.jsp'">
+							onclick="window.location.href='<%=request.getContextPath()%>/index_proveedores.jsp'">
 							<i class="fas fa-truck"></i>Proveedores</button></li>
 						<li><button type="button" class="btn btn-lg"
-							onclick="window.location.href='/index_productos.jsp'">
+							onclick="window.location.href='<%=request.getContextPath()%>/index_productos.jsp'">
 							<i class="fas fa-apple-alt"></i> Productos</button></li>
 						<li><button type="button" class="btn btn-lg"
-							onclick="window.location.href='/listaventas.jsp'">
+							onclick="window.location.href='<%=request.getContextPath()%>/listaventas.jsp'">
 							<i class="fas fa-money-check-alt"></i>Ventas</button></li>
 						<li><button type="button" class="btn btn-lg"
-							onclick="window.location.href='/reportes.jsp'">
+							onclick="window.location.href='<%=request.getContextPath()%>/reportes.jsp'">
 							<i class="fas fa-clipboard-list"></i>Reportes</button></li>
 					</ul>				
 				</div>

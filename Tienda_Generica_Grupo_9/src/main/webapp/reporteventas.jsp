@@ -115,11 +115,11 @@
 								<ul class="list-group" style="list-style-type:none;">
 				  					
 				  					<li><button type="button" class="btn btn-primary btn-lg" 
-				  						onclick="window.location.href='/reporteusuario.jsp'">
+				  						onclick="window.location.href='<%=request.getContextPath()%>/reporteusuario.jsp'">
 										<i class="fas fa-users"></i> Listado de usuarios</button></li>
 									<br>
 									<li><button type="button" class="btn btn-secondary btn-lg"
-										onclick="window.location.href='/reporteclientes.jsp'">
+										onclick="window.location.href='<%=request.getContextPath()%>/reporteclientes.jsp'">
 									<i class="fas fa-address-book"></i> Listado de clientes</button></li>
 									
 								</ul>

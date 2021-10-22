@@ -143,11 +143,11 @@ window.addEventListener('DOMContentLoaded', event => {
 								<ul class="list-group" style="list-style-type:none;">
 				  	
 									<li><button type="button" class="btn btn-primary btn-lg" 
-				  						onclick="window.location.href='/reporteusuario.jsp'">
+				  						onclick="window.location.href='<%=request.getContextPath()%>/reporteusuario.jsp'">
 										<i class="fas fa-users"></i> Listado de usuarios</button></li>
 									<br>
 									<li><button type="button" class="btn btn-info btn-lg"
-										onclick="window.location.href='/reporteventas.jsp'">
+										onclick="window.location.href='<%=request.getContextPath()%>/reporteventas.jsp'">
 									<i class="fas fa-money-check-alt"></i> Ventas por cliente</button></li>
 								</ul>
 							</div>
