@@ -63,26 +63,26 @@
 				<div class="col text-left">
 								
 				  	<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarclientes.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarclientes.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
 					<br>
 			<br>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarclientes.jsp'">
 					<i class="fas fa-trash"></i> Eliminar cliente</button>
 					<br>
 			<br>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarclientes.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
 					<br>
 			<br>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarclientes.jsp'">
 					<i class="fas fa-search"></i> Buscar un cliente</button><br>
 			<br>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listaclientes.jsp'">
 					<i class="fas fa-search"></i> Lista de clientes</button>				
 				</div>
 			</div>

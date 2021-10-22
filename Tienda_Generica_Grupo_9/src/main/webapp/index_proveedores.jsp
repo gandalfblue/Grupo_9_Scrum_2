@@ -59,19 +59,19 @@
 				<div class="col text-center">
 								
 				  	<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproveedores.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproveedores.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar proveedores</button>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproveedores.jsp'">
 					<i class="fas fa-trash"></i> Eliminar proveedores</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproveedores.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar proveedores</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarproveedores.jsp'">
 					<i class="fas fa-search"></i> Buscar proveedores</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listaproveedores.jsp'">
 					<i class="fas fa-list-ol"></i> Lista proveedores</button>				
 				</div>
 			</div>

@@ -188,13 +188,18 @@
 				
 	<!-- Script que trae la informacion de la api y la compara con las entradas -->
 	<script>
+		
+		//var baseUrl ='http://localhost:8080'
+		var getUrl = window.location;
+		var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+		
 		function comparar() {
 			//trayendo texto de input de username
 			var x = document.getElementById("inputuser").value;
 			//trayendo texto de input de password
 			var y = document.getElementById("inputpass").value;
 			//url de la api 
-			var baseurl = "http://localhost:8080/listarusuarios";
+			var baseurl = baseUrl +"/listarusuarios";
 			//creando un objeto de manipulacion de solicitudes
 			var xmlhttp = new XMLHttpRequest();
 			//abriendo la api

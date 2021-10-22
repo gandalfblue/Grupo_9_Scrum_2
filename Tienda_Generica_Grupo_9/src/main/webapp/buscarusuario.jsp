@@ -53,24 +53,26 @@
 			<div class="container p-4">
 				<div class="col text-center">
 				  	<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarusuario.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarusuario.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar usuario</button>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarusuario.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarusuario.jsp'">
 					<i class="fas fa-trash"></i> Eliminar usuario</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarusuario.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarusuario.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarusuario.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar usuario</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listausuarios.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listausuarios.jsp'">
 					<i class="fas fa-search"></i> Lista de usuarios</button>				
 				</div>
+			</div>
 				<div class="header">
 					<h1 style="color:gray; "><i class="fas fa-search"></i> Buscar usuario</h1>
 				</div>
+			
 	<div style="padding-left: 5px">
 		<div class="container">
 			<div id="error" class="alert alert-danger visually-hidden"
@@ -146,10 +148,14 @@
 	<script>
 		function enviar() {
 				
+				//var baseUrl ='http://localhost:8080'
+				var getUrl = window.location;
+				var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+				
 				var req = new XMLHttpRequest();
 				var coincidencia = false;
 				var user=   document.getElementById("usersearch").value;
-				req.open('GET', 'http://localhost:8080/consultarusuario?usuario='+user, false);
+				req.open('GET', baseUrl +'/consultarusuario?usuario='+user, false);
 				req.send(null);
 				var usuario = null;
 				if (req.status == 200)

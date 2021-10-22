@@ -40,11 +40,11 @@
 			<i class="fas fa-shopping-basket"></i> Tienda Generica</a>
 			<a class="navbar-brand links" href="index_usuarios.jsp">
 			<i class="fas fa-users"></i> Usuarios</a> 
-			<a class="navbar-brand links" href="listaclientes.jsp">
+			<a class="navbar-brand links" href="index_clientes.jsp">
 			<i class="fas fa-address-book"></i> Clientes</a>
-			<a class="navbar-brand links" href="listaproveedores.jsp">
+			<a class="navbar-brand links" href="index_proveedores.jsp">
 			<i class="fas fa-truck"></i> Proveedores</a>
-			<a class="navbar-brand links" href="listaproductos.jsp">
+			<a class="navbar-brand links" href="index_productos.jsp">
 			<i class="fas fa-apple-alt"></i> Productos</a>
 			<a class="navbar-brand links" href="listaventas.jsp">
 			<i class="fas fa-money-check-alt"></i> Ventas</a>
@@ -56,19 +56,19 @@
 		<div class="container p-4">
 			<div class="col text-center">
 					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarclientes.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarclientes.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarclientes.jsp'">
 					<i class="fas fa-trash"></i> Eliminar cliente</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarclientes.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarclientes.jsp'">
 					<i class="fas fa-search"></i> Buscar un cliente</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listaclientes.jsp'">
 					<i class="fas fa-search"></i> Lista de clientes</button>
 					
 			</div>
@@ -148,10 +148,14 @@
 	<script>
 		function enviar() {
 				
+				//var baseUrl ='http://localhost:8080'
+				var getUrl = window.location;
+				var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+				
 				var req = new XMLHttpRequest();
 				var coincidencia = false;
 				var user=   document.getElementById("cedula_cliente").value;
-				req.open('GET', 'http://localhost:8080/consultarclientes?cedula_cliente='+user, false);
+				req.open('GET', baseUrl +'/consultarclientes?cedula_cliente='+user, false);
 				req.send(null);
 				var clientes = null;
 				if (req.status == 200)

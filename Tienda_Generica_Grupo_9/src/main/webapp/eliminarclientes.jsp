@@ -57,19 +57,19 @@
 			<div class="container p-4">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarclientes.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarclientes.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='/eliminarclientes.jsp'">
 					<i class="fas fa-trash"></i> Eliminar cliente</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarclientes.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarclientes.jsp'">
 					<i class="fas fa-search"></i> Buscar un cliente</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listaclientes.jsp'">
 					<i class="fas fa-search"></i> Lista de clientes</button>
 					
 				</div>
@@ -132,10 +132,15 @@
 	<script>	
 	
 	function eliminar() {
+		
+		//var baseUrl ='http://localhost:8080'
+		var getUrl = window.location;
+		var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+		
 		var y = document.getElementById("clientesearch").value;
 		var req = new XMLHttpRequest();
 		var coincidencia = false;
-		req.open('GET', 'http://localhost:8080/listarclientes', false);
+		req.open('GET', baseUrl +'/listarclientes', false);
 		req.send(null);
 		var clientes = null;
 		if (req.status == 200)
@@ -157,7 +162,7 @@
 			var cedula=document.getElementById("clientesearch").value;
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open("DELETE", "http://localhost:8080/eliminarclientes?cedula_cliente="+cedula);
+			xhr.open("DELETE", baseUrl +'/eliminarclientes?cedula_cliente="+cedula);
 			
 			var element = document.getElementById("error");
 			element.classList.add("visually-hidden");

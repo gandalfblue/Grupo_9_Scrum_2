@@ -109,11 +109,16 @@
 	
 	<script>
 		function enviar() {
+			
+			//var baseUrl ='http://localhost:8080'
+			var getUrl = window.location;
+			var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+			
 			var x = document.getElementById("user").value;
 			var y = document.getElementById("cedula_usuario").value;
 			var req = new XMLHttpRequest();
 			var coincidencia = false;
-			req.open('GET', 'http://localhost:8080/listarusuarios', false);
+			req.open('GET', baseUrl +'/listarusuarios', false);
 			req.send(null);
 			var usuarios=null;
 			if (req.status == 200)
@@ -145,7 +150,7 @@
 	 			formData.append("password",document.getElementById("password").value);
 	 			formData.append("usuario",document.getElementById("user").value);
 	 			var xhr = new XMLHttpRequest();
-	 			xhr.open("POST", "http://localhost:8080/registrarusuario");
+	 			xhr.open("POST", baseUrl +"/registrarusuario");
 	 			
 				var element = document.getElementById("error");
 				element.classList.add("visually-hidden");

@@ -58,27 +58,27 @@
 				<div class="col text-left">
 								
 				  	<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarusuario.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarusuario.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar usuario</button>
 					<br>
 			        <br>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarusuario.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarusuario.jsp'">
 					<i class="fas fa-trash"></i> Eliminar usuario</button>
 					<br>
 			        <br>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarusuario.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarusuario.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
 					<br>
 			        <br>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarusuario.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar un usuario</button>
 					<br>
 			        <br>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listausuarios.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listausuarios.jsp'">
 					<i class="fas fa-list-ol"></i> Lista de usuarios</button>				
 				</div>
 			</div>
