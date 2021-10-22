@@ -52,19 +52,19 @@
 				<div class="container p-4">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproductos.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproductos.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar productos</button>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproductos.jsp'">
 					<i class="fas fa-trash"></i> Eliminar productos</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproductos.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarproductos.jsp'">
 					<i class="fas fa-search"></i> Buscar productos</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listaproductos.jsp'">
 					<i class="fas fa-list-ol"></i> Lista productos</button>
 					
 				</div>
@@ -103,7 +103,8 @@
  			<button type="button" class="btn btn-danger" onclick="eliminar()">
 				<i class="fas fa-trash"></i> Eliminar producto
 			</button>
-
+	</div>
+</div>
 	
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
@@ -118,10 +119,15 @@
 	<script>	
 		
 	function eliminar() {
+		
+		//var baseUrl ='http://localhost:8080'
+		var getUrl = window.location;
+		var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+		
 		var y = document.getElementById("productosearch").value;
 		var req = new XMLHttpRequest();
 		var coincidencia = false;
-		req.open('GET', 'http://localhost:8080/listarproductos', false);
+		req.open('GET', baseUrl +'/listarproductos', false);
 		req.send(null);
 		var productos = null;
 		if (req.status == 200)
@@ -143,7 +149,7 @@
 			var codigo=document.getElementById("productosearch").value;
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open("DELETE", "http://localhost:8080/eliminarproductos?codigo_producto="+codigo);
+			xhr.open("DELETE", baseUrl +"/eliminarproductos?codigo_producto="+codigo);
 			
 			var element = document.getElementById("error");
 			element.classList.add("visually-hidden");

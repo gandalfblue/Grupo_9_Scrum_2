@@ -56,19 +56,19 @@
 			<div class="container p-4">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproveedores.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproveedores.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar proveedores</button>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproveedores.jsp'">
 					<i class="fas fa-trash"></i> Eliminar proveedores</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproveedores.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar proveedores</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarproveedores.jsp'">
 					<i class="fas fa-search"></i> Buscar proveedores</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listaproveedores.jsp'">
 					<i class="fas fa-list-ol"></i> Lista proveedores</button>
 					
 				</div>
@@ -148,10 +148,14 @@
 	<script>
 		function enviar() {
 			
+			//var baseUrl ='http://localhost:8080'
+			var getUrl = window.location;
+			var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+			
 			var y = document.getElementById("nit_proveedor").value;
 			var req = new XMLHttpRequest();
 			var coincidencia = false;
-			req.open('GET', 'http://localhost:8080/listarproveedores', false);
+			req.open('GET', baseUrl +'/listarproveedores', false);
 			req.send(null);
 			var proveedores=null;
 			if (req.status == 200)
@@ -177,7 +181,7 @@
 	 			formData.append("nombre_proveedor",document.getElementById("nombre_proveedor").value);
 	 			formData.append("telefono_proveedor",document.getElementById("telefono_proveedor").value);
 	 			var xhr = new XMLHttpRequest();
-	 			xhr.open("POST", "http://localhost:8080/registrarproveedores");
+	 			xhr.open("POST", baseUrl +"/registrarproveedores");
 	 			
 				var element = document.getElementById("error");
 				element.classList.add("visually-hidden");

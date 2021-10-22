@@ -32,6 +32,10 @@
 
 <script>
 
+//var baseUrl ='http://localhost:8080'
+var getUrl = window.location;
+var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+
 	window.addEventListener('DOMContentLoaded', event => {
     // Simple-DataTables
     // https://github.com/fiduswriter/Simple-DataTables/wiki
@@ -56,7 +60,7 @@
 	   	});
     
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "http://localhost:8080/listarusuarios", true);
+		xmlhttp.open("GET", baseUrl +"/listarusuarios", true);
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
@@ -151,6 +155,7 @@
 									<li><button type="button" class="btn btn-secondary btn-lg"
 										onclick="window.location.href='/reporteclientes.jsp'">
 									<i class="fas fa-address-book"></i> Listado de clientes</button></li>
+									<br>
 									<li><button type="button" class="btn btn-info btn-lg"
 										onclick="window.location.href='/reporteventas.jsp'">
 									<i class="fas fa-money-check-alt"></i> Ventas por cliente</button></li>

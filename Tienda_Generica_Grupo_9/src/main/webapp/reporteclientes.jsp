@@ -32,6 +32,11 @@
 
 <script>
 
+//var baseUrl ='http://localhost:8080'
+var getUrl = window.location;
+var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+
+
 window.addEventListener('DOMContentLoaded', event => {
 	let table=null;
     if (datatablesusers) {
@@ -46,7 +51,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     }
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "http://localhost:8080/listarclientes", true);
+		xmlhttp.open("GET", baseUrl +"/listarclientes", true);
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
@@ -139,7 +144,8 @@ window.addEventListener('DOMContentLoaded', event => {
 				  	
 									<li><button type="button" class="btn btn-primary btn-lg" 
 				  						onclick="window.location.href='/reporteusuario.jsp'">
-										<i class="fas fa-users"></i> Lstado de usuarios</button></li>
+										<i class="fas fa-users"></i> Listado de usuarios</button></li>
+									<br>
 									<li><button type="button" class="btn btn-info btn-lg"
 										onclick="window.location.href='/reporteventas.jsp'">
 									<i class="fas fa-money-check-alt"></i> Ventas por cliente</button></li>
