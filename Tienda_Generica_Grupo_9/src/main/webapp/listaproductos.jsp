@@ -10,7 +10,7 @@
 <!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaÃ±a -->
-<title>Lista de productos</title>
+<title>Lista de Productos</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -101,19 +101,19 @@
 				<img src="https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg" id="corner_productos">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproductos.jsp'">
-					<i class="fas fa-plus-circle"></i> Insertar productos</button>
+					<i class="fas fa-plus-circle"></i> Insertar Productos</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproductos.jsp'">
-					<i class="fas fa-trash"></i> Eliminar productos</button>
+					<i class="fas fa-trash"></i> Eliminar Productos</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproductos.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Productos</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarproductos.jsp'">
-					<i class="fas fa-search"></i> Buscar productos</button>
+					<i class="fas fa-search"></i> Buscar Productos</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaproductos.jsp'">
-					<i class="fas fa-list-ol"></i> Lista productos</button>
+					<i class="fas fa-list-ol"></i> Lista Productos</button>
 					
 				</div>
 			</div>
@@ -122,7 +122,7 @@
 <br>
 <div class="header">	
 			<h1 style="color:blue;">
-			<i class="fas fa-list-ol"></i> lista productos
+			<i class="fas fa-list-ol"></i> lista Productos
 		</h1>
 
 <br>
@@ -132,28 +132,28 @@
 					<div class="col-xl-8">
 						<div class="card m-3">
 							<div class="card-header text-white bg-dark">
-								<i class="fas fa-table"></i> Tabla de productos
+								<i class="fas fa-table"></i> Tabla de Productos
 							</div>
 							<div class="card-body">
 								<table id="datatablesusers">
 									<thead>
 										<tr>
-											<th>Codigo del producto</th>
-											<th>Iva de compra</th>
-											<th>Nit del proveedor</th>
-											<th>Nombre del producto</th>
-											<th>Precio de compra</th>
-											<th>Precio de venta</th>
+											<th>Código del Producto</th>
+											<th>Iva de Compra</th>
+											<th>Nit del Proveedor</th>
+											<th>Nombre del Producto</th>
+											<th>Precio de Compra</th>
+											<th>Precio de Venta</th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
-											<th>Codigo del producto</th>
-											<th>Iva de compra</th>
-											<th>Nit del proveedor</th>
-											<th>Nombre del producto</th>
-											<th>Precio de compra</th>
-											<th>Precio de venta</th>
+											<th>Código del Producto</th>
+											<th>Iva de Compra</th>
+											<th>Nit del Proveedor</th>
+											<th>Nombre del Producto</th>
+											<th>Precio de Compra</th>
+											<th>Precio de Venta</th>
 										</tr>
 									</tfoot>
 									<tbody id="productosinfo">

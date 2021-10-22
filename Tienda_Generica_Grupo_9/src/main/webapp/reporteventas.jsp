@@ -9,7 +9,7 @@
 <!-- Tama√É¬±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pesta√É¬±a -->
-<title>Reporte de ventas</title>
+<title>Reporte de Ventas</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -82,21 +82,21 @@
 											<div class="col-6">
 			
 												<div class="input-group mb-3 input-group-sm">    												
-    												<span class="input-group-text" id="basic-addon1">Cedula cliente</span>
+    												<span class="input-group-text" id="basic-addon1">CÈdula Cliente</span>
 													<input type="text" placeholder="Inserte la cedula aqui y presione enter"
 													class="form-control" id="cedula_cliente" onkeypress="if (event.keyCode == 13) traerCliente()">
 												</div>
 											</div>
 										<tr>
-											<th>Cedula del cliente</th>
-											<th>Nombre del cliente</th>
+											<th>CÈdula del Cliente</th>
+											<th>Nombre del Cliente</th>
 											<th>Valor venta</th>											
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
-											<th>Cedula del cliente</th>
-											<th>Nombre del cliente</th>
+											<th>CÈdula del Cliente</th>
+											<th>Nombre del Cliente</th>
 											<th>Valor venta</th>
 										</tr>
 									</tfoot>
@@ -116,11 +116,11 @@
 				  					
 				  					<li><button type="button" class="btn btn-primary btn-lg" 
 				  						onclick="window.location.href='<%=request.getContextPath()%>/reporteusuario.jsp'">
-										<i class="fas fa-users"></i> Listado de usuarios</button></li>
+										<i class="fas fa-users"></i> Listado de Usuarios</button></li>
 									<br>
 									<li><button type="button" class="btn btn-secondary btn-lg"
 										onclick="window.location.href='<%=request.getContextPath()%>/reporteclientes.jsp'">
-									<i class="fas fa-address-book"></i> Listado de clientes</button></li>
+									<i class="fas fa-address-book"></i> Listado de Clientes</button></li>
 									
 								</ul>
 							</div>
@@ -133,7 +133,7 @@
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
 
-					Dise√±ado y programado por Carol Martinez, Claudia Gonzalez, David Mu√±oz, Andr√©s Lozada <i
+					DiseÒado y programado por Carol MartÌnez, Claudia Gonzalez, David MuÒoz, AndrÈs Lozada <i
 
 					class="fas fa-code-branch"></i></a>
 			</div>

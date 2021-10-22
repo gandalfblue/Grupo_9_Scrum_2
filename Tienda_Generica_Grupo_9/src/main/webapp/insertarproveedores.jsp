@@ -10,7 +10,7 @@
 <!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaÃ±a -->
-<title>Insertando proveedor</title>
+<title>Insertando Proveedor</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -57,26 +57,26 @@
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproveedores.jsp'">
-					<i class="fas fa-plus-circle"></i> Insertar proveedores</button>
+					<i class="fas fa-plus-circle"></i> Insertar Proveedores</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproveedores.jsp'">
-					<i class="fas fa-trash"></i> Eliminar proveedores</button>
+					<i class="fas fa-trash"></i> Eliminar Proveedores</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproveedores.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar proveedores</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Proveedores</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarproveedores.jsp'">
-					<i class="fas fa-search"></i> Buscar proveedores</button>
+					<i class="fas fa-search"></i> Buscar Proveedores</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaproveedores.jsp'">
-					<i class="fas fa-list-ol"></i> Lista proveedores</button>
+					<i class="fas fa-list-ol"></i> Lista Proveedores</button>
 					
 				</div>
 			</div>
 	
 			<div class="header">
 				<h1 style="color:green;" >
-					<i class="fas fa-plus-circle"></i> Insertar proveedor
+					<i class="fas fa-plus-circle"></i> Insertar Proveedor
 				</h1>		
 			</div>
 
@@ -93,41 +93,41 @@
 
 			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon2">Nit del proveedor</span> <input
+					<span class="input-group-text" id="basic-addon2">Nit del Proveedor</span> <input
 						type="text"  
-						placeholder="Inserte nit aqui..."
+						placeholder="Ingresar nit aqui..."
 						aria-describedby="basic-addon2">
 				</div>
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon2">Ciudad del proveedor</span>
+					<span class="input-group-text" id="basic-addon2">Ciudad del Proveedor</span>
 					<input type="text" class="form-control" 
-						placeholder="Inserte el ciudad aqui..."
+						placeholder="Ingresar ciudad aqui..."
 						aria-describedby="basic-addon2">
 				</div>
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon2">Direccion del proveedor</span> <input
+					<span class="input-group-text" id="basic-addon2">Dirección del Proveedor</span> <input
 						type="text" class="form-control" 
-						placeholder="Inserte la direccion aqui..."
+						placeholder="Ingresar dirección aqui..."
 						aria-describedby="basic-addon2">
 				</div>
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon4">Nombre del proveedor</span> <input
+					<span class="input-group-text" id="basic-addon4">Nombre del Proveedor</span> <input
 						type="text" class="form-control" 
-						placeholder="Inserte el nombre del proveedor aqui..."
+						placeholder="Ingresar nombre del proveedor aqui..."
 						aria-describedby="basic-addon2">
 				</div>
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon5">Telefono del proveedor</span> <input
+					<span class="input-group-text" id="basic-addon5">Teléfono del Proveedor</span> <input
 						type="text" class="form-control"  
-						placeholder="Inserte el telefono del proveedor aqui..."
+						placeholder="Ingresar teléfono del proveedor aqui..."
 						aria-describedby="basic-addon2">
 				</div>
 
 			</form>
 
 			<button type="button" class="btn btn-success" onclick="enviar()">
-				<i class="fas fa-check"></i> Insertar nuevo proveedor
+				<i class="fas fa-check"></i> Insertar Nuevo Proveedor
 			</button>
 			<br>
 			<br>

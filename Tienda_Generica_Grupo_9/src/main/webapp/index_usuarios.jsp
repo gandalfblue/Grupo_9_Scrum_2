@@ -50,7 +50,7 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
-	<br>
+	
 	<header id=titulo_3> Pagina principal de Usuarios 
 	</header>
 	
@@ -59,27 +59,27 @@
 								
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarusuario.jsp'">
-					<i class="fas fa-plus-circle"></i> Insertar usuario</button>
+					<i class="fas fa-plus-circle"></i> Insertar Usuario</button>
 					<br>
 			        <br>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarusuario.jsp'">
-					<i class="fas fa-trash"></i> Eliminar usuario</button>
+					<i class="fas fa-trash"></i> Eliminar Usuario</button>
 					<br>
 			        <br>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarusuario.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Usuario</button>
 					<br>
 			        <br>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarusuario.jsp'">
-					<i class="fas fa-search"></i> Buscar un usuario</button>
+					<i class="fas fa-search"></i> Buscar un Usuario</button>
 					<br>
 			        <br>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listausuarios.jsp'">
-					<i class="fas fa-list-ol"></i> Lista de usuarios</button>				
+					<i class="fas fa-list-ol"></i> Lista de Usuarios</button>				
 				</div>
 			</div>
 	<br>

@@ -9,7 +9,7 @@
 <!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaÃ±a -->
-<title>Reporte de clientes</title>
+<title>Reporte de Cclientes</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -107,26 +107,26 @@ window.addEventListener('DOMContentLoaded', event => {
 					<div class="col-xl-8">
 						<div class="card m-4">
 							<div class="card-header text-white bg-dark">
-								<i class="fas fa-table"></i> Tabla de clientes
+								<i class="fas fa-table"></i> Tabla de Clientes
 							</div>
 							<div class="card-body">
 								<table id="datatablesusers" data-page-length='5'>
 									<thead>
 										<tr>
-											<th>Cedula</th>
-											<th>Direccion</th>
+											<th>Cédula</th>
+											<th>Dirección</th>
 											<th>Email</th>
 											<th>Nombre</th>
-											<th>Telefono</th>
+											<th>Teléfono</th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
-											<th>Cedula</th>
-											<th>Direccion</th>
+											<th>Cédula</th>
+											<th>Dirección</th>
 											<th>Email</th>
 											<th>Nombre</th>
-											<th>Telefono</th>
+											<th>Teléfono</th>
 										</tr>
 									</tfoot>
 									<tbody id="clientesinfo">
@@ -144,11 +144,11 @@ window.addEventListener('DOMContentLoaded', event => {
 				  	
 									<li><button type="button" class="btn btn-primary btn-lg" 
 				  						onclick="window.location.href='<%=request.getContextPath()%>/reporteusuario.jsp'">
-										<i class="fas fa-users"></i> Listado de usuarios</button></li>
+										<i class="fas fa-users"></i> Listado de Usuarios</button></li>
 									<br>
 									<li><button type="button" class="btn btn-info btn-lg"
 										onclick="window.location.href='<%=request.getContextPath()%>/reporteventas.jsp'">
-									<i class="fas fa-money-check-alt"></i> Ventas por cliente</button></li>
+									<i class="fas fa-money-check-alt"></i> Ventas por Cliente</button></li>
 								</ul>
 							</div>
 						</div>

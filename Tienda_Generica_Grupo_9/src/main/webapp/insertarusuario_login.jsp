@@ -9,7 +9,7 @@
 <!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaÃ±a -->
-<title>Insertando usuario</title>
+<title>Insertando Usuario</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -40,7 +40,7 @@
 	</nav>
 
 				<div class="header">
-					<h1 style="color:green; "><i class="fas fa-plus-circle"></i> Insertar usuario</h1>
+					<h1 style="color:green; "><i class="fas fa-plus-circle"></i> Insertar Usuario</h1>
 				</div>
 		<br>
 	<div style="padding-left: 5px">
@@ -53,44 +53,44 @@
 
 			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">Cedula</span> <input
+					<span class="input-group-text" id="basic-addon1">Cédula</span> <input
 						type="text" class="form-control"
-						placeholder="Inserte cedula aqui..."
+						placeholder="Ingresar cédula aqui..."
 						aria-describedby="basic-addon1" required id="cedula_usuario">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon2">Email</span> <input
 						type="text" class="form-control"
-						placeholder="Inserte email aqui..."
+						placeholder="Ingresar email aqui..."
 						aria-describedby="basic-addon2" required id="email_usuario">
 				</div>
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon3">Nombre completo</span>
+					<span class="input-group-text" id="basic-addon3">Nombre Completo</span>
 					<input type="text" class="form-control"
-						placeholder="Inserte nombre aqui..."
+						placeholder="Ingresar nombre aqui..."
 						aria-describedby="basic-addon3" required id="nombre_usuario">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Username</span> <input
 						type="text" class="form-control"
-						placeholder="Inserte username aqui..."
+						placeholder="Ingresar username aqui..."
 						aria-describedby="basic-addon4" required id="user">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon5">Password</span> <input
 						type="text" class="form-control"
-						placeholder="Inserte password aqui..."
+						placeholder="Ingresar password aqui..."
 						aria-describedby="basic-addon5" required id="password">
 				</div>
 
 			</form>
 
 			<button type="button" class="btn btn-success" onclick="enviar()">
-				<i class="fas fa-plus-circle"></i> Insertar nuevo usuario
+				<i class="fas fa-plus-circle"></i> Insertar Nuevo Usuario
 			</button>
 
 		</div>

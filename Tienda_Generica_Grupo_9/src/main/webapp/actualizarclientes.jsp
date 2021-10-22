@@ -10,7 +10,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Actualizar cliente</title>
+<title>Actualizar Cliente</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -57,24 +57,24 @@
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarclientes.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
+					<i class="fas fa-plus-circle"></i> Agregar Cliente</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarclientes.jsp'">
-					<i class="fas fa-trash"></i> Eliminar cliente</button>
+					<i class="fas fa-trash"></i> Eliminar Cliente</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarclientes.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Cliente</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarclientes.jsp'">
-					<i class="fas fa-search"></i> Buscar un cliente</button>
+					<i class="fas fa-search"></i> Buscar un Cliente</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaclientes.jsp'">
-					<i class="fas fa-search"></i> Lista de clientes</button>
+					<i class="fas fa-search"></i> Lista de Clientes</button>
 					
 				</div>
 			</div>
 			<div class="header">
-				<h1 style="color:black; "><i class="fas fa-pen-alt"></i> Actualizar cliente</h1>
+				<h1 style="color:black; "><i class="fas fa-pen-alt"></i> Actualizar Cliente</h1>
 			</div>
 
 	<div style="padding-left: 5px">
@@ -83,10 +83,10 @@
 
 
 			<div id="error" class="alert alert-danger visually-hidden"
-				role="alert">Error al actualizar el cliente, verifique que el numero de cedula sea valido</div>
+				role="alert">Error al actualizar el cliente, verifique que el numero de cédula sea valido</div>
 			
 			<div id="error_buscar" class="alert alert-danger visually-hidden"
-				role="alert">Error al buscar el cliente, verifique que el numero de cedula sea valido</div>
+				role="alert">Error al buscar el cliente, verifique que el numero de cédula sea valido</div>
 			
 			
 			<div id="correcto" class="alert alert-success visually-hidden"
@@ -94,49 +94,49 @@
 
 			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">Cedula</span> <input
+					<span class="input-group-text" id="basic-addon1">Cédula</span> <input
 						type="text" class="form-control" 
-						placeholder="Inserte cedula aqui..."
+						placeholder="Ingresar cédula aqui..."
 						aria-describedby="basic-addon1" required id="cedula_cliente">
 				</div>
 				
 				<button type="button" class="btn btn-secondary" onclick="enviar()">
-				<i class="fas fa-search"></i> Buscar cliente
+				<i class="fas fa-search"></i> Buscar Cliente
 				</button>				
 				<br>
 				<br>
 				
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon4">Direccion</span> <input
+					<span class="input-group-text" id="basic-addon4">Dirección</span> <input
 						type="text" class="form-control" 
-						placeholder="Inserte la dirección aqui..."
+						placeholder="Ingresar dirección aqui..."
 						aria-describedby="basic-addon4" required id="direccion_cliente" disabled="disabled">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon2">Email</span> <input
 						type="text" class="form-control" 
-						placeholder="Inserte email aqui..."
+						placeholder="Ingresar email aqui..."
 						aria-describedby="basic-addon2" required id="email_cliente" disabled="disabled">
 				</div>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Nombre completo</span>
 					<input type="text" class="form-control" 
-						placeholder="Inserte el nombre aqui..."
+						placeholder="Ingresar nombre aqui..."
 						aria-describedby="basic-addon3" required id="nombre_cliente" disabled="disabled">
 				</div>				
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon5">Telefono</span> <input
+					<span class="input-group-text" id="basic-addon5">Teléfono</span> <input
 						type="text" class="form-control" 
-						placeholder="Inserte el telefono aqui..."
+						placeholder="Ingresar teléfono aqui..."
 						aria-describedby="basic-addon5" required id="telefono_cliente" disabled="disabled">
 				</div>
 			</form>
 
 			<button type="button" class="btn btn-warning" onclick="actualizar()">
-				<i class="fas fa-edit"></i> Actualizar cliente
+				<i class="fas fa-edit"></i> Actualizar Cliente
 			</button>
 
 		</div>

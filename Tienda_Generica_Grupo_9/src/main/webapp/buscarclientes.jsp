@@ -10,7 +10,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Buscar cliente</title>
+<title>Buscar Cliente</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -57,24 +57,24 @@
 			<div class="col text-center">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarclientes.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
+					<i class="fas fa-plus-circle"></i> Agregar Cliente</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarclientes.jsp'">
-					<i class="fas fa-trash"></i> Eliminar cliente</button>
+					<i class="fas fa-trash"></i> Eliminar Cliente</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarclientes.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Cliente</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarclientes.jsp'">
-					<i class="fas fa-search"></i> Buscar un cliente</button>
+					<i class="fas fa-search"></i> Buscar un Cliente</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaclientes.jsp'">
-					<i class="fas fa-search"></i> Lista de clientes</button>
+					<i class="fas fa-search"></i> Lista de Clientes</button>
 					
 			</div>
 		</div>
 		<div class="header">
-				<h1 style="color:gray; "><i class="fas fa-search"></i> Buscar cliente</h1>
+				<h1 style="color:gray; "><i class="fas fa-search"></i> Buscar Cliente</h1>
 		</div>
 
 	<div style="padding-left: 5px">
@@ -88,17 +88,17 @@
 			<form id="form1"  class="preselection">
 			
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">Cliente a buscar</span> 
+					<span class="input-group-text" id="basic-addon1">Cliente a Buscar</span> 
 					<input
 						type="text" class="form-control"
-						placeholder="Inserte la cedula aqui..."
+						placeholder="Ingresar cédula aqui..."
 						aria-describedby="basic-addon1" required id="cedula_cliente">
 				</div>
 				
 				<br>
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon3">Direccion</span>
+					<span class="input-group-text" id="basic-addon3">Dirección</span>
 					<input type="text" class="form-control"
 						aria-describedby="basic-addon3" required id="direccion_cliente"  disabled="disabled">
 				</div>
@@ -116,14 +116,14 @@
 				</div>
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon5">Telefono</span> <input
+					<span class="input-group-text" id="basic-addon5">Teléfono</span> <input
 						type="text" class="form-control"
 						aria-describedby="basic-addon5" required id="telefono_cliente"  disabled="disabled">
 				</div>
 			</form>
 
 			<button type="button" class="btn btn-secondary" onclick="enviar()">
-				<i class="fas fa-search"></i> Buscar cliente
+				<i class="fas fa-search"></i> Buscar Cliente
 			</button>
 			
 			<br>

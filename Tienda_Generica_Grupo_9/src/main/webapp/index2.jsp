@@ -39,7 +39,7 @@
 	</nav>	
 	
 	
-	<header id=titulo_3> Pagina principal Tienda Generica</header>
+	<header id=titulo_3> Página Principal Tienda Generica</header>
 	
 	<div class="container p-4">
 		<div class="row justify-align-center">

@@ -9,7 +9,7 @@
 <!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaÃ±a -->
-<title>Eliminar usuario</title>
+<title>Eliminar Usuario</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -56,24 +56,24 @@
 				<div class="col text-center">
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarusuario.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar usuario</button>
+					<i class="fas fa-plus-circle"></i> Agregar Usuario</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarusuario.jsp'">
-					<i class="fas fa-trash"></i> Eliminar usuario</button>
+					<i class="fas fa-trash"></i> Eliminar Usuario</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarusuario.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Usuario</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarusuario.jsp'">
-					<i class="fas fa-search"></i> Buscar un usuario</button>
+					<i class="fas fa-search"></i> Buscar un Usuario</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listasuarios.jsp'">
-					<i class="fas fa-search"></i> Lista de usuarios</button>				
+					<i class="fas fa-search"></i> Lista de Usuarios</button>				
 				</div>
 			</div>
   	 	<br>
 				<div class="header">
-					<h1 style="color:red; "><i class="fas fa-trash"></i> Eliminar usuario</h1>
+					<h1 style="color:red; "><i class="fas fa-trash"></i> Eliminar Usuario</h1>
 				</div>
 			<br>
 		<br>
@@ -92,9 +92,9 @@
 
 			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">Cedula del usuario</span>
+					<span class="input-group-text" id="basic-addon1">Cédula del Usuario</span>
 					 <input type="text" class="form-control"
-						placeholder="Inserte cedula aqui..."
+						placeholder="Ingresar cédula aqui..."
 						aria-describedby="basic-addon1" required id="usersearch">
 				</div>
 
@@ -102,7 +102,7 @@
 		
 	
 		<button type="button" class="btn btn-danger" onclick="eliminar()">
-				<i class="fas fa-trash"></i> Eliminar usuario
+				<i class="fas fa-trash"></i> Eliminar Usuario
 		</button>
 		
 		</div>

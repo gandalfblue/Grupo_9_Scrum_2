@@ -10,7 +10,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Eliminar proveedor</title>
+<title>Eliminar Proveedor</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -58,26 +58,26 @@
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproveedores.jsp'">
-					<i class="fas fa-plus-circle"></i> Insertar proveedores</button>
+					<i class="fas fa-plus-circle"></i> Insertar Proveedores</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproveedores.jsp'">
-					<i class="fas fa-trash"></i> Eliminar proveedores</button>
+					<i class="fas fa-trash"></i> Eliminar Proveedores</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproveedores.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar proveedores</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Proveedores</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarproveedores.jsp'">
-					<i class="fas fa-search"></i> Buscar proveedores</button>
+					<i class="fas fa-search"></i> Buscar Proveedores</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaproveedores.jsp'">
-					<i class="fas fa-list-ol"></i> Lista proveedores</button>
+					<i class="fas fa-list-ol"></i> Lista Proveedores</button>
 				</div>
 			</div>
 	
 		<br>
 			<div class="header">
 				<h1 style="color:red;" >
-					<i class="fas fa-trash"></i> Eliminar proveedores
+					<i class="fas fa-trash"></i> Eliminar Proveedores
 				</h1>		
 			</div>
 		<br>
@@ -85,7 +85,7 @@
 			<div class="container">		
 		
 			<div id="error" class="alert alert-danger visually-hidden"
-					role="alert">Error al eliminar el proveedor,</div>
+					role="alert">Error al Eliminar el Proveedor,</div>
 					
 			<div id="no_encontrado" class="alert alert-danger visually-hidden"
 					role="alert">proveedor no encontrado, verifique que este ingresando
@@ -96,16 +96,16 @@
 
 			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">Nit del proveedor</span>
+					<span class="input-group-text" id="basic-addon1">Nit del Proveedor</span>
 					 <input type="text" class="form-control" 
-						placeholder="Inserte nit aqui..."
+						placeholder="Ingresar nit aqui..."
 						aria-describedby="basic-addon1" required id="proveedorsearch">
 				</div>
 
 			</form>
 					
 					<button type="button" class="btn btn-danger" onclick="eliminar()">
-						<i class="fas fa-trash"></i> Eliminar proveedor
+						<i class="fas fa-trash"></i> Eliminar Proveedor
 					</button>
 	 			</div>
 			   

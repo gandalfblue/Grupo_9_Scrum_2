@@ -52,20 +52,20 @@
 		</div>
 	</nav>
 	<br>
-	<header id=titulo_3> Pagina principal reportes 
+	<header id=titulo_3> Página Principal Reportes 
 	</header>
 		<br>
 			<div class="container p-4">
 				<div class="col text-center">
 				  	<button type="button" class="btn btn-primary btn-lg" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/reporteusuario.jsp'">
-					<i class="fas fa-users"></i> Lstado de usuarios</button>
+					<i class="fas fa-users"></i> Lstado de Usuarios</button>
 					<button type="button" class="btn btn-secondary btn-lg"
 						onclick="window.location.href='<%=request.getContextPath()%>/reporteclientes.jsp'">
-					<i class="fas fa-address-book"></i> Listado de clientes</button>
+					<i class="fas fa-address-book"></i> Listado de Clientes</button>
 					<button type="button" class="btn btn-info btn-lg"
 						onclick="window.location.href='<%=request.getContextPath()%>/reporteventas.jsp'">
-					<i class="fas fa-money-check-alt"></i> Ventas por cliente</button>
+					<i class="fas fa-money-check-alt"></i> Ventas por Cliente</button>
 								
 				</div>
 			</div>

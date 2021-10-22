@@ -10,7 +10,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Modulo clientes</title>
+<title>Módulo Clientes</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -54,7 +54,7 @@
 	<br>
 	<br>
 	
-	<header id=titulo_3> Pagina principal de Clientes 
+	<header id=titulo_3> Página Principal de Clientes 
 	</header>
 	<br>
 			<br>
@@ -64,26 +64,26 @@
 								
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarclientes.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
+					<i class="fas fa-plus-circle"></i> Agregar Cliente</button>
 					<br>
 			<br>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarclientes.jsp'">
-					<i class="fas fa-trash"></i> Eliminar cliente</button>
+					<i class="fas fa-trash"></i> Eliminar Cliente</button>
 					<br>
 			<br>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarclientes.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Cliente</button>
 					<br>
 			<br>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarclientes.jsp'">
-					<i class="fas fa-search"></i> Buscar un cliente</button><br>
+					<i class="fas fa-search"></i> Buscar un Cliente</button><br>
 			<br>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaclientes.jsp'">
-					<i class="fas fa-search"></i> Lista de clientes</button>				
+					<i class="fas fa-search"></i> Lista de Clientes</button>				
 				</div>
 			</div>
 	<br>

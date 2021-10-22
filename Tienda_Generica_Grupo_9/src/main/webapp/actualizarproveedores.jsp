@@ -10,7 +10,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Actualizar proveedor</title>
+<title>Actualizar Proveedor</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -58,25 +58,25 @@
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproveedores.jsp'">
-					<i class="fas fa-plus-circle"></i> Insertar proveedores</button>
+					<i class="fas fa-plus-circle"></i> Insertar Proveedores</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproveedores.jsp'">
-					<i class="fas fa-trash"></i> Eliminar proveedores</button>
+					<i class="fas fa-trash"></i> Eliminar Proveedores</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproveedores.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar proveedores</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Pproveedores</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarproveedores.jsp'">
-					<i class="fas fa-search"></i> Buscar proveedores</button>
+					<i class="fas fa-search"></i> Buscar Proveedores</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaproveedores.jsp'">
-					<i class="fas fa-list-ol"></i> Lista proveedores</button>
+					<i class="fas fa-list-ol"></i> Lista Proveedores</button>
 					
 				</div>
 			</div>
 			<div class="header">
 				<h1 style="color:black;" >
-					<i class="fas fa-pen-alt"></i> Actualizar proveedor
+					<i class="fas fa-pen-alt"></i> Actualizar Proveedor
 				</h1>		
 			</div>
 		<br>	
@@ -98,41 +98,41 @@
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Nit</span> <input
 						type="text" class="form-control" 
-						placeholder="Inserte el nit aqui..."
+						placeholder="Ingresar el nit aqui..."
 						aria-describedby="basic-addon1" required id="nit_proveedor">
 				</div>
 				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Ciudad</span> <input
 						type="text" class="form-control" 
-						placeholder="Inserte la ciudad aqui..."
+						placeholder="Ingresar la ciudad aqui..."
 						aria-describedby="basic-addon4" required id="ciudad_proveedor">
 				</div>
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon2">Direccion</span> <input
+					<span class="input-group-text" id="basic-addon2">Dirección</span> <input
 						type="text" class="form-control" 
-						placeholder="Inserte la direccion aqui..."
+						placeholder="Ingresar la dirección aqui..."
 						aria-describedby="basic-addon2" required id="direccion_proveedor">
 				</div>
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon3">Nombre completo</span>
+					<span class="input-group-text" id="basic-addon3">Nombre Completo</span>
 					<input type="text" class="form-control" 
-						placeholder="Inserte el nombre aqui..."
+						placeholder="Ingresar el nombre aqui..."
 						aria-describedby="basic-addon3" required id="nombre_proveedor">
 				</div>				
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon5">Telefono</span> <input
+					<span class="input-group-text" id="basic-addon5">Teléfono</span> <input
 						type="text" class="form-control" 
-						placeholder="Inserte el telefono aqui..."
+						placeholder="Ingresar el teléfono aqui..."
 						aria-describedby="basic-addon5" required id="telefono_proveedor">
 				</div>
 			</form>
 
 			<button type="button" class="btn btn-warning" onclick="actualizar()">
-				<i class="fas fa-edit"></i> Actualizar proveedor
+				<i class="fas fa-edit"></i> Actualizar Proveedor
 			</button>
 
 			<br>

@@ -10,7 +10,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Actualizar productos</title>
+<title>Actualizar Productos</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -56,24 +56,24 @@
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproductos.jsp'">
-					<i class="fas fa-plus-circle"></i> Insertar productos</button>
+					<i class="fas fa-plus-circle"></i> Insertar Productos</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproductos.jsp'">
-					<i class="fas fa-trash"></i> Eliminar productos</button>
+					<i class="fas fa-trash"></i> Eliminar Productos</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproductos.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Productos</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarproductos.jsp'">
-					<i class="fas fa-search"></i> Buscar productos</button>
+					<i class="fas fa-search"></i> Buscar Productos</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaproductos.jsp'">
-					<i class="fas fa-list-ol"></i> Lista productos</button>	
+					<i class="fas fa-list-ol"></i> Lista Productos</button>	
 				</div>
 			</div>
 			<div class="header">
 				<h1 style="color:black;" >
-					<i class="fas fa-pen-alt"></i> Actualizar producto
+					<i class="fas fa-pen-alt"></i> Actualizar Producto
 				</h1>		
 			</div>
 			
@@ -93,52 +93,52 @@
 
 			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">Codigo del producto</span> <input
+					<span class="input-group-text" id="basic-addon1">Código del Producto</span> <input
 						type="text" class="form-control"
-						placeholder="Inserte el codigo del producto aqui..."
+						placeholder="Ingresar el código del producto aqui..."
 						aria-describedby="basic-addon1" required id="codigo_producto">
 				</div><button type="button" class="btn btn-secondary" onclick="enviar()">
-				<i class="fas fa-search"></i> Buscar producto
+				<i class="fas fa-search"></i> Buscar Producto
 				</button>	
 				<br>			
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon4">Iva de compra</span> <input
+					<span class="input-group-text" id="basic-addon4">Iva de Compra</span> <input
 						type="text" class="form-control"
-						placeholder="Inserte el iva de compra aqui..."
+						placeholder="Ingresar el iva de la compra aqui..."
 						aria-describedby="basic-addon4" required id="iva_compra" disabled="disabled">
 				</div>
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon2">Nit del proveedor</span> <input
+					<span class="input-group-text" id="basic-addon2">Nit del Proveedor</span> <input
 						type="text" class="form-control" 
-						placeholder="Inserte el nit del proveedor aqui..."
+						placeholder="Ingresar el nit del proveedor aqui..."
 						aria-describedby="basic-addon2" required id="nit_proveedor" disabled="disabled">
 				</div>
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon3">Nombre del producto</span>
+					<span class="input-group-text" id="basic-addon3">Nombre del Producto</span>
 					<input type="text" class="form-control"
-						placeholder="Inserte el nombre del producto aqui..."
+						placeholder="Ingresar el nombre del producto aqui..."
 						aria-describedby="basic-addon3" required id="nombre_producto" disabled="disabled">
 				</div>				
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon5">Precio de compra</span> <input
+					<span class="input-group-text" id="basic-addon5">Precio de Compra</span> <input
 						type="text" class="form-control"
-						placeholder="Inserte el precio de compra aqui..."
+						placeholder="Ingresar el precio de compra aqui..."
 						aria-describedby="basic-addon5" required id="precio_compra" disabled="disabled">
 				</div>
 				
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon5">Precio de venta</span> <input
+					<span class="input-group-text" id="basic-addon5">Precio de Venta</span> <input
 						type="text" class="form-control"
-						placeholder="Inserte el precio de venta aqui..."
+						placeholder="Ingresar el precio de venta aqui..."
 						aria-describedby="basic-addon5" required id="precio_venta" disabled="disabled">
 				</div>
 			</form>
 
 			<button type="button" class="btn btn-warning" onclick="actualizar()">
-				<i class="fas fa-edit"></i> Actualizar producto
+				<i class="fas fa-edit"></i> Actualizar Producto
 			</button>
 
 			<br>

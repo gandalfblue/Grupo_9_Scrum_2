@@ -10,7 +10,7 @@
 <!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaÃ±a -->
-<title>Eliminar cliente</title>
+<title>Eliminar Cliente</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -58,25 +58,25 @@
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarclientes.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
+					<i class="fas fa-plus-circle"></i> Agregar Cliente</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='/eliminarclientes.jsp'">
-					<i class="fas fa-trash"></i> Eliminar cliente</button>
+					<i class="fas fa-trash"></i> Eliminar Cliente</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarclientes.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Cliente</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarclientes.jsp'">
-					<i class="fas fa-search"></i> Buscar un cliente</button>
+					<i class="fas fa-search"></i> Buscar un Cliente</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaclientes.jsp'">
-					<i class="fas fa-search"></i> Lista de clientes</button>
+					<i class="fas fa-search"></i> Lista de Clientes</button>
 					
 				</div>
 			</div>
 		<div class="header">	
 			<h1 style="color:red;">
-			<i class="fas fa-trash"></i> Eliminar cliente
+			<i class="fas fa-trash"></i> Eliminar Cliente
 		</h1>
 
 
@@ -96,13 +96,13 @@
 					un numero de cedula registrado</div>
 					
 			<div id="correcto" class="alert alert-success visually-hidden"
-				role="alert">Cliente Eliminado con exito</div>
+				role="alert">Cliente Eliminado con Exito</div>
 
 			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">Cedula del cliente</span>
+					<span class="input-group-text" id="basic-addon1">Cédula del Cliente</span>
 					 <input type="text" class="form-control"
-						placeholder="Inserte cedula aqui..."
+						placeholder="Ingresar cédula aqui..."
 						aria-describedby="basic-addon1" required id="clientesearch">
 				</div>
 
@@ -110,7 +110,7 @@
 
 
 		 			<button type="button" class="btn btn-danger" onclick="eliminar()">
-						<i class="fas fa-trash"></i> Eliminar cliente
+						<i class="fas fa-trash"></i> Eliminar Cliente
 					</button>
 
 			</div>

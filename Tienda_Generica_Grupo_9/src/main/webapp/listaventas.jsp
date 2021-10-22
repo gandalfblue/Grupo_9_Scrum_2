@@ -9,7 +9,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Registrar venta</title>
+<title>Registrar Venta</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -68,20 +68,20 @@
 
 		<div
 			class="container-fluid px-4 animate__animated animate__bounceInLeft">
-			<h2 class="mt-4">Registrar venta</h2>
+			<h2 class="mt-4">Registrar Venta</h2>
 			<ol class="breadcrumb mb-4">
 			</ol>
 
 		<div class="col-xl-12 col-lg-12 col-md-12">
 			<div class="card mb-4">
 			<div class="card-header text-white bg-dark">
-			<i class="fas fa-table"></i> Registro de venta
+			<i class="fas fa-table"></i> Registro de Venta
 			</div>
             
 			<div class="card-body" id= "body_ventas">
 
 				<h1>
-				<i class="fas fa-file-invoice-dollar"></i> Datos de la venta
+				<i class="fas fa-file-invoice-dollar"></i> Datos de la Venta
 				</h1>
 
 	<form>
@@ -94,14 +94,14 @@
 			</div>
 			</div>
 		</div>
-				<h3>Datos del cliente</h3>
+				<h3>Datos del Cliente</h3>
 				
 				<div class="row ">
 					<div class="col-xl-4 col-lg-5 col-md-7 col-sm-6">
 						<div class="input-group input-group-sm mb-3">
 						<span class="input-group-text" class="tamano"> <i id="checkcliente"
 						class="fas fa-times text-danger"></i></span> <span
-						class="input-group-text" id="basic-addon1">Cedula cliente</span>
+						class="input-group-text" id="basic-addon1">Cédula cliente</span>
 						<input type="text" class="form-control"
 						id="cedula_cliente" oninput="traerNombreCliente()">
 						</div>
@@ -121,7 +121,7 @@
 										<div class="input-group input-group-sm mb-3">
 											<span class="input-group-text"><i id="checkusuario"
 												class="fas fa-times text-danger"></i></span> <span
-												class="input-group-text" id="basic-addon1">Username usuario</span>
+												class="input-group-text" id="basic-addon1">Username Usuario</span>
 												<input type="text" class="form-control"
 												id="cedula_usuario" oninput="traerNombreUsuario()">
 										</div>
@@ -135,7 +135,7 @@
 									</div>
 								</div>
 								<div class="border-top"></div>
-								<h3>Datos de los productos</h3>
+								<h3>Datos de los Productos</h3>
 
 
 								<!-- Producto 1 -->
@@ -262,7 +262,7 @@
 
 									<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
 										<div class="input-group input-group-sm mb-3">
-											<span class="input-group-text" id="basic-addon1">Valor total</span>
+											<span class="input-group-text" id="basic-addon1">Valor Total</span>
 											<input type="text" class="form-control" id="valtotal3" readonly="readonly" value="0">
 										</div>
 									</div>
@@ -273,7 +273,7 @@
 								<div class="row justify-content-end mt-3">
 									<div class="col-xl-6 col-lg-7 col-md-7 col-sm-10">
 										<div class="input-group input-group-sm mb-3">
-											<span class="input-group-text" id="basic-addon1">Total venta</span>
+											<span class="input-group-text" id="basic-addon1">Total Venta</span>
 											<input type="text" class="form-control" id="total_venta">
 										</div>
 									</div>
@@ -291,7 +291,7 @@
 								<div class="row justify-content-end mt-3">
 									<div class="col-xl-6 col-lg-7 col-md-7 col-sm-10">
 										<div class="input-group input-group-sm mb-3">
-											<span class="input-group-text" id="basic-addon1">Total venta + IVA</span>
+											<span class="input-group-text" id="basic-addon1">Total Venta + IVA</span>
 											<input type="text" class="form-control"	id="total_venta_iva">
 										</div>
 									</div>
@@ -301,21 +301,21 @@
 									<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
 										<button type="button" class="btn btn-success"
 											onclick="registrar()">
-											<i class="fas fa-plus-circle"></i> Registrar venta
+											<i class="fas fa-plus-circle"></i> Registrar Venta
 										</button>
 									</div>
 									<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
 										<button type="button" class="btn btn-warning"
 											onclick="window.location.reload();">
-											<i class="fas fa-sync-alt"></i> Recargar pagina
+											<i class="fas fa-sync-alt"></i> Recargar Página
 										</button >
 									</div>
 									<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 										<div class="alert alert-success visually-hidden" role="alert"
 											id="correcto">Datos insertados con exito, recargue la
-											pagina para una nueva venta</div>
+											página para una nueva venta</div>
 										<div class="alert alert-danger visually-hidden" role="alert"
-											id="error">Error al insertar datos, recargue la pagina
+											id="error">Error al insertar datos, recargue la página
 											y reintente de nuevo</div>
 									</div>
 

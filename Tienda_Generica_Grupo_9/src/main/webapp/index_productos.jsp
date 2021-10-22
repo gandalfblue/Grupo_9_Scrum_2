@@ -10,7 +10,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Modulo productos</title>
+<title>Módulo Productos</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -52,7 +52,7 @@
 	</nav>	
 	<br>
 	<br>
-	<header id=titulo_3> Pagina principal de Productos 
+	<header id=titulo_3> Página principal de Productos 
 	</header>
 	<br>
 	
@@ -61,19 +61,19 @@
 								
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproductos.jsp'">
-					<i class="fas fa-plus-circle"></i> Insertar productos</button>
+					<i class="fas fa-plus-circle"></i> Insertar Productos</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproductos.jsp'">
-					<i class="fas fa-trash"></i> Eliminar productos</button>
+					<i class="fas fa-trash"></i> Eliminar Productos</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproductos.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Productos</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarproductos.jsp'">
-					<i class="fas fa-search"></i> Buscar productos</button>
+					<i class="fas fa-search"></i> Buscar Productos</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaproductos.jsp'">
-					<i class="fas fa-list-ol"></i> Lista productos</button>				
+					<i class="fas fa-list-ol"></i> Lista Productos</button>				
 				</div>
 			</div>
 	<br>

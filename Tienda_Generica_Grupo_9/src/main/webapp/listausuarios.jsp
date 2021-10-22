@@ -10,7 +10,7 @@
 <!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaÃ±a -->
-<title>Lista de usuarios</title>
+<title>Lista de Usuarios</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -108,26 +108,26 @@
 				
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarusuario.jsp'">
-					<i class="fas fa-plus-circle"></i> Insertar usuario</button>
+					<i class="fas fa-plus-circle"></i> Insertar Usuario</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarusuario.jsp'">
-					<i class="fas fa-trash"></i> Eliminar usuario</button>
+					<i class="fas fa-trash"></i> Eliminar Usuario</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarusuario.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Usuario</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarusuario.jsp'">
-					<i class="fas fa-search"></i> Buscar un usuario</button>
+					<i class="fas fa-search"></i> Buscar un Usuario</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listausuarios.jsp'">
-					<i class="fas fa-list-ol"></i> Lista de usuarios</button>				
+					<i class="fas fa-list-ol"></i> Lista de Usuarios</button>				
 				</div>
 			</div>
 	<br>
 	<br>
 	
 		<div class="header">
-			<h1 style="color:blue; "><i class="fas fa-list-ol fa-1x"></i> Lista de usuarios</h1>
+			<h1 style="color:blue; "><i class="fas fa-list-ol fa-1x"></i> Lista de Usuarios</h1>
 		</div>
 	<br>
 	<br>
@@ -136,13 +136,13 @@
 					<div class="col-xl-8">
 						<div class="card m-4">
 							<div class="card-header text-white bg-dark">
-								<i class="fas fa-table"></i> Lista de usuarios
+								<i class="fas fa-table"></i> Lista de Usuarios
 							</div>
 							<div class="card-body">
 								<table id="datatablesusers" data-page-length='5'>
 									<thead>
 										<tr>
-											<th>Cedula</th>
+											<th>Cédula</th>
 											<th>Email</th>
 											<th>Nombre</th>
 											<th>Password</th>
@@ -151,7 +151,7 @@
 									</thead>
 									<tfoot>
 										<tr>
-											<th>Cedula</th>
+											<th>Cédula</th>
 											<th>Email</th>
 											<th>Nombre</th>
 											<th>Password</th>
