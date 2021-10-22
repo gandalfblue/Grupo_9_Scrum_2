@@ -26,8 +26,6 @@
 <link href="style.css" rel="stylesheet" type="text/css" />
 
 </head>
-<br>
-<br>
 
 <body id="index_usuarios">
 	
@@ -50,7 +48,7 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
-	<br>
+	
 	<header id=titulo_3> Pagina principal de Usuarios 
 	</header>
 	

@@ -89,6 +89,10 @@
 						placeholder="Inserte username aqui..."
 						aria-describedby="basic-addon4" required id="usersearch" >
 				</div>
+				
+				<button type="button" class="btn btn-secondary" onclick="enviar()">
+				<i class="fas fa-search"></i> Buscar usuario
+				</button>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Cedula</span> <input
@@ -121,9 +125,7 @@
 				</div>
 			</form>
 
-			<button type="button" class="btn btn-secondary" onclick="enviar()">
-				<i class="fas fa-search"></i> Buscar usuario
-			</button>
+			
 			
 			<br>
 			<br>
@@ -138,9 +140,9 @@
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
