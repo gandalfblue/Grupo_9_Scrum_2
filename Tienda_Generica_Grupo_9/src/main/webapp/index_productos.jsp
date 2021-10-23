@@ -55,11 +55,12 @@
 	<br>
 
 	<header id=titulo_3> Pagina principal de Productos 
-
 	</header>
+	<br>
+	<br>
 	
 	<div class="container p-4">
-				<div class="col text-">
+				<div class="col text-center">
 								
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproductos.jsp'">

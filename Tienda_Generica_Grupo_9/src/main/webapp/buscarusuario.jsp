@@ -72,6 +72,8 @@
 				<div class="header">
 					<h1 style="color:gray; "><i class="fas fa-search"></i> Buscar Usuario</h1>
 				</div>
+			<br>
+			<br>
 			
 	<div style="padding-left: 5px">
 		<div class="container">
@@ -93,7 +95,8 @@
 				<button type="button" class="btn btn-secondary" onclick="enviar()">
 				<i class="fas fa-search"></i> Buscar usuario
 				</button>
-
+				<br>
+				
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Cedula</span> <input
 						type="text" class="form-control"

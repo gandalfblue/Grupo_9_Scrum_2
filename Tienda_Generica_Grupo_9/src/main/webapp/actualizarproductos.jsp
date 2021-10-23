@@ -52,6 +52,8 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
+	<br>
+	
 			<div class="container p-4">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
@@ -71,11 +73,15 @@
 					<i class="fas fa-list-ol"></i> Lista Productos</button>	
 				</div>
 			</div>
+			<br>
+			
 			<div class="header">
 				<h1 style="color:black;" >
 					<i class="fas fa-pen-alt"></i> Actualizar Producto
 				</h1>		
 			</div>
+			<br>
+			<br>
 			
 	<div style="padding-left: 5px">
 		
@@ -97,10 +103,14 @@
 						type="text" class="form-control"
 						placeholder="Ingresar el código del producto aqui..."
 						aria-describedby="basic-addon1" required id="codigo_producto">
-				</div><button type="button" class="btn btn-secondary" onclick="enviar()">
+				</div>
+				<br>
+				
+				<button type="button" class="btn btn-secondary" onclick="enviar()">
 				<i class="fas fa-search"></i> Buscar Producto
 				</button>	
-				<br>			
+				<br>	
+						
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Iva de Compra</span> <input
 						type="text" class="form-control"

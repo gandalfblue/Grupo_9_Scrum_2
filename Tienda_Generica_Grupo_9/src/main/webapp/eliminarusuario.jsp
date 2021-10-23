@@ -28,8 +28,6 @@
 
 </head>
 
-
-
 <body id="body_usuarios">
 	<!-- Navbar-->
 	<nav class="navbar navbar-dark bg-dark">
@@ -50,8 +48,8 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-	
-		<br>
+	<br>
+
 			<div class="container p-4">
 				<div class="col text-center">
 				  	<button type="button" class="btn btn-success" 
@@ -67,7 +65,6 @@
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar un Usuario</button>
 					<button type="button" class="btn btn-primary"
-
 						onclick="window.location.href='<%=request.getContextPath()%>/listausuarios.jsp'">
 					<i class="fas fa-search"></i> Lista de usuarios</button>				
 

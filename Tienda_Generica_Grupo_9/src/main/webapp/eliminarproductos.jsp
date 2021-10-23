@@ -48,7 +48,8 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-	
+	<br>
+		
 				<div class="container p-4">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
@@ -70,7 +71,6 @@
 				</div>
 			</div>
 			<br>
-			<br>
 
 	<div style="padding-left: 5px">
 		<h1 style="color:red">
@@ -78,6 +78,7 @@
 		</h1>
 		<br>
 		<br>
+		
 		<div class="container">		
 		
 			<div id="error" class="alert alert-danger visually-hidden"

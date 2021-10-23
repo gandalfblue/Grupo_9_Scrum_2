@@ -72,15 +72,19 @@
 					<i class="fas fa-search"></i> Lista de Proveedores</button>					
 				</div>
 			</div>
+			<br>
+			
 			<div class="header">
 				<h1 style="color:gray;" >
 					<i class="fas fa-search"></i> Buscar Proveedor
 				</h1>		
 			</div>
+			<br>
+			<br>
+			
 	<div style="padding-left: 5px">
 
 		<div class="container">
-
 
 			<div id="error" class="alert alert-danger visually-hidden"
 				role="alert">Error al buscar el proveedor, el proveedor no existe</div>

@@ -52,9 +52,11 @@
 			<a class="navbar-brand links" href="reportes.jsp">
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
-	</nav>
-	
+	</nav>	
 	<br>
+	
+	<header id=titulo_3> Total de Ventas por Clientes
+	</header>
 	<br>
 		
 		<div style="padding-left: 5px">
@@ -66,7 +68,6 @@
 					role="alert">Cliente encontrado con exito</div>
 			</div>
 		</div>
-				<br>
 				<br>
 	
 		<div class="row">
@@ -82,22 +83,22 @@
 											<div class="col-6">
 			
 												<div class="input-group mb-3 input-group-sm">    												
-    												<span class="input-group-text" id="basic-addon1">C√©dula Cliente</span>
+    												<span class="input-group-text" id="basic-addon1">CÈdula Cliente</span>
 													<input type="text" placeholder="Inserte la cedula aqui y presione enter"
 													class="form-control" id="cedula_cliente" onkeypress="if (event.keyCode == 13) traerCliente()">
 												</div>
 											</div>
 										<tr>
-											<th>C√©dula del Cliente</th>
+											<th>CÈdula del Cliente</th>
 											<th>Nombre del Cliente</th>
-											<th>Valor venta</th>											
+											<th>Valor Total ventas</th>											
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
-											<th>C√©dula del Cliente</th>
+											<th>CÈdula del Cliente</th>
 											<th>Nombre del Cliente</th>
-											<th>Valor venta</th>
+											<th>Valor Total ventas</th>
 										</tr>
 									</tfoot>
 									<tbody id="usuariosinfo">
@@ -111,7 +112,7 @@
 					
 					<div class="col-xl">
 						<div class="container p-3">
-							<div class="col text-center">
+							<div class="col text-end">
 								<ul class="list-group" style="list-style-type:none;">
 				  					
 				  					<li><button type="button" class="btn btn-primary btn-lg" 
@@ -133,7 +134,7 @@
 			<div class="col-4">
 
 				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Dise√±ado y programado por Carol Mart√≠nez, Claudia Gonz√°lez, David Mu√±oz, Andr√©s Lozada
+					DiseÒado y programado por Carol MartÌnez, Claudia Gonz·lez, David MuÒoz, AndrÈs Lozada
 					<i class="fas fa-cogs"></i></a>
 
 			</div>
@@ -194,6 +195,8 @@ function traerCliente() {
 			}else {
 				var element = document.getElementById("error");
 				element.classList.remove("visually-hidden");
+				var element2 = document.getElementById("correcto");
+				element2.classList.add("visually-hidden");
 				var element2 = document.getElementById("correcto");
 				document.getElementById("cedula_cliente").value = "";					
 			}
