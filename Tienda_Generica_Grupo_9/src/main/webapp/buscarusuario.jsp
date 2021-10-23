@@ -7,9 +7,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Buscar usuario</title>
 <!-- bootstrap-->
 <link
@@ -89,6 +89,10 @@
 						placeholder="Ingresar username aqui..."
 						aria-describedby="basic-addon4" required id="usersearch" >
 				</div>
+				
+				<button type="button" class="btn btn-secondary" onclick="enviar()">
+				<i class="fas fa-search"></i> Buscar usuario
+				</button>
 
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Cedula</span> <input
@@ -119,15 +123,8 @@
 						type="text" class="form-control"
 						aria-describedby="basic-addon5" required id="password"  disabled="disabled">
 				</div>
-			</form>
 
-			<button type="button" class="btn btn-secondary" onclick="enviar()">
-				<i class="fas fa-search"></i> Buscar Usuario
-			</button>
-			
-			<br>
-			<br>
-			<br>
+			</form>			
 			<br>
 			<br>
 
@@ -138,9 +135,9 @@
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
@@ -155,7 +152,7 @@
 				var req = new XMLHttpRequest();
 				var coincidencia = false;
 				var user=   document.getElementById("usersearch").value;
-				req.open('GET', baseUrl +'/consultarusuario?usuario='+user, false);
+				req.open('GET',baseUrl+'/consultarusuario?usuario='+user, false);
 				req.send(null);
 				var usuario = null;
 				if (req.status == 200)

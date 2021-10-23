@@ -6,9 +6,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tama√±o de la pantalla -->
+<!-- Tama√É¬±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pesta√±a -->
+<!-- titulo de la pesta√É¬±a -->
 <title>Eliminar Usuario</title>
 <!-- bootstrap-->
 <link
@@ -67,8 +67,10 @@
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar un Usuario</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='<%=request.getContextPath()%>/listasuarios.jsp'">
-					<i class="fas fa-search"></i> Lista de Usuarios</button>				
+
+						onclick="window.location.href='<%=request.getContextPath()%>/listausuarios.jsp'">
+					<i class="fas fa-search"></i> Lista de usuarios</button>				
+
 				</div>
 			</div>
   	 	<br>
@@ -92,9 +94,9 @@
 
 			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">CÈdula del Usuario</span>
+					<span class="input-group-text" id="basic-addon1">C√©dula del Usuario</span>
 					 <input type="text" class="form-control"
-						placeholder="Ingresar cÈdula aqui..."
+						placeholder="Ingresar c√©dula aqui..."
 						aria-describedby="basic-addon1" required id="usersearch">
 				</div>
 
@@ -111,9 +113,9 @@
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					DiseÒado y programado por Carol MartÌnez, Claudia Gonz·lez, David MuÒoz, AndrÈs Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Dise√±ado y programado por Carol Mart√≠nez, Claudia Gonz√°lez, David Mu√±oz, Andr√©s Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>	
@@ -129,7 +131,7 @@
 		var y = document.getElementById("usersearch").value;
 		var req = new XMLHttpRequest();
 		var coincidencia = false;
-		req.open('GET', baseUrl +'/listarusuarios', false);
+		req.open('GET',baseUrl+'/listarusuarios', false);
 		req.send(null);
 		var usuarios = null;
 		if (req.status == 200)
@@ -151,7 +153,7 @@
 			var cedula=document.getElementById("usersearch").value;
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open("DELETE", baseUrl +"/eliminarusuario?cedula_usuario="+cedula);
+			xhr.open("DELETE",baseUrl+"/eliminarusuario?cedula_usuario="+cedula);
 			
 			var element = document.getElementById("error");
 			element.classList.add("visually-hidden");

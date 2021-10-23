@@ -34,7 +34,7 @@
 
 	window.onload = function() {
 		var req = new XMLHttpRequest();
-		req.open('GET', baseUrl +'/contadorventas', false);
+		req.open('GET',baseUrl+'/contadorventas', false);
 		req.send(null);
 		var cont = null;
 		if (req.status == 200)
@@ -333,9 +333,9 @@
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>

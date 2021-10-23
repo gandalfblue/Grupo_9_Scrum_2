@@ -100,9 +100,9 @@
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
@@ -118,7 +118,7 @@
 			var y = document.getElementById("cedula_usuario").value;
 			var req = new XMLHttpRequest();
 			var coincidencia = false;
-			req.open('GET', baseUrl +'/listarusuarios', false);
+			req.open('GET',baseUrl+'/listarusuarios', false);
 			req.send(null);
 			var usuarios=null;
 			if (req.status == 200)
@@ -150,7 +150,7 @@
 	 			formData.append("password",document.getElementById("password").value);
 	 			formData.append("usuario",document.getElementById("user").value);
 	 			var xhr = new XMLHttpRequest();
-	 			xhr.open("POST", baseUrl +"/registrarusuario");
+	 			xhr.open("POST",baseUrl+"/registrarusuario");
 	 			
 				var element = document.getElementById("error");
 				element.classList.add("visually-hidden");

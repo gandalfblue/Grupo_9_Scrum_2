@@ -146,9 +146,9 @@
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
@@ -164,7 +164,7 @@
 			var y = document.getElementById("nit_proveedor").value;
 			var req = new XMLHttpRequest();
 			var coincidencia = false;
-			req.open('GET', baseUrl +'/listarproveedores', false);
+			req.open('GET',baseUrl+'/listarproveedores', false);
 			req.send(null);
 			var proveedores = null;
 			if (req.status == 200)
@@ -196,7 +196,7 @@
 				formData.append("telefono_proveedor",
 						document.getElementById("telefono_proveedor").value);
 				var xhr = new XMLHttpRequest();
-				xhr.open("PUT", baseUrl +"/actualizarproveedores");
+				xhr.open("PUT",baseUrl+"/actualizarproveedores");
 
 				var element = document.getElementById("error");
 				element.classList.add("visually-hidden");

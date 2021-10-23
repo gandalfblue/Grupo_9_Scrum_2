@@ -38,7 +38,7 @@
 			</a>
 		</div>
 	</nav>
-	
+	<br>
 			<div class="header">
 				<h1><i class='fas fa-list-ol fa-pulse fa-spin fa-1x'></i> Bienvenido</h1>
 			</div>
@@ -150,9 +150,9 @@
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
@@ -199,11 +199,11 @@
 			//trayendo texto de input de password
 			var y = document.getElementById("inputpass").value;
 			//url de la api 
-			var baseurl = baseUrl +"/listarusuarios";
+			var baseurl = baseUrl+"/listarusuarios";
 			//creando un objeto de manipulacion de solicitudes
 			var xmlhttp = new XMLHttpRequest();
 			//abriendo la api
-			xmlhttp.open("GET", baseurl, true);
+			xmlhttp.open("GET",baseurl, true);
 			//funcion interna que compara la información
 			xmlhttp.onreadystatechange = function() {
 				//si se obtiene un 200 (Conexion correcta)

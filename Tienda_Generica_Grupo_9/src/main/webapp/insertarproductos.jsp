@@ -7,9 +7,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Insertando Producto</title>
 <!-- bootstrap-->
 <link
@@ -90,7 +90,8 @@
 
 
 			<div id="error" class="alert alert-danger visually-hidden"
-				role="alert">Archivo vacio, extension no valida o datos corruptos (El separador debe ser coma ",")</div>
+
+				role="alert">Archivo vacio, extensión no valida o datos corruptos (El separador debe ser coma ",")</div>
 
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Productos importados desde CSV con exito</div>
@@ -116,9 +117,9 @@
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Dise�ado y programado por Carol Mart�nez, Claudia Gonz�lez, David Mu�oz, Andr�s Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
@@ -145,7 +146,7 @@
 				var arrayLineas = text.split("\n");
 
 				var xhr = new XMLHttpRequest();
-				xhr.open("DELETE", baseUrl +"/eliminar_tablaproductos",true);
+				xhr.open("DELETE",baseUrl+"/eliminar_tablaproductos",true);
 				xhr.send();
 
 				for (var i = 0; i < arrayLineas.length; i += 1) {
@@ -167,7 +168,7 @@
 					formData.append("iva_compra", arraydatos[4]);
 					formData.append("precio_venta", arraydatos[5]);
 					var xhr = new XMLHttpRequest();
-					xhr.open("POST", baseUrl +"/registrarproductos");
+					xhr.open("POST",baseUrl+"/registrarproductos");
 
 					xhr.send(formData);
 				}

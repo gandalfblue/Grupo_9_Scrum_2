@@ -6,9 +6,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- TamaÃ±o de la pantalla -->
+<!-- TamaÃƒÂ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaÃ±a -->
+<!-- titulo de la pestaÃƒÂ±a -->
 <title>Reporte de Ventas</title>
 <!-- bootstrap-->
 <link
@@ -82,20 +82,20 @@
 											<div class="col-6">
 			
 												<div class="input-group mb-3 input-group-sm">    												
-    												<span class="input-group-text" id="basic-addon1">C�dula Cliente</span>
+    												<span class="input-group-text" id="basic-addon1">Cédula Cliente</span>
 													<input type="text" placeholder="Inserte la cedula aqui y presione enter"
 													class="form-control" id="cedula_cliente" onkeypress="if (event.keyCode == 13) traerCliente()">
 												</div>
 											</div>
 										<tr>
-											<th>C�dula del Cliente</th>
+											<th>Cédula del Cliente</th>
 											<th>Nombre del Cliente</th>
 											<th>Valor venta</th>											
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
-											<th>C�dula del Cliente</th>
+											<th>Cédula del Cliente</th>
 											<th>Nombre del Cliente</th>
 											<th>Valor venta</th>
 										</tr>
@@ -131,11 +131,11 @@
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
 
-					Dise�ado y programado por Carol Mart�nez, Claudia Gonzalez, David Mu�oz, Andr�s Lozada <i
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 
-					class="fas fa-code-branch"></i></a>
 			</div>
 		</div>
 	</nav>
@@ -169,7 +169,7 @@ function traerCliente() {
 	
 	var cliente= document.getElementById("cedula_cliente").value;
 	var xmlhttp = new XMLHttpRequest();
-	xmlhttp.open("GET", baseUrl +"/consultarventa?cedula_cliente=" + cliente,false);
+	xmlhttp.open("GET",baseUrl+"/consultarventa?cedula_cliente=" + cliente,false);
 	xmlhttp.addEventListener("load", function(e) {
 		
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {

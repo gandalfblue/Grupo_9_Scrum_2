@@ -152,9 +152,9 @@
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
@@ -175,7 +175,7 @@
 		var nombre = document.getElementById("nombre_producto");
 		var compra = document.getElementById("precio_compra");
 		var venta = document.getElementById("precio_venta");
-		req.open('GET', baseUrl +'/consultarproductos?codigo_producto='+user, false);
+		req.open('GET',baseUrl+'/consultarproductos?codigo_producto='+user, false);
 		req.send(null);
 		var productos = null;
 		if (req.status == 200)
@@ -221,7 +221,7 @@
 			var y = document.getElementById("codigo_producto").value;
 			var req = new XMLHttpRequest();
 			var coincidencia = false;
-			req.open('GET', baseUrl +'/listarproductos', false);
+			req.open('GET',baseUrl+'/listarproductos', false);
 			req.send(null);
 			var producto = null;
 			if (req.status == 200)
@@ -253,7 +253,7 @@
 				formData.append("precio_compra",
 						document.getElementById("precio_venta").value);
 				var xhr = new XMLHttpRequest();
-				xhr.open("PUT", baseUrl +"/actualizarproductos");
+				xhr.open("PUT",baseUrl+"/actualizarproductos");
 
 				var element = document.getElementById("error");
 				element.classList.add("visually-hidden");
