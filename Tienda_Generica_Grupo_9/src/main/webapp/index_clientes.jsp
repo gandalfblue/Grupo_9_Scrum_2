@@ -57,7 +57,6 @@
 	<header id=titulo_3> Página Principal de Clientes 
 	</header>
 	<br>
-			<br>
 	
 	<div class="container p-4">
 				<div class="col text-end">
@@ -76,12 +75,13 @@
 
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarclientes.jsp'">
-					<i class="fas fa-search"></i> Buscar un Cliente</button><br>
+					<i class="fas fa-search"></i> Buscar un Cliente</button>
 
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaclientes.jsp'">
 					<i class="fas fa-search"></i> Lista de Clientes</button>				
 				</div>
+			</div>
 					<br>
 					<br>
 	

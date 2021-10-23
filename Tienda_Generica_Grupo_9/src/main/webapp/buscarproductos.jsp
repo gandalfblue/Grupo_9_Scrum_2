@@ -52,6 +52,7 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
+	<br>
 	
 				<div class="container p-4">
 				<div class="col text-center">
@@ -73,11 +74,15 @@
 					
 				</div>
 			</div>
+			<br>
 
 	<div style="padding-left: 5px">
 		<h1 style="color:gray">
 			<i class="fas fa-search" ></i> Buscar Producto
 		</h1>
+		<br>
+		<br>
+		
 		<div class="container">
 
 
@@ -92,10 +97,16 @@
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon1">Código del Producto a Buscar</span> <input
 						type="text" class="form-control"
-						placeholder="Ingresar la cédula aqui..."
+						placeholder="Ingresar el codigo aqui..."
 						aria-describedby="basic-addon1" required id="codigo_producto">
 				</div>				
-
+				<br>
+				
+				<button type="button" class="btn btn-secondary" onclick="enviar()">
+				<i class="fas fa-search"></i> Buscar Producto
+				</button>			
+				<br>
+			
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon3">Iva de Compra</span>
 					<input type="text" class="form-control"
@@ -127,11 +138,7 @@
 				</div>
 			</form>
 
-			<button type="button" class="btn btn-secondary" onclick="enviar()">
-				<i class="fas fa-search"></i> Buscar Producto
-			</button>
 			
-			<br>
 			<br>
 			<br>
 			<br>

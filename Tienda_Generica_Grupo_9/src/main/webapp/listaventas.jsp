@@ -80,9 +80,9 @@
             
 			<div class="card-body" id= "body_ventas">
 
-				<h1>
+				<h2>
 				<i class="fas fa-file-invoice-dollar"></i> Datos de la Venta
-				</h1>
+				</h2>
 
 	<form>
 	<div class="row">

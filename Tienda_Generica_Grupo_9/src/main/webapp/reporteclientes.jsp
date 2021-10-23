@@ -99,7 +99,9 @@ window.addEventListener('DOMContentLoaded', event => {
 	</nav>
 	
 	<br>
-
+	
+	<header id=titulo_3> Lista de Clientes
+	</header>
 	<br>
 	<br>
 	
@@ -139,7 +141,7 @@ window.addEventListener('DOMContentLoaded', event => {
 					
 					<div class="col-xl">
 						<div class="container p-3">
-							<div class="col text-center">
+							<div class="col text-end">
 								<ul class="list-group" style="list-style-type:none;">
 				  	
 									<li><button type="button" class="btn btn-primary btn-lg" 

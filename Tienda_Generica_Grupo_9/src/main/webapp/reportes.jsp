@@ -28,8 +28,6 @@
 
 </head>
 
-
-
 <body id="index_reportes">
 
 	<!-- Navbar-->
@@ -53,15 +51,14 @@
 	</nav>
 
 	<br>
-	<header id=titulo_3> PÃ¡gina Principal Reportes 
-
+	<header id=titulo_3> Página Principal Reportes 
 	</header>
 	
 			<div class="container p-4">
 				<div class="col text-center">
 				  	<button type="button" class="btn btn-primary btn-lg" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/reporteusuario.jsp'">
-					<i class="fas fa-users"></i> Lstado de Usuarios</button>
+					<i class="fas fa-users"></i> Listado de Usuarios</button>
 					<button type="button" class="btn btn-secondary btn-lg"
 						onclick="window.location.href='<%=request.getContextPath()%>/reporteclientes.jsp'">
 					<i class="fas fa-address-book"></i> Listado de Clientes</button>
@@ -72,14 +69,12 @@
 				</div>
 			</div>
   	 	<br>
-  	 	<br>
-  	 	<br>
 				
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
 					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>

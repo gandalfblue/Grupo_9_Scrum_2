@@ -51,6 +51,7 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
+	<br>
 	
 	<header id=titulo_3> Página Principal de Proveedores 
 	</header>

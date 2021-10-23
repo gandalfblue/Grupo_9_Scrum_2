@@ -52,6 +52,7 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
+	<br>
 	
 			<div class="container p-4">
 				<div class="col text-center">
@@ -73,13 +74,16 @@
 					
 				</div>
 			</div>
-	
+			<br>
+			<br>
 			<div class="header">
 				<h1 style="color:green;" >
 					<i class="fas fa-plus-circle"></i> Insertar Proveedor
 				</h1>		
 			</div>
-
+			<br>
+			<br>
+			
 	<div style="padding-left: 5px">
 
 		<div class="container">
@@ -93,8 +97,8 @@
 
 			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon2">Nit del Proveedor</span> <input
-						type="text"  
+					<span class="input-group-text" id="basic-addon2">Nit del Proveedor</span>
+					<input type="text" class="form-control"
 						placeholder="Ingresar nit aqui..."
 						aria-describedby="basic-addon2">
 				</div>

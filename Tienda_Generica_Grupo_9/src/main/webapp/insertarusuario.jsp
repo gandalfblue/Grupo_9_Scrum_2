@@ -50,6 +50,7 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
+	<br>
 
 			<div class="container p-4">
 				<div class="col text-center">
@@ -70,6 +71,8 @@
 					<i class="fas fa-list-ol"></i> Lista de Usuarios</button>				
 				</div>
 			</div>
+			<br>
+			<br>
 				<div class="header">
 					<h1 style="color:green; "><i class="fas fa-plus-circle"></i> Insertar Usuario</h1>
 				</div>

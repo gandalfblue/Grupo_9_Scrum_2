@@ -74,9 +74,13 @@
 					<i class="fas fa-search"></i> Lista de Usuarios</button>				
 				</div>
 			</div>
+			<br>
+			
 				<div class="header">
 					<h1 style="color:black; "><i class="fas fa-pen-alt"></i> Actualizar Usuario</h1>
 				</div>
+			<br>
+			<br>
 
 	<div style="padding-left: 5px">
 		<div class="container">

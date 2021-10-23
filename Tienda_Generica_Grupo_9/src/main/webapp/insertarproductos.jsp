@@ -52,6 +52,7 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
+	<br>
 	
 			<div class="container p-4">
 				<div class="col text-center">
@@ -74,7 +75,7 @@
 				</div>
 			</div>
 		<br>
-		<br>
+		
 		<div class="header">
 				<h1 style="color:green;" >
 					<i class="fas fa-plus-circle"></i> Insertar Producto
@@ -85,9 +86,6 @@
 	<div style="padding-left: 5px">
 		<div class="container">
 		<br>
-		<br>
-		<br>
-
 
 			<div id="error" class="alert alert-danger visually-hidden"
 

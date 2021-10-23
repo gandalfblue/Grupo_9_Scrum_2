@@ -52,7 +52,7 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-
+	<br>
 	
 			<div class="container p-4">
 				<div class="col text-center">
@@ -78,9 +78,6 @@
 			<h1 style="color:red;">
 			<i class="fas fa-trash"></i> Eliminar Cliente
 		</h1>
-
-
-
 		</div>
 		<br>
 		<br>

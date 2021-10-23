@@ -52,6 +52,7 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
+	<br>
 	
 		<div class="container p-4">
 			<div class="col text-center">
@@ -73,6 +74,8 @@
 					
 			</div>
 		</div>
+		<br>
+		<br>
 		<div class="header">
 				<h1 style="color:gray; "><i class="fas fa-search"></i> Buscar Cliente</h1>
 		</div>
@@ -95,6 +98,10 @@
 						aria-describedby="basic-addon1" required id="cedula_cliente">
 				</div>
 				
+				<button type="button" class="btn btn-secondary" onclick="enviar()">
+				<i class="fas fa-search"></i> Buscar Cliente
+				</button>
+			
 				<br>
 
 				<div class="input-group mb-3">
@@ -122,15 +129,6 @@
 				</div>
 			</form>
 
-			<button type="button" class="btn btn-secondary" onclick="enviar()">
-				<i class="fas fa-search"></i> Buscar Cliente
-			</button>
-			
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
 		</div>
 
 	</div>

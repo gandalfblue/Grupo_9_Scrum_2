@@ -27,10 +27,7 @@
 <!-- Cargando mi hoja de estilo -->
 <link href="style.css" rel="stylesheet" type="text/css" />
 
-
-
 </head>
-
 
 <body id="body_clientes">
 	<!-- Navbar-->
@@ -52,6 +49,7 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
+	<br>
 			<div class="container p-4">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
@@ -72,10 +70,13 @@
 					
 				</div>
 			</div>
-			
+		<br>
 			<div class="header">
 				<h1 style="color:green;"><i class="fas fa-plus-circle"></i> Insertar Cliente</h1>
 			</div>
+			<br>
+			<br>
+			
 	<div style="padding-left: 5px  position">
 		<div class="container">
 		

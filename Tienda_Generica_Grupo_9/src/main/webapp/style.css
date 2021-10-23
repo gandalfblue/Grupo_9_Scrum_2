@@ -3,7 +3,7 @@
 	background-size: 50%;
 	background-attachment: fixed;
 	background-repeat:no-repeat;
-	background-color: whitesmoke;
+	background-color: white;
 	background-position:50% -10%;
 }
 
@@ -11,7 +11,7 @@
 	background: url('Coffee shop-rafiki.png');
 	background-size: 40%;
 	background-attachment: fixed;
-	background-color: whitesmoke;
+	background-color: white;
 	background-repeat:no-repeat;
 	background-position: 100% 90%;
 }
@@ -20,7 +20,7 @@
 	background: url('Coffee shop-rafiki.png');
 	background-size: 40%;
 	background-attachment: fixed;
-	background-color: whitesmoke;
+	background-color: white;
 	background-repeat:no-repeat;
 	background-position: 50% 150%;
 }
@@ -29,7 +29,7 @@
 	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg');
 	background-size: 60%;
 	background-attachment: fixed;
-	background-color: whitesmoke;
+	background-color: white;
 	background-repeat:no-repeat;
 	background-position: 100% 70%;
 }
@@ -37,16 +37,16 @@
 	background: url('https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg');
 	background-size: 50%;
 	background-attachment: fixed;
-	background-color: whitesmoke;
+	background-color: white;
 	background-repeat:no-repeat;
-	background-position: 50% 80%;
+	background-position: 50% 70%;
 }
 
 #body_proveedores{
 	background: url('FreeShippingCuate.png');
 	background-size: 50%;
 	background-attachment: fixed;
-	background-color: whitesmoke;
+	background-color: white;
 	background-repeat:no-repeat;
 	background-position: 100% -20%;
 }
@@ -55,25 +55,25 @@
 	background: url('FreeShippingCuate.png');
 	background-size: 50%;
 	background-attachment: fixed;
-	background-color: whitesmoke;
+	background-color: white;
 	background-repeat:no-repeat;
-	background-position: 50% -80%;
+	background-position: 50% -150%;
 }
 
 #body_productos{
 	background: url("https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg");
 	background-size: 42%;
 	background-attachment: fixed;
-	background-color: whitesmoke;
+	background-color: white;
 	background-repeat:no-repeat;
-	background-position: 80% 80%;
+	background-position: 90% 70%;
 }
 
 #index_productos{
 	background: url("https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg");
-	background-size: 40%;
+	background-size: 50%;
 	background-attachment: fixed;
-	background-color: whitesmoke;
+	background-color: white;
 	background-repeat:no-repeat;
 	background-position: 50% 80%;
 }
@@ -82,7 +82,7 @@
 	background: url('https://as1.ftcdn.net/v2/jpg/04/33/43/94/1000_F_433439482_TsqXhdpAxPfaNgNjwXR2E0YQWJpnCSZW.jpg');
 	background-size: 100%;
 	background-attachment: fixed;
-	background-color: whitesmoke;
+	background-color: white;
 	background-repeat:no-repeat;
 	background-position: 150% -20%;
 }
@@ -97,7 +97,7 @@ background-color: #FDC703;
 	background: url('FreeShippingCuate.png');
 	background-size: 75%;
 	background-attachment: fixed;
-	background-color: whitesmoke;
+	background-color: white;
 	background-repeat:no-repeat;
 	background-position: right;
 }
@@ -106,18 +106,18 @@ background-color: #FDC703;
 	background: url('https://image.freepik.com/vector-gratis/personas-cerca-enorme-tableta-papel-informe-flujo-agua-casillas-verificacion-analizando-datos-gestion-agua-ecologia-iot-concepto-ciudad-inteligente-ilustracion-vectorial_335657-2004.jpg');
 	background-size: 30%;
 	background-attachment: fixed;
-	background-color: whitesmoke;
+	background-color: white;
 	background-repeat:no-repeat;
 	background-position:95% 80%;
 }
 
 #index_reportes {
 	background: url('https://image.freepik.com/vector-gratis/personas-cerca-enorme-tableta-papel-informe-flujo-agua-casillas-verificacion-analizando-datos-gestion-agua-ecologia-iot-concepto-ciudad-inteligente-ilustracion-vectorial_335657-2004.jpg');
-	background-size: 40%;
+	background-size: 50%;
 	background-attachment: fixed;
-	background-color: whitesmoke;
+	background-color: white;
 	background-repeat:no-repeat;
-	background-position:50% 80%;
+	background-position: 50% 80%;
 }
 
 #corner_usuarios{
@@ -286,7 +286,7 @@ color:blue;
 }
 
 #facebook:hover{
-  background-color: whitesmoke;
+  background-color: white;
   color: #3b5998;
   border-color: gainsboro
 }
@@ -296,7 +296,7 @@ color:blue;
 }
 
 #twitter:hover{
-  background-color: whitesmoke;
+  background-color: white;
   color: #55acee;
   border-color: gainsboro
 }
@@ -306,7 +306,7 @@ color:blue;
 }
 
 #google:hover{
-  background-color: whitesmoke;
+  background-color: white;
   color: #dd4b39;
   border-color: gainsboro
 }
@@ -316,7 +316,7 @@ color:blue;
 }
 
 #instagram:hover{
-  background-color: whitesmoke;
+  background-color: white;
   color: #ac2bac;
   border-color: gainsboro
 }
@@ -326,7 +326,7 @@ color:blue;
 }
 
 #linkedin:hover{
-  background-color: whitesmoke;
+  background-color: white;
   color: #0082ca;
   border-color: gainsboro
 }
@@ -336,7 +336,7 @@ color:blue;
 }
 
 #github:hover{
-  background-color: whitesmoke;
+  background-color: white;
   color: #333333;
   border-color: gainsboro
 }
