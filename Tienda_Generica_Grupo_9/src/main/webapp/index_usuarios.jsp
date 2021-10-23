@@ -26,8 +26,6 @@
 <link href="style.css" rel="stylesheet" type="text/css" />
 
 </head>
-<br>
-<br>
 
 <body id="index_usuarios">
 	
@@ -50,33 +48,29 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>	
-	<br>
+	
 	<header id=titulo_3> Pagina principal de Usuarios 
 	</header>
 	
-	<div class="container p-4">
-				<div class="col text-left">
+	<div class="container p-3">
+				<div class="col text-center">
 								
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='/insertarusuario.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar usuario</button>
-					<br>
-			        <br>
+					
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='/eliminarusuario.jsp'">
 					<i class="fas fa-trash"></i> Eliminar usuario</button>
-					<br>
-			        <br>
+			
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='/actualizarusuario.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
-					<br>
-			        <br>
+				
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar un usuario</button>
-					<br>
-			        <br>
+				
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='/listausuarios.jsp'">
 					<i class="fas fa-list-ol"></i> Lista de usuarios</button>				

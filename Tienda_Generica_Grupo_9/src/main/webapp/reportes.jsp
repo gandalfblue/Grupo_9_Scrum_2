@@ -51,10 +51,10 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-	<br>
+
 	<header id=titulo_3> Pagina principal reportes 
 	</header>
-		<br>
+	
 			<div class="container p-4">
 				<div class="col text-center">
 				  	<button type="button" class="btn btn-primary btn-lg" 
