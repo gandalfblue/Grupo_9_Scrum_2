@@ -155,7 +155,7 @@
 				var req = new XMLHttpRequest();
 				var coincidencia = false;
 				var user=   document.getElementById("nit_proveedor").value;
-				req.open('GET', baseUrl +'/consultarproveedores?nit_proveedor='+user, false);
+				req.open('GET',baseUrl+'/consultarproveedores?nit_proveedor='+user, false);
 				req.send(null);
 				var proveedors = null;
 				if (req.status == 200)

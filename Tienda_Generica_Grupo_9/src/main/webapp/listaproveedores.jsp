@@ -139,18 +139,18 @@
 										<tr>
 											<th>Nit</th>
 											<th>Ciudad</th>
-											<th>DirecciÃ³n</th>
+											<th>Dirección</th>
 											<th>Nombre</th>
-											<th>TelÃ©fono</th>
+											<th>Teléfono</th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
 											<th>Nit</th>
 											<th>Ciudad</th>
-											<th>DirecciÃ³n</th>
+											<th>Dirección</th>
 											<th>Nombre</th>
-											<th>TelÃ©fono</th>
+											<th>Teléfono</th>
 										</tr>
 									</tfoot>
 									<tbody id="proveedorinfo">

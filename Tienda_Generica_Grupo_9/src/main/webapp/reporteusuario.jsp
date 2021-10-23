@@ -60,7 +60,7 @@ var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split
 	   	});
     
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", baseUrl +"/listarusuarios", true);
+		xmlhttp.open("GET",baseUrl+"/listarusuarios", true);
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 

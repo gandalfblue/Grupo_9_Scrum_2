@@ -60,34 +60,35 @@
 			<br>
 	
 	<div class="container p-4">
-				<div class="col text-left">
+				<div class="col text-end">
 								
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarclientes.jsp'">
 					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
 					<br>
-			<br>
+					<br>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarclientes.jsp'">
 					<i class="fas fa-trash"></i> Eliminar cliente</button>
 					<br>
-			<br>
+					<br>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarclientes.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
+				</div>					
 					<br>
-			<br>
+					<br>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarclientes.jsp'">
 					<i class="fas fa-search"></i> Buscar un cliente</button><br>
-			<br>
+					<br>
+					<br>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaclientes.jsp'">
 					<i class="fas fa-search"></i> Lista de clientes</button>				
 				</div>
-			</div>
-	<br>
-	<br>
+					<br>
+					<br>
 	
 	<nav class="navbar2 fixed-bottom navbar-dark bg-dark">
 			<div class="row justify-content-between">

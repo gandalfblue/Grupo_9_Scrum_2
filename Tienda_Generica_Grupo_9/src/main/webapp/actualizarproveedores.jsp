@@ -164,7 +164,7 @@
 			var y = document.getElementById("nit_proveedor").value;
 			var req = new XMLHttpRequest();
 			var coincidencia = false;
-			req.open('GET', baseUrl +'/listarproveedores', false);
+			req.open('GET',baseUrl+'/listarproveedores', false);
 			req.send(null);
 			var proveedores = null;
 			if (req.status == 200)
@@ -196,7 +196,7 @@
 				formData.append("telefono_proveedor",
 						document.getElementById("telefono_proveedor").value);
 				var xhr = new XMLHttpRequest();
-				xhr.open("PUT", baseUrl +"/actualizarproveedores");
+				xhr.open("PUT",baseUrl+"/actualizarproveedores");
 
 				var element = document.getElementById("error");
 				element.classList.add("visually-hidden");

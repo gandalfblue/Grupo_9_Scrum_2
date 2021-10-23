@@ -129,7 +129,7 @@
 		var y = document.getElementById("usersearch").value;
 		var req = new XMLHttpRequest();
 		var coincidencia = false;
-		req.open('GET', baseUrl +'/listarusuarios', false);
+		req.open('GET',baseUrl+'/listarusuarios', false);
 		req.send(null);
 		var usuarios = null;
 		if (req.status == 200)
@@ -151,7 +151,7 @@
 			var cedula=document.getElementById("usersearch").value;
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open("DELETE", baseUrl +"/eliminarusuario?cedula_usuario="+cedula);
+			xhr.open("DELETE",baseUrl+"/eliminarusuario?cedula_usuario="+cedula);
 			
 			var element = document.getElementById("error");
 			element.classList.add("visually-hidden");

@@ -155,7 +155,7 @@
 				var req = new XMLHttpRequest();
 				var coincidencia = false;
 				var user=   document.getElementById("cedula_cliente").value;
-				req.open('GET', baseUrl +'/consultarclientes?cedula_cliente='+user, false);
+				req.open('GET',baseUrl+'/consultarclientes?cedula_cliente='+user, false);
 				req.send(null);
 				var clientes = null;
 				if (req.status == 200)

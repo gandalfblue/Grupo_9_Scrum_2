@@ -123,13 +123,7 @@
 						type="text" class="form-control"
 						aria-describedby="basic-addon5" required id="password"  disabled="disabled">
 				</div>
-			</form>
-
-			
-			
-			<br>
-			<br>
-			<br>
+			</form>			
 			<br>
 			<br>
 
@@ -157,7 +151,7 @@
 				var req = new XMLHttpRequest();
 				var coincidencia = false;
 				var user=   document.getElementById("usersearch").value;
-				req.open('GET', baseUrl +'/consultarusuario?usuario='+user, false);
+				req.open('GET',baseUrl+'/consultarusuario?usuario='+user, false);
 				req.send(null);
 				var usuario = null;
 				if (req.status == 200)

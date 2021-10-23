@@ -161,7 +161,7 @@
 				var req = new XMLHttpRequest();
 				var coincidencia = false;
 				var user=   document.getElementById("codigo_producto").value;
-				req.open('GET', baseUrl +'/consultarproductos?codigo_producto='+user, false);
+				req.open('GET',baseUrl+'/consultarproductos?codigo_producto='+user, false);
 				req.send(null);
 				var productos = null;
 				if (req.status == 200)
