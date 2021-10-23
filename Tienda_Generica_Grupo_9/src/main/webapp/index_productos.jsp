@@ -51,13 +51,12 @@
 		</div>
 	</nav>	
 	<br>
-	<br>
+	
 	<header id=titulo_3> Pagina principal de Productos 
 	</header>
-	<br>
 	
 	<div class="container p-4">
-				<div class="col text-center">
+				<div class="col text-">
 								
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproductos.jsp'">

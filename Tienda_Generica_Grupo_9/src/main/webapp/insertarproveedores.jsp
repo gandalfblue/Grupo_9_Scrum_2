@@ -155,7 +155,7 @@
 			var y = document.getElementById("nit_proveedor").value;
 			var req = new XMLHttpRequest();
 			var coincidencia = false;
-			req.open('GET', baseUrl +'/listarproveedores', false);
+			req.open('GET',baseUrl+'/listarproveedores', false);
 			req.send(null);
 			var proveedores=null;
 			if (req.status == 200)
@@ -181,7 +181,7 @@
 	 			formData.append("nombre_proveedor",document.getElementById("nombre_proveedor").value);
 	 			formData.append("telefono_proveedor",document.getElementById("telefono_proveedor").value);
 	 			var xhr = new XMLHttpRequest();
-	 			xhr.open("POST", baseUrl +"/registrarproveedores");
+	 			xhr.open("POST",baseUrl+"/registrarproveedores");
 	 			
 				var element = document.getElementById("error");
 				element.classList.add("visually-hidden");

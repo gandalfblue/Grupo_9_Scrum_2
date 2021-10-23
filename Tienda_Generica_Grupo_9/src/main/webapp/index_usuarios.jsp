@@ -68,8 +68,10 @@
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarusuario.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
-					<br>
-			        <br>
+				</div>
+				
+				<div class="col text-right">
+				
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar un usuario</button>

@@ -137,7 +137,7 @@
 		var y = document.getElementById("clientesearch").value;
 		var req = new XMLHttpRequest();
 		var coincidencia = false;
-		req.open('GET', baseUrl +'/listarclientes', false);
+		req.open('GET',baseUrl+'/listarclientes', false);
 		req.send(null);
 		var clientes = null;
 		if (req.status == 200)
@@ -159,7 +159,7 @@
 			var cedula=document.getElementById("clientesearch").value;
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open("DELETE", baseUrl +'/eliminarclientes?cedula_cliente="+cedula);
+			xhr.open("DELETE",baseUrl+'/eliminarclientes?cedula_cliente="+cedula);
 			
 			var element = document.getElementById("error");
 			element.classList.add("visually-hidden");

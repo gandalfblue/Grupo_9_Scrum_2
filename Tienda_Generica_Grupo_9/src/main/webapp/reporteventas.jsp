@@ -167,7 +167,7 @@ function traerCliente() {
 	
 	var cliente= document.getElementById("cedula_cliente").value;
 	var xmlhttp = new XMLHttpRequest();
-	xmlhttp.open("GET", baseUrl +"/consultarventa?cedula_cliente=" + cliente,false);
+	xmlhttp.open("GET",baseUrl+"/consultarventa?cedula_cliente=" + cliente,false);
 	xmlhttp.addEventListener("load", function(e) {
 		
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {

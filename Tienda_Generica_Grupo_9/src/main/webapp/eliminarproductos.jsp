@@ -127,7 +127,7 @@
 		var y = document.getElementById("productosearch").value;
 		var req = new XMLHttpRequest();
 		var coincidencia = false;
-		req.open('GET', baseUrl +'/listarproductos', false);
+		req.open('GET',baseUrl+'/listarproductos', false);
 		req.send(null);
 		var productos = null;
 		if (req.status == 200)
@@ -149,7 +149,7 @@
 			var codigo=document.getElementById("productosearch").value;
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open("DELETE", baseUrl +"/eliminarproductos?codigo_producto="+codigo);
+			xhr.open("DELETE",baseUrl+"/eliminarproductos?codigo_producto="+codigo);
 			
 			var element = document.getElementById("error");
 			element.classList.add("visually-hidden");

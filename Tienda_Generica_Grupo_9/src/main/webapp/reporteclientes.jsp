@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     }
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", baseUrl +"/listarclientes", true);
+		xmlhttp.open("GET",baseUrl+"/listarclientes", true);
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 

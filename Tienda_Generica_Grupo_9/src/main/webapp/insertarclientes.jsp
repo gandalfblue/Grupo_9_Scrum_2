@@ -151,7 +151,7 @@
 			var y = document.getElementById("cedula_cliente").value;
 			var req = new XMLHttpRequest();
 			var coincidencia = false;
-			req.open('GET', baseUrl +'/listarclientes', false);
+			req.open('GET',baseUrl+'/listarclientes', false);
 			req.send(null);
 			var clientes=null;
 			if (req.status == 200)
@@ -177,7 +177,7 @@
 	 			formData.append("nombre_cliente",document.getElementById("nombre_cliente").value);
 	 			formData.append("telefono_cliente",document.getElementById("telefono_cliente").value);
 	 			var xhr = new XMLHttpRequest();
-	 			xhr.open("POST", baseUrl +"/registrarclientes");
+	 			xhr.open("POST",baseUrl+"/registrarclientes");
 	 			
 				var element = document.getElementById("error");
 				element.classList.add("visually-hidden");

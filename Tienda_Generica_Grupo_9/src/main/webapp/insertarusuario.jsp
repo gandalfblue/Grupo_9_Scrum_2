@@ -50,7 +50,6 @@
 			<i class="fas fa-clipboard-list"></i> Reportes</a>
 		</div>
 	</nav>
-	<br>
 
 			<div class="container p-4">
 				<div class="col text-center">
@@ -127,6 +126,7 @@
 		</div>
 
 	</div>
+	<br>
 	
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">

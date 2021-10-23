@@ -90,7 +90,7 @@
 
 
 			<div id="error" class="alert alert-danger visually-hidden"
-				role="alert">Archivo vacio, extensiÃ³n no valida o datos corruptos (El separador debe ser coma ",")</div>
+				role="alert">Archivo vacio, extensión no valida o datos corruptos (El separador debe ser coma ",")</div>
 
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Productos importados desde CSV con exito</div>
@@ -145,7 +145,7 @@
 				var arrayLineas = text.split("\n");
 
 				var xhr = new XMLHttpRequest();
-				xhr.open("DELETE", baseUrl +"/eliminar_tablaproductos",true);
+				xhr.open("DELETE",baseUrl+"/eliminar_tablaproductos",true);
 				xhr.send();
 
 				for (var i = 0; i < arrayLineas.length; i += 1) {
@@ -167,7 +167,7 @@
 					formData.append("iva_compra", arraydatos[4]);
 					formData.append("precio_venta", arraydatos[5]);
 					var xhr = new XMLHttpRequest();
-					xhr.open("POST", baseUrl +"/registrarproductos");
+					xhr.open("POST",baseUrl+"/registrarproductos");
 
 					xhr.send(formData);
 				}

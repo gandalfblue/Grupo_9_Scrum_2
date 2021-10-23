@@ -34,7 +34,7 @@
 
 	window.onload = function() {
 		var req = new XMLHttpRequest();
-		req.open('GET', baseUrl +'/contadorventas', false);
+		req.open('GET',baseUrl+'/contadorventas', false);
 		req.send(null);
 		var cont = null;
 		if (req.status == 200)

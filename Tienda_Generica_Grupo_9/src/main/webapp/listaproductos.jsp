@@ -51,7 +51,7 @@
         });
     }
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", baseUrl +"/listarproductos", true);
+		xmlhttp.open("GET",baseUrl+"/listarproductos", true);
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 

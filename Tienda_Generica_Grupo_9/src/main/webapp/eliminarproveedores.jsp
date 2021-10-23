@@ -132,7 +132,7 @@
 		var y = document.getElementById("proveedorsearch").value;
 		var req = new XMLHttpRequest();
 		var coincidencia = false;
-		req.open('GET', baseUrl +'/listarproveedores', false);
+		req.open('GET',baseUrl+'/listarproveedores', false);
 		req.send(null);
 		var proveedores = null;
 		if (req.status == 200)
@@ -154,7 +154,7 @@
 			var nit=document.getElementById("proveedorsearch").value;
 			
 			var xhr = new XMLHttpRequest();
-			xhr.open("DELETE", baseUrl +"/eliminarproveedores?nit_proveedor="+nit);
+			xhr.open("DELETE",baseUrl+"/eliminarproveedores?nit_proveedor="+nit);
 			
 			var element = document.getElementById("error");
 			element.classList.add("visually-hidden");
