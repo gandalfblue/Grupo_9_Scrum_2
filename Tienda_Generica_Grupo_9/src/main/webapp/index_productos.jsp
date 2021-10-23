@@ -7,9 +7,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Modulo productos</title>
 <!-- bootstrap-->
 <link
@@ -56,22 +56,22 @@
 	</header>
 	
 	<div class="container p-4">
-				<div class="col text-center">
+				<div class="col text-">
 								
 				  	<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproductos.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproductos.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar productos</button>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproductos.jsp'">
 					<i class="fas fa-trash"></i> Eliminar productos</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproductos.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarproductos.jsp'">
 					<i class="fas fa-search"></i> Buscar productos</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listaproductos.jsp'">
 					<i class="fas fa-list-ol"></i> Lista productos</button>				
 				</div>
 			</div>
@@ -82,7 +82,7 @@
 			<div class="row justify-content-between">
 				<div class="col-4">
 					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada
 					<i class="fas fa-cogs"></i></a>
 				</div>
 			</div>

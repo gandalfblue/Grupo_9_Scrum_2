@@ -32,6 +32,11 @@
 
 <script>
 
+//var baseUrl ='http://localhost:8080'
+var getUrl = window.location;
+var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+
+
 window.addEventListener('DOMContentLoaded', event => {
 	let table=null;
     if (datatablesusers) {
@@ -46,7 +51,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     }
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "http://localhost:8080/listarclientes", true);
+		xmlhttp.open("GET",baseUrl+"/listarclientes", true);
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
@@ -138,10 +143,11 @@ window.addEventListener('DOMContentLoaded', event => {
 								<ul class="list-group" style="list-style-type:none;">
 				  	
 									<li><button type="button" class="btn btn-primary btn-lg" 
-				  						onclick="window.location.href='/reporteusuario.jsp'">
-										<i class="fas fa-users"></i> Lstado de usuarios</button></li>
+				  						onclick="window.location.href='<%=request.getContextPath()%>/reporteusuario.jsp'">
+										<i class="fas fa-users"></i> Listado de usuarios</button></li>
+									<br>
 									<li><button type="button" class="btn btn-info btn-lg"
-										onclick="window.location.href='/reporteventas.jsp'">
+										onclick="window.location.href='<%=request.getContextPath()%>/reporteventas.jsp'">
 									<i class="fas fa-money-check-alt"></i> Ventas por cliente</button></li>
 								</ul>
 							</div>
@@ -152,9 +158,9 @@ window.addEventListener('DOMContentLoaded', event => {
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>	

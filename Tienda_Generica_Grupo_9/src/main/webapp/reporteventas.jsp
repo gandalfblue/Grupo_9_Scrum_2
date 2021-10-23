@@ -113,13 +113,15 @@
 						<div class="container p-3">
 							<div class="col text-center">
 								<ul class="list-group" style="list-style-type:none;">
-				  	
+				  					
+				  					<li><button type="button" class="btn btn-primary btn-lg" 
+				  						onclick="window.location.href='<%=request.getContextPath()%>/reporteusuario.jsp'">
+										<i class="fas fa-users"></i> Listado de usuarios</button></li>
+									<br>
 									<li><button type="button" class="btn btn-secondary btn-lg"
-										onclick="window.location.href='/reporteclientes.jsp'">
+										onclick="window.location.href='<%=request.getContextPath()%>/reporteclientes.jsp'">
 									<i class="fas fa-address-book"></i> Listado de clientes</button></li>
-									<li><button type="button" class="btn btn-info btn-lg"
-										onclick="window.location.href='/reporteventas.jsp'">
-									<i class="fas fa-money-check-alt"></i> Ventas por cliente</button></li>
+									
 								</ul>
 							</div>
 						</div>
@@ -129,73 +131,74 @@
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-
-					DiseÃ±ado y programado por Carol Martinez, Claudia Gonzalez, David MuÃ±oz, AndrÃ©s Lozada <i
-
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
 
 <script>
 
-	window.addEventListener('DOMContentLoaded', event => {
-	let table=null;
-    if (datatablesusers) {
-        table=new simpleDatatables.DataTable("#datatablesusers", {
-            searchable: false,
-            perPageSelect: false,
-            
-            labels: {
-                placeholder: "Buscar cedula...",
-                perPage: "{select} registros por pagina",
-                noRows: "No hay registros",
-                info: "Mostrando {start} a {end} de {rows} registros",                
-            },             
-        });        
-    }    
-});
-	
-	function traerCliente() {		
-		
-		window.addEventListener('load', event => {
-    	var cliente= document.getElementById("cedula_cliente").value;
-    	let table=true;
-		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "http://localhost:8080/consultarventa?cedula_cliente=" + cliente,false);
-		xmlhttp.addEventListener("load", function(e) {
-			
-			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+//var baseUrl ='http://localhost:8080'
+var getUrl = window.location;
+var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
 
-				var venta_cliente = JSON.parse(xmlhttp.responseText);
-				console.log(venta_cliente)				
-				var element = document.getElementById("error");
-				element.classList.add("visually-hidden");
-				var element2 = document.getElementById("correcto");
-				element2.classList.remove("visually-hidden");
-				
-				if (venta_cliente.toString() != "") {
-					for (i = 0; i < venta_cliente.length; i++) {
-						let fila = [
-							venta_cliente[i].cedula_cliente.toString(), 
-							venta_cliente[i].nombre_cliente.toString(), 
-							venta_cliente[i].valor_venta.toString()							
-						];
-												
-						table.rows().add(fila);
-					}				
-				}else {
-					var element = document.getElementById("error");
-					element.classList.remove("visually-hidden");
-					var element2 = document.getElementById("correcto");
-					document.getElementById("cedula_cliente").value = "";					
-				}
-			}
-		});
+
+let table=null;
+window.addEventListener('DOMContentLoaded', event => {
+
+if (datatablesusers) {
+    table=new simpleDatatables.DataTable("#datatablesusers", {
+        searchable: false,
+        perPageSelect: false,
+        
+        labels: {
+            placeholder: "Buscar cedula...",
+            perPage: "{select} registros por pagina",
+            noRows: "No hay registros",
+            info: "Mostrando {start} a {end} de {rows} registros",                
+        },             
+    });        
+}    
+});
+
+function traerCliente() {		
+	
+	var cliente= document.getElementById("cedula_cliente").value;
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET",baseUrl+"/consultarventa?cedula_cliente=" + cliente,false);
+	xmlhttp.addEventListener("load", function(e) {
 		
-		xmlhttp.send();		
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
+			var venta_cliente = JSON.parse(xmlhttp.responseText);
+			console.log(venta_cliente)				
+			var element = document.getElementById("error");
+			element.classList.add("visually-hidden");
+			var element2 = document.getElementById("correcto");
+			element2.classList.remove("visually-hidden");
+			
+			if (venta_cliente.toString() != "") {
+				for (i = 0; i < venta_cliente.length; i++) {
+					let fila = [
+						venta_cliente[i].cedula_cliente.toString(), 
+						venta_cliente[i].nombre_cliente.toString(), 
+						venta_cliente[i].valor_venta.toString()							
+					];
+											
+					table.rows().add(fila);
+				}				
+			}else {
+				var element = document.getElementById("error");
+				element.classList.remove("visually-hidden");
+				var element2 = document.getElementById("correcto");
+				document.getElementById("cedula_cliente").value = "";					
+			}
+		}
 	});
+	
+	xmlhttp.send();		
 };
 </script>
 

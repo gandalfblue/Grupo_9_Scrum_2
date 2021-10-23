@@ -56,19 +56,19 @@
 			<div class="container p-4">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproductos.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproductos.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar productos</button>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproductos.jsp'">
 					<i class="fas fa-trash"></i> Eliminar productos</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproductos.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarproductos.jsp'">
 					<i class="fas fa-search"></i> Buscar productos</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listaproductos.jsp'">
 					<i class="fas fa-list-ol"></i> Lista productos</button>
 					
 				</div>
@@ -90,7 +90,7 @@
 
 
 			<div id="error" class="alert alert-danger visually-hidden"
-				role="alert">Archivo vacio, extensiÃ³n no valida o datos corruptos (El separador debe ser coma ",")</div>
+				role="alert">Archivo vacio, extensión no valida o datos corruptos (El separador debe ser coma ",")</div>
 
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Productos importados desde CSV con exito</div>
@@ -116,9 +116,9 @@
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
@@ -126,7 +126,11 @@
 	<script>
 	
 	function subirArchivo() {
-
+		
+		//var baseUrl ='http://localhost:8080'
+		var getUrl = window.location;
+		var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+		
 		try {
 
 			var csvFile = document.getElementById("archivo");
@@ -141,8 +145,7 @@
 				var arrayLineas = text.split("\n");
 
 				var xhr = new XMLHttpRequest();
-				xhr.open("DELETE",
-						"http://localhost:8080/eliminar_tablaproductos",true);
+				xhr.open("DELETE",baseUrl+"/eliminar_tablaproductos",true);
 				xhr.send();
 
 				for (var i = 0; i < arrayLineas.length; i += 1) {
@@ -164,8 +167,7 @@
 					formData.append("iva_compra", arraydatos[4]);
 					formData.append("precio_venta", arraydatos[5]);
 					var xhr = new XMLHttpRequest();
-					xhr.open("POST",
-							"http://localhost:8080/registrarproductos");
+					xhr.open("POST",baseUrl+"/registrarproductos");
 
 					xhr.send(formData);
 				}

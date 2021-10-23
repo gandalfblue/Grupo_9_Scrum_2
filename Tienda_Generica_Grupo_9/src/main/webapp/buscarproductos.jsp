@@ -56,19 +56,19 @@
 				<div class="container p-4">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproductos.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproductos.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar productos</button>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproductos.jsp'">
 					<i class="fas fa-trash"></i> Eliminar productos</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproductos.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarproductos.jsp'">
 					<i class="fas fa-search"></i> Buscar productos</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listaproductos.jsp'">
 					<i class="fas fa-list-ol"></i> Lista productos</button>
 					
 				</div>
@@ -144,9 +144,9 @@
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
@@ -154,10 +154,14 @@
 	<script>
 		function enviar() {
 				
+				//var baseUrl ='http://localhost:8080'
+				var getUrl = window.location;
+				var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+				
 				var req = new XMLHttpRequest();
 				var coincidencia = false;
 				var user=   document.getElementById("codigo_producto").value;
-				req.open('GET', 'http://localhost:8080/consultarproductos?codigo_producto='+user, false);
+				req.open('GET',baseUrl+'/consultarproductos?codigo_producto='+user, false);
 				req.send(null);
 				var productos = null;
 				if (req.status == 200)

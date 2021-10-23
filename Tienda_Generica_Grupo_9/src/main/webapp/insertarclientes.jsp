@@ -55,19 +55,19 @@
 			<div class="container p-4">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarclientes.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarclientes.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar cliente</button>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarclientes.jsp'">
 					<i class="fas fa-trash"></i> Eliminar cliente</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarclientes.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarclientes.jsp'">
 					<i class="fas fa-search"></i> Buscar un cliente</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaclientes.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listaclientes.jsp'">
 					<i class="fas fa-search"></i> Lista de clientes</button>
 					
 				</div>
@@ -135,19 +135,23 @@
 		<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
 	<script>
 		function enviar() {
 			
+			//var baseUrl ='http://localhost:8080'
+			var getUrl = window.location;
+			var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+			
 			var y = document.getElementById("cedula_cliente").value;
 			var req = new XMLHttpRequest();
 			var coincidencia = false;
-			req.open('GET', 'http://localhost:8080/listarclientes', false);
+			req.open('GET',baseUrl+'/listarclientes', false);
 			req.send(null);
 			var clientes=null;
 			if (req.status == 200)
@@ -173,7 +177,7 @@
 	 			formData.append("nombre_cliente",document.getElementById("nombre_cliente").value);
 	 			formData.append("telefono_cliente",document.getElementById("telefono_cliente").value);
 	 			var xhr = new XMLHttpRequest();
-	 			xhr.open("POST", "http://localhost:8080/registrarclientes");
+	 			xhr.open("POST",baseUrl+"/registrarclientes");
 	 			
 				var element = document.getElementById("error");
 				element.classList.add("visually-hidden");

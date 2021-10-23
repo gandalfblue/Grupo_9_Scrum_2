@@ -32,6 +32,10 @@
 
 <script>
 
+//var baseUrl ='http://localhost:8080'
+var getUrl = window.location;
+var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+
 	window.addEventListener('DOMContentLoaded', event => {
     // Simple-DataTables
     // https://github.com/fiduswriter/Simple-DataTables/wiki
@@ -56,7 +60,7 @@
 	   	});
     
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "http://localhost:8080/listarusuarios", true);
+		xmlhttp.open("GET",baseUrl+"/listarusuarios", true);
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
@@ -149,10 +153,11 @@
 								<ul class="list-group" style="list-style-type:none;">
 				  	
 									<li><button type="button" class="btn btn-secondary btn-lg"
-										onclick="window.location.href='/reporteclientes.jsp'">
+										onclick="window.location.href='<%=request.getContextPath()%>/reporteclientes.jsp'">
 									<i class="fas fa-address-book"></i> Listado de clientes</button></li>
+									<br>
 									<li><button type="button" class="btn btn-info btn-lg"
-										onclick="window.location.href='/reporteventas.jsp'">
+										onclick="window.location.href='<%=request.getContextPath()%>/reporteventas.jsp'">
 									<i class="fas fa-money-check-alt"></i> Ventas por cliente</button></li>
 								</ul>
 							</div>
@@ -163,9 +168,9 @@
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>	

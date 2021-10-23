@@ -150,9 +150,9 @@
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
@@ -188,17 +188,22 @@
 				
 	<!-- Script que trae la informacion de la api y la compara con las entradas -->
 	<script>
+		
+		//var baseUrl ='http://localhost:8080'
+		var getUrl = window.location;
+		var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+		
 		function comparar() {
 			//trayendo texto de input de username
 			var x = document.getElementById("inputuser").value;
 			//trayendo texto de input de password
 			var y = document.getElementById("inputpass").value;
 			//url de la api 
-			var baseurl = "http://localhost:8080/listarusuarios";
+			var baseurl = baseUrl+"/listarusuarios";
 			//creando un objeto de manipulacion de solicitudes
 			var xmlhttp = new XMLHttpRequest();
 			//abriendo la api
-			xmlhttp.open("GET", baseurl, true);
+			xmlhttp.open("GET",baseurl, true);
 			//funcion interna que compara la información
 			xmlhttp.onreadystatechange = function() {
 				//si se obtiene un 200 (Conexion correcta)

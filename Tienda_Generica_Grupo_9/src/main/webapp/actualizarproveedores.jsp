@@ -57,19 +57,19 @@
 				<div class="container p-4">
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproveedores.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproveedores.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar proveedores</button>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproveedores.jsp'">
 					<i class="fas fa-trash"></i> Eliminar proveedores</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproveedores.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar proveedores</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarproveedores.jsp'">
 					<i class="fas fa-search"></i> Buscar proveedores</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listaproveedores.jsp'">
 					<i class="fas fa-list-ol"></i> Lista proveedores</button>
 					
 				</div>
@@ -146,19 +146,25 @@
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
 	
 	<script>
+	
 		function actualizar() {
+			
+			//var baseUrl ='http://localhost:8080'
+			var getUrl = window.location;
+			var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+			
 			var y = document.getElementById("nit_proveedor").value;
 			var req = new XMLHttpRequest();
 			var coincidencia = false;
-			req.open('GET', 'http://localhost:8080/listarproveedores', false);
+			req.open('GET',baseUrl+'/listarproveedores', false);
 			req.send(null);
 			var proveedores = null;
 			if (req.status == 200)
@@ -190,7 +196,7 @@
 				formData.append("telefono_proveedor",
 						document.getElementById("telefono_proveedor").value);
 				var xhr = new XMLHttpRequest();
-				xhr.open("PUT", "http://localhost:8080/actualizarproveedores");
+				xhr.open("PUT",baseUrl+"/actualizarproveedores");
 
 				var element = document.getElementById("error");
 				element.classList.add("visually-hidden");

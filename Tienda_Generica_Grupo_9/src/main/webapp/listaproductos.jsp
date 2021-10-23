@@ -32,6 +32,10 @@
 	rel="stylesheet" />
 
 <script>
+	
+	//var baseUrl ='http://localhost:8080'
+	var getUrl = window.location;
+	var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
 
 	window.addEventListener('DOMContentLoaded', event => {
 	let table=null;
@@ -47,7 +51,7 @@
         });
     }
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "http://localhost:8080/listarproductos", true);
+		xmlhttp.open("GET",baseUrl+"/listarproductos", true);
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
@@ -96,19 +100,19 @@
 				<div class="col text-center">
 				<img src="https://image.freepik.com/free-vector/grocery-bags-set-plastic-paper-packages-supermarket-basket-with-food-packs-cans-bread-milk-products-flat-vector-illustrations-shopping-food-delivery-charity-concept_74855-10074.jpg" id="corner_productos">
 					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproductos.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproductos.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar productos</button>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproductos.jsp'">
 					<i class="fas fa-trash"></i> Eliminar productos</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproductos.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarproductos.jsp'">
 					<i class="fas fa-search"></i> Buscar productos</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproductos.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listaproductos.jsp'">
 					<i class="fas fa-list-ol"></i> Lista productos</button>
 					
 				</div>
@@ -159,15 +163,16 @@
 							</div>
 						</div>
 					</div>
+				</div>
 									
 
 
 <nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>

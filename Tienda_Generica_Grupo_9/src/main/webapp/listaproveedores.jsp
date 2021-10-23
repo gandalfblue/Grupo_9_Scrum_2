@@ -32,6 +32,9 @@
 	rel="stylesheet" />
 
 <script>
+	//var baseUrl ='http://localhost:8080'
+	var getUrl = window.location;
+	var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
 
 	window.addEventListener('DOMContentLoaded', event => {
 	let table=null;
@@ -47,7 +50,7 @@
         });
     }
 		var xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "http://localhost:8080/listarproveedores", true);
+		xmlhttp.open("GET", baseUrl +"/listarproveedores", true);
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
@@ -97,19 +100,19 @@
 				<div class="col text-center">
 				<img src="FreeShippingCuate.png" id="corner_provadores">
 					<button type="button" class="btn btn-success" 
-				  		onclick="window.location.href='/insertarproveedores.jsp'">
+				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproveedores.jsp'">
 					<i class="fas fa-plus-circle"></i> Insertar proveedores</button>
 					<button type="button" class="btn btn-danger"
-						onclick="window.location.href='/eliminarproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproveedores.jsp'">
 					<i class="fas fa-trash"></i> Eliminar proveedores</button>
 					<button type="button" class="btn btn-warning"
-						onclick="window.location.href='/actualizarproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproveedores.jsp'">
 					<i class="fas fa-pen-alt"></i> Actualizar proveedores</button>
 					<button type="button" class="btn btn-secondary"
-						onclick="window.location.href='/buscarproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/buscarproveedores.jsp'">
 					<i class="fas fa-search"></i> Buscar proveedores</button>
 					<button type="button" class="btn btn-primary"
-						onclick="window.location.href='/listaproveedores.jsp'">
+						onclick="window.location.href='<%=request.getContextPath()%>/listaproveedores.jsp'">
 					<i class="fas fa-list-ol"></i> Lista proveedores</button>
 					
 				</div>
@@ -136,18 +139,18 @@
 										<tr>
 											<th>Nit</th>
 											<th>Ciudad</th>
-											<th>DirecciÃ³n</th>
+											<th>Dirección</th>
 											<th>Nombre</th>
-											<th>TelÃ©fono</th>
+											<th>Teléfono</th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
 											<th>Nit</th>
 											<th>Ciudad</th>
-											<th>DirecciÃ³n</th>
+											<th>Dirección</th>
 											<th>Nombre</th>
-											<th>TelÃ©fono</th>
+											<th>Teléfono</th>
 										</tr>
 									</tfoot>
 									<tbody id="proveedorinfo">
@@ -162,9 +165,9 @@
 	<nav class="navbar fixed-bottom navbar-dark bg-dark">
 		<div class="row justify-content-between">
 			<div class="col-4">
-				<a class="navbar-brand links" href="#"><i class="fas fa-code"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada <i
-					class="fas fa-code-branch"></i></a>
+				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
 	</nav>
