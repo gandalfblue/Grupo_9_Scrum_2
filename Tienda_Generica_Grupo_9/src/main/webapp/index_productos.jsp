@@ -7,9 +7,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Modulo productos</title>
 <!-- bootstrap-->
 <link
@@ -51,7 +51,7 @@
 		</div>
 	</nav>	
 	<br>
-	
+
 	<header id=titulo_3> Pagina principal de Productos 
 	</header>
 	
@@ -82,7 +82,7 @@
 			<div class="row justify-content-between">
 				<div class="col-4">
 					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada
 					<i class="fas fa-cogs"></i></a>
 				</div>
 			</div>
