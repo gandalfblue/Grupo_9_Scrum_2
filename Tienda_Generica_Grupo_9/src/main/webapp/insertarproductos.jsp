@@ -7,10 +7,10 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
-<title>Insertando producto</title>
+<!-- titulo de la pestaÃ±a -->
+<title>Insertando Producto</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -57,19 +57,19 @@
 				<div class="col text-center">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproductos.jsp'">
-					<i class="fas fa-plus-circle"></i> Insertar productos</button>
+					<i class="fas fa-plus-circle"></i> Insertar Productos</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproductos.jsp'">
-					<i class="fas fa-trash"></i> Eliminar productos</button>
+					<i class="fas fa-trash"></i> Eliminar Productos</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproductos.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar productos</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Productos</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarproductos.jsp'">
-					<i class="fas fa-search"></i> Buscar productos</button>
+					<i class="fas fa-search"></i> Buscar Productos</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaproductos.jsp'">
-					<i class="fas fa-list-ol"></i> Lista productos</button>
+					<i class="fas fa-list-ol"></i> Lista Productos</button>
 					
 				</div>
 			</div>
@@ -77,7 +77,7 @@
 		<br>
 		<div class="header">
 				<h1 style="color:green;" >
-					<i class="fas fa-plus-circle"></i> Insertar producto
+					<i class="fas fa-plus-circle"></i> Insertar Producto
 				</h1>		
 			</div>
 			<br>			
@@ -90,7 +90,8 @@
 
 
 			<div id="error" class="alert alert-danger visually-hidden"
-				role="alert">Archivo vacio, extensi�n no valida o datos corruptos (El separador debe ser coma ",")</div>
+
+				role="alert">Archivo vacio, extensión no valida o datos corruptos (El separador debe ser coma ",")</div>
 
 			<div id="correcto" class="alert alert-success visually-hidden"
 				role="alert">Productos importados desde CSV con exito</div>
@@ -103,7 +104,7 @@
 						placeholder="Inserte el archivo aqui" accept=".csv,.txt">
 						<br>
 					<button type="button" class="btn btn-success"
-						onclick="subirArchivo()">Insertar producto</button>
+						onclick="subirArchivo()">Insertar Producto</button>
 				</div>
 
 			</form>
@@ -117,7 +118,7 @@
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Dise�ado y programado por Carol Mart�nez, Claudia Gonz�lez, David Mu�oz, Andr�s Lozada
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
 					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>

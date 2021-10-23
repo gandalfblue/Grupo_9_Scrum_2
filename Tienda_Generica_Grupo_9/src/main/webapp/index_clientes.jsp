@@ -7,10 +7,10 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tama�o de la pantalla -->
+<!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pesta�a -->
-<title>Modulo clientes</title>
+<!-- titulo de la pestaña -->
+<title>Módulo Clientes</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -54,7 +54,7 @@
 	<br>
 	<br>
 	
-	<header id=titulo_3> Pagina principal de Clientes 
+	<header id=titulo_3> Página Principal de Clientes 
 	</header>
 	<br>
 			<br>
@@ -64,28 +64,23 @@
 								
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarclientes.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar cliente</button>
-					<br>
-					<br>
+					<i class="fas fa-plus-circle"></i> Agregar Cliente</button>
+
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarclientes.jsp'">
-					<i class="fas fa-trash"></i> Eliminar cliente</button>
-					<br>
-					<br>
+					<i class="fas fa-trash"></i> Eliminar Cliente</button>
+
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarclientes.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
-				</div>					
-					<br>
-					<br>
+					<i class="fas fa-pen-alt"></i> Actualizar Cliente</button>
+
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarclientes.jsp'">
-					<i class="fas fa-search"></i> Buscar un cliente</button><br>
-					<br>
-					<br>
+					<i class="fas fa-search"></i> Buscar un Cliente</button><br>
+
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaclientes.jsp'">
-					<i class="fas fa-search"></i> Lista de clientes</button>				
+					<i class="fas fa-search"></i> Lista de Clientes</button>				
 				</div>
 					<br>
 					<br>
@@ -94,7 +89,7 @@
 			<div class="row justify-content-between">
 				<div class="col-4">
 					<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Dise�ado y programado por Carol Mart�nez, Claudia Gonz�lez, David Mu�oz, Andr�s Lozada
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
 					<i class="fas fa-cogs"></i></a>
 				</div>
 			</div>

@@ -57,6 +57,7 @@
 								
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarusuario.jsp'">
+
 					<i class="fas fa-plus-circle"></i> Insertar usuario</button>
 					
 					<button type="button" class="btn btn-danger"
@@ -70,10 +71,10 @@
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarusuario.jsp'">
 					<i class="fas fa-search"></i> Buscar un usuario</button>
-				
+
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listausuarios.jsp'">
-					<i class="fas fa-list-ol"></i> Lista de usuarios</button>				
+					<i class="fas fa-list-ol"></i> Lista de Usuarios</button>				
 				</div>
 			</div>
 	<br>

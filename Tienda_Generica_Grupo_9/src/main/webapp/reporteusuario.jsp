@@ -9,7 +9,7 @@
 <!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaÃ±a -->
-<title>Reporte de usuarios</title>
+<title>Reporte de Usuarios</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -117,13 +117,13 @@ var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split
 					<div class="col-xl-8">
 						<div class="card m-4">
 							<div class="card-header text-white bg-dark">
-								<i class="fas fa-table"></i> Tabla de usuarios
+								<i class="fas fa-table"></i> Tabla de Usuarios
 							</div>
 							<div class="card-body">
 								<table id="datatablesusers">
 									<thead>
 										<tr>
-											<th>Cedula</th>
+											<th>Cédula</th>
 											<th>Email</th>
 											<th>Nombre</th>
 											<th>Password</th>
@@ -132,7 +132,7 @@ var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split
 									</thead>
 									<tfoot>
 										<tr>
-											<th>Cedula</th>
+											<th>Cédula</th>
 											<th>Email</th>
 											<th>Nombre</th>
 											<th>Password</th>
@@ -154,11 +154,11 @@ var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split
 				  	
 									<li><button type="button" class="btn btn-secondary btn-lg"
 										onclick="window.location.href='<%=request.getContextPath()%>/reporteclientes.jsp'">
-									<i class="fas fa-address-book"></i> Listado de clientes</button></li>
+									<i class="fas fa-address-book"></i> Listado de Clientes</button></li>
 									<br>
 									<li><button type="button" class="btn btn-info btn-lg"
 										onclick="window.location.href='<%=request.getContextPath()%>/reporteventas.jsp'">
-									<i class="fas fa-money-check-alt"></i> Ventas por cliente</button></li>
+									<i class="fas fa-money-check-alt"></i> Ventas por Cliente</button></li>
 								</ul>
 							</div>
 						</div>

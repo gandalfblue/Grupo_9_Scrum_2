@@ -6,10 +6,10 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
-<title>Eliminar usuario</title>
+<!-- titulo de la pestaÃ±a -->
+<title>Eliminar Usuario</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -56,24 +56,26 @@
 				<div class="col text-center">
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarusuario.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar usuario</button>
+					<i class="fas fa-plus-circle"></i> Agregar Usuario</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarusuario.jsp'">
-					<i class="fas fa-trash"></i> Eliminar usuario</button>
+					<i class="fas fa-trash"></i> Eliminar Usuario</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarusuario.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Usuario</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarusuario.jsp'">
-					<i class="fas fa-search"></i> Buscar un usuario</button>
+					<i class="fas fa-search"></i> Buscar un Usuario</button>
 					<button type="button" class="btn btn-primary"
+
 						onclick="window.location.href='<%=request.getContextPath()%>/listausuarios.jsp'">
 					<i class="fas fa-search"></i> Lista de usuarios</button>				
+
 				</div>
 			</div>
   	 	<br>
 				<div class="header">
-					<h1 style="color:red; "><i class="fas fa-trash"></i> Eliminar usuario</h1>
+					<h1 style="color:red; "><i class="fas fa-trash"></i> Eliminar Usuario</h1>
 				</div>
 			<br>
 		<br>
@@ -92,9 +94,9 @@
 
 			<form id="form1" class="preselection">
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon1">Cedula del usuario</span>
+					<span class="input-group-text" id="basic-addon1">Cédula del Usuario</span>
 					 <input type="text" class="form-control"
-						placeholder="Inserte cedula aqui..."
+						placeholder="Ingresar cédula aqui..."
 						aria-describedby="basic-addon1" required id="usersearch">
 				</div>
 
@@ -102,7 +104,7 @@
 		
 	
 		<button type="button" class="btn btn-danger" onclick="eliminar()">
-				<i class="fas fa-trash"></i> Eliminar usuario
+				<i class="fas fa-trash"></i> Eliminar Usuario
 		</button>
 		
 		</div>
@@ -112,7 +114,7 @@
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Dise�ado y programado por Carol Mart�nez, Claudia Gonz�lez, David Mu�oz, Andr�s Lozada
+					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
 					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>

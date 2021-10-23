@@ -10,7 +10,7 @@
 <!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaÃ±a -->
-<title>Lista de clientes</title>
+<title>Lista de Clientes</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -100,26 +100,26 @@
 				<img src="https://www.emprendedorinteligente.com/wp-content/uploads/2020/10/father-son-buying-food-supermarket_74855-52451.jpg" id="corner_clientes">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarclientes.jsp'">
-					<i class="fas fa-plus-circle"></i> Insertar cliente</button>
+					<i class="fas fa-plus-circle"></i> Insertar Cliente</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarclientes.jsp'">
-					<i class="fas fa-trash"></i> Eliminar cliente</button>
+					<i class="fas fa-trash"></i> Eliminar Cliente</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarclientes.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar cliente</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Cliente</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarclientes.jsp'">
-					<i class="fas fa-search"></i> Buscar un cliente</button>
+					<i class="fas fa-search"></i> Buscar un Cliente</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaclientes.jsp'">
-					<i class="fas fa-list-ol"></i> Lista de clientes</button>
+					<i class="fas fa-list-ol"></i> Lista de Clientes</button>
 					
 				</div>
 			</div>
 			<br>
 			<br>
 			<div class="header">
-				<h1 style="color:Blue;"><i class="fas fa-list-ol"></i> lista de clientes</h1>
+				<h1 style="color:Blue;"><i class="fas fa-list-ol"></i> lista de Clientes</h1>
 			</div>
 	<br>
 	<br>
@@ -129,26 +129,26 @@
 					<div class="col-xl-8">
 						<div class="card m-4">
 							<div class="card-header text-white bg-dark">
-								<i class="fas fa-table"></i> Tabla de clientes
+								<i class="fas fa-table"></i> Tabla de Clientes
 							</div>
 							<div class="card-body">
 								<table id="datatablesusers">
 									<thead>
 										<tr>
-											<th>Cedula</th>
-											<th>Direccion</th>
+											<th>Cédula</th>
+											<th>Dirección</th>
 											<th>Email</th>
 											<th>Nombre</th>
-											<th>Telefono</th>											
+											<th>Teléfono</th>											
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
-											<th>Cedula</th>
-											<th>Direccion</th>
+											<th>Cédula</th>
+											<th>Dirección</th>
 											<th>Email</th>
 											<th>Nombre</th>
-											<th>Telefono</th>
+											<th>Teléfono</th>
 										</tr>
 									</tfoot>
 									<tbody id="clientesinfo">

@@ -10,7 +10,7 @@
 <!-- Tamaño de la pantalla -->
 <meta name="viewport" content="width=device-width">
 <!-- titulo de la pestaña -->
-<title>Lista de proveedores</title>
+<title>Lista de Proveedores</title>
 <!-- bootstrap-->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -101,26 +101,26 @@
 				<img src="FreeShippingCuate.png" id="corner_provadores">
 					<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarproveedores.jsp'">
-					<i class="fas fa-plus-circle"></i> Insertar proveedores</button>
+					<i class="fas fa-plus-circle"></i> Insertar Proveedores</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarproveedores.jsp'">
-					<i class="fas fa-trash"></i> Eliminar proveedores</button>
+					<i class="fas fa-trash"></i> Eliminar Proveedores</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarproveedores.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar proveedores</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Proveedores</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarproveedores.jsp'">
-					<i class="fas fa-search"></i> Buscar proveedores</button>
+					<i class="fas fa-search"></i> Buscar Proveedores</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listaproveedores.jsp'">
-					<i class="fas fa-list-ol"></i> Lista proveedores</button>
+					<i class="fas fa-list-ol"></i> Lista Proveedores</button>
 					
 				</div>
 			</div>
 <br>		
 <div class="header">	
 			<h1 style="color:blue;">
-			<i class="fas fa-list-ol"></i> lista proveedores
+			<i class="fas fa-list-ol"></i> lista Proveedores
 		</h1>
 		<br><br><br>
 
@@ -131,7 +131,7 @@
 						<div class="card m-4">
 						
 							<div class="card-header text-white bg-dark">
-								<i class="fas fa-table"></i> Tabla proveedores
+								<i class="fas fa-table"></i> Tabla Proveedores
 							</div>
 							<div class="card-body">
 								<table id="datatablesusers">

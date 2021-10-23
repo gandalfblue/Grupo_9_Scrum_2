@@ -7,9 +7,9 @@
 
 <!-- paquete de caracteres -->
 <meta charset="utf-8">
-<!-- Tamaño de la pantalla -->
+<!-- TamaÃ±o de la pantalla -->
 <meta name="viewport" content="width=device-width">
-<!-- titulo de la pestaña -->
+<!-- titulo de la pestaÃ±a -->
 <title>Buscar usuario</title>
 <!-- bootstrap-->
 <link
@@ -54,23 +54,23 @@
 				<div class="col text-center">
 				  	<button type="button" class="btn btn-success" 
 				  		onclick="window.location.href='<%=request.getContextPath()%>/insertarusuario.jsp'">
-					<i class="fas fa-plus-circle"></i> Agregar usuario</button>
+					<i class="fas fa-plus-circle"></i> Agregar Usuario</button>
 					<button type="button" class="btn btn-danger"
 						onclick="window.location.href='<%=request.getContextPath()%>/eliminarusuario.jsp'">
-					<i class="fas fa-trash"></i> Eliminar usuario</button>
+					<i class="fas fa-trash"></i> Eliminar Usuario</button>
 					<button type="button" class="btn btn-warning"
 						onclick="window.location.href='<%=request.getContextPath()%>/actualizarusuario.jsp'">
-					<i class="fas fa-pen-alt"></i> Actualizar usuario</button>
+					<i class="fas fa-pen-alt"></i> Actualizar Usuario</button>
 					<button type="button" class="btn btn-secondary"
 						onclick="window.location.href='<%=request.getContextPath()%>/buscarusuario.jsp'">
-					<i class="fas fa-search"></i> Buscar usuario</button>
+					<i class="fas fa-search"></i> Buscar Usuario</button>
 					<button type="button" class="btn btn-primary"
 						onclick="window.location.href='<%=request.getContextPath()%>/listausuarios.jsp'">
-					<i class="fas fa-search"></i> Lista de usuarios</button>				
+					<i class="fas fa-search"></i> Lista de Usuarios</button>				
 				</div>
 			</div>
 				<div class="header">
-					<h1 style="color:gray; "><i class="fas fa-search"></i> Buscar usuario</h1>
+					<h1 style="color:gray; "><i class="fas fa-search"></i> Buscar Usuario</h1>
 				</div>
 			
 	<div style="padding-left: 5px">
@@ -86,7 +86,7 @@
 				<div class="input-group mb-3">
 					<span class="input-group-text" id="basic-addon4">Usuario a buscar</span> <input
 						type="text" class="form-control"
-						placeholder="Inserte username aqui..."
+						placeholder="Ingresar username aqui..."
 						aria-describedby="basic-addon4" required id="usersearch" >
 				</div>
 				
@@ -107,7 +107,7 @@
 				</div>
 
 				<div class="input-group mb-3">
-					<span class="input-group-text" id="basic-addon3">Nombrecompleto</span>
+					<span class="input-group-text" id="basic-addon3">Nombre Completo</span>
 					<input type="text" class="form-control"
 						aria-describedby="basic-addon3" required id="nombre_usuario"  disabled="disabled">
 				</div>
@@ -123,6 +123,7 @@
 						type="text" class="form-control"
 						aria-describedby="basic-addon5" required id="password"  disabled="disabled">
 				</div>
+
 			</form>			
 			<br>
 			<br>
@@ -135,7 +136,7 @@
 		<div class="row justify-content-between">
 			<div class="col-4">
 				<a class="navbar-brand links" href="#"><i class="fab fa-battle-net"></i>
-					Diseñado y programado por Carol Martínez, Claudia González, David Muñoz, Andrés Lozada
+					DiseÃ±ado y programado por Carol MartÃ­nez, Claudia GonzÃ¡lez, David MuÃ±oz, AndrÃ©s Lozada
 					<i class="fas fa-cogs"></i></a>
 			</div>
 		</div>
