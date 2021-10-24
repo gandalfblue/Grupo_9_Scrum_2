@@ -357,7 +357,7 @@
 		var client = document.getElementById("cedula_cliente").value;
 		var req = new XMLHttpRequest();
 		var coincidencia = false;
-		req.open('GET', baseUrl +'/consultarclientes?cedula_cliente=' + client, false);
+		req.open('GET',baseUrl+'/consultarclientes?cedula_cliente=' + client, false);
 		req.send(null);
 		var cliente = null;
 		if (req.status == 200)
@@ -383,7 +383,7 @@
 		var user = document.getElementById("cedula_usuario").value;
 		var req = new XMLHttpRequest();
 		var coincidencia = false;
-		req.open('GET', baseUrl +'/consultarusuario_cedula?cedula_usuario=' + user, false);
+		req.open('GET',baseUrl+'/consultarusuario_cedula?cedula_usuario=' + user, false);
 		req.send(null);
 		var usuario = null;
 		if (req.status == 200)
@@ -410,7 +410,7 @@
 		var prod1 = document.getElementById("codigo_producto1").value;
 		var req = new XMLHttpRequest();
 		var coincidencia = false;
-		req.open('GET', baseUrl +'/consultarproductos?codigo_producto=' + prod1, false);
+		req.open('GET',baseUrl+'/consultarproductos?codigo_producto=' + prod1, false);
 		req.send(null);
 		var producto1 = null;
 		if (req.status == 200)
@@ -440,7 +440,7 @@
 		var prod2 = document.getElementById("codigo_producto2").value;
 		var req = new XMLHttpRequest();
 		var coincidencia = false;
-		req.open('GET', baseUrl +'/consultarproductos?codigo_producto='	+ prod2, false);
+		req.open('GET',baseUrl+'/consultarproductos?codigo_producto='	+ prod2, false);
 		req.send(null);
 		var producto2 = null;
 		if (req.status == 200)
@@ -468,7 +468,7 @@
 		var prod3 = document.getElementById("codigo_producto3").value;
 		var req = new XMLHttpRequest();
 		var coincidencia = false;
-		req.open('GET', baseUrl +'/consultarproductos?codigo_producto='	+ prod3, false);
+		req.open('GET',baseUrl+'/consultarproductos?codigo_producto='	+ prod3, false);
 		req.send(null);
 		var producto3 = null;
 		if (req.status == 200)
@@ -556,7 +556,7 @@
 			formData.append("total_venta", document.getElementById("total_venta").value);
 			formData.append("valor_venta", document.getElementById("total_venta_iva").value);
 			var xhr = new XMLHttpRequest();
-			xhr.open("POST", baseUrl +'/registrarventa");
+			xhr.open("POST",baseUrl+"/registrarventa");
 			xhr.send(formData);
 
 			setTimeout(
@@ -575,7 +575,7 @@
 								formData2.append("valor_venta",document.getElementById("total_venta").value);
 								formData2.append("valor_iva",document.getElementById("total_venta_iva").value);
 								var xhr2 = new XMLHttpRequest();
-								xhr2.open("POST", baseUrl +'/registrardetalleventa");
+								xhr2.open("POST",baseUrl+"/registrardetalleventa");
 								xhr2.send(formData2);
 							}
 

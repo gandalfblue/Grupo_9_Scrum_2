@@ -27,7 +27,7 @@ public class Cliente_VentaDAO {
 			
 			//cree un objeto para cada encontrado en la base de datos basado en la clase entidad con los datos encontrados
 			
-			if (res.next()) {
+			while (res.next()) {
 				Cliente_VentaVO Venta_Cliente = new Cliente_VentaVO();
 				
 				Venta_Cliente.setCedula_cliente(Integer.parseInt(res.getString("cedula_cliente")));

@@ -23,7 +23,7 @@ public class VentasController {
 	 * */
 
 	@PostMapping("/registrarventa")
-	public void registrarVenta(VentasVO venta) {
+	public void registrarVentas(VentasVO venta) {
 		VentasDAO Dao = new VentasDAO();
 		Dao.registrarVentas(venta);
 	}

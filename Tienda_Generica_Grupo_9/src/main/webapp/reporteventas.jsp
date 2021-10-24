@@ -191,7 +191,7 @@ function traerCliente() {
             element2.classList.remove("visually-hidden");
             
             if (venta_cliente.toString() != "") {
-                for (i = 0; i < venta_cliente.length; i++) {
+                for (i = 0; i <= venta_cliente.length; i++) {
                     let fila = [
                         venta_cliente[i].cedula_cliente.toString(), 
                         venta_cliente[i].nombre_cliente.toString(), 
