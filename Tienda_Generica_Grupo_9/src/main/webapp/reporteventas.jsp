@@ -183,7 +183,7 @@ function traerCliente() {
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
 			var venta_cliente = JSON.parse(xmlhttp.responseText);
-			var valortotal = 0.0;
+            var valortotal = 0.0;
             console.log(venta_cliente)                
             var element = document.getElementById("error");
             element.classList.add("visually-hidden");
@@ -191,7 +191,7 @@ function traerCliente() {
             element2.classList.remove("visually-hidden");
             
             if (venta_cliente.toString() != "") {
-                for (i = 0; i <= venta_cliente.length; i++) {
+                for (i = 0; i < venta_cliente.length; i++) {
                     let fila = [
                         venta_cliente[i].cedula_cliente.toString(), 
                         venta_cliente[i].nombre_cliente.toString(), 
@@ -201,9 +201,11 @@ function traerCliente() {
                     table.rows().add(fila);
                     var venta = venta_cliente[i].valor_venta
                     var total = parseFloat(venta) + valortotal;
+                    valortotal = total
                 } 
 	                console.log("total_venta: " + total);				
 	                document.getElementById("valor_total").value = total;
+
 	                
 			}else {
 				var element = document.getElementById("error");

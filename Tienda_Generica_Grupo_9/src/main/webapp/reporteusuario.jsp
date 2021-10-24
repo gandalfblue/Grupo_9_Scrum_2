@@ -45,19 +45,14 @@ var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split
             searchable: true,            
                                                          
             labels: {
-                placeholder: "Buscar...",
-                
+            	placeholder: "Buscar...",
+                perPage: "{select} registros por pagina",
                 noRows: "No hay registros",
                 info: "Mostrando {start} a {end} de {rows} registros",
             }, 
                         
         }); 
-     }
-    
-
-	    table.on('datatable.perpage', function(perpage){ 
-	        {select:(5)}
-	   	});
+     }	
     
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.open("GET",baseUrl+"/listarusuarios", true);
