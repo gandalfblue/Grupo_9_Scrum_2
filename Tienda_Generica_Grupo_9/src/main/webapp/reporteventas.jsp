@@ -88,6 +88,13 @@
 													class="form-control" id="cedula_cliente" onkeypress="if (event.keyCode == 13) traerCliente()">
 												</div>
 											</div>
+											
+											<div class="col-4 text-end" id="ventas">
+												<div class="input-group input-group-sm mb-3">
+													<span class="input-group-text" id="basic-addon1">Total Ventas $</span>
+													<input type="text" class="form-control" id="valor_total" readonly="readonly" value="0">
+												</div>
+											</div>
 										<tr>
 											<th>Cédula del Cliente</th>
 											<th>Nombre del Cliente</th>
@@ -176,22 +183,28 @@ function traerCliente() {
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
 			var venta_cliente = JSON.parse(xmlhttp.responseText);
-			console.log(venta_cliente)				
-			var element = document.getElementById("error");
-			element.classList.add("visually-hidden");
-			var element2 = document.getElementById("correcto");
-			element2.classList.remove("visually-hidden");
-			
-			if (venta_cliente.toString() != "") {
-				for (i = 0; i < venta_cliente.length; i++) {
-					let fila = [
-						venta_cliente[i].cedula_cliente.toString(), 
-						venta_cliente[i].nombre_cliente.toString(), 
-						venta_cliente[i].valor_venta.toString()							
-					];
-											
-					table.rows().add(fila);
-				}				
+			var valortotal = 0.0;
+            console.log(venta_cliente)                
+            var element = document.getElementById("error");
+            element.classList.add("visually-hidden");
+            var element2 = document.getElementById("correcto");
+            element2.classList.remove("visually-hidden");
+            
+            if (venta_cliente.toString() != "") {
+                for (i = 0; i < venta_cliente.length; i++) {
+                    let fila = [
+                        venta_cliente[i].cedula_cliente.toString(), 
+                        venta_cliente[i].nombre_cliente.toString(), 
+                        venta_cliente[i].valor_venta.toString()                            
+                    ];
+                                                                
+                    table.rows().add(fila);
+                    var venta = venta_cliente[i].valor_venta
+                    var total = parseFloat(venta) + valortotal;
+                } 
+	                console.log("total_venta: " + total);				
+	                document.getElementById("valor_total").value = total;
+	                
 			}else {
 				var element = document.getElementById("error");
 				element.classList.remove("visually-hidden");

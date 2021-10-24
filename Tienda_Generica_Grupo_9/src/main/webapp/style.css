@@ -415,5 +415,13 @@ a:hover{
   	max-width: 45%;
 }
 
-
 .dataTables_filter, .dataTables_info { display: none; }
+
+#boton_buscar{
+	max-width:45%;
+}
+
+#ventas{
+	max-width:30%;
+	
+}
